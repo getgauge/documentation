@@ -1,0 +1,614 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Initialization | Gauge</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.7.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="getgauge">
+    
+    
+    <link rel="next" href="./project_structure.html" />
+    
+    
+    <link rel="prev" href="./index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="getgauge/documentation" data-level="0.1" data-basepath="." data-revision="1409567750820">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/getgauge/documentation" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >Gauge</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/getgauge" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/getgauge/documentation/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/getgauge/documentation/edit/master/initialization.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="0.1" data-path="initialization.html">
+            
+                
+                    <a href="./initialization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                         Initialization
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="0.2" data-path="project_structure.html">
+            
+                
+                    <a href="./project_structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                         Project Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="specifications/README">
+            
+                
+                    <a href="./specifications/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Specifications
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="specifications/scenarios">
+            
+                
+                    <a href="./specifications/scenarios">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Scenarios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="specifications/steps">
+            
+                
+                    <a href="./specifications/steps">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Steps
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.2.1" data-path="specifications/contexts">
+            
+                
+                    <a href="./specifications/contexts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                         Contexts
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="specifications/parameters">
+            
+                
+                    <a href="./specifications/parameters">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Parameters
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="specifications/tags">
+            
+                
+                    <a href="./specifications/tags">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Tags
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="specifications/concepts">
+            
+                
+                    <a href="./specifications/concepts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Concepts
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="test_code/README.html">
+            
+                
+                    <a href="./test_code/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Test Code
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="test_code/java.html">
+            
+                
+                    <a href="./test_code/java.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Java
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="test_code/ruby.html">
+            
+                
+                    <a href="./test_code/ruby.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Ruby
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="execution/README.html">
+            
+                
+                    <a href="./execution/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Execution
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="execution/table_driven_execution.html">
+            
+                
+                    <a href="./execution/table_driven_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Table driven execution
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="managing_environments/README.html">
+            
+                
+                    <a href="./managing_environments/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Environments
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="plugins/README.html">
+            
+                
+                    <a href="./plugins/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Plugins
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="plugins/installation">
+            
+                
+                    <a href="./plugins/installation">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="plugins/html_report_plugin">
+            
+                
+                    <a href="./plugins/html_report_plugin">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         HTML Report plugin
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="ide_support/README">
+            
+                
+                    <a href="./ide_support/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         IDE Support
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="ide_support/intellij_idea">
+            
+                
+                    <a href="./ide_support/intellij_idea">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Intellij Idea
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 5%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./initialization.html" title="Initialization" class="chapter done " data-progress="0.1" style="left: 5%;"></a>
+    
+        <a href="./project_structure.html" title="Project Structure" class="chapter  " data-progress="0.2" style="left: 10%;"></a>
+    
+        <a href="./specifications/README" title="Specifications" class="chapter  new-chapter" data-progress="1" style="left: 15%;"></a>
+    
+        <a href="./specifications/scenarios" title="Scenarios" class="chapter  " data-progress="1.1" style="left: 20%;"></a>
+    
+        <a href="./specifications/steps" title="Steps" class="chapter  " data-progress="1.2" style="left: 25%;"></a>
+    
+        <a href="./specifications/contexts" title="Contexts" class="chapter  " data-progress="1.2.1" style="left: 30%;"></a>
+    
+        <a href="./specifications/parameters" title="Parameters" class="chapter  " data-progress="1.3" style="left: 35%;"></a>
+    
+        <a href="./specifications/tags" title="Tags" class="chapter  " data-progress="1.4" style="left: 40%;"></a>
+    
+        <a href="./specifications/concepts" title="Concepts" class="chapter  " data-progress="1.5" style="left: 45%;"></a>
+    
+        <a href="./test_code/README.html" title="Test Code" class="chapter  new-chapter" data-progress="2" style="left: 50%;"></a>
+    
+        <a href="./test_code/java.html" title="Java" class="chapter  " data-progress="2.1" style="left: 55%;"></a>
+    
+        <a href="./test_code/ruby.html" title="Ruby" class="chapter  " data-progress="2.2" style="left: 60%;"></a>
+    
+        <a href="./execution/README.html" title="Execution" class="chapter  new-chapter" data-progress="3" style="left: 65%;"></a>
+    
+        <a href="./execution/table_driven_execution.html" title="Table driven execution" class="chapter  " data-progress="3.1" style="left: 70%;"></a>
+    
+        <a href="./managing_environments/README.html" title="Environments" class="chapter  new-chapter" data-progress="4" style="left: 75%;"></a>
+    
+        <a href="./plugins/README.html" title="Plugins" class="chapter  new-chapter" data-progress="5" style="left: 80%;"></a>
+    
+        <a href="./plugins/installation" title="Installation" class="chapter  " data-progress="5.1" style="left: 85%;"></a>
+    
+        <a href="./plugins/html_report_plugin" title="HTML Report plugin" class="chapter  " data-progress="5.2" style="left: 90%;"></a>
+    
+        <a href="./ide_support/README" title="IDE Support" class="chapter  new-chapter" data-progress="6" style="left: 95%;"></a>
+    
+        <a href="./ide_support/intellij_idea" title="Intellij Idea" class="chapter  " data-progress="6.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_2">
+                    
+                        <h1 id="initialization">Initialization</h1>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./project_structure.html" class="navigation navigation-next " aria-label="Next page: Project Structure"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
