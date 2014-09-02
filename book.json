@@ -1,1 +1,21 @@
-{}
+{
+    "output": "_book",
+    "generator": "site",
+    "title": "Gauge Documentation",
+    "description": "Help documentation for Gauge.",
+    "github": "https://www.github.com/getgauge/gauge",
+    "githubHost": "https://github.com/",
+    "plugins": [],
+    "pluginsConfig": {},
+    "links": {
+        "home": "http://getgauge.io",
+        "about": "http://getgauge.io",
+        "issues": "https://github.com/getgauge/gauge/issues",
+        "contribute": "https://github.com/getgauge/gauge/",
+        "sharing": {
+            "google": "http://getgauge.io",
+            "facebook": "http://getgauge.io",
+            "twitter": "http://getgauge.io"
+        }
+    }
+}
