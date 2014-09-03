@@ -19,6 +19,6 @@
 * [Plugins](plugins/README.md)
    * [Installation](plugins/installation)
    * [HTML Report plugin](plugins/html_report_plugin)
-* [IDE Support](ide_support/README)
+* [IDE Support](ide_support/README.md)
    * [Intellij Idea](ide_support/intellij_idea)
 
