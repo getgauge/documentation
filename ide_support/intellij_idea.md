@@ -51,3 +51,10 @@ Debugging can be performed by attaching debugger to the gauge java process.
 * This will start the execution and halts at breakpoints.
 
 ![debugging](intellij-screenshots/execution/debug.gif "debugging")
+
+####Configuration
+
+You can edit the run configuration to change the spec files or folders to be executed and the environment.
+
+
+![run configuration](intellij-screenshots/execution/config.gif "run configuration")
