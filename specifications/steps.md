@@ -2,7 +2,7 @@
 
 Steps are the executable components of your specification. They  are written as markdown unordered list items (bulleted points).
 
-Every step has an underlying code implementatiomn for the programming language used. This is executed when the steps inside a spec are executed.
+Every step has an underlying code implementation for the programming language used. This is executed when the steps inside a spec are executed.
 
 See [test code](../test_code/README.md) to understand how to write step implementations for different languages.
 

@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](getting_started/readmemd.md)
+* [Getting Started](getting_started/README.md)
    * [Creating a gauge project](getting_started/creating_a_gauge_project.md)
    * [Project Structure](getting_started/project_structure.md)
 * [Specifications](specifications/README.md)

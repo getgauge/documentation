@@ -9,7 +9,7 @@ They help in filtering specs or scenarios based on tags used.
 
 ####Example
 
-Both the **Login specification** and the scenario **Successful login scenario** have tage in the below example.
+Both the **Login specification** and the scenario **Successful login scenario** have tags in the below example.
 ````
 Login specification
 ===================

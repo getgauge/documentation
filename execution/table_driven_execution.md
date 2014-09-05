@@ -32,7 +32,7 @@ In the above example the step uses the `name` column from the data table as a dy
 Both `Scenario` and `Second Scenario` are executed first for the first row values `1, vishnu` and then consecutively for the second and third row values from the table.
 
 
-Data table values
+### Data Table values in inline tables 
 Dynamic values from the data table can also be referred in table parameters passed into steps
 
 Example
@@ -56,4 +56,4 @@ first scenario
 
 ````
 
-In the above example teh table parameter uses a dynamic value from the data table.
+In the above example the table parameter uses a dynamic value from the data table.

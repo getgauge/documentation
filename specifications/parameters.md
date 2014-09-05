@@ -1,13 +1,13 @@
 #Parameters
 
-Steps can be defined to take values as paramters so that they can be re-used with different paramter values.
+Steps can be defined to take values as parameters so that they can be re-used with different parameter values.
 
 ````
 * Check "product 1" exists
 * Check "product 2" exists
 ````
 
-***The underlying [step implementation](../test_code/README.md) in code must also take the same number of parametrs as passed from the step***
+***The underlying [step implementation](../test_code/README.md) in code must also take the same number of parameters as passed from the step***
 
 The parameters passed into a step can be of different types:
 
@@ -21,7 +21,7 @@ They are values passed into the steps in double quotes.
 
 ## Table Parameter:
 Tables can be passed to steps as parameters. They will be available as a language specific table data structure in the underlying implementation.
-* Table parameters are written in Multimarkdown table formats.
+* Table parameters are written in Multi-markdown table formats.
 * The first row contain the table headers. Following rows contains the row values.
 * A separator between the header and the other rows is optional
 
@@ -47,7 +47,7 @@ Special parameters provide the ability to pass larger and richer data into the s
 
 **Prefix** : This defines the type of special parameter. e.g. file, table.
 
-**Value** : This defines the value for the type of special paramter.
+**Value** : This defines the value for the type of special parameter.
 
 ``<prefix:value>``
 
@@ -69,7 +69,7 @@ The prefix and value are below:
 The path to the file can be the relative path from the Gauge project or an absolute path to the file.
 
 ###2. Table
-They are used to pass table value into steps read from an external CSV file. The parameter text in the step contains a  prefix table and the path to the csv file.
+Table or **inline table** are used to pass table value into steps read from an external CSV file. The parameter text in the step contains a  prefix table and the path to the csv file.
 
 **Prefix** : The prefix is ***table***
 

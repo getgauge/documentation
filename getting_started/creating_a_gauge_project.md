@@ -5,7 +5,7 @@ To create or initialize a Gauge project use the `gauge --init` command. In an em
 ````
 gauge --init language
 ````
-Where **language** is the programming language to write test code in. See [supported programming languages](test_code/README.md).
+Where **language** is the programming language to write test code in. See [supported programming languages](../test_code/README.md).
 
 **Example:**
 ````

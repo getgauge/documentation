@@ -1,6 +1,6 @@
 # Environments
 
-Environment specific [variables](https://en.wikipedia.org/wiki/Environment_variable) can be managed using property files. The [property files](https://en.wikipedia.org/wiki/.properties) have set of key value pairs which are set as enviroment variables during execution.
+Environment specific [variables](https://en.wikipedia.org/wiki/Environment_variable) can be managed using property files. The [property files](https://en.wikipedia.org/wiki/.properties) have set of key value pairs which are set as environment variables during execution.
 
 The env directory structure for a `java` project:
 ````
@@ -14,7 +14,7 @@ Custom properties can be added to an existing property files or in a newly creat
 
 ##Creating new environment
 
-To create an enviroment called `ci`:
+To create an environment called `ci`:
 
 * Create a directory called `ci` in `env` directory
 * Add property files (e.g. `user.properties`)
@@ -46,7 +46,7 @@ For e.g.
 gauge_custom_build_path: out/production
 ```
 
-present in **env/default/java.properties** is overriden by the
+present in **env/default/java.properties** is overridden by the
 
 ```
 gauge_custom_build_path: target

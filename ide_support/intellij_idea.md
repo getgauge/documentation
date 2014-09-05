@@ -25,7 +25,7 @@ http://plugins.jetbrains.com/plugin/7535
 
 
 ###Auto Completion
-Steps present in the current project can be listed by invoking the auto completion pop up `ctrl+space` after the '*'. After choosing a step, it gets inserted with parameters highlighted, you can press `tab` to cycle between the paramerters and edit them.
+Steps present in the current project can be listed by invoking the auto completion pop up `ctrl+space` after the '*'. After choosing a step, it gets inserted with parameters highlighted, you can press `tab` to cycle between the parameters and edit them.
 
 ![creation](intellij-screenshots/auto completion/completion.gif "step completion")
 
