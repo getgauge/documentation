@@ -16,7 +16,7 @@ This will give a colored console output with details of the execution as well an
 
 ### 1. Parse error in a spec file:
 
-This occurs if the spec file doesn't follow the expected [specifications](specifications/README.md) syntax or parameters could not be resolved.
+This occurs if the spec file doesn't follow the expected [specifications](../specifications/README.md) syntax or parameters could not be resolved.
 
 **Example**
 

@@ -30,7 +30,7 @@ Spec Heading
 ````
 
 * Every spec must contain one or more [scenarios](scenarios.md).
-* Every spec can be marked with labels using [tags](tags).
+* Every spec can be marked with labels using [tags](tags.md).
 
 
 ## Scenarios
@@ -56,7 +56,7 @@ They are written inside a specification ([context steps](contexts.md)) or a scen
 ### Learn more
  * [Scenarios](scenarios.md)
  * [Steps](steps.md)
- 
+
 
 
 

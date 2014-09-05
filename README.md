@@ -15,7 +15,7 @@ Some of its key features include:
 ## Get started quickly
 
 * Get gauge installers from the [download page](http://getgauge.io/download.html).
-* [Initialize](initialization.md) a gauge project.
+* [Create a gauge project](getting_started/creating_a_gauge_project.md)
 * [Execute Specifications](execution/README.md)
 
 ## Learn more about using gauge
