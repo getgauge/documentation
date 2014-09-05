@@ -1,33 +1,41 @@
 # Execution
 
-To execute a spec or set of specs in a directory
+To execute a spec or set of specs in a directory use the following command.
 
 ```
-gauge specs/Login Test.spec
+gauge specs/login_test.spec
 ```
 or
 ```
 gauge specs/
 ```
 
+This will give a colored console output with details of the execution as well an execution summary.
+
 ## Errors during execution
 
-### Parse error in a spec file:
-This is because the spec file doesn't follow the expected syntax or parameters could not be resolved
+### 1. Parse error in a spec file:
 
-eg
+This occurs if the spec file doesn't follow the expected [specifications](specifications/README.md) syntax or parameters could not be resolved.
 
-`
+**Example**
+
+```
 [ParseError] hello_world.spec : line no: 25, Dynamic parameter <product> could not be resolved
-`
+```
 
 
-### Unimplemented steps present in spec file
-If the spec file has a step that is not implemented in the runner side, there will be a validation error. So a proper implementaion has to be provided for all the steps and concepts
 
-eg
+###2. Unimplemented steps present in spec file
+If the spec file has a step that does not have an implementation in the projects programming language there will be a validation error.
 
-`login.spec:33: Step implementation not found. login with "user" and "p@ssword"`
+Appropriate underlying code implementation has to be provided for all the steps in the specs to be executed.
 
-### Not able to launch the runner
-If the language runtimes haven't been installed(java, ruby) then the runner can't be launched.
+**Example**
+
+````
+login.spec:33: Step implementation not found. login with "user" and "p@ssword"
+````
+
+###3. Failure to launch the language runner plugin
+If the language specific plugin for the project has not been installed then the execution will fail.

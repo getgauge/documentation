@@ -2,16 +2,23 @@
 
 Plugins are installed using the flag `install`, this checks our plugin repository and downloads them.
 
-eg
+e.g.
 ```
 gauge --install <plugin-id>
 ```
 
-since runners are also plugins, they can be installed the same way.
+To install a specific version of a plugin use the `--plugin-version` flag.
+````
+gauge --install ruby --plugin-version 0.0.2
+````
 
-Plugins are placed in `<home>/.gauge/plugins` on *nix and `%APPDATA%\gauge\plugins` on windows
+### Plugin install location
+* **Windows** - `%APPDATA%\gauge\plugins` on windows
+* **MacOS**   - `<home>/.gauge/plugins`
+* **Linux**   - `<home>/.gauge/plugins`
 
-##Adding plugins to project
+
+##Adding plugins to a project
 
 Once plugins are installed, they can be added to the project by
 using the `add-plugin` flag
@@ -19,9 +26,10 @@ using the `add-plugin` flag
 ```
 gauge --add-plugin <plugin-id>
 ```
-additional plugin information can be passed using `plugin-args`
+Additional plugin information can be passed using `plugin-args` flag.
+These depend on the plugin being installed.
 
-eg: adding webdriver version 2.37
+e.g: On the Webdriver plugin, Adding webdriver version 2.37
 
 ```
 gauge --add-plugin webdriver --plugin-args="selenium_version=2.37"

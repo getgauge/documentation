@@ -1,6 +1,6 @@
-# Initialization
+# Creating a gauge  project
 
-To initialize a Gauge project use the `gauge --init` command. In an empty directory run
+To create or initialize a Gauge project use the `gauge --init` command. In an empty directory run
 
 ````
 gauge --init language

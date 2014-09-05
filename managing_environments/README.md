@@ -17,7 +17,7 @@ Custom properties can be added to an existing property files or in a newly creat
 To create an enviroment called `ci`:
 
 * Create a directory called `ci` in `env` directory
-* Add property files (eg `user.properties`)
+* Add property files (e.g. `user.properties`)
 
 
 ```
@@ -35,18 +35,21 @@ The environment is specified using the `env` flag. For example if `ci` environme
 ```
 gauge --env ci specs/
 ```
-This reads the properties in the `default` directory and then overrides with the properties in the `ci` directory.
+On execution
+* The properties from the `default` directory are first set.
+* The properties from the specified environment `ci`  are then set.
+* For common values,  environment specific variables from `ci` override the default values.
 
-For eg
+For e.g.
 
 ```
 gauge_custom_build_path: out/production
 ```
 
-present in env/default/java.properties is overriden by the
+present in **env/default/java.properties** is overriden by the
 
 ```
 gauge_custom_build_path: target
 ```
 
-present in the env/ci/java.properties
+present in the **env/ci/java.properties**

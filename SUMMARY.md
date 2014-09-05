@@ -1,8 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
-   * [Initialization](initialization.md)
-   * [Project Structure](project_structure.md)
+* [Getting Started](getting_started/readmemd.md)
+   * [Creating a gauge project](getting_started/creating_a_gauge_project.md)
+   * [Project Structure](getting_started/project_structure.md)
 * [Specifications](specifications/README.md)
    * [Scenarios](specifications/scenarios.md)
    * [Steps](specifications/steps.md)
