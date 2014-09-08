@@ -20,7 +20,7 @@ They are values passed into the steps in double quotes.
 ````
 
 ## Table Parameter:
-Tables can be passed to steps as parameters. They will be available as a language specific table data structure in the underlying implementation.
+Tables or **inline tables** can be passed to steps as parameters. They will be available as a language specific table data structure in the underlying implementation.
 * Table parameters are written in Multi-markdown table formats.
 * The first row contain the table headers. Following rows contains the row values.
 * A separator between the header and the other rows is optional
@@ -49,11 +49,14 @@ Special parameters provide the ability to pass larger and richer data into the s
 
 **Value** : This defines the value for the type of special parameter.
 
-``<prefix:value>``
+````
+<prefix:value>
+
+````
 
 The different special parameter types are:
 
-###1. File
+####1. File
 These are used to read files and pass the file content as a string parameter to the underlying steps.
 
 The prefix and value are below:
@@ -68,8 +71,8 @@ The prefix and value are below:
 ````
 The path to the file can be the relative path from the Gauge project or an absolute path to the file.
 
-###2. Table
-Table or **inline table** are used to pass table value into steps read from an external CSV file. The parameter text in the step contains a  prefix table and the path to the csv file.
+####2. Table
+Tables are used to pass table value into steps read from an external CSV file. The parameter text in the step contains a  prefix table and the path to the csv file.
 
 **Prefix** : The prefix is ***table***
 

@@ -22,3 +22,5 @@ Note: This will download and install the specific language plugin if it is not c
 ### Learn more
 * [Gauge project structure](project_structure.md)
 * [Executing Specs](../execution/README.md)
+* [Specifications](../specifications/README.md)
+* [Test code](../test_code/README.md)

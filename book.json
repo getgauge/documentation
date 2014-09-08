@@ -8,6 +8,10 @@
     "plugins": [],
     "pluginsConfig": {},
     "links": {
+        "sidebar": {
+            "Home": "http://getgauge.io",
+            "Github": "http://github.com/getgauge/gauge"
+        },
         "home": "http://getgauge.io",
         "about": "http://getgauge.io",
         "issues": "https://github.com/getgauge/gauge/issues",
@@ -15,7 +19,7 @@
         "sharing": {
             "google": "http://getgauge.io",
             "facebook": "http://getgauge.io",
-            "twitter": "http://getgauge.io"
+            "twitter": "getgauge"
         }
     }
 }
