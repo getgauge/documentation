@@ -28,7 +28,7 @@ public class StepImplementation {
 }
 ````
 
-* The text passed to the is the [step template](../step_name_template.mdd), whichis a simple representation of the step.
+* The text passed to the annotation is the [step template](../step_name_template.mdd), which is a simple representation of the step.
 * The Method can be written in **any java class** as long as it is in classpath.
 
 
