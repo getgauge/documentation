@@ -9,8 +9,19 @@ or
 ```
 gauge specs/
 ```
-
 This will give a colored console output with details of the execution as well an execution summary.
+
+To execute a single scenario in a spec use the following command.
+
+````
+gauge specs/login_test.spec:3
+````
+or
+````
+gauge login_test.spec:3
+````
+
+This executes only the scenario with index 3 in login_test.spec.
 
 ## Errors during execution
 
