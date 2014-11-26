@@ -11,6 +11,26 @@ gauge specs/
 ```
 
 This will give a colored console output with details of the execution as well an execution summary.
+## Single scenario execution
+
+A single scenario of a specification can be executed by specifying the index of that scenario in the spec (index starts from 0). To execute a single scenario in a spec use the following command.
+
+````
+gauge specs/login_test.spec:3
+````
+or
+````
+gauge login_test.spec:3
+````
+
+This executes only the scenario with index 3 in login_test.spec.
+
+Multiple scenarios can be executed selectively as follows :
+
+````
+gauge specs/helloworld.spec:4 specs/helloworld.spec:7
+````
+These scenarios can also belong to different specifications.
 
 ## Errors during execution
 
