@@ -31,30 +31,6 @@ gauge specs/helloworld.spec:4 specs/helloworld.spec:7
 ````
 These scenarios can also belong to different specifications.
 
-To execute a single scenario in a spec use the following command.
-
-````
-gauge specs/login_test.spec:3
-````
-or
-````
-gauge login_test.spec:3
-````
-
-This executes only the scenario with index 3 in login_test.spec.
-
-## Tagged Execution
-
-To execute all the specs or scenarios which are tagged, use the following command.
-
-````
-gauge --tags tag1,tag2,tag3 specs
-````
-or
-````
-gauge --tags "tag1, tag2, tag3" specs
-````
-This executes only the scenarios and specifications which are tagged with tag1,tag2,tag3.
 
 ## Errors during execution
 
