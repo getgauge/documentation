@@ -5,8 +5,11 @@
     "description": "Help documentation for Gauge.",
     "github": "https://www.github.com/getgauge/gauge",
     "githubHost": "https://github.com/",
-    "plugins": ["anchors"],
-    "pluginsConfig": {},
+    "plugins": ["anchors", "ga"],
+    "pluginsConfig": {
+        "ga": {
+              "token": "UA-54838477-1"
+          } },
     "links": {
         "sidebar": {
             "Home": "http://getgauge.io",
