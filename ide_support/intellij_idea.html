@@ -7,7 +7,7 @@
         <title>Intellij Idea | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,9 +31,13 @@
         
 <link rel="stylesheet" href="../gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="7.1" data-basepath=".." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="7.1" data-basepath=".." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -450,72 +454,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="../execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="../execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="../execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="../execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -721,17 +687,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_10">
                     
-                        <h1 id="intellij-idea">Intellij Idea</h1>
+                        <h1 id="intellij-idea"><a name="intellij-idea" class="plugin-anchor" href="#intellij-idea"><span class="fa fa-link"></span></a>Intellij Idea</h1>
 <p>Gauge projects can be created and executed from intellij. The plugin can be downloaded from the jetbrains plugin repository.</p>
 <p>This plugin supports only <a href="../test_code/java.html">java</a>.</p>
-<h2 id="installation">Installation</h2>
+<h2 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h2>
 <ul>
 <li>Follow the <a href="http://www.jetbrains.com/idea/webhelp/installing-updating-and-uninstalling-repository-plugins.html#d645926e261" target="_blank">Download and install instructions</a> to get the gauge idea plugin from jetbrains plugin repository.</li>
 <li>The plugin can also be downloaded from the <a href="http://plugins.jetbrains.com/plugin/7535" target="_blank">gauge plugin home</a> and installed manually,</li>
 </ul>
-<h2 id="features">Features:</h2>
+<h2 id="features"><a name="features" class="plugin-anchor" href="#features"><span class="fa fa-link"></span></a>Features:</h2>
 <ul>
 <li>Project Creation</li>
 <li>Syntax Highlighting</li>
@@ -739,24 +705,24 @@
 <li>Navigation from step to implementation</li>
 <li>Quick Fix for unimplemented steps</li>
 </ul>
-<h3 id="1-project-creation">1. Project Creation</h3>
+<h3 id="1-project-creation"><a name="1-project-creation" class="plugin-anchor" href="#1-project-creation"><span class="fa fa-link"></span></a>1. Project Creation</h3>
 <ul>
 <li>File -&gt; New Project.</li>
-<li>Choose &#39;Gauge&#39;</li>
+<li>Choose &apos;Gauge&apos;</li>
 <li>Choose the project location and java sdk</li>
 <li>Finish</li>
 </ul>
 <pre><code>Note: If gauge-java is not installed, it will download it for the first time.
 </code></pre><p><img src="intellij-screenshots/creation/creation.gif" alt="creation" title="project creation"></p>
-<h3 id="2-auto-completion">2. Auto Completion</h3>
-<p>Steps present in the current project can be listed by invoking the auto completion pop up <code>ctrl+space</code> after the &#39;*&#39;. After choosing a step, it gets inserted with parameters highlighted, you can press <code>tab</code> to cycle between the parameters and edit them.</p>
+<h3 id="2-auto-completion"><a name="2-auto-completion" class="plugin-anchor" href="#2-auto-completion"><span class="fa fa-link"></span></a>2. Auto Completion</h3>
+<p>Steps present in the current project can be listed by invoking the auto completion pop up <code>ctrl+space</code> after the &apos;*&apos;. After choosing a step, it gets inserted with parameters highlighted, you can press <code>tab</code> to cycle between the parameters and edit them.</p>
 <p><img src="intellij-screenshots/auto completion/completion.gif" alt="creation" title="step completion"></p>
-<h3 id="3-step-quick-fix">3. Step Quick Fix</h3>
-<p>If you have an unimplemented step in the spec file, it will be annotated saying &#39;undefined step&#39;. <code>alt+enter</code> can be pressed to open the quick fix pop up. The destination of the implementation can be chosen, either a new class or from a list of existing classes. It will then generate the step with required annotation and parameters.</p>
+<h3 id="3-step-quick-fix"><a name="3-step-quick-fix" class="plugin-anchor" href="#3-step-quick-fix"><span class="fa fa-link"></span></a>3. Step Quick Fix</h3>
+<p>If you have an unimplemented step in the spec file, it will be annotated saying &apos;undefined step&apos;. <code>alt+enter</code> can be pressed to open the quick fix pop up. The destination of the implementation can be chosen, either a new class or from a list of existing classes. It will then generate the step with required annotation and parameters.</p>
 <p><img src="intellij-screenshots/quick fix/fix.gif" alt="step quick fix" title="step quick fix"></p>
-<h3 id="4-execution">4. Execution</h3>
+<h3 id="4-execution"><a name="4-execution" class="plugin-anchor" href="#4-execution"><span class="fa fa-link"></span></a>4. Execution</h3>
 <p>Specs can be executed by <code>right click -&gt; Run spec</code></p>
-<h4 id="debug">Debug</h4>
+<h4 id="debug"><a name="debug" class="plugin-anchor" href="#debug"><span class="fa fa-link"></span></a>Debug</h4>
 <p>Debugging can be performed by attaching debugger to the gauge java process.</p>
 <ul>
 <li>Create a remote configuration <code>Gauge</code> which attaches to port <code>50005</code></li>
@@ -766,7 +732,7 @@
 <li>This will start the execution and halts at breakpoints.</li>
 </ul>
 <p><img src="intellij-screenshots/execution/debug.gif" alt="debugging" title="debugging"></p>
-<h4 id="configuration">Configuration</h4>
+<h4 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><span class="fa fa-link"></span></a>Configuration</h4>
 <p>You can edit the run configuration to change the spec files or folders to be executed and the environment.</p>
 <p><img src="intellij-screenshots/execution/config.gif" alt="run configuration" title="run configuration"></p>
 
@@ -789,7 +755,11 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -798,12 +768,12 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

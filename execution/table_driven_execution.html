@@ -7,7 +7,7 @@
         <title>Table driven execution | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,7 +20,7 @@
     <meta name="author" content="https:">
     
     
-    <link rel="next" href="../execution/execution_hooks.html" />
+    <link rel="next" href="../execution/tagged_execution.html" />
     
     
     <link rel="prev" href="../execution/README.html" />
@@ -33,9 +33,13 @@
         
 <link rel="stylesheet" href="../gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="4.1" data-basepath=".." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="4.1" data-basepath=".." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -452,72 +456,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="../execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="../execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="../execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="../execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -723,9 +689,9 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_10">
+                    <section class="normal" id="section-gitbook_4">
                     
-                        <h1 id="table-driven-execution">Table driven execution</h1>
+                        <h1 id="table-driven-execution"><a name="table-driven-execution" class="plugin-anchor" href="#table-driven-execution"><span class="fa fa-link"></span></a>Table driven execution</h1>
 <p>When a scenario or multiple scenarios in a specification are to be executed for multiple sets of data then Data table execution can be used.</p>
 <ul>
 <li>A <strong>data table</strong> is defined in markdown table format in the beginning of the spec before any steps.</li>
@@ -752,7 +718,7 @@ Second Scenario
 * Say &quot;namaste&quot; to &lt;name&gt;
 </code></pre><p>In the above example the step uses the <code>name</code> column from the data table as a dynamic parameter.</p>
 <p>Both <code>Scenario</code> and <code>Second Scenario</code> are executed first for the first row values <code>1, vishnu</code> and then consecutively for the second and third row values from the table.</p>
-<h3 id="data-table-values-in-inline-tables">Data Table values in inline tables</h3>
+<h3 id="data-table-values-in-inline-tables"><a name="data-table-values-in-inline-tables" class="plugin-anchor" href="#data-table-values-in-inline-tables"><span class="fa fa-link"></span></a>Data Table values in inline tables</h3>
 <p>Dynamic values from the data table can also be referred in table parameters passed into steps</p>
 <p>Example</p>
 <pre><code>Create projects
@@ -785,7 +751,7 @@ first scenario
         <a href="../execution/README.html" class="navigation navigation-prev " aria-label="Previous page: Execution"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../execution/execution_hooks.html" class="navigation navigation-next " aria-label="Next page: Execution hooks"><i class="fa fa-angle-right"></i></a>
+        <a href="../execution/tagged_execution.html" class="navigation navigation-next " aria-label="Next page: Tagged Execution"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
@@ -794,7 +760,11 @@ first scenario
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -803,12 +773,12 @@ first scenario
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

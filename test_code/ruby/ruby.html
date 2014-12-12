@@ -7,7 +7,7 @@
         <title>Ruby | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,9 +33,13 @@
         
 <link rel="stylesheet" href="../../gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="3.3" data-basepath="../.." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="3.3" data-basepath="../.." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -452,72 +456,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../../execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="../../execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="../../execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="../../execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="../../execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -723,21 +689,21 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_30">
+                    <section class="normal" id="section-gitbook_28">
                     
-                        <h1 id="ruby">Ruby</h1>
-<h2 id="step-implementations">Step implementations</h2>
+                        <h1 id="ruby"><a name="ruby" class="plugin-anchor" href="#ruby"><span class="fa fa-link"></span></a>Ruby</h1>
+<h2 id="step-implementations"><a name="step-implementations" class="plugin-anchor" href="#step-implementations"><span class="fa fa-link"></span></a>Step implementations</h2>
 <p>Step implementations in ruby are method calls calling the <strong><em>step</em></strong> method. The <a href="../step_name_template.html">step name template</a> is passed as the first parameter to the method followed by a code block which takes the necessary number of parameters.</p>
-<h3 id="examples">Examples</h3>
-<h4 id="1-simple-step">1. Simple step</h4>
+<h3 id="examples"><a name="examples" class="plugin-anchor" href="#examples"><span class="fa fa-link"></span></a>Examples</h3>
+<h4 id="1-simple-step"><a name="1-simple-step" class="plugin-anchor" href="#1-simple-step"><span class="fa fa-link"></span></a>1. Simple step</h4>
 <p><strong>Step name</strong></p>
 <pre><code>* Say &quot;hello&quot; to &quot;gauge&quot;
 </code></pre><p><strong>Ruby Implementation:</strong></p>
-<pre><code class="lang-ruby"><span class="hljs-prompt">step 'Say &lt;greeting&gt;</span> to &lt;product name&gt;<span class="hljs-string">' do |greeting, name|
+<pre><code class="lang-ruby"><span class="hljs-input"><span class="hljs-prompt">step &apos;Say &lt;greeting&gt;</span> to &lt;product name&gt;<span class="hljs-string">&apos; do |greeting, name|
  # Code for the step
-end</span>
+end</span></span>
 </code></pre>
-<h4 id="2-step-with-table">2. Step with table</h4>
+<h4 id="2-step-with-table"><a name="2-step-with-table" class="plugin-anchor" href="#2-step-with-table"><span class="fa fa-link"></span></a>2. Step with table</h4>
 <p><strong>Step:</strong></p>
 <pre><code>Create following &quot;admin&quot; users
 |id |   name  |
@@ -746,24 +712,24 @@ end</span>
 |456| vishnu  |
 |789|navaneeth|
 </code></pre><p><strong>Ruby Implementation:</strong></p>
-<pre><code class="lang-ruby"><span class="hljs-prompt">step 'Create following &lt;role&gt;</span> users &lt;table&gt;<span class="hljs-string">' do |role, table|
+<pre><code class="lang-ruby"><span class="hljs-input"><span class="hljs-prompt">step &apos;Create following &lt;role&gt;</span> users &lt;table&gt;<span class="hljs-string">&apos; do |role, table|
   puts table.rows
   puts table.columns
-end</span>
+end</span></span>
 </code></pre>
 <ul>
 <li>Here <strong>table</strong> is a custom data structure defined by gauge-ruby.</li>
 </ul>
-<h2 id="multiple-step-names">Multiple Step names</h2>
+<h2 id="multiple-step-names"><a name="multiple-step-names" class="plugin-anchor" href="#multiple-step-names"><span class="fa fa-link"></span></a>Multiple Step names</h2>
 <p>The same implementation can point to multiple step names. To do this pass all the <a href="../step_name_template.html">step name template</a> as parameters to the method call.</p>
-<h4 id="example">Example</h4>
+<h4 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h4>
 <p><strong><em>Step Names :</em></strong></p>
 <pre><code>* Create a user &quot;prateek&quot;
 * Create another user &quot;vishnu&quot;
 </code></pre><p><strong><em>Implementation :</em></strong></p>
-<pre><code class="lang-ruby"><span class="hljs-prompt">step "Create a user &lt;username&gt;</span><span class="hljs-string">", "</span><span class="hljs-constant">Create</span> another user &lt;username&gt;<span class="hljs-string">" do |username|
- #step code
-end</span>
+<pre><code class="lang-ruby">step <span class="hljs-string">&quot;Create a user &lt;username&gt;&quot;</span>, <span class="hljs-string">&quot;Create another user &lt;username&gt;&quot;</span> <span class="hljs-keyword">do</span> |username|
+ <span class="hljs-comment">#step code</span>
+<span class="hljs-keyword">end</span>
 </code></pre>
 
                     
@@ -787,7 +753,11 @@ end</span>
 <script src="../../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -796,12 +766,12 @@ end</span>
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

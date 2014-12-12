@@ -7,7 +7,7 @@
         <title>Parameters | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,9 +33,13 @@
         
 <link rel="stylesheet" href="../gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="2.3" data-basepath=".." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="2.3" data-basepath=".." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -452,72 +456,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="../execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="../execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="../execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="../execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -723,19 +689,19 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_20">
+                    <section class="normal" id="section-gitbook_18">
                     
-                        <h1 id="parameters">Parameters</h1>
+                        <h1 id="parameters"><a name="parameters" class="plugin-anchor" href="#parameters"><span class="fa fa-link"></span></a>Parameters</h1>
 <p>Steps can be defined to take values as parameters so that they can be re-used with different parameter values.</p>
 <pre><code>* Check &quot;product 1&quot; exists
 * Check &quot;product 2&quot; exists
 </code></pre><p><strong><em>The underlying <a href="../test_code/README.html">step implementation</a> in code must also take the same number of parameters as passed from the step</em></strong></p>
 <p>The parameters passed into a step can be of different types:</p>
-<h2 id="simple-parameters">Simple parameters</h2>
+<h2 id="simple-parameters"><a name="simple-parameters" class="plugin-anchor" href="#simple-parameters"><span class="fa fa-link"></span></a>Simple parameters</h2>
 <p>They are values passed into the steps in double quotes.</p>
-<pre><code>* Create a “gauge-java” project
-* Write “100” line specification
-</code></pre><h2 id="table-parameter">Table Parameter:</h2>
+<pre><code>* Create a &#x201C;gauge-java&#x201D; project
+* Write &#x201C;100&#x201D; line specification
+</code></pre><h2 id="table-parameter"><a name="table-parameter" class="plugin-anchor" href="#table-parameter"><span class="fa fa-link"></span></a>Table Parameter:</h2>
 <p>Tables or <strong>inline tables</strong> can be passed to steps as parameters. They will be available as a language specific table data structure in the underlying implementation.</p>
 <ul>
 <li>Table parameters are written in Multi-markdown table formats.</li>
@@ -752,7 +718,7 @@
  |----- | ---------|
  |123   |   John   |
  |456   |  Mcclain |
-</code></pre><h2 id="special-parameters">Special Parameters</h2>
+</code></pre><h2 id="special-parameters"><a name="special-parameters" class="plugin-anchor" href="#special-parameters"><span class="fa fa-link"></span></a>Special Parameters</h2>
 <p>Special parameters provide the ability to pass larger and richer data into the steps as parameters.</p>
 <ul>
 <li>They are entered in angular brackets - <code>&lt;&gt;</code> in the step. There are 2 types of special parameters available in Gauge</li>
@@ -762,7 +728,7 @@
 <p><strong>Value</strong> : This defines the value for the type of special parameter.</p>
 <pre><code>&lt;prefix:value&gt;
 </code></pre><p>The different special parameter types are:</p>
-<h4 id="1-file">1. File</h4>
+<h4 id="1-file"><a name="1-file" class="plugin-anchor" href="#1-file"><span class="fa fa-link"></span></a>1. File</h4>
 <p>These are used to read files and pass the file content as a string parameter to the underlying steps.</p>
 <p>The prefix and value are below:</p>
 <p><strong>Prefix</strong> : The prefix is <strong><em>file</em></strong></p>
@@ -770,7 +736,7 @@
 <pre><code>* Verify email text is &lt;file:email.txt&gt;
 * Check if &lt;file:/work/content.txt&gt; is visible
 </code></pre><p>The path to the file can be the relative path from the Gauge project or an absolute path to the file.</p>
-<h4 id="2-table">2. Table</h4>
+<h4 id="2-table"><a name="2-table" class="plugin-anchor" href="#2-table"><span class="fa fa-link"></span></a>2. Table</h4>
 <p>Tables are used to pass table value into steps read from an external CSV file. The parameter text in the step contains a  prefix table and the path to the csv file.</p>
 <p><strong>Prefix</strong> : The prefix is <strong><em>table</em></strong></p>
 <p><strong>Value</strong>  : The value is the path to the csv file.</p>
@@ -798,7 +764,11 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -807,12 +777,12 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

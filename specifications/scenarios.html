@@ -7,7 +7,7 @@
         <title>Scenarios | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,9 +33,13 @@
         
 <link rel="stylesheet" href="../gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="2.1" data-basepath=".." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="2.1" data-basepath=".." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -452,72 +456,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="../execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="../execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="../execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="../execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -723,9 +689,9 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21">
+                    <section class="normal" id="section-gitbook_19">
                     
-                        <h1 id="scenarios">Scenarios</h1>
+                        <h1 id="scenarios"><a name="scenarios" class="plugin-anchor" href="#scenarios"><span class="fa fa-link"></span></a>Scenarios</h1>
 <p>Each scenario represents a single flow in a particular specification. A specification must contain at least one scenario.</p>
 <p>A scenario starts after a scenario heading or a scenario name. The scenario heading is written in markdown <strong>H2</strong> syntax. This can be written in 2 ways:</p>
 <pre><code>Scenario heading
@@ -736,7 +702,7 @@
 <li>A scenario contains one or more <a href="steps.html">steps</a> under it.</li>
 <li>A scenario can be tagged using <a href="tags.html">tags</a>.</li>
 </ul>
-<h4 id="example-spec-with-a-scenario">Example spec with a scenario:</h4>
+<h4 id="example-spec-with-a-scenario"><a name="example-spec-with-a-scenario" class="plugin-anchor" href="#example-spec-with-a-scenario"><span class="fa fa-link"></span></a>Example spec with a scenario:</h4>
 <pre><code>Configuration
 =============
 
@@ -748,7 +714,7 @@ Admin Login
 * Navigate to the configuration page
 * Change permissions for user &quot;john&quot; to &quot;admin&quot;
 * User &quot;john&quot; should have admin permissions
-</code></pre><h3 id="learn-more">Learn more</h3>
+</code></pre><h3 id="learn-more"><a name="learn-more" class="plugin-anchor" href="#learn-more"><span class="fa fa-link"></span></a>Learn more</h3>
 <ul>
 <li><a href="steps.html">Steps</a></li>
 <li><a href="tags.html">Tags</a></li>
@@ -775,7 +741,11 @@ Admin Login
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -784,12 +754,12 @@ Admin Login
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

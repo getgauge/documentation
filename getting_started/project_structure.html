@@ -7,7 +7,7 @@
         <title>Project Structure | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,9 +33,13 @@
         
 <link rel="stylesheet" href="../gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="1.2" data-basepath=".." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="1.2" data-basepath=".." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -452,72 +456,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="../execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="../execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="../execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="../execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -723,26 +689,26 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3">
+                    <section class="normal" id="section-gitbook_8">
                     
-                        <h1 id="project-structure">Project Structure</h1>
+                        <h1 id="project-structure"><a name="project-structure" class="plugin-anchor" href="#project-structure"><span class="fa fa-link"></span></a>Project Structure</h1>
 <p>On initialization of a gauge project for a particular language a project skeleton is created with the following files</p>
-<h2 id="1-common-gauge-files">1. Common Gauge files</h2>
-<pre><code>├── env
-│  └── default
-│     └── default.properties
-├── manifest.json
-├── specs
-   └── hello_world.spec
-</code></pre><h3 id="env-directory">Env Directory</h3>
+<h2 id="1-common-gauge-files"><a name="1-common-gauge-files" class="plugin-anchor" href="#1-common-gauge-files"><span class="fa fa-link"></span></a>1. Common Gauge files</h2>
+<pre><code>&#x251C;&#x2500;&#x2500; env
+&#x2502;  &#x2514;&#x2500;&#x2500; default
+&#x2502;     &#x2514;&#x2500;&#x2500; default.properties
+&#x251C;&#x2500;&#x2500; manifest.json
+&#x251C;&#x2500;&#x2500; specs
+   &#x2514;&#x2500;&#x2500; hello_world.spec
+</code></pre><h3 id="env-directory"><a name="env-directory" class="plugin-anchor" href="#env-directory"><span class="fa fa-link"></span></a>Env Directory</h3>
 <p>The env directory contains multiple environment specific directories. Each directory has  <a href="https://en.wikipedia.org/wiki/.properties" target="_blank">.property files</a> which define the environment variables set during execution for that specific environment.</p>
 <p>A <strong>env/default</strong> directory is created on project initialization which contains the default environment variables set during execution.</p>
 <p>Learn more about <a href="../managing_environments/README.html">managing environments</a>.</p>
-<h3 id="specs-directory">Specs Directory</h3>
+<h3 id="specs-directory"><a name="specs-directory" class="plugin-anchor" href="#specs-directory"><span class="fa fa-link"></span></a>Specs Directory</h3>
 <p>The specs directory contains all the <a href="../specifications/README.html">spec</a> files for the project. They are the business layer specifications written in simple markdown format.</p>
 <p>A simple example spec (<strong>hello_world.spec</strong>)  is created in the specs directory to better understand the format of specifications.</p>
 <p>Learn more about <a href="../specifications/README.html">specifications</a></p>
-<h3 id="manifest-file">Manifest file</h3>
+<h3 id="manifest-file"><a name="manifest-file" class="plugin-anchor" href="#manifest-file"><span class="fa fa-link"></span></a>Manifest file</h3>
 <p>The <strong>manifest.json</strong> contains gauge specific configurations which include the following:</p>
 <ul>
 <li><p><strong>language</strong> : Programming language used for the test code. Gauge uses the corresponding language runner for executing the specs.</p>
@@ -750,7 +716,7 @@
 <li><p><strong>Plugins</strong> : The gauge plugins used for the project. Some plugins are used by default on each gauge project.</p>
 </li>
 </ul>
-<h2 id="2-language-specific-files">2. Language specific files</h2>
+<h2 id="2-language-specific-files"><a name="2-language-specific-files" class="plugin-anchor" href="#2-language-specific-files"><span class="fa fa-link"></span></a>2. Language specific files</h2>
 <p>Along with common gauge files certain language specific files and directories are created during <a href="creating_a_gauge_project.html">project creation</a>. You can find the more details about language specific files created under each <a href="../test_code/README.html">programming language</a>.</p>
 
                     
@@ -774,7 +740,11 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -783,12 +753,12 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

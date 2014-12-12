@@ -7,7 +7,7 @@
         <title>Introduction | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="Help documentation for Gauge.">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.0.2">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,9 +31,13 @@
         
 <link rel="stylesheet" href="gitbook/style.css">
 
+    
+    <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+    
+
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="0" data-basepath="." data-revision="1410177489827">
+    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="0" data-basepath="." data-revision="1418372024859">
     
 
 <div class="book-summary">
@@ -450,72 +454,34 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="execution/execution_hooks.html">
+        <li class="chapter " data-level="4.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="./execution/tagged_execution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Tagged Execution
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="execution/execution_hooks.html">
             
                 
                     <a href="./execution/execution_hooks.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                          Execution hooks
                     </a>
                 
             
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3" data-path="execution/data_store.html">
-            
-                
-                    <a href="./execution/data_store.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.</b>
-                        
-                         Data Sharing
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.3.1" data-path="execution/java.html">
-            
-                
-                    <a href="./execution/java.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.1.</b>
-                        
-                         Java
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.3.2" data-path="execution/ruby.html">
-            
-                
-                    <a href="./execution/ruby.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.3.2.</b>
-                        
-                         Ruby
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -721,10 +687,10 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-gitbook_1">
                     
-                        <h1 id="welcome-to-gauge">Welcome to Gauge</h1>
-<p>Gauge is a light weight cross-platform BDD style test automation tool. It provides the ability to author test cases in the business language.</p>
+                        <h1 id="welcome-to-gauge"><a name="welcome-to-gauge" class="plugin-anchor" href="#welcome-to-gauge"><span class="fa fa-link"></span></a>Welcome to Gauge</h1>
+<p>Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language.</p>
 <p>Gauge champions the idea of <strong>living/executable documentation</strong>.</p>
 <p>Some of its key features include:</p>
 <ul>
@@ -733,13 +699,25 @@
 <li>A modular architecture with <a href="plugins/README.html">plugin</a> support.</li>
 <li>Consistency across language implementations.</li>
 </ul>
-<h2 id="get-started-quickly">Get started quickly</h2>
+<h2 id="why-gauge"><a name="why-gauge" class="plugin-anchor" href="#why-gauge"><span class="fa fa-link"></span></a>Why Gauge?</h2>
+<p>Certain features of Gauge make it stand unique amongst others.</p>
+<ul>
+<li>Consistent Cross Platform/Language Support</li>
+<li>Business Language Tests : Supports the concept of executable documentation</li>
+<li>Open Source, so it could be shared freely and improved by others as well</li>
+<li>Simple, Flexible and Rich Syntax</li>
+<li>Helps you create Maintainable and Understandable test suites</li>
+<li>Extensible through <a href="plugins/README.html">Plugins</a> and Hackable</li>
+<li>Supports External Data Sources</li>
+<li>IDE Support</li>
+</ul>
+<h2 id="get-started-quickly"><a name="get-started-quickly" class="plugin-anchor" href="#get-started-quickly"><span class="fa fa-link"></span></a>Get started quickly</h2>
 <ul>
 <li>Get gauge installers from the <a href="http://getgauge.io/download.html" target="_blank">download page</a>.</li>
 <li><a href="getting_started/creating_a_gauge_project.html">Create a gauge project</a></li>
 <li><a href="execution/README.html">Execute Specifications</a></li>
 </ul>
-<h2 id="learn-more-about-using-gauge">Learn more about using gauge</h2>
+<h2 id="learn-more-about-using-gauge"><a name="learn-more-about-using-gauge" class="plugin-anchor" href="#learn-more-about-using-gauge"><span class="fa fa-link"></span></a>Learn more about using gauge</h2>
 <ul>
 <li><a href="specifications/README.html">Specifications</a></li>
 <li><a href="specifications/steps.html">Steps</a></li>
@@ -767,7 +745,11 @@
 <script src="gitbook/app.js"></script>
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -776,12 +758,12 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-54838477-1"}};
     gitbook.start(config);
 });
 </script>
 
-        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>
