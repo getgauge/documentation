@@ -31,10 +31,12 @@ The concept header is followed by the steps that are used inside the concept. Th
 
 * All the parameters used from the concept header will be in `< >` brackets.
 * Fixed static parameter values are writen in quotes `" "`.
+* Other concepts can also be called inside the concept definition.
 
 ###Example of Concept definition
 ````
 # login as user <username> and create project <project_name>
+
 * login as user <username> and "password"
 * navigate to project page
 * create a project <project_name>
@@ -43,34 +45,6 @@ The concept header is followed by the steps that are used inside the concept. Th
 In the above example
 * The first line is the concept header
 * The following 3 steps are abstracted into the concept
-
-## Nested Concepts
-
-By combining steps into concepts at various levels, multiple levels of abstraction can be obtained. Thus, higher levels of abstraction can be achieved using Nested Concepts.
-
-Example :
-````
-# Create user <user_id> <user_name> and <user_phone>
-* assign id <user_id> and name <user_name>
-* assign phone <user_phone> to <user_id>
-* display success message
-
-# assign id <user_id> and name <user_name>
-* add id <user_id>
-* add name <user_name>
-
-# assign phone <user_phone> to <user_id>
-* search for <user_id>
-* add <user_phone>
-
-````
-
-In this example, the top level concept "Create user \<user_id\> \<user_name\> and \<user_phone\>" has three steps in it.
-* assign id \<user_id\> and name \<user_name\>
-* assign phone \<user_phone\> to \<user_id\>
-* display success message
-
-The steps 1 and 2 inside the concept, are also concepts. They can also pass parameters from top level concept to next level. Thus multiple level concepts can be defined which can be reused at various levels.
 
 
 
