@@ -5,7 +5,7 @@
     "description": "Help documentation for Gauge.",
     "github": "https://www.github.com/getgauge/gauge",
     "githubHost": "https://github.com/",
-    "plugins": [],
+    "plugins": ["anchors"],
     "pluginsConfig": {},
     "links": {
         "sidebar": {
