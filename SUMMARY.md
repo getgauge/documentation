@@ -22,6 +22,7 @@
        * [Ruby Project files](test_code/ruby/ruby_project_files.md)
 * [Execution](execution/README.md)
    * [Table driven execution](execution/table_driven_execution.md)
+   * [Tagged Execution](execution/tagged_execution.md)
    * [Execution hooks](execution/execution_hooks.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)

@@ -10,8 +10,9 @@ or
 gauge specs/
 ```
 This will give a colored console output with details of the execution as well an execution summary.
+## Single scenario execution
 
-To execute a single scenario in a spec use the following command.
+A single scenario of a specification can be executed by specifying the index of that scenario in the spec (index starts from 0). To execute a single scenario in a spec use the following command.
 
 ````
 gauge specs/login_test.spec:3
@@ -23,18 +24,13 @@ gauge login_test.spec:3
 
 This executes only the scenario with index 3 in login_test.spec.
 
-## Tagged Execution
-
-To execute all the specs or scenarios which are tagged, use the following command.
+Multiple scenarios can be executed selectively as follows :
 
 ````
-gauge --tags tag1,tag2,tag3 specs
+gauge specs/helloworld.spec:4 specs/helloworld.spec:7
 ````
-or
-````
-gauge --tags "tag1, tag2, tag3" specs
-````
-This executes only the scenarios and specifications which are tagged with tag1,tag2,tag3.
+These scenarios can also belong to different specifications.
+
 
 ## Errors during execution
 
