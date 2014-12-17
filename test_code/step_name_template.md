@@ -18,12 +18,12 @@ The Step template contains:
 
 **For Steps with tables:**
 ````
-Step usage                       Step name template
-
-Create following users           Create following users <table>
-   |user-id|  name   |
-   |  123  | vishnu  |
-   |  456  |navaneeth|
+| Step usage                |       Step name template             |
+|---------------------------|--------------------------------------|
+| Create following users    |    Create following users <table>    |
+|   |user-id|  name   |     |                                      |
+|   |  123  | vishnu  |     |                                      |
+|   |  456  |navaneeth|     |                                      |
 
 ````
 

@@ -1,6 +1,6 @@
 # Welcome to Gauge
 
-Gauge is a light weight cross-platform BDD style test automation tool. It provides the ability to author test cases in the business language.
+Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language.
 
 Gauge champions the idea of **living/executable documentation**.
 
@@ -13,7 +13,7 @@ Some of its key features include:
 
 ## Why Gauge?
 
-Certain features of Gauge makes it stand unique amongst others.
+Certain features of Gauge make it stand unique amongst others.
 
 *	Consistent Cross Platform/Language Support
 * Business Language Tests : Supports the concept of executable documentation
@@ -22,8 +22,7 @@ Certain features of Gauge makes it stand unique amongst others.
 *	Helps you create Maintainable and Understandable test suites
 *	Extensible through [Plugins](plugins/README.html) and Hackable
 *	Supports External Data Sources
-*	[IDE Support](ide_support/README.md)
-
+*	IDE Support
 
 ## Get started quickly
 
@@ -31,12 +30,11 @@ Certain features of Gauge makes it stand unique amongst others.
 * [Create a gauge project](getting_started/creating_a_gauge_project.md)
 * [Execute Specifications](execution/README.md)
 
+
 ## Learn more about using gauge
 * [Specifications](specifications/README.md)
 * [Steps](specifications/steps.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
 * [IDE Support](ide_support/README.md)
-
-
 
