@@ -16,6 +16,8 @@ This plugin supports only [java](../test_code/java.md).
 * Auto completion
 * Navigation from step to implementation
 * Quick Fix for unimplemented steps
+* Execution
+* Formatting
 
 ###1. Project Creation
 
@@ -43,7 +45,13 @@ If you have an unimplemented step in the spec file, it will be annotated saying 
 
 ![step quick fix](intellij-screenshots/quick fix/fix.gif "step quick fix")
 
-###4. Execution
+###4. Formatting
+
+A spec file can be formatted by pressing `ctrl+alt+shift l` (in windows and linux) and `cmd+alt+shift l`(in mac).
+
+This formats all the elements of current spec including indentation of tables and steps.
+
+###5. Execution
 
 Specs can be executed by `right click -> Run spec`
 
@@ -65,3 +73,18 @@ You can edit the run configuration to change the spec files or folders to be exe
 
 
 ![run configuration](intellij-screenshots/execution/config.gif "run configuration")
+
+####Single Scenario Execution
+
+A single scenario can be executed by doing a right click on the scenario which should be executed and choosing the scenario.
+`right click -> run -> Scenario Name`
+
+If the right click is done in context other than that of scenario, by default, first scenario will be executed.
+
+![scenario execution](intellij-screenshots/execution/scenario.gif "scenario execution")
+
+
+
+
+
+
