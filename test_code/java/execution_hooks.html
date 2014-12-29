@@ -4,10 +4,11 @@
     <head>
         
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
         <title>Execution hooks java | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="generator" content="GitBook 1.5.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,9 +16,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
         
-    
-    
-    <meta name="author" content="https:">
+        
     
     
     <link rel="next" href="../../test_code/java/java_project_files.html" />
@@ -39,7 +38,7 @@
 
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="3.2.1" data-basepath="../.." data-revision="1418372024859">
+    <div class="book" data-level="3.2.1" data-basepath="../.." data-revision="1419849600097">
     
 
 <div class="book-summary">
@@ -417,6 +416,60 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="3.4" data-path="test_code/csharp/csharp.html">
+            
+                
+                    <a href="../../test_code/csharp/csharp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         C#
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.4.1" data-path="test_code/csharp/execution_hooks_c.html">
+            
+                
+                    <a href="../../test_code/csharp/execution_hooks_c.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                         Execution hooks C#
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4.2" data-path="test_code/csharp/c_project_files.html">
+            
+                
+                    <a href="../../test_code/csharp/c_project_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                         C# Project files
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -689,11 +742,10 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_24">
+                    <section class="normal" id="section-gitbook_28">
                     
                         <h1 id="execution-hooks-java"><a name="execution-hooks-java" class="plugin-anchor" href="#execution-hooks-java"><span class="fa fa-link"></span></a>Execution hooks Java</h1>
 <p>The <a href="../../execution/execution_hooks.html">execution hooks</a> can be defined at all levels in java by annotating methods with the following annotations:</p>
-<p>Before Suite hooks :</p>
 <table>
 <thead>
 <tr>
@@ -704,35 +756,35 @@
 <tbody>
 <tr>
 <td>Before Suite</td>
-<td>@BeforeSuite</td>
+<td><code>@BeforeSuite</code></td>
 </tr>
 <tr>
 <td>After Suite</td>
-<td>@AfterSuite</td>
+<td><code>@AfterSuite</code></td>
 </tr>
 <tr>
 <td>Before Specification</td>
-<td>@BeforeSpec</td>
+<td><code>@BeforeSpec</code></td>
 </tr>
 <tr>
 <td>After Specification</td>
-<td>@AfterSpec</td>
+<td><code>@AfterSpec</code></td>
 </tr>
 <tr>
 <td>Before Scenario</td>
-<td>@BeforeScenario</td>
+<td><code>@BeforeScenario</code></td>
 </tr>
 <tr>
 <td>After Scenario</td>
-<td>@AfterScenario</td>
+<td><code>@AfterScenario</code></td>
 </tr>
 <tr>
 <td>Before Step</td>
-<td>@BeforeStep</td>
+<td><code>@BeforeStep</code></td>
 </tr>
 <tr>
 <td>After Step</td>
-<td>@AfterStep</td>
+<td><code>@AfterStep</code></td>
 </tr>
 </tbody>
 </table>
@@ -740,12 +792,12 @@
 <pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExecutionHooks</span> </span>{
 
     <span class="hljs-annotation">@BeforeSpec</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loginUser</span>() {
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loginUser</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">// Code for before spec</span>
     }
 
     <span class="hljs-annotation">@AfterStep</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">performAfterStep</span>() {
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">performAfterStep</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">// Code for after step</span>
     }
 }
@@ -776,7 +828,7 @@
     
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     

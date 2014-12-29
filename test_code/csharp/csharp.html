@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Java project files | Gauge Documentation</title>
+        <title>C# | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../test_code/java/configuration.html" />
+    <link rel="next" href="../../test_code/csharp/execution_hooks_c.html" />
     
     
-    <link rel="prev" href="../../test_code/java/execution_hooks.html" />
+    <link rel="prev" href="../../test_code/ruby/ruby_project_files.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="3.2.2" data-basepath="../.." data-revision="1419849600097">
+    <div class="book" data-level="3.4" data-basepath="../.." data-revision="1419849600097">
     
 
 <div class="book-summary">
@@ -326,7 +326,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="3.2.2" data-path="test_code/java/java_project_files.html">
+        <li class="chapter " data-level="3.2.2" data-path="test_code/java/java_project_files.html">
             
                 
                     <a href="../../test_code/java/java_project_files.html">
@@ -417,7 +417,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.4" data-path="test_code/csharp/csharp.html">
+        <li class="chapter active" data-level="3.4" data-path="test_code/csharp/csharp.html">
             
                 
                     <a href="../../test_code/csharp/csharp.html">
@@ -742,24 +742,70 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_29">
+                    <section class="normal" id="section-gitbook_22">
                     
-                        <h1 id="java-project-files"><a name="java-project-files" class="plugin-anchor" href="#java-project-files"><span class="fa fa-link"></span></a>Java project files</h1>
-<p>The java specific project files create in the project are:</p>
-<pre><code>&#x251C;&#x2500;&#x2500; libs
-&#x2514;&#x2500;&#x2500; src
-    &#x2514;&#x2500;&#x2500; test
-        &#x2514;&#x2500;&#x2500; java
-            &#x2514;&#x2500;&#x2500; StepImplementation.java
-&#x251C;&#x2500;&#x2500; env
-    &#x2514;&#x2500;&#x2500; default
-        &#x2514;&#x2500;&#x2500; java.properties
-</code></pre><h3 id="libs"><a name="libs" class="plugin-anchor" href="#libs"><span class="fa fa-link"></span></a>libs</h3>
-<p>This contains the additional java dependencies for the project.</p>
-<h3 id="src"><a name="src" class="plugin-anchor" href="#src"><span class="fa fa-link"></span></a>src</h3>
-<p>Src directory contains the classes the test code including step implementations.</p>
-<h3 id="javaproperties"><a name="javaproperties" class="plugin-anchor" href="#javaproperties"><span class="fa fa-link"></span></a>java.properties</h3>
-<p>This defines configurations for java runner plugin. See <a href="configuration.html">configuration</a> for more details.</p>
+                        <h1 id="c"><a name="c" class="plugin-anchor" href="#c"><span class="fa fa-link"></span></a>C#</h1>
+<h2 id="step-implementations"><a name="step-implementations" class="plugin-anchor" href="#step-implementations"><span class="fa fa-link"></span></a>Step implementations</h2>
+<p>Step implementations for C# are methods in C# classes.</p>
+<p>The method implementation for the particular step has to be decorated with<code>[Step]</code> attribute which takes the <a href="../step_name_template.html">step name template</a> as value.</p>
+<h3 id="examples"><a name="examples" class="plugin-anchor" href="#examples"><span class="fa fa-link"></span></a>Examples</h3>
+<h4 id="1-simple-step"><a name="1-simple-step" class="plugin-anchor" href="#1-simple-step"><span class="fa fa-link"></span></a>1. Simple step</h4>
+<p><strong>Step name</strong></p>
+<pre><code>* Say &quot;hello&quot; to &quot;gauge&quot;
+</code></pre><p><strong>C# Implementation:</strong></p>
+<pre><code class="lang-csharp">
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">StepImplementation</span> {
+
+    [Step(<span class="hljs-string">&quot;Say &lt;greeting&gt; to &lt;product name&gt;&quot;</span>)]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">HelloWorld</span><span class="hljs-params">(<span class="hljs-keyword">string</span> greeting, <span class="hljs-keyword">string</span> name)</span> </span>{
+        <span class="hljs-comment">// Step implementation</span>
+    }
+}
+</code></pre>
+<ul>
+<li>The text passed to the annotation is the <a href="../step_name_template.mdd">step template</a>, which is a simple representation of the step.</li>
+<li>The Method can be written in <strong>any C# class</strong> as long as it is part of the project.</li>
+</ul>
+<h4 id="2-step-with-table"><a name="2-step-with-table" class="plugin-anchor" href="#2-step-with-table"><span class="fa fa-link"></span></a>2. Step with table</h4>
+<p><strong>Step:</strong></p>
+<pre><code>Create following &quot;admin&quot; users
+|id |   name  |
+|---|---------|
+|123| prateek |
+|456| vishnu  |
+|789|navaneeth|
+</code></pre><p><strong>C# Implementation:</strong></p>
+<pre><code class="lang-csharp"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Users</span> {
+
+    [Step(<span class="hljs-string">&quot;Create following &lt;role&gt; users &lt;table&gt;&quot;</span>)]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">HelloWorld</span><span class="hljs-params">(<span class="hljs-keyword">string</span> role, Table table)</span> </span>{
+        <span class="hljs-comment">// Step implementation</span>
+    }
+}
+</code></pre>
+<ul>
+<li>Here <strong>Table</strong> is a custom data structure defined by gauge. This is available by adding a reference to the <a href="http://nuget.org/packages/Gauge.CSharp.Lib/" target="_blank">Gauge.CSharp.Lib</a> nuget package.</li>
+</ul>
+<h2 id="multiple-step-names"><a name="multiple-step-names" class="plugin-anchor" href="#multiple-step-names"><span class="fa fa-link"></span></a>Multiple Step names</h2>
+<p>The same implementation can point to multiple step names. To do this add all the <a href="../step_name_template.html">step name template</a> to the <code>[Step]</code> attribute.</p>
+<p>The number and type of parameters for all the steps names must match the number of parameters on the C# implementation.</p>
+<h4 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h4>
+<p><strong><em>Step Names :</em></strong></p>
+<pre><code>* Create a user &quot;srikanth&quot;
+* Create another user &quot;vishnu&quot;
+</code></pre><p><strong><em>Implementation :</em></strong></p>
+<pre><code class="lang-csharp"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Users</span> {
+
+    [Step({<span class="hljs-string">&quot;Create a user &lt;username&gt;&quot;</span>, <span class="hljs-string">&quot;Create another user &lt;username&gt;&quot;</span>})]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">HelloWorld</span><span class="hljs-params">(<span class="hljs-keyword">string</span> role, Table table)</span> </span>{
+        <span class="hljs-comment">// Step implementation</span>
+    }
+}
+</code></pre>
+<p>Learn More</p>
+<ul>
+<li><a href="execution_hooks_c.html">Execution Hooks</a></li>
+</ul>
 
                     
                     </section>
@@ -770,10 +816,10 @@
         </div>
 
         
-        <a href="../../test_code/java/execution_hooks.html" class="navigation navigation-prev " aria-label="Previous page: Execution hooks java"><i class="fa fa-angle-left"></i></a>
+        <a href="../../test_code/ruby/ruby_project_files.html" class="navigation navigation-prev " aria-label="Previous page: Ruby Project files"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../test_code/java/configuration.html" class="navigation navigation-next " aria-label="Next page: Configuration"><i class="fa fa-angle-right"></i></a>
+        <a href="../../test_code/csharp/execution_hooks_c.html" class="navigation navigation-next " aria-label="Next page: Execution hooks C#"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
