@@ -27,6 +27,7 @@
    * [Table driven execution](execution/table_driven_execution.md)
    * [Tagged Execution](execution/tagged_execution.md)
    * [Execution hooks](execution/execution_hooks.md)
+* [Refactoring](execution/refactoring.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
    * [Installation](plugins/installation.md)

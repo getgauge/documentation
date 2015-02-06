@@ -16,7 +16,7 @@ These are plugins that act on a setup phase - When the plugin added to the proje
 
 ##Default plugins
 
-Some plugins are installed by default with gauge and are added to every new created project.
+Some plugins are added to every new project created in gauge.
 
  * [HTML Report Plugin](html_report_plugin.md)
 
