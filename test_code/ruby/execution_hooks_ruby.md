@@ -4,14 +4,14 @@ The [execution hooks](../../execution/execution_hooks.md) can be defined at all 
 
 | Execution Hook | Method  |
 |----------------| ------------|
-| Before Suite   | before_suite|
-| After Suite    | after_suite|
-| Before Specification   | before_spec|
-| After Specification   | after_spec|
-| Before Scenario | before_scenario|
-| After Scenario   | after_scenario|
-| Before Step | before_step |
-|After Step| after_step|
+| Before Suite   | `before_suite`|
+| After Suite    | `after_suite`|
+| Before Specification   | `before_spec`|
+| After Specification   | `after_spec`|
+| Before Scenario | `before_scenario`|
+| After Scenario   | `after_scenario`|
+| Before Step | `before_step` |
+|After Step| `after_step`|
 
 
 ###Examples
