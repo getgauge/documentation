@@ -4,10 +4,11 @@
     <head>
         
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
         <title>Ruby | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="generator" content="GitBook 1.5.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,9 +16,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
         
-    
-    
-    <meta name="author" content="https:">
+        
     
     
     <link rel="next" href="../../test_code/ruby/execution_hooks_ruby.html" />
@@ -39,7 +38,7 @@
 
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="3.3" data-basepath="../.." data-revision="1418372024859">
+    <div class="book" data-level="3.3" data-basepath="../.." data-revision="1419849600097">
     
 
 <div class="book-summary">
@@ -417,6 +416,60 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="3.4" data-path="test_code/csharp/csharp.html">
+            
+                
+                    <a href="../../test_code/csharp/csharp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         C#
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.4.1" data-path="test_code/csharp/execution_hooks_c.html">
+            
+                
+                    <a href="../../test_code/csharp/execution_hooks_c.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                         Execution hooks C#
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4.2" data-path="test_code/csharp/c_project_files.html">
+            
+                
+                    <a href="../../test_code/csharp/c_project_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                         C# Project files
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -689,7 +742,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_28">
+                    <section class="normal" id="section-gitbook_31">
                     
                         <h1 id="ruby"><a name="ruby" class="plugin-anchor" href="#ruby"><span class="fa fa-link"></span></a>Ruby</h1>
 <h2 id="step-implementations"><a name="step-implementations" class="plugin-anchor" href="#step-implementations"><span class="fa fa-link"></span></a>Step implementations</h2>
@@ -699,9 +752,9 @@
 <p><strong>Step name</strong></p>
 <pre><code>* Say &quot;hello&quot; to &quot;gauge&quot;
 </code></pre><p><strong>Ruby Implementation:</strong></p>
-<pre><code class="lang-ruby"><span class="hljs-input"><span class="hljs-prompt">step &apos;Say &lt;greeting&gt;</span> to &lt;product name&gt;<span class="hljs-string">&apos; do |greeting, name|
+<pre><code class="lang-ruby"><span class="hljs-prompt">step &apos;Say &lt;greeting&gt;</span> to &lt;product name&gt;<span class="hljs-string">&apos; do |greeting, name|
  # Code for the step
-end</span></span>
+end</span>
 </code></pre>
 <h4 id="2-step-with-table"><a name="2-step-with-table" class="plugin-anchor" href="#2-step-with-table"><span class="fa fa-link"></span></a>2. Step with table</h4>
 <p><strong>Step:</strong></p>
@@ -712,10 +765,10 @@ end</span></span>
 |456| vishnu  |
 |789|navaneeth|
 </code></pre><p><strong>Ruby Implementation:</strong></p>
-<pre><code class="lang-ruby"><span class="hljs-input"><span class="hljs-prompt">step &apos;Create following &lt;role&gt;</span> users &lt;table&gt;<span class="hljs-string">&apos; do |role, table|
+<pre><code class="lang-ruby"><span class="hljs-prompt">step &apos;Create following &lt;role&gt;</span> users &lt;table&gt;<span class="hljs-string">&apos; do |role, table|
   puts table.rows
   puts table.columns
-end</span></span>
+end</span>
 </code></pre>
 <ul>
 <li>Here <strong>table</strong> is a custom data structure defined by gauge-ruby.</li>
@@ -727,9 +780,9 @@ end</span></span>
 <pre><code>* Create a user &quot;prateek&quot;
 * Create another user &quot;vishnu&quot;
 </code></pre><p><strong><em>Implementation :</em></strong></p>
-<pre><code class="lang-ruby">step <span class="hljs-string">&quot;Create a user &lt;username&gt;&quot;</span>, <span class="hljs-string">&quot;Create another user &lt;username&gt;&quot;</span> <span class="hljs-keyword">do</span> |username|
- <span class="hljs-comment">#step code</span>
-<span class="hljs-keyword">end</span>
+<pre><code class="lang-ruby"><span class="hljs-prompt">step &quot;Create a user &lt;username&gt;</span><span class="hljs-string">&quot;, &quot;</span><span class="hljs-constant">Create</span> another user &lt;username&gt;<span class="hljs-string">&quot; do |username|
+ #step code
+end</span>
 </code></pre>
 
                     
@@ -757,7 +810,7 @@ end</span></span>
     
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     

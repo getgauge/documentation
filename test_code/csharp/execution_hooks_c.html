@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Java project files | Gauge Documentation</title>
+        <title>Execution hooks C# | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../../test_code/java/configuration.html" />
+    <link rel="next" href="../../test_code/csharp/c_project_files.html" />
     
     
-    <link rel="prev" href="../../test_code/java/execution_hooks.html" />
+    <link rel="prev" href="../../test_code/csharp/csharp.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="3.2.2" data-basepath="../.." data-revision="1419849600097">
+    <div class="book" data-level="3.4.1" data-basepath="../.." data-revision="1419849600097">
     
 
 <div class="book-summary">
@@ -326,7 +326,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="3.2.2" data-path="test_code/java/java_project_files.html">
+        <li class="chapter " data-level="3.2.2" data-path="test_code/java/java_project_files.html">
             
                 
                     <a href="../../test_code/java/java_project_files.html">
@@ -434,7 +434,7 @@
                 
     
         
-        <li class="chapter " data-level="3.4.1" data-path="test_code/csharp/execution_hooks_c.html">
+        <li class="chapter active" data-level="3.4.1" data-path="test_code/csharp/execution_hooks_c.html">
             
                 
                     <a href="../../test_code/csharp/execution_hooks_c.html">
@@ -742,24 +742,66 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_29">
+                    <section class="normal" id="section-gitbook_25">
                     
-                        <h1 id="java-project-files"><a name="java-project-files" class="plugin-anchor" href="#java-project-files"><span class="fa fa-link"></span></a>Java project files</h1>
-<p>The java specific project files create in the project are:</p>
-<pre><code>&#x251C;&#x2500;&#x2500; libs
-&#x2514;&#x2500;&#x2500; src
-    &#x2514;&#x2500;&#x2500; test
-        &#x2514;&#x2500;&#x2500; java
-            &#x2514;&#x2500;&#x2500; StepImplementation.java
-&#x251C;&#x2500;&#x2500; env
-    &#x2514;&#x2500;&#x2500; default
-        &#x2514;&#x2500;&#x2500; java.properties
-</code></pre><h3 id="libs"><a name="libs" class="plugin-anchor" href="#libs"><span class="fa fa-link"></span></a>libs</h3>
-<p>This contains the additional java dependencies for the project.</p>
-<h3 id="src"><a name="src" class="plugin-anchor" href="#src"><span class="fa fa-link"></span></a>src</h3>
-<p>Src directory contains the classes the test code including step implementations.</p>
-<h3 id="javaproperties"><a name="javaproperties" class="plugin-anchor" href="#javaproperties"><span class="fa fa-link"></span></a>java.properties</h3>
-<p>This defines configurations for java runner plugin. See <a href="configuration.html">configuration</a> for more details.</p>
+                        <h1 id="execution-hooks-c"><a name="execution-hooks-c" class="plugin-anchor" href="#execution-hooks-c"><span class="fa fa-link"></span></a>Execution hooks C#</h1>
+<p>The <a href="../../execution/execution_hooks.html">execution hooks</a> can be defined at all levels in C# by decorating methods with the one (or more) of the following attributes:</p>
+<table>
+<thead>
+<tr>
+<th>Execution Hook</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Before Suite</td>
+<td><code>BeforeSuite</code></td>
+</tr>
+<tr>
+<td>After Suite</td>
+<td><code>AfterSuite</code></td>
+</tr>
+<tr>
+<td>Before Specification</td>
+<td><code>BeforeSpec</code></td>
+</tr>
+<tr>
+<td>After Specification</td>
+<td><code>AfterSpec</code></td>
+</tr>
+<tr>
+<td>Before Scenario</td>
+<td><code>BeforeScenario</code></td>
+</tr>
+<tr>
+<td>After Scenario</td>
+<td><code>AfterScenario</code></td>
+</tr>
+<tr>
+<td>Before Step</td>
+<td><code>BeforeStep</code></td>
+</tr>
+<tr>
+<td>After Step</td>
+<td><code>AfterStep</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h3>
+<pre><code class="lang-csharp"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">ExecutionHooks</span> {
+
+    [BeforeSpec]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">LoginUser</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Code for before spec</span>
+    }
+
+    [AfterStep]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">PerformAfterStep</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Code for after step</span>
+    }
+}
+</code></pre>
 
                     
                     </section>
@@ -770,10 +812,10 @@
         </div>
 
         
-        <a href="../../test_code/java/execution_hooks.html" class="navigation navigation-prev " aria-label="Previous page: Execution hooks java"><i class="fa fa-angle-left"></i></a>
+        <a href="../../test_code/csharp/csharp.html" class="navigation navigation-prev " aria-label="Previous page: C#"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../test_code/java/configuration.html" class="navigation navigation-next " aria-label="Next page: Configuration"><i class="fa fa-angle-right"></i></a>
+        <a href="../../test_code/csharp/c_project_files.html" class="navigation navigation-next " aria-label="Next page: C# Project files"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -4,10 +4,11 @@
     <head>
         
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
         <title>Intellij Idea | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="generator" content="GitBook 1.5.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,9 +16,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-    
-    
-    <meta name="author" content="https:">
+        
     
     
     
@@ -37,7 +36,7 @@
 
 
         
-    <div class="book" data-github="https://www.github.com/getgauge/gauge" data-level="7.1" data-basepath=".." data-revision="1418372024859">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="1419849600097">
     
 
 <div class="book-summary">
@@ -415,6 +414,60 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="3.4" data-path="test_code/csharp/csharp.html">
+            
+                
+                    <a href="../test_code/csharp/csharp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         C#
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.4.1" data-path="test_code/csharp/execution_hooks_c.html">
+            
+                
+                    <a href="../test_code/csharp/execution_hooks_c.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.1.</b>
+                        
+                         Execution hooks C#
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4.2" data-path="test_code/csharp/c_project_files.html">
+            
+                
+                    <a href="../test_code/csharp/c_project_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.2.</b>
+                        
+                         C# Project files
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
             </ul>
             
@@ -704,6 +757,8 @@
 <li>Auto completion</li>
 <li>Navigation from step to implementation</li>
 <li>Quick Fix for unimplemented steps</li>
+<li>Execution</li>
+<li>Formatting</li>
 </ul>
 <h3 id="1-project-creation"><a name="1-project-creation" class="plugin-anchor" href="#1-project-creation"><span class="fa fa-link"></span></a>1. Project Creation</h3>
 <ul>
@@ -720,7 +775,10 @@
 <h3 id="3-step-quick-fix"><a name="3-step-quick-fix" class="plugin-anchor" href="#3-step-quick-fix"><span class="fa fa-link"></span></a>3. Step Quick Fix</h3>
 <p>If you have an unimplemented step in the spec file, it will be annotated saying &apos;undefined step&apos;. <code>alt+enter</code> can be pressed to open the quick fix pop up. The destination of the implementation can be chosen, either a new class or from a list of existing classes. It will then generate the step with required annotation and parameters.</p>
 <p><img src="intellij-screenshots/quick fix/fix.gif" alt="step quick fix" title="step quick fix"></p>
-<h3 id="4-execution"><a name="4-execution" class="plugin-anchor" href="#4-execution"><span class="fa fa-link"></span></a>4. Execution</h3>
+<h3 id="4-formatting"><a name="4-formatting" class="plugin-anchor" href="#4-formatting"><span class="fa fa-link"></span></a>4. Formatting</h3>
+<p>A spec file can be formatted by pressing <code>ctrl+alt+shift l</code> (in windows and linux) and <code>cmd+alt+shift l</code>(in mac).</p>
+<p>This formats all the elements of current spec including indentation of tables and steps.</p>
+<h3 id="5-execution"><a name="5-execution" class="plugin-anchor" href="#5-execution"><span class="fa fa-link"></span></a>5. Execution</h3>
 <p>Specs can be executed by <code>right click -&gt; Run spec</code></p>
 <h4 id="debug"><a name="debug" class="plugin-anchor" href="#debug"><span class="fa fa-link"></span></a>Debug</h4>
 <p>Debugging can be performed by attaching debugger to the gauge java process.</p>
@@ -735,6 +793,11 @@
 <h4 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><span class="fa fa-link"></span></a>Configuration</h4>
 <p>You can edit the run configuration to change the spec files or folders to be executed and the environment.</p>
 <p><img src="intellij-screenshots/execution/config.gif" alt="run configuration" title="run configuration"></p>
+<h4 id="single-scenario-execution"><a name="single-scenario-execution" class="plugin-anchor" href="#single-scenario-execution"><span class="fa fa-link"></span></a>Single Scenario Execution</h4>
+<p>A single scenario can be executed by doing a right click on the scenario which should be executed and choosing the scenario.
+<code>right click -&gt; run -&gt; Scenario Name</code></p>
+<p>If the right click is done in context other than that of scenario, by default, first scenario will be executed.</p>
+<p><img src="intellij-screenshots/execution/scenario.gif" alt="scenario execution" title="scenario execution"></p>
 
                     
                     </section>
@@ -759,7 +822,7 @@
     
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     

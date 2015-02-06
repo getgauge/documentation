@@ -23,12 +23,25 @@
     "cheerio": "*",
     "underscore": "*"
   },
-  "readme": "Gitbook Anchors Plugin\n==============\n\nA plugin which adds Github style heading anchors to your book.\n\nInstall using\n\t \n```\n$ npm install -g gitbook-plugin-anchors\n```\n\nAdd the plugin to your `book.json`:\n    \n```\n{\n\t\"plugins\" : [ \"anchors\" ]\n}\t\t\n```\n\n",
-  "readmeFilename": "README.md",
   "_id": "gitbook-plugin-anchors@0.3.0",
   "dist": {
-    "shasum": "e3cf4c35e878fcaa6bccd27def60420500bcd88c"
+    "shasum": "be455c6a292bce024013c68e01fbee58a7871259",
+    "tarball": "http://registry.npmjs.org/gitbook-plugin-anchors/-/gitbook-plugin-anchors-0.3.0.tgz"
   },
-  "_from": "gitbook-plugin-anchors@",
-  "_resolved": "https://registry.npmjs.org/gitbook-plugin-anchors/-/gitbook-plugin-anchors-0.3.0.tgz"
+  "_from": "gitbook-plugin-anchors@latest",
+  "_npmVersion": "1.3.21",
+  "_npmUser": {
+    "name": "rlmv",
+    "email": "bo.marchman@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "rlmv",
+      "email": "bo.marchman@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "be455c6a292bce024013c68e01fbee58a7871259",
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-anchors/-/gitbook-plugin-anchors-0.3.0.tgz",
+  "readme": "ERROR: No README data found!"
 }
