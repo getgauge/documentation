@@ -15,10 +15,17 @@ Example:
 
 ![Spec](../specifications/images/spec.png "Specification")
 
-In the above spec, if all the scenarios tagged with "successful" should be executed, then use the following command.
+In the above spec, if all the scenarios tagged with "search" and "admin" should be executed, then use the following command.
 
 ````
-gauge --tags "successful" specs
+gauge --tags "search & admin" SPEC_FILE_NAME
 ````
-Here, last parameter "specs" specifies the specifications directory.
+
+
+### Tags can be selected using expressions
+__Examples__
+* __TagA & TagB:__  Selects specs/scenarios that have both TagA and TagB.
+* __TagA | TagB:__  Selects specs/scenarios that have either TagA or TagB.
+* __(TagA & TagB) | TagC:__  Selects specs/scenarios that have either TagC or both the tags TagA and TagB
+* __(TagA | TagB) & TagC:__  Selects specs/scenarios that either TagA and TagC or TagB and TagC
 

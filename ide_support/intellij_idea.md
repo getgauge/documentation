@@ -69,7 +69,10 @@ Debugging can be performed by attaching debugger to the gauge java process.
 
 ####Configuration
 
-You can edit the run configuration to change the spec files or folders to be executed and the environment.
+You can edit the run configuration to make changes to:
+* The scenario or spec file to be executed
+* The environment to run againt
+* To add a tag filter to the execution
 
 
 ![run configuration](intellij-screenshots/execution/config.gif "run configuration")
