@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="4.2" data-basepath=".." data-revision="1419849600097">
+    <div class="book" data-level="4.2" data-basepath=".." data-revision="1423809963659">
     
 
 <div class="book-summary">
@@ -546,13 +546,29 @@
         </li>
     
         
-        <li class="chapter " data-level="5" data-path="managing_environments/README.html">
+        <li class="chapter " data-level="5" data-path="execution/refactoring.html">
+            
+                
+                    <a href="../execution/refactoring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Refactoring
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="managing_environments/README.html">
             
                 
                     <a href="../managing_environments/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.</b>
+                            <b>6.</b>
                         
                          Environments
                     </a>
@@ -562,13 +578,13 @@
         </li>
     
         
-        <li class="chapter " data-level="6" data-path="plugins/README.html">
+        <li class="chapter " data-level="7" data-path="plugins/README.html">
             
                 
                     <a href="../plugins/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>6.</b>
+                            <b>7.</b>
                         
                          Plugins
                     </a>
@@ -579,13 +595,13 @@
                 
     
         
-        <li class="chapter " data-level="6.1" data-path="plugins/installation.html">
+        <li class="chapter " data-level="7.1" data-path="plugins/installation.html">
             
                 
                     <a href="../plugins/installation.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>6.1.</b>
+                            <b>7.1.</b>
                         
                          Installation
                     </a>
@@ -595,13 +611,13 @@
         </li>
     
         
-        <li class="chapter " data-level="6.2" data-path="plugins/html_report_plugin.html">
+        <li class="chapter " data-level="7.2" data-path="plugins/html_report_plugin.html">
             
                 
                     <a href="../plugins/html_report_plugin.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>6.2.</b>
+                            <b>7.2.</b>
                         
                          HTML Report plugin
                     </a>
@@ -616,13 +632,13 @@
         </li>
     
         
-        <li class="chapter " data-level="7" data-path="ide_support/README.html">
+        <li class="chapter " data-level="8" data-path="ide_support/README.html">
             
                 
                     <a href="../ide_support/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.</b>
+                            <b>8.</b>
                         
                          IDE Support
                     </a>
@@ -633,13 +649,13 @@
                 
     
         
-        <li class="chapter " data-level="7.1" data-path="ide_support/intellij_idea.html">
+        <li class="chapter " data-level="8.1" data-path="ide_support/intellij_idea.html">
             
                 
                     <a href="../ide_support/intellij_idea.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.1.</b>
+                            <b>8.1.</b>
                         
                          Intellij Idea
                     </a>
@@ -742,7 +758,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_4">
+                    <section class="normal" id="section-gitbook_6">
                     
                         <h1 id="tagged-execution"><a name="tagged-execution" class="plugin-anchor" href="#tagged-execution"><span class="fa fa-link"></span></a>Tagged Execution</h1>
 <p>Tags allow you to filter the specs and scenarios quickly for execution. To execute all the specs and scenarios which are labelled with certain tags, use the following command.</p>
@@ -752,9 +768,16 @@
 </code></pre><p>This executes only the scenarios and specifications which are tagged with tag1 and tag2.</p>
 <p>Example:</p>
 <p><img src="../specifications/images/spec.png" alt="Spec" title="Specification"></p>
-<p>In the above spec, if all the scenarios tagged with &quot;successful&quot; should be executed, then use the following command.</p>
-<pre><code>gauge --tags &quot;successful&quot; specs
-</code></pre><p>Here, last parameter &quot;specs&quot; specifies the specifications directory.</p>
+<p>In the above spec, if all the scenarios tagged with &quot;search&quot; and &quot;admin&quot; should be executed, then use the following command.</p>
+<pre><code>gauge --tags &quot;search &amp; admin&quot; SPEC_FILE_NAME
+</code></pre><h3 id="tags-can-be-selected-using-expressions"><a name="tags-can-be-selected-using-expressions" class="plugin-anchor" href="#tags-can-be-selected-using-expressions"><span class="fa fa-link"></span></a>Tags can be selected using expressions</h3>
+<p><strong>Examples</strong></p>
+<ul>
+<li><strong>TagA &amp; TagB:</strong>  Selects specs/scenarios that have both TagA and TagB.</li>
+<li><strong>TagA | TagB:</strong>  Selects specs/scenarios that have either TagA or TagB.</li>
+<li><strong>(TagA &amp; TagB) | TagC:</strong>  Selects specs/scenarios that have either TagC or both the tags TagA and TagB</li>
+<li><strong>(TagA | TagB) &amp; TagC:</strong>  Selects specs/scenarios that either TagA and TagC or TagB and TagC</li>
+</ul>
 
                     
                     </section>

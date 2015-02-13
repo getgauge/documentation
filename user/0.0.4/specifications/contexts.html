@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="2.2.1" data-basepath=".." data-revision="1419849600097">
+    <div class="book" data-level="2.2.1" data-basepath=".." data-revision="1423809963659">
     
 
 <div class="book-summary">
@@ -546,13 +546,29 @@
         </li>
     
         
-        <li class="chapter " data-level="5" data-path="managing_environments/README.html">
+        <li class="chapter " data-level="5" data-path="execution/refactoring.html">
+            
+                
+                    <a href="../execution/refactoring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Refactoring
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="managing_environments/README.html">
             
                 
                     <a href="../managing_environments/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.</b>
+                            <b>6.</b>
                         
                          Environments
                     </a>
@@ -562,13 +578,13 @@
         </li>
     
         
-        <li class="chapter " data-level="6" data-path="plugins/README.html">
+        <li class="chapter " data-level="7" data-path="plugins/README.html">
             
                 
                     <a href="../plugins/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>6.</b>
+                            <b>7.</b>
                         
                          Plugins
                     </a>
@@ -579,13 +595,13 @@
                 
     
         
-        <li class="chapter " data-level="6.1" data-path="plugins/installation.html">
+        <li class="chapter " data-level="7.1" data-path="plugins/installation.html">
             
                 
                     <a href="../plugins/installation.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>6.1.</b>
+                            <b>7.1.</b>
                         
                          Installation
                     </a>
@@ -595,13 +611,13 @@
         </li>
     
         
-        <li class="chapter " data-level="6.2" data-path="plugins/html_report_plugin.html">
+        <li class="chapter " data-level="7.2" data-path="plugins/html_report_plugin.html">
             
                 
                     <a href="../plugins/html_report_plugin.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>6.2.</b>
+                            <b>7.2.</b>
                         
                          HTML Report plugin
                     </a>
@@ -616,13 +632,13 @@
         </li>
     
         
-        <li class="chapter " data-level="7" data-path="ide_support/README.html">
+        <li class="chapter " data-level="8" data-path="ide_support/README.html">
             
                 
                     <a href="../ide_support/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.</b>
+                            <b>8.</b>
                         
                          IDE Support
                     </a>
@@ -633,13 +649,13 @@
                 
     
         
-        <li class="chapter " data-level="7.1" data-path="ide_support/intellij_idea.html">
+        <li class="chapter " data-level="8.1" data-path="ide_support/intellij_idea.html">
             
                 
                     <a href="../ide_support/intellij_idea.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>7.1.</b>
+                            <b>8.1.</b>
                         
                          Intellij Idea
                     </a>
@@ -742,11 +758,11 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_17">
+                    <section class="normal" id="section-gitbook_18">
                     
                         <h1 id="contexts"><a name="contexts" class="plugin-anchor" href="#contexts"><span class="fa fa-link"></span></a>Contexts</h1>
 <p><strong>Contexts</strong> or <strong>Context steps</strong> are steps defined in a spec before any scenario.</p>
-<p>They allow you to specify a set of conditions that are necessary for executing scenarios in a spec.</p>
+<p>They allow you to specify a set of conditions that are necessary for executing scenarios in a spec. Context steps can be used to set up data before running scenarios. They can also perform a setup or tear down function. </p>
 <ul>
 <li>Any regular <a href="steps.html">step</a> can be used as a context.</li>
 <li>Contexts are executed before every scenario in the spec.</li>
@@ -767,7 +783,7 @@ Delete multiple projects
 ------------------------
 * Delete all the projects in the list
 * Ensure project list is empty
-</code></pre><p>In the above example spec the context steps are <strong> <em>Delete the &quot;example&quot; project</em></strong> and <strong><em>Navigate to the project page</em></strong>, they are defined before any scenario.</p>
+</code></pre><p>In the above example spec the context steps are <strong><em>User is logged in as Mike</em></strong> and <strong><em>Ensure example project has been deleted</em></strong>, they are defined before any scenario.</p>
 <p>These steps are executed before the execution of each scenario <strong><em>Delete single project</em></strong> and <strong><em>Delete multiple projects</em></strong>.</p>
 <p>The spec execution flow would be:</p>
 <ol>
