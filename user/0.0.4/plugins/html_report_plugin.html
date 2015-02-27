@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>HTML Report plugin | Gauge Documentation</title>
+        <title>HTML Reports | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="7.2" data-basepath=".." data-revision="1423809963659">
+    <div class="book" data-level="7.2" data-basepath=".." data-revision="1425039951795">
     
 
 <div class="book-summary">
@@ -619,7 +619,7 @@
                         
                             <b>7.2.</b>
                         
-                         HTML Report plugin
+                         HTML Reports
                     </a>
                 
             
@@ -760,19 +760,28 @@
                 
                     <section class="normal" id="section-gitbook_14">
                     
-                        <h1 id="html-report-plugin"><a name="html-report-plugin" class="plugin-anchor" href="#html-report-plugin"><span class="fa fa-link"></span></a>HTML Report plugin</h1>
+                        <h1 id="html-reports"><a name="html-reports" class="plugin-anchor" href="#html-reports"><span class="fa fa-link"></span></a>HTML Reports</h1>
 <p>Reports are generated using <code>html-report</code> plugin. By default html-report is added to the project.</p>
 <p>When the specs are executed, the html report is generated in <code>reports</code> directory in the project by default.</p>
 <h2 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><span class="fa fa-link"></span></a>Configuration</h2>
 <p>The HTML report plugin can be configured by the properties set in the <code>env/default.properties</code> file in the project.</p>
 <p>The configurable properties are:</p>
 <h4 id="gauge_reports_dir"><a name="gauge_reports_dir" class="plugin-anchor" href="#gauge_reports_dir"><span class="fa fa-link"></span></a><em>gauge_reports_dir</em></h4>
-<p>Specifies the path to the directory where the execution reports will be generated. Should be either relative to the project directory or an absolute path.
+<ul>
+<li><p>Specifies the path to the directory where the execution reports will be generated.</p>
+</li>
+<li><p>Should be either relative to the project directory or an absolute path.
 By default it is set to <code>reports</code> directory in the project</p>
+</li>
+</ul>
 <h4 id="overwrite_reports"><a name="overwrite_reports" class="plugin-anchor" href="#overwrite_reports"><span class="fa fa-link"></span></a><strong><em>overwrite_reports</em></strong></h4>
-<p>Set to <code>true</code> if the reports should be overwritten on each execution hence maintaining only the latest execution report.</p>
-<p>If set to <code>false</code> then a new report will be generated on each execution in the reports directory in a nested time-stamped directory.</p>
-<p>Default value set is <code>true</code></p>
+<ul>
+<li><p>Set to <code>true</code> if the reports <strong>should be overwritten</strong> on each execution hence maintaining only the latest execution report.</p>
+</li>
+<li><p>If set to <code>false</code> then a <strong>new report</strong> will be generated on each execution in the reports directory in a nested time-stamped directory.</p>
+</li>
+</ul>
+<p>Default value is <code>true</code></p>
 
                     
                     </section>
