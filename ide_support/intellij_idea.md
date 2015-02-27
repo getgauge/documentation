@@ -18,6 +18,7 @@ This plugin supports only [java](../test_code/java.md).
 * Quick Fix for unimplemented steps
 * Execution
 * Formatting
+* Rephrase steps
 
 ###1. Project Creation
 
@@ -53,26 +54,26 @@ This formats all the elements of current spec including indentation of tables an
 
 ###5. Execution
 
-Specs can be executed by `right click -> Run spec`
+* Specs can be executed by `right click -> Run spec`.
+* Execute all specs inside a directory by `right click -> Run specifications`
 
 ####Debug
 
 Debugging can be performed by attaching debugger to the gauge java process.
 
-* Create a remote configuration `Gauge` which attaches to port `50005`
-* Right click on spec -> Debug
-* This will launch gauge in debug mode and waits for the debugger
-* Now go to the run configuration and choose the remote configuration `Gauge` that was created
+* Create a new  ```Remote``` configuration named `Gauge` and set the port number to `50005`. Do this by selecting **Edit configurations*** and pressing the plus icon.
+* Right click on spec/specs -> Debug
+* Now go to the run configuration and execute the remote configuration `Gauge` that was created.
 * This will start the execution and halts at breakpoints.
 
 ![debugging](intellij-screenshots/execution/debug.gif "debugging")
 
-####Configuration
+###6 Run Configuration
 
 You can edit the run configuration to make changes to:
 * The scenario or spec file to be executed
-* The environment to run againt
-* To add a tag filter to the execution
+* The environment to run against
+* Add a tag filter to the execution
 
 
 ![run configuration](intellij-screenshots/execution/config.gif "run configuration")
@@ -85,6 +86,11 @@ A single scenario can be executed by doing a right click on the scenario which s
 If the right click is done in context other than that of scenario, by default, first scenario will be executed.
 
 ![scenario execution](intellij-screenshots/execution/scenario.gif "scenario execution")
+
+###6 Rephrase Steps
+* Press **Shift+F6** on a step to rephrase it.
+* The parameters will be in ```< >``` in the rephrase dialog. They can be reordered,removed or new parameters can be added.
+* The rephrase change will reflect across **all the specs** in the project.
 
 
 
