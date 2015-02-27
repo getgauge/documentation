@@ -31,7 +31,7 @@
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
    * [Installation](plugins/installation.md)
-   * [HTML Report plugin](plugins/html_report_plugin.md)
+   * [HTML Reports](plugins/html_report_plugin.md)
 * [IDE Support](ide_support/README.md)
    * [Intellij Idea](ide_support/intellij_idea.md)
 

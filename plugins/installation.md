@@ -2,9 +2,13 @@
 
 Plugins are installed using the flag `install`, this checks our plugin repository and downloads them.
 
-e.g.
+```gauge --install <plugin-id>```
+
+**Example:**
 ```
-gauge --install <plugin-id>
+gauge --install java
+
+gauge --install html-report
 ```
 
 To install a specific version of a plugin use the `--plugin-version` flag.
