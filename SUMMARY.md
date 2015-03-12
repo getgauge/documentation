@@ -27,11 +27,11 @@
    * [Table driven execution](execution/table_driven_execution.md)
    * [Tagged Execution](execution/tagged_execution.md)
    * [Execution hooks](execution/execution_hooks.md)
-* [Refactoring](execution/refactoring.md)
+   * [Parallel Execution](execution/parallel_execution.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
    * [Installation](plugins/installation.md)
-   * [HTML Reports](plugins/html_report_plugin.md)
+   * [HTML Report plugin](plugins/html_report_plugin.md)
 * [IDE Support](ide_support/README.md)
    * [Intellij Idea](ide_support/intellij_idea.md)
 

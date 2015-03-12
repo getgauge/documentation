@@ -2,7 +2,7 @@
 
 __Contexts__ or __Context steps__ are steps defined in a spec before any scenario.
 
-They allow you to specify a set of conditions that are necessary for executing scenarios in a spec. Context steps can be used to set up data before running scenarios. They can also perform a setup or tear down function. 
+They allow you to specify a set of conditions that are necessary for executing scenarios in a spec. Context steps can be used to set up data before running scenarios. They can also perform a setup or tear down function.
 
 * Any regular [step](steps.md) can be used as a context.
 * Contexts are executed before every scenario in the spec.

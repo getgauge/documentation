@@ -7,7 +7,7 @@ This plugin supports only [java](../test_code/java.md).
 
 ## Installation
 * Follow the [Download and install instructions](http://www.jetbrains.com/idea/webhelp/installing-updating-and-uninstalling-repository-plugins.html#d645926e261) to get the gauge idea plugin from jetbrains plugin repository.
-* The plugin can also be downloaded from the [gauge plugin home](http://plugins.jetbrains.com/plugin/7535) and installed manually,
+* The plugin can also be downloaded from the [gauge plugin home](http://plugins.jetbrains.com/plugin/7535) and installed manually.
 
 ##Features:
 
@@ -83,6 +83,7 @@ You can edit the run configuration to make changes to:
 * The scenario or spec file to be executed
 * The environment to run against
 * Add a tag filter to the execution
+* Choose the number of parallel streams
 
 
 ![run configuration](intellij-screenshots/execution/config.gif "run configuration")
