@@ -8,7 +8,7 @@ The env directory structure for a `java` project:
   └── default
      ├── default.properties
      └── java.properties
-```
+````
 
 Custom properties can be added to an existing property files or in a newly created one.
 
@@ -53,3 +53,17 @@ gauge_custom_build_path: target
 ```
 
 present in the **env/ci/java.properties**
+
+##Configuring the Properties
+
+Certain properties can be configured in `env/default/default.properties`, which overrides the default properties and are scoped only to the current project.
+
+These are key value pairs, key being the property name and the value is either the absolute or path relative to project root.
+
+Example:
+
+```
+gauge_reports_dir = reports
+
+logs_directory = GaugeLogs
+```

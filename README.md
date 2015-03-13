@@ -22,7 +22,7 @@ Certain features of Gauge make it stand unique amongst others.
 *	Helps you create Maintainable and Understandable test suites
 *	Extensible through [Plugins](plugins/README.html) and Hackable
 *	Supports External Data Sources
-*	IDE Support
+*	[IDE Support](ide_support/README.md)
 
 ## Get started quickly
 

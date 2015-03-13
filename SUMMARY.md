@@ -34,4 +34,7 @@
    * [HTML Report plugin](plugins/html_report_plugin.md)
 * [IDE Support](ide_support/README.md)
    * [Intellij Idea](ide_support/intellij_idea.md)
+       * [IntelliJ Features](ide_support/features.md)
+* [Integration with CI](integration_with_ci/README.md)
+   * [Go](integration_with_ci/go.md)
 

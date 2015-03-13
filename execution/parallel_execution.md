@@ -15,3 +15,6 @@ Example:
 gauge --parallel --n=4 specs
 ````
 This creates four parallel execution streams.
+
+**Note**:
+The number of streams should be specified depending on the machine, beyond which it affects the performance of the system.
