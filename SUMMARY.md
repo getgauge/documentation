@@ -37,4 +37,6 @@
        * [IntelliJ Features](ide_support/features.md)
 * [Integration with CI](integration_with_ci/README.md)
    * [Go](integration_with_ci/go.md)
+* [Technical Details](technical_architecture/README.md)
+   * [Gauge Architecture - Responsbilities of components](technical_architecture/gauge_architecture_-_responsbilities_of_components.md)
 
