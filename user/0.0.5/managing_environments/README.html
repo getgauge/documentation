@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="5" data-basepath=".." data-revision="1426573994553">
+    <div class="book" data-level="5" data-basepath=".." data-revision="1426586468454">
     
 
 <div class="book-summary">
@@ -662,6 +662,28 @@
                 
             
             
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1.1" data-path="ide_support/features.html">
+            
+                
+                    <a href="../ide_support/features.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.1.</b>
+                        
+                         IntelliJ Features
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -670,13 +692,89 @@
         </li>
     
         
-        <li class="chapter " data-level="8" data-path="ide_support/examples.html">
+        <li class="chapter " data-level="8" data-path="integration_with_ci/README.html">
+            
+                
+                    <a href="../integration_with_ci/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Integration with CI
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="integration_with_ci/go.html">
+            
+                
+                    <a href="../integration_with_ci/go.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Go
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="technical_architecture/README.html">
+            
+                
+                    <a href="../technical_architecture/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Technical Details
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="technical_architecture/gauge_architecture_-_responsbilities_of_components.html">
+            
+                
+                    <a href="../technical_architecture/gauge_architecture_-_responsbilities_of_components.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         Gauge Architecture - Responsbilities of components
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="ide_support/examples.html">
             
                 
                     <a href="../ide_support/examples.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>8.</b>
+                            <b>10.</b>
                         
                          Example Projects
                     </a>
@@ -774,17 +872,16 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13">
+                    <section class="normal" id="section-gitbook_16">
                     
                         <h1 id="environments"><a name="environments" class="plugin-anchor" href="#environments"><span class="fa fa-link"></span></a>Environments</h1>
 <p>Environment specific <a href="https://en.wikipedia.org/wiki/Environment_variable" target="_blank">variables</a> can be managed using property files. The <a href="https://en.wikipedia.org/wiki/.properties" target="_blank">property files</a> have set of key value pairs which are set as environment variables during execution.</p>
 <p>The env directory structure for a <code>java</code> project:</p>
-<pre><code class="lang-`">&#x251C;&#x2500;&#x2500; env
+<pre><code>&#x251C;&#x2500;&#x2500; env
   &#x2514;&#x2500;&#x2500; default
      &#x251C;&#x2500;&#x2500; default.properties
      &#x2514;&#x2500;&#x2500; java.properties
-</code></pre>
-<p>Custom properties can be added to an existing property files or in a newly created one.</p>
+</code></pre><p>Custom properties can be added to an existing property files or in a newly created one.</p>
 <h2 id="creating-new-environment"><a name="creating-new-environment" class="plugin-anchor" href="#creating-new-environment"><span class="fa fa-link"></span></a>Creating new environment</h2>
 <p>To create an environment called <code>ci</code>:</p>
 <ul>
@@ -811,7 +908,14 @@
 </code></pre><p>present in <strong>env/default/java.properties</strong> is overridden by the</p>
 <pre><code>gauge_custom_build_path: target
 </code></pre><p>present in the <strong>env/ci/java.properties</strong></p>
+<h2 id="configuring-the-properties"><a name="configuring-the-properties" class="plugin-anchor" href="#configuring-the-properties"><span class="fa fa-link"></span></a>Configuring the Properties</h2>
+<p>Certain properties can be configured in <code>env/default/default.properties</code>, which overrides the default properties and are scoped only to the current project.</p>
+<p>These are key value pairs, key being the property name and the value is either the absolute or path relative to project root.</p>
+<p>Example:</p>
+<pre><code>gauge_reports_dir = reports
 
+logs_directory = GaugeLogs
+</code></pre>
                     
                     </section>
                 
