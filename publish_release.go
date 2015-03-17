@@ -14,6 +14,9 @@ import (
 const (
 	newDirPermissions = 0755
 	ghPages           = "gh-pages"
+	bookDir           = "_book"
+	defaultUserName   = "gaugeci"
+	defaultUserEmail  = "getgauge@googlegroups.com"
 )
 
 var updateCurrent = flag.Bool("update-current", false, "Update current docs symlink to point to version")
@@ -36,7 +39,7 @@ func updateDocs() {
 }
 
 func commitAndPushChanges() {
-	runCommand("git", "config", "user.name", "gaugeci")
+	setCredentials()
 	runCommand("git", "add", filepath.Join("user"))
 	runCommand("git", "commit", "-m", fmt.Sprintf("Updating docs for version %v", *version))
 	runCommand("git", "push", "origin", ghPages)
@@ -63,14 +66,25 @@ func switchToGitBranch() {
 func buildGitBook() string {
 	runCommand("gitbook", "install")
 	runCommand("gitbook", "build", ".")
-	bookPath := filepath.Join(os.TempDir(), "_book")
-	mirrorDir("_book", bookPath)
+	bookPath := filepath.Join(os.TempDir(), bookDir)
+	mirrorDir(bookDir, bookPath)
 	return bookPath
 }
 
 func cleanUp() {
 	runCommand("git", "checkout", "master")
-	runCommand("rm", "-rf", "_book")
+	runCommand("rm", "-rf", bookDir)
+}
+
+func setCredentials() {
+	uName := getCommandOutput("git", "config", "user.name")
+	if strings.TrimSpace(uName) == "" {
+		runCommand("git", "config", "user.name", defaultUserName)
+	}
+	uEmail := getCommandOutput("git", "config", "user.email")
+	if strings.TrimSpace(uEmail) == "" {
+		runCommand("git", "config", "user.email", defaultUserEmail)
+	}
 }
 
 func runCommand(command string, arg ...string) {
