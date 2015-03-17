@@ -42,6 +42,16 @@ func commitAndPushChanges() {
 	setCredentials()
 	runCommand("git", "add", filepath.Join("user"))
 	runCommand("git", "commit", "-m", fmt.Sprintf("Updating docs for version %v", *version))
+	pushChanges()
+}
+
+func pushChanges() {
+	defer func() {
+		if error := recover(); error != nil {
+			runCommand("git", "reset", "HEAD~1")
+			runCommand("git", "checkout", "-f", "master")
+		}
+	}()
 	runCommand("git", "push", "origin", ghPages)
 }
 
@@ -72,8 +82,8 @@ func buildGitBook() string {
 }
 
 func cleanUp() {
-	runCommand("git", "checkout", "master")
-	runCommand("rm", "-rf", bookDir)
+	getCommandOutput("git", "checkout", "-f", "master")
+	getCommandOutput("rm", "-rf", bookDir)
 }
 
 func setCredentials() {
