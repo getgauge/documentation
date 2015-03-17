@@ -101,10 +101,7 @@ func runCommand(command string, arg ...string) {
 func getCommandOutput(command string, arg ...string) string {
 	cmd := exec.Command(command, arg...)
 	log.Printf("Running => %s %s", command, arg)
-	output, err := cmd.Output()
-	if err != nil {
-		log.Panic(err)
-	}
+	output, _ := cmd.Output()
 	return string(output)
 }
 
