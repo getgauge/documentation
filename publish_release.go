@@ -71,6 +71,7 @@ func switchToGitBranch() {
 	} else {
 		runCommand("git", "checkout", "-b", ghPages, "--track", "origin/gh-pages")
 	}
+	runCommand("git", "pull", "origin", ghPages)
 }
 
 func buildGitBook() string {
