@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Plugins | Gauge Documentation</title>
+        <title>Installation | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../plugins/installation.html" />
+    <link rel="next" href="../examples/examples.html" />
     
     
-    <link rel="prev" href="../managing_environments/README.html" />
+    <link rel="prev" href="../troubleshooting/troubleshooting.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="7" data-basepath=".." data-revision="1427714773929">
+    <div class="book" data-level="10.1" data-basepath=".." data-revision="1427714773929">
     
 
 <div class="book-summary">
@@ -594,7 +594,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="7" data-path="plugins/README.html">
+        <li class="chapter " data-level="7" data-path="plugins/README.html">
             
                 
                     <a href="../plugins/README.html">
@@ -779,7 +779,7 @@
                 
     
         
-        <li class="chapter " data-level="10.1" data-path="troubleshooting/installation.html">
+        <li class="chapter active" data-level="10.1" data-path="troubleshooting/installation.html">
             
                 
                     <a href="../troubleshooting/installation.html">
@@ -958,21 +958,57 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_18">
+                    <section class="normal" id="section-gitbook_44">
                     
-                        <h1 id="plugins"><a name="plugins" class="plugin-anchor" href="#plugins"><span class="fa fa-link"></span></a>Plugins</h1>
-<p>Plugins help to extend the features of gauge. They are available at various defined scopes. The different types of plugins that can be used with gauge are below.</p>
-<h4 id="language-plugins"><a name="language-plugins" class="plugin-anchor" href="#language-plugins"><span class="fa fa-link"></span></a>Language Plugins</h4>
-<p> Also known as <strong>language runners</strong>, these are plugins that provide the support for execution of specs for the particular programming language. Example - <a href="../test_code/java/java.html">Java</a>, <a href="../test_code/ruby/ruby.html">Ruby</a>.</p>
-<h4 id="execution-scope-plugin"><a name="execution-scope-plugin" class="plugin-anchor" href="#execution-scope-plugin"><span class="fa fa-link"></span></a>Execution Scope plugin</h4>
-<p>These are plugins that work during the execution of the specifications.
-Example - <a href="html_report_plugin.html">HTML Report Plugin</a></p>
-<h4 id="setup-based-plugin"><a name="setup-based-plugin" class="plugin-anchor" href="#setup-based-plugin"><span class="fa fa-link"></span></a>Setup based plugin</h4>
-<p>These are plugins that act on a setup phase - When the plugin added to the project. As the name suggests, they do plugin specific setup on the project.</p>
-<h2 id="default-plugins"><a name="default-plugins" class="plugin-anchor" href="#default-plugins"><span class="fa fa-link"></span></a>Default plugins</h2>
-<p>Some plugins are added to every new project created in gauge.</p>
+                        <h1 id="troubleshooting"><a name="troubleshooting" class="plugin-anchor" href="#troubleshooting"><span class="fa fa-link"></span></a>Troubleshooting</h1>
+<h2 id="gauge-installation"><a name="gauge-installation" class="plugin-anchor" href="#gauge-installation"><span class="fa fa-link"></span></a>Gauge Installation</h2>
+<h3 id="windows"><a name="windows" class="plugin-anchor" href="#windows"><span class="fa fa-link"></span></a>Windows</h3>
 <ul>
-<li><a href="html_report_plugin.html">HTML Report Plugin</a></li>
+<li><p><strong>GAUGE_ROOT</strong> <a href="http://www.computerhope.com/issues/ch000549.htm" target="_blank">environment variable</a> should be set to the gauge installation path.</p>
+</li>
+<li><p>The default installation location is %ProgramFiles%\gauge.</p>
+</li>
+<li><p><code>Gauge_install_location\bin</code> should be in PATH to run from command line. See <a href="http://windowsitpro.com/systems-management/how-can-i-add-new-folder-my-system-path" target="_blank">how to add folder to path</a></p>
+</li>
+<li><p>Gauge plugins are installed at <code>%APPDATA%\gauge\plugins</code> directory.</p>
+</li>
+<li><p><a href="http://windows.microsoft.com/en-in/windows-8/what-appdata-folder" target="_blank">APPDATA</a> directory is usually located at <code>C:\Users\USER_NAME\AppData\Roaming</code>.</p>
+</li>
+</ul>
+<h3 id="macos-x"><a name="macos-x" class="plugin-anchor" href="#macos-x"><span class="fa fa-link"></span></a>MacOs X</h3>
+<ul>
+<li><p>The default installation location is <code>/usr/local/</code>.</p>
+</li>
+<li><p><code>usr/local/bin/</code> should be in PATH.</p>
+</li>
+<li><p>Run <code>brew update</code> before installing the latest version of gauge.</p>
+</li>
+<li><p>If installation is failing <a href="https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/FAQ.md#faq" target="_blank">Upgrade homebrew</a></p>
+</li>
+<li><p>Gauge plugins are installed under <code>~/.gauge/plugins</code> directory</p>
+</li>
+</ul>
+<h3 id="linux"><a name="linux" class="plugin-anchor" href="#linux"><span class="fa fa-link"></span></a>Linux</h3>
+<ul>
+<li><p>The default installation location is <code>/usr/local/</code>.</p>
+</li>
+<li><p>On custom installation location Set <code>GAUGE_ROOT</code> to custom_install_location.</p>
+</li>
+<li><p><code>usr/local/bin/</code> or <code>custom_install_location/bin</code> should be in PATH.</p>
+</li>
+<li><p>Gauge plugins are installed under <code>~/.gauge/plugins</code> directory</p>
+</li>
+</ul>
+<h2 id="plugin-installation"><a name="plugin-installation" class="plugin-anchor" href="#plugin-installation"><span class="fa fa-link"></span></a>Plugin installation</h2>
+<ul>
+<li>If <strong><a href="../../plugins/installation.html">plugin installation</a></strong> fails due to a network connection issue. You can <strong>manually download</strong> the plugin distributable zip and install it using the <code>-f</code> flag.</li>
+</ul>
+<pre><code>gauge --install plugin_name -f path_to_zip_file
+
+eg:
+gauge --install html-report -f html-report-1.0.3-darwin.x86.zip
+</code></pre><ul>
+<li>Find the plugin zip files under Releases section of the plugin github repositories. See the <a href="../../plugins/list.html">gauge plugins list</a> for plugin repositories details.</li>
 </ul>
 
                     
@@ -984,10 +1020,10 @@ Example - <a href="html_report_plugin.html">HTML Report Plugin</a></p>
         </div>
 
         
-        <a href="../managing_environments/README.html" class="navigation navigation-prev " aria-label="Previous page: Environments"><i class="fa fa-angle-left"></i></a>
+        <a href="../troubleshooting/troubleshooting.html" class="navigation navigation-prev " aria-label="Previous page: Troubleshooting"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../plugins/installation.html" class="navigation navigation-next " aria-label="Next page: Installation"><i class="fa fa-angle-right"></i></a>
+        <a href="../examples/examples.html" class="navigation navigation-next " aria-label="Next page: Example Projects"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

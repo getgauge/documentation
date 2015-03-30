@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Plugins | Gauge Documentation</title>
+        <title>Syntax Cheat Sheet | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../plugins/installation.html" />
+    <link rel="next" href="../test_code/README.html" />
     
     
-    <link rel="prev" href="../managing_environments/README.html" />
+    <link rel="prev" href="../specifications/concepts.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="7" data-basepath=".." data-revision="1427714773929">
+    <div class="book" data-level="3" data-basepath=".." data-revision="1427714773929">
     
 
 <div class="book-summary">
@@ -260,7 +260,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3" data-path="cheat_sheet/README.html">
+        <li class="chapter active" data-level="3" data-path="cheat_sheet/README.html">
             
                 
                     <a href="../cheat_sheet/README.html">
@@ -594,7 +594,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="7" data-path="plugins/README.html">
+        <li class="chapter " data-level="7" data-path="plugins/README.html">
             
                 
                     <a href="../plugins/README.html">
@@ -958,21 +958,50 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_18">
+                    <section class="normal" id="section-gitbook_4">
                     
-                        <h1 id="plugins"><a name="plugins" class="plugin-anchor" href="#plugins"><span class="fa fa-link"></span></a>Plugins</h1>
-<p>Plugins help to extend the features of gauge. They are available at various defined scopes. The different types of plugins that can be used with gauge are below.</p>
-<h4 id="language-plugins"><a name="language-plugins" class="plugin-anchor" href="#language-plugins"><span class="fa fa-link"></span></a>Language Plugins</h4>
-<p> Also known as <strong>language runners</strong>, these are plugins that provide the support for execution of specs for the particular programming language. Example - <a href="../test_code/java/java.html">Java</a>, <a href="../test_code/ruby/ruby.html">Ruby</a>.</p>
-<h4 id="execution-scope-plugin"><a name="execution-scope-plugin" class="plugin-anchor" href="#execution-scope-plugin"><span class="fa fa-link"></span></a>Execution Scope plugin</h4>
-<p>These are plugins that work during the execution of the specifications.
-Example - <a href="html_report_plugin.html">HTML Report Plugin</a></p>
-<h4 id="setup-based-plugin"><a name="setup-based-plugin" class="plugin-anchor" href="#setup-based-plugin"><span class="fa fa-link"></span></a>Setup based plugin</h4>
-<p>These are plugins that act on a setup phase - When the plugin added to the project. As the name suggests, they do plugin specific setup on the project.</p>
-<h2 id="default-plugins"><a name="default-plugins" class="plugin-anchor" href="#default-plugins"><span class="fa fa-link"></span></a>Default plugins</h2>
-<p>Some plugins are added to every new project created in gauge.</p>
+                        <h1 id="syntax-cheat-sheet"><a name="syntax-cheat-sheet" class="plugin-anchor" href="#syntax-cheat-sheet"><span class="fa fa-link"></span></a>Syntax Cheat Sheet</h1>
+<h4 id="specification"><a name="specification" class="plugin-anchor" href="#specification"><span class="fa fa-link"></span></a>Specification</h4>
+<pre><code>Specification name            # Specification name
+==================
+</code></pre><h4 id="scenario"><a name="scenario" class="plugin-anchor" href="#scenario"><span class="fa fa-link"></span></a>Scenario</h4>
+<pre><code>Scenario name                 ## Scenario name
+-------------
+</code></pre><h4 id="tags"><a name="tags" class="plugin-anchor" href="#tags"><span class="fa fa-link"></span></a>Tags</h4>
+<pre><code>Specification Level        Scenario Level
+===================        --------------
+
+Tags: login, admin         Tags: login-success, admin
+</code></pre><h4 id="concept"><a name="concept" class="plugin-anchor" href="#concept"><span class="fa fa-link"></span></a>Concept</h4>
+<pre><code>Concept Heading             # Concept Heading
+===============
+</code></pre><h4 id="steps"><a name="steps" class="plugin-anchor" href="#steps"><span class="fa fa-link"></span></a>Steps</h4>
+<pre><code>* Step Name
+</code></pre><h4 id="parameters"><a name="parameters" class="plugin-anchor" href="#parameters"><span class="fa fa-link"></span></a>Parameters</h4>
 <ul>
-<li><a href="html_report_plugin.html">HTML Report Plugin</a></li>
+<li><p><code>&quot;</code>Static Arg<code>&quot;</code></p>
+<pre><code>  * Check &quot;product&quot; exists
+</code></pre></li>
+<li><p><code>&lt;</code>Dynamic Arg<code>&gt;</code></p>
+<pre><code>* Check &lt;product&gt; exists
+</code></pre></li>
+<li><p><code>|</code>Table Parameter<code>|</code></p>
+<pre><code>* Step that takes a table
+  | id   |  name   |
+  | 123  |  John   |
+  | 456  | Mcclain |
+</code></pre></li>
+<li><p><code>&lt;</code>Special<code>:</code>Parameters<code>&gt;</code></p>
+<pre><code>&lt;prefix:value&gt;
+</code></pre><ul>
+<li><p><em>File</em></p>
+<pre><code>* Check if &lt;file:/work/content.txt&gt; is visible
+</code></pre></li>
+<li><p><em>Table</em></p>
+<pre><code>* Check if the users exist &lt;table : /Users/john/work/users.csv&gt;
+</code></pre></li>
+</ul>
+</li>
 </ul>
 
                     
@@ -984,10 +1013,10 @@ Example - <a href="html_report_plugin.html">HTML Report Plugin</a></p>
         </div>
 
         
-        <a href="../managing_environments/README.html" class="navigation navigation-prev " aria-label="Previous page: Environments"><i class="fa fa-angle-left"></i></a>
+        <a href="../specifications/concepts.html" class="navigation navigation-prev " aria-label="Previous page: Concepts"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../plugins/installation.html" class="navigation navigation-next " aria-label="Next page: Installation"><i class="fa fa-angle-right"></i></a>
+        <a href="../test_code/README.html" class="navigation navigation-next " aria-label="Next page: Test Code"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
