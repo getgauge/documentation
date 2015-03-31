@@ -1,0 +1,3 @@
+# Troubleshooting
+
+* [Installation](installation.md)

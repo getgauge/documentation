@@ -3,7 +3,7 @@
 Gauge supports:
 
 * First class Command line support
-* [IDE Support](ide_support/README.md)
+* [IDE Support](../ide_support/README.md)
 
 ###Starting with command line :
 
@@ -15,8 +15,8 @@ Gauge supports:
 ###Starting with IDE :
 
 * [Download and install](http://getgauge.io/download) gauge
-* [Install gauge Intellij plugin](../ide-support/intellij_idea.md)
-* [Create a gauge project](../ide-support/features.md)
+* [Install gauge Intellij plugin](../ide_support/intellij_idea.md)
+* [Create a gauge project](../ide_support/features.md)
 
 
 Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/README.md) for the steps.
