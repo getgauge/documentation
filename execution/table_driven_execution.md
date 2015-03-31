@@ -5,6 +5,7 @@ When a scenario or multiple scenarios in a specification are to be executed for 
 * The data table should have a header row and one or more data rows
 * The header names from the table can be used in the steps within angular brackets `< >` to refer a particular column from the data table as a parameter.
 * On execution each scenario will be executed for every data row from the table.
+* Table can be easily created in IDE using template `table:<no of columns>`, and hit `Tab`.
 
 **Example:**
 
