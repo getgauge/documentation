@@ -34,12 +34,12 @@
 
 ## Plugin installation
 
-* If **[plugin installation](../../plugins/installation.md)** fails due to a network connection issue. You can **manually download** the plugin distributable zip and install it using the ```-f``` flag.
+* If **[plugin installation](../../plugins/installation.md)** fails due to a network connection issue. You can **manually download** the plugin distributable zip and install it using the ```--f``` flag.
 
 ````
-gauge --install plugin_name -f path_to_zip_file
+gauge --install plugin_name --f path_to_zip_file
 
 eg:
-gauge --install html-report -f html-report-1.0.3-darwin.x86.zip
+gauge --install html-report --f html-report-1.0.3-darwin.x86.zip
 ````
 * Find the plugin zip files under Releases section of the plugin github repositories. See the [gauge plugins list](../plugins/list.md) for plugin repositories details.
