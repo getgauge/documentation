@@ -1,4 +1,28 @@
 {
-    "plugins": [],
-    "pluginsConfig": {}
+    "output": "_book_tech",
+    "generator": "site",
+    "title": "Gauge Technical Documentation",
+    "description": "Technical documentation for Gauge.",
+    "github": "https://www.github.com/getgauge/gauge",
+    "githubHost": "https://github.com/",
+    "plugins": ["anchors", "ga"],
+    "pluginsConfig": {
+        "ga": {
+              "token": "UA-54838477-1"
+          } },
+    "links": {
+        "sidebar": {
+            "Home": "http://getgauge.io",
+            "Github": "http://github.com/getgauge/gauge"
+        },
+        "home": "http://getgauge.io",
+        "about": "http://getgauge.io",
+        "issues": "https://github.com/getgauge/gauge/issues",
+        "contribute": "https://github.com/getgauge/gauge/",
+        "sharing": {
+            "google": "http://getgauge.io",
+            "facebook": "http://getgauge.io",
+            "twitter": "getgauge"
+        }
+    }
 }
