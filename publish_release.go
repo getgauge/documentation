@@ -62,7 +62,9 @@ func pushChanges() {
 func copyDocs(bookPath string, version string, docType string) {
 	mirrorDir(bookPath, filepath.Join(docType, version))
 	if *updateCurrent {
-		runCommand("rm", filepath.Join(docType, "current"))
+		if exists(filepath.Join(docType, "current")){
+			runCommand("rm", filepath.Join(docType, "current"))
+		}
 		runCommand("ln", "-s", version, filepath.Join(docType, "current"))
 	}
 }
@@ -199,4 +201,11 @@ func mirrorDir(src, dst string) {
 	if err != nil {
 		log.Panic(err)
 	}
+}
+
+func exists(path string) bool {
+	_, err := os.Stat(path)
+	if err == nil { return true }
+	if os.IsNotExist(err) { return false }
+	return false
 }
