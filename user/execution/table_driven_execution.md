@@ -32,7 +32,9 @@ In the above example the step uses the `name` column from the data table as a dy
 
 Both `Scenario` and `Second Scenario` are executed first for the first row values `1, vishnu` and then consecutively for the second and third row values from the table.
 
-Tables at spec level can also be passed from an external CSV file. The parameter contains a prefix table and the path to the csv file.
+### External CSV for data table
+
+Data Tables for a specification can also be passed from an external [CSV file](http://en.wikipedia.org/wiki/Comma-separated_values). The parameter contains a prefix table and the path to the csv file.
 
 **Prefix** : The prefix is table
 
@@ -40,9 +42,18 @@ Tables at spec level can also be passed from an external CSV file. The parameter
 
 Example:
 ````
-Specification Heading
+Table Driven execution
 =====================
+
 table: /system/users.csv
+
+Scenario
+--------
+* Say "hello" to <name>
+
+Second Scenario
+---------------
+* Say "namaste" to <name>
 ````
 
 ###Execute selected data table rows

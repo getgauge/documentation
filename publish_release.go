@@ -15,6 +15,9 @@ const (
 	newDirPermissions = 0755
 	ghPages           = "gh-pages"
 	bookDir           = "_book"
+	technicalBookDir  = "_book_tech"
+	userDocType		  = "user"
+	techDocType		  = "technical"
 	defaultUserName   = "gaugeci"
 	defaultUserEmail  = "getgauge@googlegroups.com"
 )
@@ -31,9 +34,10 @@ func main() {
 }
 
 func updateDocs() {
-	bookPath := buildGitBook()
+	userBookPath, techBookPath := buildGitBook()
 	switchToGitBranch()
-	copyDocs(bookPath, *version)
+	copyDocs(userBookPath, *version, userDocType)
+	copyDocs(techBookPath, *version, techDocType)
 	commitAndPushChanges()
 	cleanUp()
 }
@@ -55,11 +59,13 @@ func pushChanges() {
 	runCommand("git", "push", "origin", ghPages)
 }
 
-func copyDocs(bookPath string, version string) {
-	mirrorDir(bookPath, filepath.Join("user", version))
+func copyDocs(bookPath string, version string, docType string) {
+	mirrorDir(bookPath, filepath.Join(docType, version))
 	if *updateCurrent {
-		runCommand("rm", filepath.Join("user", "current"))
-		runCommand("ln", "-s", version, filepath.Join("user", "current"))
+		if exists(filepath.Join(docType, "current")){
+			runCommand("rm", filepath.Join(docType, "current"))
+		}
+		runCommand("ln", "-s", version, filepath.Join(docType, "current"))
 	}
 }
 
@@ -74,17 +80,24 @@ func switchToGitBranch() {
 	runCommand("git", "pull", "origin", ghPages)
 }
 
-func buildGitBook() string {
-	runCommand("gitbook", "install")
-	runCommand("gitbook", "build", ".")
-	bookPath := filepath.Join(os.TempDir(), bookDir)
-	mirrorDir(bookDir, bookPath)
-	return bookPath
+func buildGitBook() (string, string) {
+	u := filepath.Join(os.TempDir(), bookDir)
+	t := filepath.Join(os.TempDir(), technicalBookDir)
+	buildAndCopyBook(userDocType, u)
+	buildAndCopyBook(techDocType, t)
+	return u, t
+}
+
+func buildAndCopyBook(docType string, bookPath string) {
+	runCommand("gitbook", "install", docType)
+	runCommand("gitbook", "build", docType)
+	mirrorDir(bookDir, filepath.Join(bookPath, docType))
 }
 
 func cleanUp() {
 	getCommandOutput("git", "checkout", "-f", "master")
 	getCommandOutput("rm", "-rf", bookDir)
+	getCommandOutput("rm", "-rf", technicalBookDir)
 }
 
 func setCredentials() {
@@ -188,4 +201,11 @@ func mirrorDir(src, dst string) {
 	if err != nil {
 		log.Panic(err)
 	}
+}
+
+func exists(path string) bool {
+	_, err := os.Stat(path)
+	if err == nil { return true }
+	if os.IsNotExist(err) { return false }
+	return false
 }
