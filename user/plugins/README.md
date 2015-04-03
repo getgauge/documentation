@@ -9,10 +9,6 @@ Plugins help to extend the features of gauge. They are available at various defi
 These are plugins that work during the execution of the specifications.
 Example - [HTML Report Plugin](html_report_plugin.md)
 
-#### Setup based plugin
-These are plugins that act on a setup phase - When the plugin added to the project. As the name suggests, they do plugin specific setup on the project.
-
-
 
 ##Default plugins
 
