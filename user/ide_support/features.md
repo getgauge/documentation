@@ -47,23 +47,44 @@ This formats all the elements of current spec including indentation of tables an
 * Specs can be executed by `right click -> Run spec`.
 * Execute all specs inside a directory by `right click -> Run specifications`
 
-####Single Scenario Execution
+####5.1. Single Scenario Execution
 
 A single scenario can be executed by doing a right click on the scenario which should be executed and choosing the scenario.
 `right click -> run -> Scenario Name`
 
-If the right click is done in context other than that of scenario, by default, first scenario will be executed.
+````
+Note: If the right click is done in context other than that of scenario, by default, first scenario will be executed.
+````
 
 ![scenario execution](intellij-screenshots/execution/scenario.gif "scenario execution")
 
-#### Debugging
+####5.2. Parallel Execution
+To run multiple specifications in parallel
+* Right click on the ```specs``` directory and select ```Create Specifications``` option.
+* In the new Run configuration select ```In Parallel``` options. This will distribute specs execution based on number of cores the machine has.
+* You can also specify the ```Number of parallel execution streams```. This is optional
+````
+Caution: Select parallel nodes based on current systems performance.
+For example on a 2 core machine select upto 4 parallel streams.
+A very large number may affect performance.
+````
+* Select ```ok```. Now you can run this new configuration for parallel execution of specs.
+
+
+####5.3. Debugging
 
 Debugging can be performed by attaching debugger to the gauge java process.
 
-* Create a new  ```Remote``` configuration named `Gauge` and set the port number to `50005`. Do this by selecting **Edit configurations*** and pressing the plus icon.
+* Create a new  ```Remote``` configuration named `Gauge` and set the port number to `50005`. Do this by selecting **Edit configurations** and pressing the plus icon.
 * Right click on spec/specs -> Debug
 * Now go to the run configuration and execute the remote configuration `Gauge` that was created.
 * This will start the execution and halts at breakpoints.
+
+````
+Note: The remote configuration (Gauge) needs to be run after launching the spec in debug mode.
+Run the debug config for the second time if it does not connect for the first time.
+```
+
 
 ![debugging](intellij-screenshots/execution/debug.gif "debugging")
 
