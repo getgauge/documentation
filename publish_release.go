@@ -44,7 +44,7 @@ func updateDocs() {
 
 func commitAndPushChanges() {
 	setCredentials()
-	runCommand("git", "add", filepath.Join("user"))
+	runCommand("git", "add", filepath.Join(userDocType), filepath.Join(techDocType))
 	runCommand("git", "commit", "-m", fmt.Sprintf("Updating docs for version %v", *version))
 	pushChanges()
 }
