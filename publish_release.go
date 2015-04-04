@@ -38,7 +38,7 @@ func updateDocs() {
 	switchToGitBranch()
 	copyDocs(b, *version, userDocType)
 	copyDocs(b, *version, techDocType)
-//	commitAndPushChanges()
+	commitAndPushChanges()
 	cleanUp()
 }
 
@@ -60,7 +60,7 @@ func pushChanges() {
 }
 
 func copyDocs(bookPath string, version string, docType string) {
-	mirrorDir(bookPath, filepath.Join(docType, version))
+	mirrorDir(filepath.Join(bookPath, docType), filepath.Join(docType, version))
 	if *updateCurrent {
 		if exists(filepath.Join(docType, "current")){
 			runCommand("rm", filepath.Join(docType, "current"))
