@@ -34,11 +34,11 @@ func main() {
 }
 
 func updateDocs() {
-	userBookPath, techBookPath := buildGitBook()
+	b := buildGitBook()
 	switchToGitBranch()
-	copyDocs(userBookPath, *version, userDocType)
-	copyDocs(techBookPath, *version, techDocType)
-	commitAndPushChanges()
+	copyDocs(b, *version, userDocType)
+	copyDocs(b, *version, techDocType)
+//	commitAndPushChanges()
 	cleanUp()
 }
 
@@ -80,12 +80,11 @@ func switchToGitBranch() {
 	runCommand("git", "pull", "origin", ghPages)
 }
 
-func buildGitBook() (string, string) {
+func buildGitBook() string {
 	u := filepath.Join(os.TempDir(), bookDir)
-	t := filepath.Join(os.TempDir(), technicalBookDir)
 	buildAndCopyBook(userDocType, u)
-	buildAndCopyBook(techDocType, t)
-	return u, t
+	buildAndCopyBook(techDocType, u)
+	return u
 }
 
 func buildAndCopyBook(docType string, bookPath string) {
