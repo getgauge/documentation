@@ -27,7 +27,7 @@
   "_id": "gitbook-plugin-anchors@0.4.0",
   "scripts": {},
   "_shasum": "9f2b1729a8470c129f6803c22d12be38ffbcdfc0",
-  "_from": "gitbook-plugin-anchors@latest",
+  "_from": "gitbook-plugin-anchors@0.4.0",
   "_npmVersion": "1.4.23",
   "_npmUser": {
     "name": "rlmv",
