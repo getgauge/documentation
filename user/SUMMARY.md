@@ -35,6 +35,7 @@
    * [Installation](plugins/installation.md)
    * [Plugins list](plugins/list.md)
    * [HTML Report plugin](plugins/html_report_plugin.md)
+   * [XML Report plugin](plugins/xml_report_plugin.md)
 * [IDE Support](ide_support/README.md)
    * [Intellij Idea](ide_support/intellij_idea.md)
        * [IntelliJ Features](ide_support/features.md)
