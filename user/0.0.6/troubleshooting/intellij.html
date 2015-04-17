@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Scenarios | Gauge Documentation</title>
+        <title>IDE | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../specifications/steps.html" />
+    <link rel="next" href="../examples/examples.html" />
     
     
-    <link rel="prev" href="../specifications/README.html" />
+    <link rel="prev" href="../troubleshooting/execution.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1429263812963">
+    <div class="book" data-level="10.4" data-basepath=".." data-revision="1429263812963">
     
 
 <div class="book-summary">
@@ -153,7 +153,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="specifications/scenarios.html">
+        <li class="chapter " data-level="2.1" data-path="specifications/scenarios.html">
             
                 
                     <a href="../specifications/scenarios.html">
@@ -843,7 +843,7 @@
         </li>
     
         
-        <li class="chapter " data-level="10.4" data-path="troubleshooting/intellij.html">
+        <li class="chapter active" data-level="10.4" data-path="troubleshooting/intellij.html">
             
                 
                     <a href="../troubleshooting/intellij.html">
@@ -1022,35 +1022,23 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_28">
+                    <section class="normal" id="section-gitbook_47">
                     
-                        <h1 id="scenarios"><a name="scenarios" class="plugin-anchor" href="#scenarios"><span class="fa fa-link"></span></a>Scenarios</h1>
-<p>Each scenario represents a single flow in a particular specification. A specification must contain at least one scenario.</p>
-<p>A scenario starts after a scenario heading or a scenario name. The scenario heading is written in markdown <strong>H2</strong> syntax. This can be written in 2 ways:</p>
-<pre><code>Scenario heading
-----------------
-</code></pre><p>or</p>
-<pre><code>## Scenario heading
-</code></pre><ul>
-<li>A scenario contains one or more <a href="steps.html">steps</a> under it.</li>
-<li>A scenario can be tagged using <a href="tags.html">tags</a>.</li>
-</ul>
-<h4 id="example-spec-with-a-scenario"><a name="example-spec-with-a-scenario" class="plugin-anchor" href="#example-spec-with-a-scenario"><span class="fa fa-link"></span></a>Example spec with a scenario:</h4>
-<pre><code>Configuration
-=============
-
-The Admin user should be able to switch permissions for other users.
-
-Admin Login
------------
-* User must login as &quot;admin&quot;
-* Navigate to the configuration page
-* Change permissions for user &quot;john&quot; to &quot;admin&quot;
-* User &quot;john&quot; should have admin permissions
-</code></pre><h3 id="learn-more"><a name="learn-more" class="plugin-anchor" href="#learn-more"><span class="fa fa-link"></span></a>Learn more</h3>
+                        <h1 id="ide"><a name="ide" class="plugin-anchor" href="#ide"><span class="fa fa-link"></span></a>IDE</h1>
+<p>It is advised to use the latest version of <a href="http://getgauge.io/download" target="_blank">gauge</a> and <a href="https://plugins.jetbrains.com/plugin/7535?pr=idea" target="_blank">Intellij-gauge</a>.</p>
+<h3 id="intellij-errors"><a name="intellij-errors" class="plugin-anchor" href="#intellij-errors"><span class="fa fa-link"></span></a>Intellij Errors</h3>
+<pre><code>Could not start gauge api: Could not find executable in PATH or GAUGE_ROOT. Gauge is not installed.
+</code></pre><p>This can occur because of following reasons :</p>
 <ul>
-<li><a href="steps.html">Steps</a></li>
-<li><a href="tags.html">Tags</a></li>
+<li>Gauge is not installed</li>
+<li>Gauge is installed at custom location and <code>custom_install_location/bin</code> is not in <code>PATH</code>.</li>
+</ul>
+<p>To Solve this :</p>
+<ul>
+<li>If gauge is not installed, <a href="installation.html">install gauge</a></li>
+<li>If gauge is installed at custom location, add <code>custom_install_location/bin</code> to <code>PATH</code></li>
+<li>On custom installation location Set <code>GAUGE_ROOT</code> to custom_install_location</li>
+<li>Restart Intellij</li>
 </ul>
 
                     
@@ -1062,10 +1050,10 @@ Admin Login
         </div>
 
         
-        <a href="../specifications/README.html" class="navigation navigation-prev " aria-label="Previous page: Specifications"><i class="fa fa-angle-left"></i></a>
+        <a href="../troubleshooting/execution.html" class="navigation navigation-prev " aria-label="Previous page: Execution"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../specifications/steps.html" class="navigation navigation-next " aria-label="Next page: Steps"><i class="fa fa-angle-right"></i></a>
+        <a href="../examples/examples.html" class="navigation navigation-next " aria-label="Next page: Example Projects"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
