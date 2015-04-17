@@ -39,6 +39,8 @@
 * [IDE Support](ide_support/README.md)
    * [Intellij Idea](ide_support/intellij_idea.md)
        * [IntelliJ Features](ide_support/features.md)
+   * [Eclipse](ide_support/eclipse.md)
+       * [Gauge Eclipse Features](ide_support/gauge_eclipse_plugin_features.md)
 * [Integration with CI](integration_with_ci/README.md)
    * [Go](integration_with_ci/go.md)
 * [Troubleshooting](troubleshooting/troubleshooting.md)
