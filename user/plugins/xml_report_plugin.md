@@ -23,7 +23,7 @@ Download the plugin zip from the [Github Releases](https://github.com/getgauge/x
 
 To add XML report plugin to your project, run the following command :
 ```
-gauge --add xml-report
+gauge --add-plugin xml-report
 ```
 The XML report plugin can be configured by the properties set in the `env/default.properties` file in the project.
 

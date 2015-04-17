@@ -7,7 +7,7 @@ Plugins help to extend the features of gauge. They are available at various defi
 
 #### Execution Scope plugin
 These are plugins that work during the execution of the specifications.
-Example - [HTML Report Plugin](html_report_plugin.md)
+Example -[HTML Report Plugin](html_report_plugin.md), [XML Report Plugin](xml_report_plugin.md)
 
 
 ##Default plugins
