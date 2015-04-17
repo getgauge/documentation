@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Specifications | Gauge Documentation</title>
+        <title>XML Report plugin | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../specifications/scenarios.html" />
+    <link rel="next" href="../ide_support/README.html" />
     
     
-    <link rel="prev" href="../getting_started/project_structure.html" />
+    <link rel="prev" href="../plugins/html_report_plugin.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="2" data-basepath=".." data-revision="1429268613436">
+    <div class="book" data-level="7.4" data-basepath=".." data-revision="1429268613436">
     
 
 <div class="book-summary">
@@ -136,7 +136,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2" data-path="specifications/README.html">
+        <li class="chapter " data-level="2" data-path="specifications/README.html">
             
                 
                     <a href="../specifications/README.html">
@@ -675,7 +675,7 @@
         </li>
     
         
-        <li class="chapter " data-level="7.4" data-path="plugins/xml_report_plugin.html">
+        <li class="chapter active" data-level="7.4" data-path="plugins/xml_report_plugin.html">
             
                 
                     <a href="../plugins/xml_report_plugin.html">
@@ -1038,45 +1038,40 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_25">
+                    <section class="normal" id="section-gitbook_23">
                     
-                        <h1 id="specifications"><a name="specifications" class="plugin-anchor" href="#specifications"><span class="fa fa-link"></span></a>Specifications</h1>
-<p><strong>Specifications</strong> are business layer test cases which can also act as your feature documentation. They are written in the Business language. Typically a spec or specification describe a particular feature of the application under test.</p>
+                        <h1 id="xml-report"><a name="xml-report" class="plugin-anchor" href="#xml-report"><span class="fa fa-link"></span></a>XML Report</h1>
+<p><a href="https://github.com/getgauge/gauge" target="_blank">Gauge</a> plugin to generate JUnit style XML reports in the format described <a href="https://windyroad.com.au/dl/Open%20Source/JUnit.xsd" target="_blank">here</a></p>
+<h2 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h2>
+<p>To install XML Report plugin :</p>
+<pre><code>gauge --install xml-report
+</code></pre><p>To install a specific version of XML report plugin use the <code>--plugin-version</code> flag.</p>
+<pre><code>gauge --install xml-report --plugin-version 0.0.2
+</code></pre><p><strong>Offline Installation</strong> :</p>
+<p>If plugin should be installed from a zipfile instead of downloading from plugin repository, use the <code>--file</code> or <code>-f</code> flag.</p>
+<pre><code>gauge --install xml-report --file ZIP_FILE_PATH
+</code></pre><p>Download the plugin zip from the <a href="https://github.com/getgauge/xml-report/releases" target="_blank">Github Releases</a></p>
+<h2 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><span class="fa fa-link"></span></a>Configuration</h2>
+<p>To add XML report plugin to your project, run the following command :</p>
+<pre><code>gauge --add xml-report
+</code></pre><p>The XML report plugin can be configured by the properties set in the <code>env/default.properties</code> file in the project.</p>
+<p>The configurable properties are:</p>
+<p><strong>gauge_reports_dir</strong></p>
 <ul>
-<li><p>They are written in a <strong>.spec</strong> file. Gauge also supports <strong>.md</strong> file format.</p>
+<li><p>Specifies the path to the directory where the execution reports will be generated.</p>
 </li>
-<li><p>The Markup for a Specification file is based on <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a> syntax.</p>
+<li><p>Should be either relative to the project directory or an absolute path.
+By default it is set to <code>reports</code> directory in the project</p>
 </li>
 </ul>
-<h4 id="a-simple-spec"><a name="a-simple-spec" class="plugin-anchor" href="#a-simple-spec"><span class="fa fa-link"></span></a>A simple Spec:</h4>
-<p><img src="images/spec.png" alt="Spec" title="Specification"></p>
-<h2 id="specification-heading"><a name="specification-heading" class="plugin-anchor" href="#specification-heading"><span class="fa fa-link"></span></a>Specification Heading</h2>
-<p>A Spec must begins with a spec heading and a single specification can contain only one spec heading.</p>
-<p>It is written in <strong>H1</strong> syntax of markdown. This can be in two forms</p>
-<pre><code>Spec Heading
-============
-</code></pre><p> or</p>
-<pre><code>#Spec Heading
-</code></pre><ul>
-<li>Every spec must contain one or more <a href="scenarios.html">scenarios</a>.</li>
-<li>Every spec can be marked with labels using <a href="tags.html">tags</a>.</li>
-</ul>
-<h2 id="scenarios"><a name="scenarios" class="plugin-anchor" href="#scenarios"><span class="fa fa-link"></span></a>Scenarios</h2>
-<p>Each scenario represents a single flow in a particular specification.</p>
-<p>Consider the above example, <strong>successful search</strong> and <strong>unsuccessful search</strong> are 2 scenarios for the <strong>search specification</strong>. In business language terms they represent the entire search feature in the app.</p>
-<p>Learn more about the structure of a <a href="scenarios.html">Scenario</a></p>
-<h2 id="steps"><a name="steps" class="plugin-anchor" href="#steps"><span class="fa fa-link"></span></a>Steps</h2>
-<p>Steps are the executable part of the specification. They have underlying implementations in the programming language for execution of the specs.</p>
-<p>They are written inside a specification (<a href="contexts.html">context steps</a>) or a scenario.</p>
-<h4 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h4>
-<pre><code>* Search for product &quot;die hard&quot;
-* User &quot;admin&quot; must be logged in
-</code></pre><h3 id="learn-more"><a name="learn-more" class="plugin-anchor" href="#learn-more"><span class="fa fa-link"></span></a>Learn more</h3>
+<p><strong>overwrite_reports</strong></p>
 <ul>
-<li><a href="scenarios.html">Scenarios</a></li>
-<li><a href="steps.html">Steps</a></li>
-<li><a href="../test_code/README.html">Test code</a></li>
+<li><p>Set to <code>true</code> if the reports <strong>should be overwritten</strong> on each execution hence maintaining only the latest execution report.</p>
+</li>
+<li><p>If set to <code>false</code> then a <strong>new report</strong> will be generated on each execution in the reports directory in a nested time-stamped directory.</p>
+</li>
 </ul>
+<p>Default value is <code>true</code></p>
 
                     
                     </section>
@@ -1087,10 +1082,10 @@
         </div>
 
         
-        <a href="../getting_started/project_structure.html" class="navigation navigation-prev " aria-label="Previous page: Project Structure"><i class="fa fa-angle-left"></i></a>
+        <a href="../plugins/html_report_plugin.html" class="navigation navigation-prev " aria-label="Previous page: HTML Report plugin"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../specifications/scenarios.html" class="navigation navigation-next " aria-label="Next page: Scenarios"><i class="fa fa-angle-right"></i></a>
+        <a href="../ide_support/README.html" class="navigation navigation-next " aria-label="Next page: IDE Support"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

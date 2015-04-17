@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="5.5" data-basepath=".." data-revision="1429265261955">
+    <div class="book" data-level="5.5" data-basepath=".." data-revision="1429268613436">
     
 
 <div class="book-summary">
@@ -674,6 +674,22 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="7.4" data-path="plugins/xml_report_plugin.html">
+            
+                
+                    <a href="../plugins/xml_report_plugin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         XML Report plugin
+                    </a>
+                
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -1025,15 +1041,15 @@
                     <section class="normal" id="section-gitbook_8">
                     
                         <h1 id="executing-a-group-of-specification"><a name="executing-a-group-of-specification" class="plugin-anchor" href="#executing-a-group-of-specification"><span class="fa fa-link"></span></a>Executing a group of specification</h1>
-<p>Specifications can be distributed into groups and <code>--group</code> | <code>--g</code> flag provides the ability to execute a specific group.</p>
+<p>Specifications can be distributed into groups and <code>--group</code> | <code>-g</code> flag provides the ability to execute a specific group.</p>
 <p>This can be done by the command:</p>
-<pre><code>gauge --n=4 --g=2 specs
-</code></pre><p>This creates 4 groups (provided by --n flag) of specification and selects the 2nd group (provided by --g flag) for execution.</p>
+<pre><code>gauge -n=4 -g=2 specs
+</code></pre><p>This creates 4 groups (provided by -n flag) of specification and selects the 2nd group (provided by -g flag) for execution.</p>
 <p>Specifications are sorted by alphabetical order and then distributed into groups, which guarantees that every group will have the same set of specifications, no matter how many times it is being executed.</p>
 <p>Example:</p>
-<pre><code>gauge --n=4 --g=2 specs
+<pre><code>gauge -n=4 -g=2 specs
 
-gauge --n=4 --g=2 specs
+gauge -n=4 -g=2 specs
 </code></pre><p>The above two commands will execute the same group of specifications.</p>
 
                     

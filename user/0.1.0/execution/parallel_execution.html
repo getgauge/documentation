@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="5.4" data-basepath=".." data-revision="1429265261955">
+    <div class="book" data-level="5.4" data-basepath=".." data-revision="1429268613436">
     
 
 <div class="book-summary">
@@ -674,6 +674,22 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="7.4" data-path="plugins/xml_report_plugin.html">
+            
+                
+                    <a href="../plugins/xml_report_plugin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         XML Report plugin
+                    </a>
+                
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -1028,10 +1044,12 @@
 <p>Specs can be executed in parallel to run the tests faster and distribute the load.</p>
 <p>This can be done by the command:</p>
 <pre><code>gauge --parallel specs
+
+gauge -p specs
 </code></pre><p>This creates a number of execution streams depending on the number of cores of the machine and distribute the load among workers.</p>
-<p>The number of parallel execution streams can be specified by <code>--n</code> flag.</p>
+<p>The number of parallel execution streams can be specified by <code>-n</code> flag.</p>
 <p>Example:</p>
-<pre><code>gauge --parallel --n=4 specs
+<pre><code>gauge --parallel -n=4 specs
 </code></pre><p>This creates four parallel execution streams.</p>
 <p><strong>Note</strong>:
 The number of streams should be specified depending on the machine, beyond which it affects the performance of the system.</p>
