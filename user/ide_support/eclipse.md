@@ -11,7 +11,9 @@ This plugin only supports [Java](../test_code/java.md).
 
 ## Versions supported
 
-The plugin has been tested on Eclipse 4.3.2 (Kepler SR2) and 4.4 (Luna).
+The plugin has been tested on  below versions of Eclipse
+- 4.4 (Luna)
+- 4.3.2 (Kepler SR2)
 
 ## Installation
 
