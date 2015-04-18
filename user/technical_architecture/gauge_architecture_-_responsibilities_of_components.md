@@ -1,4 +1,4 @@
-# Gauge Architecture - Responsbilities of components
+# Gauge Architecture - Responsibilities of components
 
 ## Gauge Core
 
