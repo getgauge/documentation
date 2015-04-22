@@ -22,7 +22,7 @@ Steps to install:
 2) Ensure that the below update sites are listed in the "Available Software Sites" list:
 
     1) XText : http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/
-    2) Gauge : http://getgauge.io/eclipse
+    2) Gauge : https://dl.bintray.com/sriv/Gauge
 
 3) In the Dialog that opens up, choose the Gauge update site (entered above) in the "Work with" textbox, press enter.
 
