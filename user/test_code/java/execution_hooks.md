@@ -13,6 +13,8 @@ The [execution hooks](../../execution/execution_hooks.md) can be defined at all 
 | After Scenario   | `@AfterScenario`|
 | Before Step | `@BeforeStep` |
 |After Step| `@AfterStep`|
+|BeforeClassSteps|`@BeforeClassSteps`|
+|AfterClassSteps|`@AfterClassSteps`|
 
 ###Example
 ````java
