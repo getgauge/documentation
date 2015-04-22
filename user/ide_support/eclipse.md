@@ -1,10 +1,5 @@
 # Eclipse
 
-```
-Note: The eclipse plugin is not yet published. Drop a note at getgauge@googlegroups.com,
-if you are interested in trying out an early version.
-```
-
 There is an eclipse plugin that helps in authoring Java implementation of Gauge specs.
 
 This plugin only supports [Java](../test_code/java.md).
@@ -17,13 +12,19 @@ The plugin has been tested on  below versions of Eclipse
 
 ## Installation
 
-This plugin can be installed via an update-site (to-be-published).
+This plugin depends on XText 2.6 or newer. This plugin can be installed via an update-site.
+
 
 Steps to install:
 
 1) Click on Help -> Install New Software
 
-2) In the Dialog that opens up, enter the update site (to-be-published) in the "Work with" textbox, press enter.
+2) Ensure that the below update sites are listed in the "Available Software Sites" list:
+
+    1) XText : http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/
+    2) Gauge : http://getgauge.io/eclipse
+
+3) In the Dialog that opens up, choose the Gauge update site (entered above) in the "Work with" textbox, press enter.
 
 3) Eclipse should fetch and list the below
 
