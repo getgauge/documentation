@@ -29,7 +29,6 @@
    * [Tagged Execution](execution/tagged_execution.md)
    * [Execution hooks](execution/execution_hooks.md)
    * [Parallel Execution](execution/parallel_execution.md)
-   * [Executing a group of specification](execution/executing_a_group_of_specification.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
    * [Installation](plugins/installation.md)

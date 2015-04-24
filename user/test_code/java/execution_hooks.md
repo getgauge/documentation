@@ -30,8 +30,20 @@ public class ExecutionHooks {
     // Code for after step
     }
 }
-
 ````
+Add parameter **`SpecificationInfo`** to the hooks for getting information about the current running **`specification`**.
+###Example
+````java
+public class ExecutionHooks {
 
+    @BeforeScenario
+    public void loginUser(SpecificationInfo info) {
+    // Code for before scenario
+    }
 
-
+    @AfterStep
+    public void performAfterStep(SpecificationInfo info) {
+    // Code for after step
+    }
+}
+````

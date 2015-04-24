@@ -21,10 +21,16 @@ The [execution hooks](../../execution/execution_hooks.md) can be defined at all 
  end
 
  after_step do
-   put "Inside after step hook"
+   puts "Inside after step hook"
  end
 
 ````
 
+Add one parameter to the hooks for getting information about the current running **`specification`**.
 
-
+###Examples
+````ruby
+after_step do |info|
+  puts info.currentScenario
+end
+````
