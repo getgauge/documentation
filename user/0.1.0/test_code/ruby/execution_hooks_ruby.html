@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="4.3.1" data-basepath="../.." data-revision="1429614077906">
+    <div class="book" data-level="4.3.1" data-basepath="../.." data-revision="1430114704321">
     
 
 <div class="book-summary">
@@ -572,22 +572,6 @@
             
         </li>
     
-        
-        <li class="chapter " data-level="5.5" data-path="execution/executing_a_group_of_specification.html">
-            
-                
-                    <a href="../../execution/executing_a_group_of_specification.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.5.</b>
-                        
-                         Executing a group of specification
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -1076,7 +1060,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_43">
+                    <section class="normal" id="section-gitbook_42">
                     
                         <h1 id="execution-hooks-ruby"><a name="execution-hooks-ruby" class="plugin-anchor" href="#execution-hooks-ruby"><span class="fa fa-link"></span></a>Execution Hooks Ruby</h1>
 <p>The <a href="../../execution/execution_hooks.html">execution hooks</a> can be defined at all levels in ruby by calling the necessary execution hook method and passing a code block with thecode to run at the level.</p>
@@ -1128,8 +1112,14 @@
  <span class="hljs-keyword">end</span>
 
  after_step <span class="hljs-keyword">do</span>
-   put <span class="hljs-string">&quot;Inside after step hook&quot;</span>
+   puts <span class="hljs-string">&quot;Inside after step hook&quot;</span>
  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Add one parameter to the hooks for getting information about the current running <strong><code>specification</code></strong>.</p>
+<h3 id="examples"><a name="examples" class="plugin-anchor" href="#examples"><span class="fa fa-link"></span></a>Examples</h3>
+<pre><code class="lang-ruby">after_step <span class="hljs-keyword">do</span> |info|
+  puts info.currentScenario
+<span class="hljs-keyword">end</span>
 </code></pre>
 
                     

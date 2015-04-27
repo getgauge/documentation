@@ -19,7 +19,7 @@
         
     
     
-    <link rel="next" href="../execution/executing_a_group_of_specification.html" />
+    <link rel="next" href="../managing_environments/README.html" />
     
     
     <link rel="prev" href="../execution/execution_hooks.html" />
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="5.4" data-basepath=".." data-revision="1429614077906">
+    <div class="book" data-level="5.4" data-basepath=".." data-revision="1430114704321">
     
 
 <div class="book-summary">
@@ -572,22 +572,6 @@
             
         </li>
     
-        
-        <li class="chapter " data-level="5.5" data-path="execution/executing_a_group_of_specification.html">
-            
-                
-                    <a href="../execution/executing_a_group_of_specification.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.5.</b>
-                        
-                         Executing a group of specification
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -1076,7 +1060,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_11">
                     
                         <h1 id="parallel-execution"><a name="parallel-execution" class="plugin-anchor" href="#parallel-execution"><span class="fa fa-link"></span></a>Parallel Execution</h1>
 <p>Specs can be executed in parallel to run the tests faster and distribute the load.</p>
@@ -1091,6 +1075,17 @@ gauge -p specs
 </code></pre><p>This creates four parallel execution streams.</p>
 <p><strong>Note</strong>:
 The number of streams should be specified depending on the machine, beyond which it affects the performance of the system.</p>
+<h2 id="rerun-one-execution-stream"><a name="rerun-one-execution-stream" class="plugin-anchor" href="#rerun-one-execution-stream"><span class="fa fa-link"></span></a>Rerun one execution stream</h2>
+<p>Specifications can be distributed into groups and <code>--group</code> | <code>-g</code> flag provides the ability to execute a specific group.</p>
+<p>This can be done by the command:</p>
+<pre><code>gauge -n=4 -g=2 specs
+</code></pre><p>This creates 4 groups (provided by -n flag) of specification and selects the 2nd group (provided by -g flag) for execution.</p>
+<p>Specifications are sorted by alphabetical order and then distributed into groups, which guarantees that every group will have the same set of specifications, no matter how many times it is being executed.</p>
+<p>Example:</p>
+<pre><code>gauge -n=4 -g=2 specs
+
+gauge -n=4 -g=2 specs
+</code></pre><p>The above two commands will execute the same group of specifications.</p>
 
                     
                     </section>
@@ -1104,7 +1099,7 @@ The number of streams should be specified depending on the machine, beyond which
         <a href="../execution/execution_hooks.html" class="navigation navigation-prev " aria-label="Previous page: Execution hooks"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../execution/executing_a_group_of_specification.html" class="navigation navigation-next " aria-label="Next page: Executing a group of specification"><i class="fa fa-angle-right"></i></a>
+        <a href="../managing_environments/README.html" class="navigation navigation-next " aria-label="Next page: Environments"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

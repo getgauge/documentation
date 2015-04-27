@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="8.2" data-basepath=".." data-revision="1429614077906">
+    <div class="book" data-level="8.2" data-basepath=".." data-revision="1430114704321">
     
 
 <div class="book-summary">
@@ -572,22 +572,6 @@
             
         </li>
     
-        
-        <li class="chapter " data-level="5.5" data-path="execution/executing_a_group_of_specification.html">
-            
-                
-                    <a href="../execution/executing_a_group_of_specification.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.5.</b>
-                        
-                         Executing a group of specification
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -1079,9 +1063,7 @@
                     <section class="normal" id="section-gitbook_2">
                     
                         <h1 id="eclipse"><a name="eclipse" class="plugin-anchor" href="#eclipse"><span class="fa fa-link"></span></a>Eclipse</h1>
-<pre><code>Note: The eclipse plugin is not yet published. Drop a note at getgauge@googlegroups.com,
-if you are interested in trying out an early version.
-</code></pre><p>There is an eclipse plugin that helps in authoring Java implementation of Gauge specs.</p>
+<p>There is an eclipse plugin that helps in authoring Java implementation of Gauge specs.</p>
 <p>This plugin only supports <a href="../test_code/java.html">Java</a>.</p>
 <h2 id="versions-supported"><a name="versions-supported" class="plugin-anchor" href="#versions-supported"><span class="fa fa-link"></span></a>Versions supported</h2>
 <p>The plugin has been tested on  below versions of Eclipse</p>
@@ -1090,10 +1072,13 @@ if you are interested in trying out an early version.
 <li>4.3.2 (Kepler SR2)</li>
 </ul>
 <h2 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h2>
-<p>This plugin can be installed via an update-site (to-be-published).</p>
+<p>This plugin depends on XText 2.6 or newer. This plugin can be installed via an update-site.</p>
 <p>Steps to install:</p>
 <p>1) Click on Help -&gt; Install New Software</p>
-<p>2) In the Dialog that opens up, enter the update site (to-be-published) in the &quot;Work with&quot; textbox, press enter.</p>
+<p>2) Ensure that the below update sites are listed in the &quot;Available Software Sites&quot; list:</p>
+<pre><code>1) XText : http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/
+2) Gauge : https://dl.bintray.com/sriv/Gauge
+</code></pre><p>3) In the Dialog that opens up, choose the Gauge update site (entered above) in the &quot;Work with&quot; textbox, press enter.</p>
 <p>3) Eclipse should fetch and list the below</p>
 <p>Category: <code>Gauge</code>
 Feature: <code>Gauge Eclipse</code></p>

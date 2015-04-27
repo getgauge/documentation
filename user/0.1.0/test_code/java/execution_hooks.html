@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="4.2.1" data-basepath="../.." data-revision="1429614077906">
+    <div class="book" data-level="4.2.1" data-basepath="../.." data-revision="1430114704321">
     
 
 <div class="book-summary">
@@ -572,22 +572,6 @@
             
         </li>
     
-        
-        <li class="chapter " data-level="5.5" data-path="execution/executing_a_group_of_specification.html">
-            
-                
-                    <a href="../../execution/executing_a_group_of_specification.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.5.</b>
-                        
-                         Executing a group of specification
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -1076,7 +1060,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_40">
+                    <section class="normal" id="section-gitbook_39">
                     
                         <h1 id="execution-hooks-java"><a name="execution-hooks-java" class="plugin-anchor" href="#execution-hooks-java"><span class="fa fa-link"></span></a>Execution hooks Java</h1>
 <p>The <a href="../../execution/execution_hooks.html">execution hooks</a> can be defined at all levels in java by annotating methods with the following annotations:</p>
@@ -1120,6 +1104,14 @@
 <td>After Step</td>
 <td><code>@AfterStep</code></td>
 </tr>
+<tr>
+<td>BeforeClassSteps</td>
+<td><code>@BeforeClassSteps</code></td>
+</tr>
+<tr>
+<td>AfterClassSteps</td>
+<td><code>@AfterClassSteps</code></td>
+</tr>
 </tbody>
 </table>
 <h3 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h3>
@@ -1132,6 +1124,21 @@
 
     <span class="hljs-annotation">@AfterStep</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">performAfterStep</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Code for after step</span>
+    }
+}
+</code></pre>
+<p>Add parameter <strong><code>SpecificationInfo</code></strong> to the hooks for getting information about the current running <strong><code>specification</code></strong>.</p>
+<h3 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExecutionHooks</span> </span>{
+
+    <span class="hljs-annotation">@BeforeScenario</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loginUser</span><span class="hljs-params">(SpecificationInfo info)</span> </span>{
+    <span class="hljs-comment">// Code for before scenario</span>
+    }
+
+    <span class="hljs-annotation">@AfterStep</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">performAfterStep</span><span class="hljs-params">(SpecificationInfo info)</span> </span>{
     <span class="hljs-comment">// Code for after step</span>
     }
 }
