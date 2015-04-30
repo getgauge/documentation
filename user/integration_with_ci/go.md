@@ -1,39 +1,37 @@
 # Go
-[Go](http://www.go.cd/), a tool which supports Continuous Integration, can be integrated with Gauge.
+[Go](http://www.go.cd/), is a continuous integration and deployment tool.
 
-Steps to integrate Gauge with Go:
+##Integrating Gauge with Go
 
 * [Setup a new pipeline on Go](http://www.go.cd/documentation/user/current/configuration/quick_pipeline_setup.html)
 
     ![pipeline](images/Gauge_Pipeline.png "gauge pipeline")
-* [Download](http://getgauge.io/download.html) and Install Gauge on the Go Agent
+* [Download](http://getgauge.io/download.html) and Install Gauge on the Go Agents
+* Install the required gauge [language plugin](../plugins/installation.md) on the Go agents.
 
-Following steps will help **setting up the environment for Gauge** :
+### Create execution task
 
-* If you want to run specific instance of gauge on Go, set `GAUGE_ROOT` in environment variable tab to the path of specific instance.
-
-    ![setting gauge root](images/Setting_Gauge.png "setting gauge root")
-
-* Create a new task which will run `gauge specs`. If you want to run only a subset of specs, you can use [tags](../../flags/README.md). Adding a flag `-p` runs them in [parallel](../../execution/parallel_execution.md).
-
-    Another understood parameter is env. This lets you run your tests against `Staging`, or `QA`. You can also use this to decide which browser to execute against.
-
-    All the [flags](../../flags/README.md) supported by Gauge can be used here as per the need.
+* Create a new task which will run `gauge specs`.
+* If you want to run only a subset of specs, you can use [tags](../execution/tagged_execution.md). Eg. ```gauge --tags "tag1 & tag2" specs```
+* Adding a flag `-p` runs them in [parallel](../execution/parallel_execution.md).
+* Run against specific [environments](../managing_environments/README.md) using the ```--env``` flag
+* See the [Gauge CLI](../cli/README.md) for list of all flags that can be used.
 
     ![configuring](images/Configuring_Gauge.png "adding new task")
 
-* Gauge generates **reports** after execution which can be configured in Go by adding a new artifact in Artifacts tab.
+### Reports
+
+* Gauge generates **html-reports** after execution which can be configured in Go by adding a new artifact in Artifacts tab.
 
     ![artifact](images/Configuring_Artifacts.png "artifact")
 
-* Artifacts can be viewed here. You see the configured Gauge artifact appear here.
+
+* Artifacts can be viewed in the artifacts tab.
 
     ![artifact](images/Arifacts.png "artifact")
 
 * **Console output** can be seen while execution of job and reports can be seen after execution.
 
-    ![console](images/Console_Output.png "console")
+     ![console](images/Console_Output.png "console")
 
-* This is how the output HTML configured looks.
-
-    ![html report](images/Report.png "html report")
+* You can also add a [custom tab](http://www.go.cd/documentation/user/current/configuration/managing_artifacts_and_reports.html#using-tabs) to view your html reports generated.

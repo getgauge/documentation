@@ -12,8 +12,8 @@
    * [Tags](specifications/tags.md)
    * [Concepts](specifications/concepts.md)
 * [Syntax Cheat Sheet](cheat_sheet/README.md)
-* [Flags](flags/README.md)
-* [Test Code](test_code/README.md)
+* [Command Line Interface](cli/README.md)
+* [Step implementations](test_code/README.md)
    * [Step Name Template](test_code/step_name_template.md)
    * [Java](test_code/java/java.md)
        * [Execution hooks java](test_code/java/execution_hooks.md)
@@ -50,6 +50,6 @@
    * [IDE](troubleshooting/intellij.md)
 * [Example Projects](examples/examples.md)
 * [Technical Details](technical_architecture/README.md)
-   * [Gauge Architecture - Responsbilities of components](technical_architecture/gauge_architecture_-_responsbilities_of_components.md)
+   * [Gauge Architecture - Responsbilities of components](technical_architecture/responsibilities.md)
 * [Previous Versions](previous_versions/README.md)
 

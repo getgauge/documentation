@@ -20,7 +20,7 @@ If plugin should be installed from a zipfile instead of downloading from plugin 
 ````
 gauge --install java --file ZIP_FILE_PATH
 ````
-Download the plugin zip from the `Releases` section of the respective repository. See [plugin list](list.md) to find the repositories.
+Download the latest version of plugin from the `Releases` section of the respective repository. See [plugin list](list.md) to find the repositories.
 
 ### Plugin install location
 * **Windows** - `%APPDATA%\gauge\plugins` on windows
@@ -36,13 +36,9 @@ using the `add-plugin` flag
 ```
 gauge --add-plugin <plugin-id>
 ```
-Additional plugin information can be passed using `plugin-args` flag.
-These depend on the plugin being installed.
-
-e.g: On the Webdriver plugin, Adding webdriver version 2.37
 
 ```
-gauge --add-plugin webdriver --plugin-args="selenium_version=2.37"
+gauge --add-plugin xml-report
 ```
 
 ##Updating plugins
