@@ -24,5 +24,10 @@ Note: IntelliJ and Eclipse out directory will be usually auto-detected.
 ### gauge_jvm_args
 Specify the JVM arguments passed to java while launching.
 
+### gauge_clear_state_level
+Specify the level at which cached objects should get removed while execution.
+* suite
+* scenario (default)
+* specification
 
 

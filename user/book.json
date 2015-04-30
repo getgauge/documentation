@@ -7,8 +7,7 @@
     "githubHost": "https://github.com/",
     "plugins": [
         "anchors",
-        "ga",
-        "toggle-chapters"
+        "ga"
     ],
     "pluginsConfig": {
         "ga": {

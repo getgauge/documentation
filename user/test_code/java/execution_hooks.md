@@ -13,6 +13,8 @@ The [execution hooks](../../execution/execution_hooks.md) can be defined at all 
 | After Scenario   | `@AfterScenario`|
 | Before Step | `@BeforeStep` |
 |After Step| `@AfterStep`|
+|BeforeClassSteps|`@BeforeClassSteps`|
+|AfterClassSteps|`@AfterClassSteps`|
 
 ###Example
 ````java
@@ -28,8 +30,20 @@ public class ExecutionHooks {
     // Code for after step
     }
 }
-
 ````
+Add parameter **`SpecificationInfo`** to the hooks for getting information about the current running **`specification`**.
+###Example
+````java
+public class ExecutionHooks {
 
+    @BeforeScenario
+    public void loginUser(SpecificationInfo info) {
+    // Code for before scenario
+    }
 
-
+    @AfterStep
+    public void performAfterStep(SpecificationInfo info) {
+    // Code for after step
+    }
+}
+````

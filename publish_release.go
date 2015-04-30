@@ -34,17 +34,17 @@ func main() {
 }
 
 func updateDocs() {
-	userBookPath, techBookPath := buildGitBook()
+	b := buildGitBook()
 	switchToGitBranch()
-	copyDocs(userBookPath, *version, userDocType)
-	copyDocs(techBookPath, *version, techDocType)
+	copyDocs(b, *version, userDocType)
+	copyDocs(b, *version, techDocType)
 	commitAndPushChanges()
 	cleanUp()
 }
 
 func commitAndPushChanges() {
 	setCredentials()
-	runCommand("git", "add", filepath.Join("user"))
+	runCommand("git", "add", filepath.Join(userDocType), filepath.Join(techDocType))
 	runCommand("git", "commit", "-m", fmt.Sprintf("Updating docs for version %v", *version))
 	pushChanges()
 }
@@ -60,7 +60,7 @@ func pushChanges() {
 }
 
 func copyDocs(bookPath string, version string, docType string) {
-	mirrorDir(bookPath, filepath.Join(docType, version))
+	mirrorDir(filepath.Join(bookPath, docType), filepath.Join(docType, version))
 	if *updateCurrent {
 		if exists(filepath.Join(docType, "current")){
 			runCommand("rm", filepath.Join(docType, "current"))
@@ -80,12 +80,11 @@ func switchToGitBranch() {
 	runCommand("git", "pull", "origin", ghPages)
 }
 
-func buildGitBook() (string, string) {
+func buildGitBook() string {
 	u := filepath.Join(os.TempDir(), bookDir)
-	t := filepath.Join(os.TempDir(), technicalBookDir)
 	buildAndCopyBook(userDocType, u)
-	buildAndCopyBook(techDocType, t)
-	return u, t
+	buildAndCopyBook(techDocType, u)
+	return u
 }
 
 func buildAndCopyBook(docType string, bookPath string) {
