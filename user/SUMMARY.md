@@ -50,6 +50,6 @@
    * [IDE](troubleshooting/intellij.md)
 * [Example Projects](examples/examples.md)
 * [Technical Details](technical_architecture/README.md)
-   * [Gauge Architecture - Responsbilities of components](technical_architecture/gauge_architecture_-_responsbilities_of_components.md)
+   * [Gauge Architecture - Responsbilities of components](technical_architecture/responsibilities.md)
 * [Previous Versions](previous_versions/README.md)
 
