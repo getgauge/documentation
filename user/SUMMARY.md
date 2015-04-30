@@ -12,7 +12,7 @@
    * [Tags](specifications/tags.md)
    * [Concepts](specifications/concepts.md)
 * [Syntax Cheat Sheet](cheat_sheet/README.md)
-* [Flags](flags/README.md)
+* [Command Line Interface](cli/README.md)
 * [Step implementations](test_code/README.md)
    * [Step Name Template](test_code/step_name_template.md)
    * [Java](test_code/java/java.md)
