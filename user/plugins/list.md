@@ -1,6 +1,6 @@
 # All plugins
 
-## Language plugin
+## Language plugins
 * [Java](http://github.com/getgauge/gauge-java)
 * [Ruby](http://github.com/getgauge/gauge-ruby)
 * [Csharp](http://github.com/getgauge/gauge-csharp)
