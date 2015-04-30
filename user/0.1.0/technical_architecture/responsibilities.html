@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Parallel Execution | Gauge Documentation</title>
+        <title>Gauge Architecture - Responsbilities of components | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../managing_environments/README.html" />
+    <link rel="next" href="../previous_versions/README.html" />
     
     
-    <link rel="prev" href="../execution/execution_hooks.html" />
+    <link rel="prev" href="../technical_architecture/README.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="6.4" data-basepath=".." data-revision="1430392238710">
+    <div class="book" data-level="13.1" data-basepath=".." data-revision="1430392238710">
     
 
 <div class="book-summary">
@@ -573,7 +573,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="6.4" data-path="execution/parallel_execution.html">
+        <li class="chapter " data-level="6.4" data-path="execution/parallel_execution.html">
             
                 
                     <a href="../execution/parallel_execution.html">
@@ -951,7 +951,7 @@
                 
     
         
-        <li class="chapter " data-level="13.1" data-path="technical_architecture/responsibilities.html">
+        <li class="chapter active" data-level="13.1" data-path="technical_architecture/responsibilities.html">
             
                 
                     <a href="../technical_architecture/responsibilities.html">
@@ -1076,32 +1076,84 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_35">
                     
-                        <h1 id="parallel-execution"><a name="parallel-execution" class="plugin-anchor" href="#parallel-execution"><span class="fa fa-link"></span></a>Parallel Execution</h1>
-<p>Specs can be executed in parallel to run the tests faster and distribute the load.</p>
-<p>This can be done by the command:</p>
-<pre><code>gauge --parallel specs
-
-gauge -p specs
-</code></pre><p>This creates a number of execution streams depending on the number of cores of the machine and distribute the load among workers.</p>
-<p>The number of parallel execution streams can be specified by <code>-n</code> flag.</p>
-<p>Example:</p>
-<pre><code>gauge --parallel -n=4 specs
-</code></pre><p>This creates four parallel execution streams.</p>
-<p><strong>Note</strong>:
-The number of streams should be specified depending on the machine, beyond which it affects the performance of the system.</p>
-<h2 id="rerun-one-execution-stream"><a name="rerun-one-execution-stream" class="plugin-anchor" href="#rerun-one-execution-stream"><span class="fa fa-link"></span></a>Rerun one execution stream</h2>
-<p>Specifications can be distributed into groups and <code>--group</code> | <code>-g</code> flag provides the ability to execute a specific group.</p>
-<p>This can be done by the command:</p>
-<pre><code>gauge -n=4 -g=2 specs
-</code></pre><p>This creates 4 groups (provided by -n flag) of specification and selects the 2nd group (provided by -g flag) for execution.</p>
-<p>Specifications are sorted by alphabetical order and then distributed into groups, which guarantees that every group will have the same set of specifications, no matter how many times it is being executed.</p>
-<p>Example:</p>
-<pre><code>gauge -n=4 -g=2 specs
-
-gauge -n=4 -g=2 specs
-</code></pre><p>The above two commands will execute the same group of specifications.</p>
+                        <h1 id="gauge-architecture---responsibilities-of-components"><a name="gauge-architecture---responsibilities-of-components" class="plugin-anchor" href="#gauge-architecture---responsibilities-of-components"><span class="fa fa-link"></span></a>Gauge Architecture - Responsibilities of components</h1>
+<h2 id="gauge-core"><a name="gauge-core" class="plugin-anchor" href="#gauge-core"><span class="fa fa-link"></span></a>Gauge Core</h2>
+<ul>
+<li><p>install plugins</p>
+</li>
+<li><p>check version compatibility</p>
+</li>
+<li><p>init project</p>
+<ul>
+<li>Copy common files</li>
+<li>Send Runner an <code>init</code> request</li>
+</ul>
+</li>
+<li><p>Loads environment</p>
+</li>
+<li><p>validate specs</p>
+<ul>
+<li>request the runner for list of all steps defined</li>
+<li>scan spec files for step invocations, detect unimplemented step</li>
+</ul>
+</li>
+<li><p>orchestrate test run</p>
+<ul>
+<li>determine scenarios to be executed</li>
+<li>orchestrate the test run</li>
+<li>hold the spec-&gt;[context step]?-&gt;scenario-&gt;step structure.</li>
+<li>aggregate test run results</li>
+<li>broadcast event hooks</li>
+<li>parallelize test execution</li>
+<li>filter by tags</li>
+<li>Request runner to Initialize datastore (at various event)</li>
+</ul>
+</li>
+<li><p>refactor</p>
+<ul>
+<li>send refactor request to language runner</li>
+</ul>
+</li>
+<li><p>daemonized run</p>
+</li>
+<li><p>expose API with helpers for plugins</p>
+<ul>
+<li>all steps in project</li>
+<li>all concepts in the project</li>
+<li>parse step/spec to parameterized value</li>
+</ul>
+</li>
+<li><p>Console report</p>
+</li>
+</ul>
+<h2 id="plugins"><a name="plugins" class="plugin-anchor" href="#plugins"><span class="fa fa-link"></span></a>Plugins</h2>
+<h3 id="language-runners"><a name="language-runners" class="plugin-anchor" href="#language-runners"><span class="fa fa-link"></span></a>Language Runners</h3>
+<ul>
+<li>Execute hooks (when requested to)</li>
+<li>Execute method corresponding to a step<ul>
+<li>send execution response back to Gauge</li>
+</ul>
+</li>
+<li>Refactor method signatures with changes defined by Gauge</li>
+<li>Initialize a project with template</li>
+<li>Read/write to datastore (currently, datastore is intra process, hence parallel processes cannot use a shared datastore)</li>
+<li>Holds reference to Step text and Method / execution block.</li>
+</ul>
+<h3 id="others"><a name="others" class="plugin-anchor" href="#others"><span class="fa fa-link"></span></a>Others</h3>
+<h4 id="reporters"><a name="reporters" class="plugin-anchor" href="#reporters"><span class="fa fa-link"></span></a>Reporters</h4>
+<ul>
+<li>HTML Report (via plugin)</li>
+</ul>
+<h4 id="ide-intellij-visual-studio-eclipse"><a name="ide-intellij-visual-studio-eclipse" class="plugin-anchor" href="#ide-intellij-visual-studio-eclipse"><span class="fa fa-link"></span></a>IDE (Intellij, Visual Studio, Eclipse)</h4>
+<ul>
+<li>Syntax highlighting</li>
+<li>Autocomplete</li>
+<li>Goto definition</li>
+<li>Refactoring</li>
+<li>Test runner</li>
+</ul>
 
                     
                     </section>
@@ -1112,10 +1164,10 @@ gauge -n=4 -g=2 specs
         </div>
 
         
-        <a href="../execution/execution_hooks.html" class="navigation navigation-prev " aria-label="Previous page: Execution hooks"><i class="fa fa-angle-left"></i></a>
+        <a href="../technical_architecture/README.html" class="navigation navigation-prev " aria-label="Previous page: Technical Details"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../managing_environments/README.html" class="navigation navigation-next " aria-label="Next page: Environments"><i class="fa fa-angle-right"></i></a>
+        <a href="../previous_versions/README.html" class="navigation navigation-next " aria-label="Next page: Previous Versions"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Parallel Execution | Gauge Documentation</title>
+        <title>Command Line Interface | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../managing_environments/README.html" />
+    <link rel="next" href="../test_code/README.html" />
     
     
-    <link rel="prev" href="../execution/execution_hooks.html" />
+    <link rel="prev" href="../cheat_sheet/README.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="6.4" data-basepath=".." data-revision="1430392238710">
+    <div class="book" data-level="4" data-basepath=".." data-revision="1430392238710">
     
 
 <div class="book-summary">
@@ -276,7 +276,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4" data-path="cli/README.html">
+        <li class="chapter active" data-level="4" data-path="cli/README.html">
             
                 
                     <a href="../cli/README.html">
@@ -573,7 +573,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="6.4" data-path="execution/parallel_execution.html">
+        <li class="chapter " data-level="6.4" data-path="execution/parallel_execution.html">
             
                 
                     <a href="../execution/parallel_execution.html">
@@ -1076,32 +1076,113 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_8">
                     
-                        <h1 id="parallel-execution"><a name="parallel-execution" class="plugin-anchor" href="#parallel-execution"><span class="fa fa-link"></span></a>Parallel Execution</h1>
-<p>Specs can be executed in parallel to run the tests faster and distribute the load.</p>
-<p>This can be done by the command:</p>
-<pre><code>gauge --parallel specs
-
-gauge -p specs
-</code></pre><p>This creates a number of execution streams depending on the number of cores of the machine and distribute the load among workers.</p>
-<p>The number of parallel execution streams can be specified by <code>-n</code> flag.</p>
-<p>Example:</p>
-<pre><code>gauge --parallel -n=4 specs
-</code></pre><p>This creates four parallel execution streams.</p>
-<p><strong>Note</strong>:
-The number of streams should be specified depending on the machine, beyond which it affects the performance of the system.</p>
-<h2 id="rerun-one-execution-stream"><a name="rerun-one-execution-stream" class="plugin-anchor" href="#rerun-one-execution-stream"><span class="fa fa-link"></span></a>Rerun one execution stream</h2>
-<p>Specifications can be distributed into groups and <code>--group</code> | <code>-g</code> flag provides the ability to execute a specific group.</p>
-<p>This can be done by the command:</p>
-<pre><code>gauge -n=4 -g=2 specs
-</code></pre><p>This creates 4 groups (provided by -n flag) of specification and selects the 2nd group (provided by -g flag) for execution.</p>
-<p>Specifications are sorted by alphabetical order and then distributed into groups, which guarantees that every group will have the same set of specifications, no matter how many times it is being executed.</p>
-<p>Example:</p>
-<pre><code>gauge -n=4 -g=2 specs
-
-gauge -n=4 -g=2 specs
-</code></pre><p>The above two commands will execute the same group of specifications.</p>
+                        <h1 id="command-line-interface"><a name="command-line-interface" class="plugin-anchor" href="#command-line-interface"><span class="fa fa-link"></span></a>Command Line Interface</h1>
+<p>Gauge has <strong>first-class command line support</strong>. If you have gauge installed, running <code>gauge</code> in terminal gives you command usage and all the flags it supports.</p>
+<p>Here is a list of flags that can be used with <code>gauge</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--add-plugin=&quot;&quot;</td>
+<td>Adds the specified non-language plugin to the current project.</td>
+</tr>
+<tr>
+<td>--api-port=&quot;&quot;</td>
+<td>Specifies the api port to be used.<br> Eg: <code>gauge --daemonize --api-port 7777</code></td>
+</tr>
+<tr>
+<td>--daemonize=false</td>
+<td>Run as a <strong>daemon</strong>.</td>
+</tr>
+<tr>
+<td>--dir=&quot;.&quot;</td>
+<td>Set the working directory for the current command, accepts a path relative to current directory.</td>
+</tr>
+<tr>
+<td>--env=&quot;&quot;</td>
+<td>Specifies the <strong>environment</strong>. If not specified, default will be used.</td>
+</tr>
+<tr>
+<td>--file, -f=&quot;&quot;</td>
+<td>Installs the plugin from zip file. This is used with --install.<br> Eg: <code>gauge --install java -f ZIP_FILE</code></td>
+</tr>
+<tr>
+<td>--format=&quot;&quot;</td>
+<td>Formats the specified spec files. <br>Eg: <code>gauge --format specs</code></td>
+</tr>
+<tr>
+<td>-g, --group</td>
+<td>Specify which group of specs to execute based on -n flag.<br>Eg: <code>gauge -n=3 -g=1 specs</code></td>
+</tr>
+<tr>
+<td>--init=&quot;&quot;</td>
+<td>Initializes project structure in the current directory.<br> Eg: <code>gauge --init java</code></td>
+</tr>
+<tr>
+<td>--install=&quot;&quot;</td>
+<td>Downloads and installs a plugin.<br> Eg: <code>gauge --install java</code></td>
+</tr>
+<tr>
+<td>--log-level=&quot;&quot;</td>
+<td>Set level of logging to debug, info, warning, error or critical.</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>Specify number of <strong>parallel execution</strong> streams.<br>Eg: <code>gauge -p -n=4 specs</code> <br> This executes the specs in 4 parallel streams.</td>
+</tr>
+<tr>
+<td>--parallel, -p=false</td>
+<td>Execute specs in parallel.</td>
+</tr>
+<tr>
+<td>--plugin-args=&quot;&quot;</td>
+<td>Specify additional arguments to the plugin. This is used together with --add-plugin.</td>
+</tr>
+<tr>
+<td>--plugin-version=&quot;&quot;</td>
+<td>Version of plugin to be installed. This is used with --install.</td>
+</tr>
+<tr>
+<td>--refactor=&quot;&quot;</td>
+<td><strong>Refactor/Rephrase</strong> steps.<br>Eg: <code>gauge --refactor old_step new_step</code></td>
+</tr>
+<tr>
+<td>--simple-console=false</td>
+<td>Removes colouring and simplifies the console output.</td>
+</tr>
+<tr>
+<td>--sort, -s=false</td>
+<td>Run specs in Alphabetical Order. <br>Eg: <code>gauge -s specs</code></td>
+</tr>
+<tr>
+<td>--table-rows=&quot;&quot;</td>
+<td>Executes the specs and scenarios only for the selected rows of data table.<br> Eg: <code>gauge --table-rows &quot;1-3&quot; specs/hello.spec</code></td>
+</tr>
+<tr>
+<td>--tags=&quot;&quot;</td>
+<td>Executes the specs/ scenarios tagged with given tags. <br>Eg: <code>gauge --tags tag1,tag2 specs</code><br>This filtering can also be done based on <strong>tag expression</strong>.<br>Eg: <code>gauge --tags &quot;tag1 &amp; tag2&quot; specs</code></td>
+</tr>
+<tr>
+<td>--update=&quot;&quot;</td>
+<td>Updates a plugin. <br>Eg: <code>gauge --update java</code></td>
+</tr>
+<tr>
+<td>-v, --version, -version=false</td>
+<td>Print the current version and exit.<br> Eg: <code>gauge --version</code></td>
+</tr>
+<tr>
+<td>--verbose=false</td>
+<td>Enable verbose logging for debugging.</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>
@@ -1112,10 +1193,10 @@ gauge -n=4 -g=2 specs
         </div>
 
         
-        <a href="../execution/execution_hooks.html" class="navigation navigation-prev " aria-label="Previous page: Execution hooks"><i class="fa fa-angle-left"></i></a>
+        <a href="../cheat_sheet/README.html" class="navigation navigation-prev " aria-label="Previous page: Syntax Cheat Sheet"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../managing_environments/README.html" class="navigation navigation-next " aria-label="Next page: Environments"><i class="fa fa-angle-right"></i></a>
+        <a href="../test_code/README.html" class="navigation navigation-next " aria-label="Next page: Step implementations"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
