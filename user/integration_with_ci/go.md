@@ -14,7 +14,11 @@ Following steps will help **setting up the environment for Gauge** :
 
     ![setting gauge root](images/Setting_Gauge.png "setting gauge root")
 
-* Create a new task which will run `gauge specs`. You can also use arguments like tags if you only want to run a particular subset of your tests. Another understood parameter is env. This lets you run your tests against `Staging`, or `QA`. You can also use this to decide which browser to execute against.
+* Create a new task which will run `gauge specs`. If you want to run only a subset of specs, you can use [tags](../../flags/README.md). Adding a flag `-p` runs them in [parallel](../../execution/parallel_execution.md).
+
+    Another understood parameter is env. This lets you run your tests against `Staging`, or `QA`. You can also use this to decide which browser to execute against.
+
+    All the [flags](../../flags/README.md) supported by Gauge can be used here as per the need.
 
     ![configuring](images/Configuring_Gauge.png "adding new task")
 

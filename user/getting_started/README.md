@@ -21,7 +21,7 @@ Gauge supports:
 
 Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/README.md) for the steps.
 
-If Gauge is already installed, you can check the current version of gauge and all its plugins by `--version` or `--v` flag.
+If Gauge is already installed, you can check the current version of gauge and all its plugins by `--version` or `-v` flag.
 
 ````
 gauge --version
