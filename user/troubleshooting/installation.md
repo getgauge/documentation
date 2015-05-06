@@ -15,6 +15,8 @@
 ### MacOs X
 * The default installation location is ```/usr/local/```.
 
+* On custom installation location Set the environment variable ```GAUGE_ROOT``` to custom_install_location.
+
 * ```usr/local/bin/``` should be in PATH.
 
 * Run `brew update` before installing the latest version of gauge.
@@ -26,7 +28,7 @@
 ### Linux
 * The default installation location is ```/usr/local/```.
 
-* On custom installation location Set ```GAUGE_ROOT``` to custom_install_location.
+* On custom installation location Set the environment variable ```GAUGE_ROOT``` to custom_install_location.
 
 * ```usr/local/bin/``` or ```custom_install_location/bin``` should be in PATH.
 
