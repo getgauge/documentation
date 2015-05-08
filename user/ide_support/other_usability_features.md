@@ -8,11 +8,42 @@ The intellij idea gauge plugin comes with more features to simplify writing spec
 
 ![create spec](intellij-screenshots/additional/create_spec_file.png "Spec creation")
 
+
 ##2.  Creating markdown table
-* To easily create markdown tables in specification(.spec) or concept(.cpt) files you can use predefined table templates specifying th enumber of columns needed.
+* To easily create markdown tables in specification(.spec) or concept(.cpt) files you can use predefined table templates specifying the number of columns needed.
 
 For example, to create a table with 4 columns type
+
 ![table template enter](intellij-screenshots/additional/table_type.png "table template fill")
 
 Then fill the column names in the template.
+
 ![table template fill](intellij-screenshots/additional/table_column_fill.png "table template fill")
+
+
+##3. Writing Specification Heading
+* To write the specification heading in markdown, you can use the predefined heading template.
+
+![spec heading enter](intellij-screenshots/additional/spec_heading.png "spec heading enter")
+
+Then fill the specification name in the template.
+
+![spec heading fill](intellij-screenshots/additional/spec_heading_fill.png "spec heading fill")
+
+
+##4. Writing Scenario Heading
+* Scenario heading in markdown can be easily written using the predefined scenario heading template.
+
+
+![scenario heading enter](intellij-screenshots/additional/sce_heading_enter.png "scenario heading enter")
+
+Then fill the scenario name in the template.
+
+![scenario heading fill](intellij-screenshots/additional/sce_heading_fill.png "sce heading fill")
+
+
+##5. Format Specification
+* A specification file can be formatted easily using the keyboard shortcut `ctrl+alt+shift+l` (in windows and linux) and `cmd+alt+shift+l`(in mac).
+
+This formats the specification including indentation of tables and steps.
+
