@@ -1,6 +1,6 @@
 # Execution
 
-It is advised to use the latest version of gauge and [gauge plugins](../plugins). See our [download page](http://getgauge.io/download) for links to latest installation
+It is advised to use the latest version of gauge and [gauge plugins](../plugins/README.md). See our [download page](http://getgauge.io/download) for links to latest installation
 
 ### Validation Errors
 ````
