@@ -1,14 +1,14 @@
-# Gauge IntelliJ plugin Features
+# Gauge IntelliJ idea plugin Features
 
-* Project Creation
-* Syntax Highlighting
-* Auto completion
-* Navigation from step to implementation
-* Quick Fix for unimplemented steps
-* Execution
-* Formatting
-* Rephrase steps
-* Extract to concept
+* [Project Creation](#1-project-creation)
+* [Auto completion](#2-auto-completion)
+* [Quick Fix for unimplemented steps](#3-step-quick-fix)
+* [Formatting](#4-formatting)
+* [Execution and Debugging](#5-execution)
+* [Parallel Execution](#52-parallel-execution)
+* [Run configurations](#6-run-configuration)
+* [Rephrase steps](#7-rephrase-steps)
+* Navigation from step to implementation (cmd/ctrl + b)
 
 ###1. Project Creation
 
@@ -76,13 +76,16 @@ A very large number may affect performance.
 Debugging can be performed by attaching debugger to the gauge java process.
 
 * Create a new  ```Remote``` configuration named `Gauge` and set the port number to `50005`. Do this by selecting **Edit configurations** and pressing the plus icon.
-* Right click on spec/specs -> Debug
+* Right click on a specification or specs directory -> Debug
 * Now go to the run configuration and execute the remote configuration `Gauge` that was created.
 * This will start the execution and halts at breakpoints.
 
 ````
-Note: The remote configuration (Gauge) needs to be run after launching the spec in debug mode.
-Run the debug config for the second time if it does not connect for the first time.
+Important:
+
+* The remote configuration (Gauge) needs to be run after launching the spec in debug mode.
+
+* Run the remote configuration for the second time if it does not connect for the first time.
 ```
 
 

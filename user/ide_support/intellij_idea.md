@@ -21,7 +21,9 @@ Steps to install Gauge Intellij plugin from IDE:
 * Click Close.
 * Click OK in the Settings dialog and restart IntelliJ IDEA for the changes to take effect.
 
-Note that the plugin you have installed is automatically enabled. When necessary, you can disable it as described in Enabling and Disabling Plugins.
+````
+Note: The plugin you have installed is automatically enabled. When necessary, you can disable it as described in Enabling and Disabling Plugins.
+```
 
 To install plugin by downloading it manually or to update plugin, follow the steps [here](https://www.jetbrains.com/idea/help/installing-updating-and-uninstalling-repository-plugins.html#d645926e261).
 
