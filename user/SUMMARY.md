@@ -47,7 +47,7 @@
    * [Logs](troubleshooting/logs.md)
    * [Installation](troubleshooting/installation.md)
    * [Execution](troubleshooting/execution.md)
-   * [IDE](troubleshooting/intellij.md)
+   * [Intellij idea](troubleshooting/intellij.md)
 * [Example Projects](examples/examples.md)
 * [Technical Details](technical_architecture/README.md)
    * [Gauge Architecture - Responsbilities of components](technical_architecture/responsibilities.md)
