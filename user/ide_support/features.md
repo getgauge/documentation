@@ -11,7 +11,7 @@
 * Navigation from step to implementation (cmd/ctrl + b)
 
 ###1. Project Creation
-
+####1.1 Creating a simple java project
  * File -> New Project.
  * Choose 'Gauge'
  * Choose the project location and java sdk
@@ -22,6 +22,28 @@ Note: If gauge-java is not installed, it will download it for the first time.
 ````
 
 ![creation](intellij-screenshots/creation/creation.gif "project creation")
+
+#### 1.2 Creating a maven project using gauge-maven-plugin
+
+* File -> New Project
+* Choose `Maven`
+* Select `Create from Archetype`
+* Select the gauge archetype - ```com.thoughtworks.gauge.maven```
+* If the ```com.thoughtworks.gauge.maven``` archetype is not added select ```Add Archetype```
+    * Enter GroupId: com.thoughtworks.gauge.maven
+    * Enter ArtifactId: gauge-maven-plugin
+    * Enter Version: 1.0.1 or the [latest version number](https://github.com/getgauge/gauge-maven-plugin/releases)
+![maven add archetype](intellij-screenshots/creation/maven_add_archetype.png "maven add archetype")
+
+
+* Enter the ```groupId``` and `artifactId` for your project.
+* Enter `Project Name` and finish
+* The project will be created in batch mode, watch the console for progress.
+* After project creation ```close and re-open the project``` to enable auto-complete features.
+* Enable ```auto-import``` for the project. Under ```File > Settings > Maven > Importing```, mark the checkbox  `Import Maven projects automatically`.
+
+ See [gauge-maven-plugin](../dependency_management/maven-plugin.md) for more details on using the gauge maven plugin.
+
 
 
 ###2. Auto Completion
