@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="5.2.3" data-basepath="../.." data-revision="1431157920961">
+    <div class="book" data-level="5.2.3" data-basepath="../.." data-revision="1431516002987">
     
 
 <div class="book-summary">
@@ -1137,24 +1137,29 @@
 <p>The following configurations can be made:</p>
 <h3 id="gauge_java_home"><a name="gauge_java_home" class="plugin-anchor" href="#gauge_java_home"><span class="fa fa-link"></span></a>gauge_java_home</h3>
 <p>Specify an alternate Java home if you want to use a custom version.</p>
-<h3 id="gauge_custom-_build_path"><a name="gauge_custom-_build_path" class="plugin-anchor" href="#gauge_custom-_build_path"><span class="fa fa-link"></span></a>gauge_custom _build_path</h3>
-<p>Use this property if you need to override the build path for the project.</p>
+<p>Example:</p>
+<pre><code>gauge_java_home = PATH_TO_JAVA_HOME
+</code></pre><h3 id="gauge_custom-_build_path"><a name="gauge_custom-_build_path" class="plugin-anchor" href="#gauge_custom-_build_path"><span class="fa fa-link"></span></a>gauge_custom _build_path</h3>
 <pre><code>Note: IntelliJ and Eclipse out directory will be usually auto-detected.
+</code></pre><p>Use this property if you need to override the build path for the project.</p>
+<p>Example:</p>
+<pre><code>gauge_custom_build_path = PATH_TO_CUSTOM_BUILDPATH
 </code></pre><h3 id="gauge_additional_libs"><a name="gauge_additional_libs" class="plugin-anchor" href="#gauge_additional_libs"><span class="fa fa-link"></span></a>gauge_additional_libs</h3>
 <ul>
 <li>Specify the directory where additional libraries are kept.</li>
 <li>You can specify multiple directory names separated with a comma <strong>&apos;,&apos;</strong></li>
 <li><strong><em>libs</em></strong> directory in the gauge project is added by default.</li>
 </ul>
-<h3 id="gauge_jvm_args"><a name="gauge_jvm_args" class="plugin-anchor" href="#gauge_jvm_args"><span class="fa fa-link"></span></a>gauge_jvm_args</h3>
+<p>Example:</p>
+<pre><code>gauge_additional_libs = libs/*, PATH_TO_NEW_LIBRARY
+</code></pre><h3 id="gauge_jvm_args"><a name="gauge_jvm_args" class="plugin-anchor" href="#gauge_jvm_args"><span class="fa fa-link"></span></a>gauge_jvm_args</h3>
 <p>Specify the JVM arguments passed to java while launching.</p>
 <h3 id="gauge_clear_state_level"><a name="gauge_clear_state_level" class="plugin-anchor" href="#gauge_clear_state_level"><span class="fa fa-link"></span></a>gauge_clear_state_level</h3>
 <p>Specify the level at which cached objects should get removed while execution.</p>
-<ul>
-<li>suite</li>
-<li>scenario (default)</li>
-<li>specification</li>
-</ul>
+<p>Possible values for this property are <code>suite</code>,<code>spec</code> and <code>scenario</code>. By default, Gauge clears state at scenario level.</p>
+<p>Example:</p>
+<pre><code>gauge_clear_state_level = spec
+</code></pre><p>This clears the objects after the execution of each specification, so that new objects are created for next execution.</p>
 
                     
                     </section>
