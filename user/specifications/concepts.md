@@ -14,10 +14,10 @@ Note: A single .cpt file can contain multiple concept definitions.
 ## Defining a concept
 Create a **.cpt** file under specs directory with the concept definition.
 
-The concept definition contians the 2 parts:
+The concept definition contains the 2 parts:
 
 ### 1. Concept header
-The concept header defines the name of the conecpt and the parameters that it takes. It is written in the markdown **H1** format.
+The concept header defines the name of the concept and the parameters that it takes. It is written in the markdown **H1** format.
 
 * All parameters are defined in angular brackets `< >`.
 * A concept definition must have a concept header.
@@ -30,7 +30,7 @@ Example:
 The concept header is followed by the steps that are used inside the concept. They are defined in the usual [step](steps.md) structure.
 
 * All the parameters used from the concept header will be in `< >` brackets.
-* Fixed static parameter values are writen in quotes `" "`.
+* Fixed static parameter values are written in quotes `" "`.
 * Other concepts can also be called inside the concept definition.
 
 ###Example of Concept definition
