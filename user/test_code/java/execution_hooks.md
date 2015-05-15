@@ -47,3 +47,9 @@ public class ExecutionHooks {
     }
 }
 ````
+
+
+By default, Gauge cleares the state after each scenario so that new objects are created for next scenario execution.
+
+You can [configure](execution_hooks.md) to change the level at which Gauge cleares cache.
+
