@@ -94,24 +94,8 @@ A very large number may affect performance.
 
 
 ####5.3. Debugging
-
-Debugging can be performed by attaching debugger to the gauge java process.
-
-* Create a new  ```Remote``` configuration named `Gauge` and set the port number to `50005`. Do this by selecting **Edit configurations** and pressing the plus icon.
-* Right click on a specification or specs directory -> Debug
-* Now go to the run configuration and execute the remote configuration `Gauge` that was created.
-* This will start the execution and halts at breakpoints.
-
-````
-Important:
-
-* The remote configuration (Gauge) needs to be run after launching the spec in debug mode.
-
-* Run the remote configuration for the second time if it does not connect for the first time.
-```
-
-
-![debugging](intellij-screenshots/execution/debug.gif "debugging")
+Debugging can be performed the same way spec execution works.
+* Right click on a specification or specs directory -> Debug. Execution will halt on marked [breakpoints](https://www.jetbrains.com/idea/help/breakpoints.html).
 
 ###6. Run Configuration
 
