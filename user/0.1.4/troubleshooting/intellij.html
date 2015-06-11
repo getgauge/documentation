@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="13.4" data-basepath=".." data-revision="1433232804137">
+    <div class="book" data-level="13.4" data-basepath=".." data-revision="1434003052525">
     
 
 <div class="book-summary">
@@ -399,6 +399,22 @@
                             <b>6.2.3.</b>
                         
                          Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.4" data-path="test_code/java/data_store_to_share_data.html">
+            
+                
+                    <a href="../test_code/java/data_store_to_share_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.4.</b>
+                        
+                         DataStore to share data
                     </a>
                 
             
@@ -1146,7 +1162,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_54">
+                    <section class="normal" id="section-gitbook_55">
                     
                         <h1 id="intellij-idea-plugin"><a name="intellij-idea-plugin" class="plugin-anchor" href="#intellij-idea-plugin"><span class="fa fa-link"></span></a>Intellij idea plugin</h1>
 <p>It is advised to use the latest version of <a href="http://getgauge.io/download" target="_blank">gauge</a> and <a href="https://plugins.jetbrains.com/plugin/7535?pr=idea" target="_blank">Intellij-gauge</a>.</p>
@@ -1183,6 +1199,16 @@
 <ul>
 <li>Under <code>Project Settings -&gt; Modules</code> select the gauge module. Under the <code>dependencies</code> tab should be <code>gauge-lib</code> and <code>project-lib</code>.</li>
 <li>If not present restart Intellij or close and re-open project. They should be added</li>
+</ul>
+<h4 id="3-project-build-failing-with-compilation-error-but-the-java-files-do-not-mark-any-errors"><a name="3-project-build-failing-with-compilation-error-but-the-java-files-do-not-mark-any-errors" class="plugin-anchor" href="#3-project-build-failing-with-compilation-error-but-the-java-files-do-not-mark-any-errors"><span class="fa fa-link"></span></a>3. Project Build failing with compilation error but the Java Files do not mark any errors.</h4>
+<ul>
+<li>The project compilation fails however the java files do not mark any errors in the file.</li>
+<li>This is a specific issue with Java &lt;= 1.7 on Windows.</li>
+<li>To resolve set <strong>-Duser.home=USER_HOME</strong> in the <strong>IDEA_INSTALLATION\bin\idea.exe.vmoptions</strong> file.</li>
+</ul>
+<pre><code>-Duser.home=C:\\Users\\johnk
+</code></pre><ul>
+<li>See the <a href="https://devnet.jetbrains.com/message/5545889#5545889" target="_blank">Intellij idea forum post</a> for more details</li>
 </ul>
 
                     
