@@ -26,7 +26,7 @@ Delete multiple projects
 * Ensure project list is empty
 ````
 
-In the above example spec the context steps are ***User is logged in as Mike*** and ***Ensure example project has been deleted***, they are defined before any scenario.
+In the above example spec the context steps are ***User is logged in as Mike*** and ***Navigate to the project page***, they are defined before any scenario.
 
 These steps are executed before the execution of each scenario ***Delete single project*** and ***Delete multiple projects***.
 
