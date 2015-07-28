@@ -47,6 +47,8 @@
    * [Intellij Idea](ide_support/intellij_idea.md)
        * [Features](ide_support/features.md)
        * [Other usability features](ide_support/other_usability_features.md)
+   * [Visual Studio](ide_support/visual_studio.md)
+       * [Features](visual_studio_features.md)
    * [Eclipse](ide_support/eclipse.md)
        * [Features](ide_support/gauge_eclipse_plugin_features.md)
 * [Integration with CI](integration_with_ci/README.md)
