@@ -32,7 +32,7 @@ Note: If gauge-java is not installed, it will download it for the first time.
 * If the ```com.thoughtworks.gauge.maven``` archetype is not added select ```Add Archetype```
     * Enter GroupId: com.thoughtworks.gauge.maven
     * Enter ArtifactId: gauge-maven-plugin
-    * Enter Version: 1.0.1 or the [latest version number](https://github.com/getgauge/gauge-maven-plugin/releases)
+    * Enter Version: 1.0.3 or the [latest version number](https://github.com/getgauge/gauge-maven-plugin/releases)
 ![maven add archetype](intellij-screenshots/creation/maven_add_archetype.png "maven add archetype")
 
 

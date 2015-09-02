@@ -15,14 +15,14 @@ Some of its key features include:
 
 Certain features of Gauge make it stand unique amongst others.
 
-*	Consistent Cross Platform/Language Support
+* Consistent Cross Platform/Language Support
 * Business Language Tests : Supports the concept of executable documentation
-*	Open Source, so it could be shared freely and improved by others as well
-*	Simple, Flexible and Rich Syntax
-*	Helps you create Maintainable and Understandable test suites
-*	Extensible through [Plugins](plugins/README.html) and Hackable
-*	Supports External Data Sources
-*	[IDE Support](ide_support/README.md)
+* Open Source, so it could be shared freely and improved by others as well
+* Simple, Flexible and Rich Syntax
+* Helps you create Maintainable and Understandable test suites
+* Extensible through [Plugins](plugins/README.html) and Hackable
+* Supports External Data Sources
+* [IDE Support](ide_support/README.md)
 
 ## Get started quickly
 
