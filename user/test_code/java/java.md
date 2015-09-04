@@ -57,7 +57,7 @@ public class Users {
 ````
 * Here **Table** is a custom data structure defined by gauge.
 
-## Multiple Step names
+## Multiple Step names (Alias for Step names)
 The same implementation can point to multiple step names. To do this add all the [step name template](../step_name_template.md) to the ``@Step`` annotations.
 
 The number and type of parameters for all the steps names must match the number of parameters on the java implementation.

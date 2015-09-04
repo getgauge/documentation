@@ -18,8 +18,8 @@ public class CustomScreenshotFactory : IScreenGrabber
     // Return Screenshot byte array
     public byte[] TakeScreenShot()
     {
-        var driver = new FirefoxDriver();
-        return driver.GetScreenshot().AsByteArray;
+        // `driver` should be an instance of IWebDriver
+        return driver.TakeScreenshot().AsByteArray;
     }
 }
 ````

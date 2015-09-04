@@ -21,3 +21,5 @@ Successful login scenario
  Tags: login-success, admin
 
 ````
+
+A tag applied to a spec automatically applies to a scenario. 
