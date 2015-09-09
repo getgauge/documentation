@@ -82,3 +82,11 @@ Tables are used to pass table value into steps read from an external CSV file. T
 * Step that takes a table <table:data.csv>
 * Check if the following users exist <table : /Users/john/work/users.csv>
 ````
+**Sample csv file **:
+
+```
+Id,Name
+1,The Way to Go On
+2,Ivo Jay Balbaert
+```
+***The first row is considered as table headers. Following rows are considered as the row values.***

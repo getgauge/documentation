@@ -55,6 +55,14 @@ Second Scenario
 ---------------
 * Say "namaste" to <name>
 ````
+Sample csv file :
+
+```
+Id,Name
+1,The Way to Go On
+2,Ivo Jay Balbaert
+```
+***The first row is considered as table headers. Following rows are considered as the row values.***
 
 ###Execute selected data table rows
 By default, scenarios in a spec are run against all the data table rows. It can be run against selected data table rows with flag `--table-rows` and specifying the row number against which the scenarios should be executed.
