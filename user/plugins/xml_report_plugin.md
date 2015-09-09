@@ -1,6 +1,18 @@
 # XML Report
+XML Report plugin creates JUnit XML test result document that can be read by tools such as Go, Jenkins.
+When the specs are executed, the xml report is generated in reports directory in the project. The format of XML report is based on [JUnit XML Schema](https://windyroad.com.au/dl/Open%20Source/JUnit.xsd)
 
-[Gauge](https://github.com/getgauge/gauge) plugin to generate JUnit style XML reports in the format described [here](https://windyroad.com.au/dl/Open%20Source/JUnit.xsd)
+**Sample XML Report Document** : 
+```
+<testsuites>
+	<testsuite id="1" tests="1" failures="0" package="specs/hello_world.spec" time="0.002" timestamp="2015-09-09T13:52:00" name="Specification Heading" errors="0" hostname="INcomputer.local">
+		<properties></properties>
+		<testcase classname="Specification Heading" name="First scenario" time="0.001"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+</testsuites>
+```
 ## Installation
 To install XML Report plugin :
 ```
