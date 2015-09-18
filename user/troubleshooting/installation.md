@@ -36,7 +36,7 @@
 
 ## Plugin installation
 
-* If **[plugin installation](../../plugins/installation.md)** fails due to a network connection issue. You can **manually download** the plugin distributable zip and install it using the ```-f``` flag.
+* If **[plugin installation](../../plugins/installation.md)** fails due to a network connection issue, you can **manually download** the plugin distributable zip and install it using the ```-f``` flag.
 
 ````
 gauge --install plugin_name -f path_to_zip_file

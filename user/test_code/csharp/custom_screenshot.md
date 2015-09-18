@@ -18,7 +18,7 @@ public class CustomScreenshotFactory : IScreenGrabber
     // Return Screenshot byte array
     public byte[] TakeScreenShot()
     {
-        // `driver` should be an instance of IWebDriver
+        // `driver` should be an instance of IWebDriver currently used
         return driver.TakeScreenshot().AsByteArray;
     }
 }
