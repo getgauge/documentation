@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="6.4.1" data-basepath="../.." data-revision="1434717291850">
+    <div class="book" data-level="6.4.1" data-basepath="../.." data-revision="1442565759390">
     
 
 <div class="book-summary">
@@ -284,7 +284,7 @@
                         
                             <b>4.</b>
                         
-                         Configuration
+                         Gauge Configuration
                     </a>
                 
             
@@ -555,6 +555,54 @@
                             <b>6.4.2.</b>
                         
                          C# Project files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4.3" data-path="test_code/csharp/datastore_to_share_data.html">
+            
+                
+                    <a href="../../test_code/csharp/datastore_to_share_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.3.</b>
+                        
+                         DataStore to share data
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4.4" data-path="test_code/csharp/custom_screenshot.html">
+            
+                
+                    <a href="../../test_code/csharp/custom_screenshot.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.4.</b>
+                        
+                         Custom Screenshots
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4.5" data-path="test_code/csharp/custom_messages_in_reports.html">
+            
+                
+                    <a href="../../test_code/csharp/custom_messages_in_reports.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.5.</b>
+                        
+                         Custom messages in reports
                     </a>
                 
             
@@ -869,13 +917,51 @@
         </li>
     
         
-        <li class="chapter " data-level="11.2" data-path="ide_support/eclipse.html">
+        <li class="chapter " data-level="11.2" data-path="ide_support/visual_studio.html">
+            
+                
+                    <a href="../../ide_support/visual_studio.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         Visual Studio
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.2.1" data-path="visual_studio_features.html">
+            
+                
+                    <a href="../../visual_studio_features.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.1.</b>
+                        
+                         Features
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="ide_support/eclipse.html">
             
                 
                     <a href="../../ide_support/eclipse.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.2.</b>
+                            <b>11.3.</b>
                         
                          Eclipse
                     </a>
@@ -886,13 +972,13 @@
                 
     
         
-        <li class="chapter " data-level="11.2.1" data-path="ide_support/gauge_eclipse_plugin_features.html">
+        <li class="chapter " data-level="11.3.1" data-path="ide_support/gauge_eclipse_plugin_features.html">
             
                 
                     <a href="../../ide_support/gauge_eclipse_plugin_features.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.2.1.</b>
+                            <b>11.3.1.</b>
                         
                          Features
                     </a>
@@ -1052,51 +1138,13 @@
         </li>
     
         
-        <li class="chapter " data-level="15" data-path="technical_architecture/README.html">
-            
-                
-                    <a href="../../technical_architecture/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>15.</b>
-                        
-                         Technical Details
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="15.1" data-path="technical_architecture/responsibilities.html">
-            
-                
-                    <a href="../../technical_architecture/responsibilities.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>15.1.</b>
-                        
-                         Gauge Architecture - Responsbilities of components
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="16" data-path="previous_versions/README.html">
+        <li class="chapter " data-level="15" data-path="previous_versions/README.html">
             
                 
                     <a href="../../previous_versions/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>16.</b>
+                            <b>15.</b>
                         
                          Previous Versions
                     </a>
@@ -1194,7 +1242,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_43">
+                    <section class="normal" id="section-gitbook_45">
                     
                         <h1 id="execution-hooks-c"><a name="execution-hooks-c" class="plugin-anchor" href="#execution-hooks-c"><span class="fa fa-link"></span></a>Execution hooks C#</h1>
 <p>The <a href="../../execution/execution_hooks.html">execution hooks</a> can be defined at all levels in C# by decorating methods with the one (or more) of the following attributes:</p>
@@ -1253,6 +1301,24 @@
     <span class="hljs-comment">// Code for after step</span>
     }
 }
+</code></pre>
+<h2 id="filtering-hooks-execution-based-on-tags"><a name="filtering-hooks-execution-based-on-tags" class="plugin-anchor" href="#filtering-hooks-execution-based-on-tags"><span class="fa fa-link"></span></a>Filtering Hooks execution based on tags</h2>
+<ul>
+<li>You can specify tags for which the execution hooks can run. This will ensure that the hook runs only on scenarios and specifications that have the required tags.</li>
+</ul>
+<pre><code class="lang-csharp">    <span class="hljs-comment">// A before scenario hook that runs when tag1 and tag2 is present in the current scenario and spec.</span>
+    [BeforeScenario(<span class="hljs-string">&quot;tag1&quot;</span>, <span class="hljs-string">&quot;tag2&quot;</span>)]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">LoginUser</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// Code for before scenario</span>
+    }
+
+    <span class="hljs-comment">// A after scenario hook runs when tag1 or tag2 is present in the current scenario and spec.</span>
+    <span class="hljs-comment">// Default TagAggregationBehaviour value is TagAggregation.AND.</span>
+    [AfterScenario(<span class="hljs-string">&quot;tag1&quot;</span>, <span class="hljs-string">&quot;tag2&quot;</span>)]
+    [TagAggregationBehaviour(TagAggregation.Or)]
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">PerformAfterScenario</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// Code for after scenario</span>
+    }
 </code></pre>
 
                     

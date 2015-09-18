@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="1434717291850">
+    <div class="book" data-level="1.2" data-basepath=".." data-revision="1442565759390">
     
 
 <div class="book-summary">
@@ -284,7 +284,7 @@
                         
                             <b>4.</b>
                         
-                         Configuration
+                         Gauge Configuration
                     </a>
                 
             
@@ -555,6 +555,54 @@
                             <b>6.4.2.</b>
                         
                          C# Project files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4.3" data-path="test_code/csharp/datastore_to_share_data.html">
+            
+                
+                    <a href="../test_code/csharp/datastore_to_share_data.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.3.</b>
+                        
+                         DataStore to share data
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4.4" data-path="test_code/csharp/custom_screenshot.html">
+            
+                
+                    <a href="../test_code/csharp/custom_screenshot.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.4.</b>
+                        
+                         Custom Screenshots
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4.5" data-path="test_code/csharp/custom_messages_in_reports.html">
+            
+                
+                    <a href="../test_code/csharp/custom_messages_in_reports.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.5.</b>
+                        
+                         Custom messages in reports
                     </a>
                 
             
@@ -869,13 +917,51 @@
         </li>
     
         
-        <li class="chapter " data-level="11.2" data-path="ide_support/eclipse.html">
+        <li class="chapter " data-level="11.2" data-path="ide_support/visual_studio.html">
+            
+                
+                    <a href="../ide_support/visual_studio.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         Visual Studio
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.2.1" data-path="visual_studio_features.html">
+            
+                
+                    <a href="../visual_studio_features.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.1.</b>
+                        
+                         Features
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="ide_support/eclipse.html">
             
                 
                     <a href="../ide_support/eclipse.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.2.</b>
+                            <b>11.3.</b>
                         
                          Eclipse
                     </a>
@@ -886,13 +972,13 @@
                 
     
         
-        <li class="chapter " data-level="11.2.1" data-path="ide_support/gauge_eclipse_plugin_features.html">
+        <li class="chapter " data-level="11.3.1" data-path="ide_support/gauge_eclipse_plugin_features.html">
             
                 
                     <a href="../ide_support/gauge_eclipse_plugin_features.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>11.2.1.</b>
+                            <b>11.3.1.</b>
                         
                          Features
                     </a>
@@ -1052,51 +1138,13 @@
         </li>
     
         
-        <li class="chapter " data-level="15" data-path="technical_architecture/README.html">
-            
-                
-                    <a href="../technical_architecture/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>15.</b>
-                        
-                         Technical Details
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="15.1" data-path="technical_architecture/responsibilities.html">
-            
-                
-                    <a href="../technical_architecture/responsibilities.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>15.1.</b>
-                        
-                         Gauge Architecture - Responsbilities of components
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="16" data-path="previous_versions/README.html">
+        <li class="chapter " data-level="15" data-path="previous_versions/README.html">
             
                 
                     <a href="../previous_versions/README.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>16.</b>
+                            <b>15.</b>
                         
                          Previous Versions
                     </a>
@@ -1194,7 +1242,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3">
+                    <section class="normal" id="section-gitbook_4">
                     
                         <h1 id="project-structure"><a name="project-structure" class="plugin-anchor" href="#project-structure"><span class="fa fa-link"></span></a>Project Structure</h1>
 <p>On initialization of a gauge project for a particular language a project skeleton is created with the following files</p>
@@ -1214,14 +1262,32 @@
 <p>A simple example spec (<strong>hello_world.spec</strong>)  is created in the specs directory to better understand the format of specifications.</p>
 <p>Learn more about <a href="../specifications/README.html">specifications</a></p>
 <h3 id="manifest-file"><a name="manifest-file" class="plugin-anchor" href="#manifest-file"><span class="fa fa-link"></span></a>Manifest file</h3>
-<p>The <strong>manifest.json</strong> contains gauge specific configurations which include the following:</p>
-<ul>
+<p>The <strong>manifest.json</strong> contains gauge specific configurations which includes the information of plugins required in the project.</p>
+<p>After project initialization, the <code>manifest.json</code> will have the following content. </p>
+<pre><code>{
+  &quot;Language&quot;: {{ LANGAUGE }},
+  &quot;Plugins&quot;: [
+    &quot;html-report&quot;
+  ]
+}
+</code></pre><ul>
 <li><p><strong>language</strong> : Programming language used for the test code. Gauge uses the corresponding language runner for executing the specs.</p>
 </li>
-<li><p><strong>Plugins</strong> : The gauge plugins used for the project. Some plugins are used by default on each gauge project.</p>
-</li>
+<li><p><strong>Plugins</strong> : The gauge plugins used for the project. Some plugins are used by default on each gauge project. The plugins can be added to project by running the following command : </p>
+<pre><code>  gauge --add-plugin {{PLUGIN_NAME}}
+</code></pre><p>  Example :</p>
+<pre><code>  gauge --add-plugin xml-report
+</code></pre></li>
 </ul>
-<h2 id="2-language-specific-files"><a name="2-language-specific-files" class="plugin-anchor" href="#2-language-specific-files"><span class="fa fa-link"></span></a>2. Language specific files</h2>
+<p>After running the above command, the manifest.json would have the following content:</p>
+<pre><code>{
+  &quot;Language&quot;: {{ LANGAUGE }},
+  &quot;Plugins&quot;: [
+    &quot;html-report&quot;,
+    &quot;xml-report&quot;
+  ]
+}
+</code></pre><h2 id="2-language-specific-files"><a name="2-language-specific-files" class="plugin-anchor" href="#2-language-specific-files"><span class="fa fa-link"></span></a>2. Language specific files</h2>
 <p>Along with common gauge files certain language specific files and directories are created during <a href="creating_a_gauge_project.html">project creation</a>. You can find the more details about language specific files created under each <a href="../test_code/README.html">programming language</a>.</p>
 
                     
