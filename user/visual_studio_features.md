@@ -14,7 +14,7 @@ Gauge specs are in [Markdown](http://daringfireball.net/projects/markdown/syntax
 
 Steps with missing implementation are also highlighted.
 
-![syntax highlighting](ide_support/visual_studio_screenshots/features/syntax_highlighting.png
+![syntax highlighting](ide_support/visual_studio_screenshots/features/Syntax_highlighting.png
 "syntax highlighting")
 
 ### Autocomplete

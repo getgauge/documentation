@@ -8,5 +8,5 @@ Open Visual Studio Extension Manager - `Tools` -> `Extensions and Updates`. Sear
 
 The extension resides on the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/d34964c5-3bf8-4138-be63-01214cb1db3e).
 
-![install plugin](visual_studio_screenshots/VSPluginInstallation.png "install Gauge plugin")
+![install plugin](visual_studio_screenshots/VSPluginInstallation.PNG "install Gauge plugin")
 
