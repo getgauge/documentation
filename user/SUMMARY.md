@@ -23,6 +23,7 @@
        * [Custom Screenshots](test_code/java/custom_screenshots_support.md)
        * [Configuration](test_code/java/configuration.md)
        * [Custom messages in reports](test_code/java/custom_messages_in_reports.md)
+       * [Using build tools](test_code/java/using_build_tools.md)
    * [Ruby](test_code/ruby/ruby.md)
        * [Execution Hooks Ruby](test_code/ruby/execution_hooks_ruby.md)
        * [Ruby Project files](test_code/ruby/ruby_project_files.md)

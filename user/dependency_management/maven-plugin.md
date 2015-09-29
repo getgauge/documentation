@@ -33,7 +33,7 @@ The generated **pom.xml** in the project will have the** gauge-java** dependency
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
-            <version>0.0.7</version>
+            <version>0.2.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -43,7 +43,7 @@ The generated **pom.xml** in the project will have the** gauge-java** dependency
             <plugin>
                 <groupId>com.thoughtworks.gauge.maven</groupId>
                 <artifactId>gauge-maven-plugin</artifactId>
-                <version>1.0.1</version>
+                <version>1.0.3</version>
                 <executions>
                     <execution>
                         <phase>test</phase>
