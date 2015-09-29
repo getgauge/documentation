@@ -8,7 +8,6 @@ Plugins are installed using the flag `install`, this checks our plugin repositor
 ```
 gauge --install java
 
-gauge --install html-report
 ```
 
 To install a specific version of a plugin use the `--plugin-version` flag.
@@ -33,9 +32,7 @@ Download the latest version of plugin from the `Releases` section of the respect
 Once plugins are installed, they can be added to the project by
 using the `add-plugin` flag
 
-```
-gauge --add-plugin <plugin-id>
-```
+`gauge --add-plugin <plugin-id>`
 
 ```
 gauge --add-plugin xml-report
@@ -50,6 +47,13 @@ To update a plugin to the latest verion of it, use the `--update` flag. This dow
 Example:
 ````
 gauge --update java
+````
+##Uninstalling plugins
+Plugins can be uninstalled using the `uninstall` flag. The command is
 
-gauge --update ruby
+`gauge --uninstall <plugin-id>`
+
+Example:
+````
+gauge --uninstall java
 ````
