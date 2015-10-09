@@ -11,12 +11,12 @@ Here is a list of flags that can be used with `gauge`.
 |  --daemonize    |  Run as a **daemon**.|```gauge --daemonize```|
 |  --dir="."|Set the working directory for the current command, accepts a path relative to current directory.|```gauge --dir=PATH specs```|
 |  --env | Specifies the **environment**. If not specified, default will be used.|```gauge --env="chrome" specs```|
-|  --file, -f    | Installs the plugin from zip file. This is used with --install.|```gauge --install java -f ZIP_FILE```|
+|  --file, -f    | Installs the plugin from zip file. This is used with --install.|```gauge -f PATH_TO_ZIP_FILE --install java```|
 |  --format      |Formats the specified spec files. |```gauge --format specs``` |
 |  -g, --group   |  Specify which group of specs to execute based on -n flag.|```gauge -n=3 -g=1 specs```|
 |  --init| Initializes project structure in the current directory.|```gauge --init java```|
 |  --install |  Downloads and installs a plugin.|```gauge --install java```|
-|  --log-level |     Set level of logging to debug, info, warning, error or critical.|```gauge --log-level="error"```|
+|  --log-level |     Set level of logging to debug, info, warning, error or critical.|```gauge --log-level="debug" specs```|
 |  -n          |Specify number of **parallel execution** streams.|```gauge -p -n=4 specs``` |
 |  --parallel, -p |    Execute specs in parallel.|```gauge -p specs```|
 |  --plugin-args | Specify additional arguments to the plugin. This is used together with --add-plugin.|```gauge --add-plugin xml-report --plugin-args="version=1.0"```|
