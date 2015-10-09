@@ -58,3 +58,13 @@ All the scenarios in the project should be listed. Run one or more of these test
 
 ![Test Explorer](ide_support/visual_studio_screenshots/features/TestExplorer.png
 "Test Explorer")
+
+### Create Spec and Concept files
+
+* You can right-click on `specs` directory or any nested directory, choose `Add` -> `New Item` -> Go to `Gauge` under `Visual C# Items`.
+* Choose `Specification` or `Concept` file type.
+* Enter file name and click `Add`.
+
+![Create File Type](ide_support/visual_studio_screenshots/features/Create_FileType.png
+"Create FileType")
+
