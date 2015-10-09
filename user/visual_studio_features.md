@@ -2,11 +2,23 @@
 
 ### Creating a new Gauge Project
 
-- Create a new Project of Type "Class Library".
-- Add a Nuget reference to "Gauge.CSharp.Lib" using the Nuget Package Manager.
+- Go to `File` -> `New Project`.
+- Choose `Gauge Test Project` under Visual C# Test category.
+
+![ProjectCreation](ide_support/visual_studio_screenshots/features/Create_Project.png
+"Create New Project")
+
+- Choose the Project location and Project Name.
+- Click `OK`.
 
 This should setup a new Gauge project, and add the required meta data for Gauge to execute this project.
 
+Alternately, you can create a Gauge project from command-line as:
+````
+mkdir <project_name>
+gauge --init csharp
+````
+This creates `<project_name>.sln` file which can be opened with Visual Studio.
 
 ### Syntax Highlighting
 
