@@ -2,7 +2,7 @@
 
 Gauge projects can be created and executed from intellij. The plugin can be downloaded from the jetbrains plugin repository.
 
-This plugin supports only [java](../test_code/java.md).
+This plugin supports only [java](../test_code/java/java.md).
 
 
 ## Installation
