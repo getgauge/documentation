@@ -8,6 +8,7 @@ Here is a list of flags that can be used with `gauge`.
 | ------| ----------- |-----|
 |--add-plugin| Adds the specified non-language plugin to the current project.|```gauge --add-plugin xml-report```|
 |  --api-port  |    Specifies the api port to be used.| ``` gauge --daemonize --api-port 7777```|
+| --check | Checks for parse and validation errors. | ```gauge --check specs```|
 |  --daemonize    |  Run as a **daemon**.|```gauge --daemonize```|
 |  --dir="."|Set the working directory for the current command, accepts a path relative to current directory.|```gauge --dir=PATH specs```|
 |  --env | Specifies the **environment**. If not specified, default will be used.|```gauge --env="chrome" specs```|
@@ -21,9 +22,10 @@ Here is a list of flags that can be used with `gauge`.
 |  --parallel, -p |    Execute specs in parallel.|```gauge -p specs```|
 |  --plugin-args | Specify additional arguments to the plugin. This is used together with --add-plugin.|```gauge --add-plugin xml-report --plugin-args="version=1.0"```|
 |  --plugin-version    |         Version of plugin to be installed. This is used with --install.|```gauge --install java --plugin-version="0.0.5"```|
-|  --refactor   |      **Refactor/Rephrase** steps.| ```gauge --refactor old_step new_step```|
+|  --refactor   |      **Refactor/Rephrase** steps.| ```gauge --refactor OLD_STEP NEW_STEP```|
 |  --simple-console  | Removes colouring and simplifies the console output.|```gauge --simple-console specs```|
 |  --sort, -s          |       Run specs in Alphabetical Order.|```gauge -s specs```|
+| --strategy="eager" | Set the parallelization strategy for execution. Should be used with -p flag. Possible values are: eager, lazy. | ```gauge -p --strategy="lazy" specs``` |
 |  --table-rows      |     Executes the specs and scenarios only for the selected rows of data table.| ```gauge --table-rows "1-3" specs/hello.spec ```|
 |  --tags    | Executes the specs/ scenarios tagged with given tags. This filtering can also be done based on **tag expression**.| ```gauge --tags tag1,tag2 specs```<br>```gauge --tags "tag1 & tag2" specs```|
 |  --update  |Updates a plugin. | ```gauge --update java```|
