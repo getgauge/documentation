@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="7.4" data-basepath=".." data-revision="1442566572151">
+    <div class="book" data-level="7.4" data-basepath=".." data-revision="1444798227832">
     
 
 <div class="book-summary">
@@ -447,6 +447,22 @@
                             <b>6.2.6.</b>
                         
                          Custom messages in reports
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.7" data-path="test_code/java/using_build_tools.html">
+            
+                
+                    <a href="../test_code/java/using_build_tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.7.</b>
+                        
+                         Using build tools
                     </a>
                 
             
@@ -1268,6 +1284,14 @@ The number of streams should be specified depending on the machine, beyond which
 
 gauge -n=4 -g=2 specs
 </code></pre><p>The above two commands will execute the same group of specifications.</p>
+<h2 id="run-your-test-suite-with-lazy-assignment-of-tests"><a name="run-your-test-suite-with-lazy-assignment-of-tests" class="plugin-anchor" href="#run-your-test-suite-with-lazy-assignment-of-tests"><span class="fa fa-link"></span></a>Run your test suite with lazy assignment of tests</h2>
+<p>This features allows you to dynamically allocate your specs to streams during execution instead of at the start of execution.</p>
+<p>This allows Gauge to optimise the resources on your agent/execution environment. This is useful because some specs may take much longer than other, either because of the number of scenarios in them or the nature of the feature under test</p>
+<p>The following command will assign tests lazily across the specified number of streams:</p>
+<pre><code>gauge -n=4 --strategy=&quot;lazy&quot; specs
+</code></pre><p>Say you have 100 tests, which you have chosen to run across 4 streams/cores; lazy assignment will dynamically, during execution, assign the next spec in line to the stream that has completed it&apos;s previous execution and is waiting for more work.</p>
+<p>Eager assignment of tests is the default behaviour. In this case, the 100 tests are distributed before execution, thus making them an equal number based distribution.</p>
+<p><em>Note:</em> The &apos;lazy&apos; assignment strategy only works when you do NOT use the -g flag. This is because grouping is dependent on allocation of tests before the start of execution. Using this in conjunction with a lazy strategy will have no impact on your test suite execution.</p>
 
                     
                     </section>

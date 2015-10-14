@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="4" data-basepath=".." data-revision="1442566572151">
+    <div class="book" data-level="4" data-basepath=".." data-revision="1444798227832">
     
 
 <div class="book-summary">
@@ -447,6 +447,22 @@
                             <b>6.2.6.</b>
                         
                          Custom messages in reports
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.7" data-path="test_code/java/using_build_tools.html">
+            
+                
+                    <a href="../test_code/java/using_build_tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.7.</b>
+                        
+                         Using build tools
                     </a>
                 
             
@@ -1244,25 +1260,23 @@
                 
                     <section class="normal" id="section-gitbook_7">
                     
-                        <h1 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><span class="fa fa-link"></span></a>Configuration</h1>
-<p>Certain Gauge specific internal configurations can be made in <strong>gauge.properties</strong> file present in your Gauge install location (GAUGE_ROOT). These properties are key value pairs.</p>
+                        <h1 id="gauge-configuration"><a name="gauge-configuration" class="plugin-anchor" href="#gauge-configuration"><span class="fa fa-link"></span></a>Gauge Configuration</h1>
+<p>All the Gauge specific internal configurations are stored    in <strong>gauge.properties</strong> file present in your Gauge install location (GAUGE_ROOT). These properties are key value pairs.</p>
 <h3 id="gauge_repository_url"><a name="gauge_repository_url" class="plugin-anchor" href="#gauge_repository_url"><span class="fa fa-link"></span></a>gauge_repository_url</h3>
 <p>This property is set to an url, which acts as plugin repository for Gauge.</p>
+<p><strong>Please do not change this url</strong> or it will break the installation and update of Gauge plugins.</p>
 <pre><code>gauge_repository_url = http://raw.github.com/getgauge/gauge-repository/master
-</code></pre><h3 id="api_refresh_interval"><a name="api_refresh_interval" class="plugin-anchor" href="#api_refresh_interval"><span class="fa fa-link"></span></a>api_refresh_interval</h3>
-<p>Gauge refreshes the api cache at a particular frequency set as value to this property. This property takes the value in milliseconds.</p>
-<pre><code>api_refresh_interval = 3000
 </code></pre><h3 id="runner_connection_timeout"><a name="runner_connection_timeout" class="plugin-anchor" href="#runner_connection_timeout"><span class="fa fa-link"></span></a>runner_connection_timeout</h3>
-<p>This property sets the timeout for making a connection to the langauge runner. The value is taken in milliseconds.</p>
-<pre><code>runner_connection_timeout = 25000
+<p>This property sets the timeout in milliseconds for making a connection to the langauge runner.</p>
+<pre><code>runner_connection_timeout = 30000
 </code></pre><h3 id="plugin_connection_timeout"><a name="plugin_connection_timeout" class="plugin-anchor" href="#plugin_connection_timeout"><span class="fa fa-link"></span></a>plugin_connection_timeout</h3>
-<p>This property configures the timeout for making a connection to plugins.</p>
+<p>This property sets the timeout in milliseconds for making a connection to plugins (except language runner plugins).</p>
 <pre><code>plugin_connection_timeout = 10000
 </code></pre><h3 id="plugin_kill_timeout"><a name="plugin_kill_timeout" class="plugin-anchor" href="#plugin_kill_timeout"><span class="fa fa-link"></span></a>plugin_kill_timeout</h3>
 <p>This property sets the timeout in milliseconds for a plugin to stop after a kill message has been sent.</p>
 <pre><code>plugin_kill_timeout = 10000
 </code></pre><h3 id="runner_request_timeout"><a name="runner_request_timeout" class="plugin-anchor" href="#runner_request_timeout"><span class="fa fa-link"></span></a>runner_request_timeout</h3>
-<p>This property configures the timeout in milliseconds for requests from the langauge runner.</p>
+<p>This property sets the timeout in milliseconds for requests from the langauge runner.</p>
 <p>If the size of the project is too big, Gauge may timeout before the runner returns the response message. This value can be configured accordingly.</p>
 <pre><code>runner_request_timeout = 10000
 </code></pre>

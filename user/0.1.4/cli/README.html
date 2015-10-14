@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="5" data-basepath=".." data-revision="1442566572151">
+    <div class="book" data-level="5" data-basepath=".." data-revision="1444798227832">
     
 
 <div class="book-summary">
@@ -447,6 +447,22 @@
                             <b>6.2.6.</b>
                         
                          Custom messages in reports
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.7" data-path="test_code/java/using_build_tools.html">
+            
+                
+                    <a href="../test_code/java/using_build_tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.7.</b>
+                        
+                         Using build tools
                     </a>
                 
             
@@ -1267,6 +1283,11 @@
 <td><code>gauge --daemonize --api-port 7777</code></td>
 </tr>
 <tr>
+<td>--check</td>
+<td>Checks for parse and validation errors.</td>
+<td><code>gauge --check specs</code></td>
+</tr>
+<tr>
 <td>--daemonize</td>
 <td>Run as a <strong>daemon</strong>.</td>
 <td><code>gauge --daemonize</code></td>
@@ -1284,7 +1305,7 @@
 <tr>
 <td>--file, -f</td>
 <td>Installs the plugin from zip file. This is used with --install.</td>
-<td><code>gauge --install java -f ZIP_FILE</code></td>
+<td><code>gauge -f PATH_TO_ZIP_FILE --install java</code></td>
 </tr>
 <tr>
 <td>--format</td>
@@ -1309,7 +1330,7 @@
 <tr>
 <td>--log-level</td>
 <td>Set level of logging to debug, info, warning, error or critical.</td>
-<td><code>gauge --log-level=&quot;error&quot;</code></td>
+<td><code>gauge --log-level=&quot;debug&quot; specs</code></td>
 </tr>
 <tr>
 <td>-n</td>
@@ -1334,7 +1355,7 @@
 <tr>
 <td>--refactor</td>
 <td><strong>Refactor/Rephrase</strong> steps.</td>
-<td><code>gauge --refactor old_step new_step</code></td>
+<td><code>gauge --refactor OLD_STEP NEW_STEP</code></td>
 </tr>
 <tr>
 <td>--simple-console</td>
@@ -1345,6 +1366,11 @@
 <td>--sort, -s</td>
 <td>Run specs in Alphabetical Order.</td>
 <td><code>gauge -s specs</code></td>
+</tr>
+<tr>
+<td>--strategy=&quot;eager&quot;</td>
+<td>Set the parallelization strategy for execution. Should be used with -p flag. Possible values are: eager, lazy.</td>
+<td><code>gauge -p --strategy=&quot;lazy&quot; specs</code></td>
 </tr>
 <tr>
 <td>--table-rows</td>

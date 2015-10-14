@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="3" data-basepath=".." data-revision="1442566572151">
+    <div class="book" data-level="3" data-basepath=".." data-revision="1444798227832">
     
 
 <div class="book-summary">
@@ -447,6 +447,22 @@
                             <b>6.2.6.</b>
                         
                          Custom messages in reports
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.7" data-path="test_code/java/using_build_tools.html">
+            
+                
+                    <a href="../test_code/java/using_build_tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.7.</b>
+                        
+                         Using build tools
                     </a>
                 
             
@@ -1252,12 +1268,12 @@
 <pre><code>Scenario name                 ## Scenario name
 -------------
 </code></pre><h4 id="tags"><a name="tags" class="plugin-anchor" href="#tags"><span class="fa fa-link"></span></a>Tags</h4>
-<pre><code>Specification Level        Scenario Level
-===================        --------------
+<pre><code>Specification Level           Scenario Level
+===================           --------------
 
-Tags: login, admin         Tags: login-success, admin
+Tags: login, admin            Tags: login-success, admin
 </code></pre><h4 id="concept"><a name="concept" class="plugin-anchor" href="#concept"><span class="fa fa-link"></span></a>Concept</h4>
-<pre><code>Concept Heading             # Concept Heading
+<pre><code>Concept Heading               # Concept Heading
 ===============
 </code></pre><h4 id="steps"><a name="steps" class="plugin-anchor" href="#steps"><span class="fa fa-link"></span></a>Steps</h4>
 <pre><code>* Step Name
@@ -1274,7 +1290,8 @@ Tags: login, admin         Tags: login-success, admin
   | id   |  name   |
   | 123  |  John   |
   | 456  | Mcclain |
-</code></pre></li>
+</code></pre><p>There should be no empty lines between step name and table parameter.</p>
+</li>
 <li><p><code>&lt;</code>Special<code>:</code>Parameters<code>&gt;</code></p>
 <pre><code>&lt;prefix:value&gt;
 </code></pre><ul>
@@ -1287,6 +1304,20 @@ Tags: login, admin         Tags: login-success, admin
 </ul>
 </li>
 </ul>
+<h4 id="comments"><a name="comments" class="plugin-anchor" href="#comments"><span class="fa fa-link"></span></a>Comments</h4>
+<p>Comment has no syntax. Any normal line of text is treated as comment.</p>
+<pre><code>Im a comment!!!
+</code></pre><h4 id="images"><a name="images" class="plugin-anchor" href="#images"><span class="fa fa-link"></span></a>Images</h4>
+<p>Inline image syntax looks like this:</p>
+<pre><code>![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+</code></pre><p>The path to image file should be relative to current directory.</p>
+<h4 id="links"><a name="links" class="plugin-anchor" href="#links"><span class="fa fa-link"></span></a>Links</h4>
+<pre><code>This is [an example](http://getgauge.io &quot;Title&quot;) inline link.
+
+[This link](http://github.com/getgauge/gauge) has no title attribute.
+</code></pre><p>Read more about <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a>.</p>
 
                     
                     </section>

@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="10.1" data-basepath=".." data-revision="1442566572151">
+    <div class="book" data-level="10.1" data-basepath=".." data-revision="1444798227832">
     
 
 <div class="book-summary">
@@ -447,6 +447,22 @@
                             <b>6.2.6.</b>
                         
                          Custom messages in reports
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2.7" data-path="test_code/java/using_build_tools.html">
+            
+                
+                    <a href="../test_code/java/using_build_tools.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.7.</b>
+                        
+                         Using build tools
                     </a>
                 
             
@@ -1249,8 +1265,6 @@
 <p><code>gauge --install &lt;plugin-id&gt;</code></p>
 <p><strong>Example:</strong></p>
 <pre><code>gauge --install java
-
-gauge --install html-report
 </code></pre><p>To install a specific version of a plugin use the <code>--plugin-version</code> flag.</p>
 <pre><code>gauge --install ruby --plugin-version 0.0.2
 </code></pre><h3 id="offline-installation"><a name="offline-installation" class="plugin-anchor" href="#offline-installation"><span class="fa fa-link"></span></a>Offline Installation</h3>
@@ -1266,15 +1280,18 @@ gauge --install html-report
 <h2 id="adding-plugins-to-a-project"><a name="adding-plugins-to-a-project" class="plugin-anchor" href="#adding-plugins-to-a-project"><span class="fa fa-link"></span></a>Adding plugins to a project</h2>
 <p>Once plugins are installed, they can be added to the project by
 using the <code>add-plugin</code> flag</p>
-<pre><code>gauge --add-plugin &lt;plugin-id&gt;
-</code></pre><pre><code>gauge --add-plugin xml-report
+<p><code>gauge --add-plugin &lt;plugin-id&gt;</code></p>
+<pre><code>gauge --add-plugin xml-report
 </code></pre><h2 id="updating-plugins"><a name="updating-plugins" class="plugin-anchor" href="#updating-plugins"><span class="fa fa-link"></span></a>Updating plugins</h2>
 <p>To update a plugin to the latest verion of it, use the <code>--update</code> flag. This downloads the latest plugin from our plugin repository.</p>
 <p><code>gauge --update &lt;plugin-id&gt;</code></p>
 <p>Example:</p>
 <pre><code>gauge --update java
-
-gauge --update ruby
+</code></pre><h2 id="uninstalling-plugins"><a name="uninstalling-plugins" class="plugin-anchor" href="#uninstalling-plugins"><span class="fa fa-link"></span></a>Uninstalling plugins</h2>
+<p>Plugins can be uninstalled using the <code>uninstall</code> flag. The command is</p>
+<p><code>gauge --uninstall &lt;plugin-id&gt;</code></p>
+<p>Example:</p>
+<pre><code>gauge --uninstall java
 </code></pre>
                     
                     </section>
