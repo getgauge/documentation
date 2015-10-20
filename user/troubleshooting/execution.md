@@ -21,8 +21,9 @@ Failed to start a runner. Compatible runner version to 0.0.7 not found
 * Run ```gauge --install LANGAUGE_NAME ``` to install the latest compatible version. See [plugin installation](../plugins/installation.md) for more details
 
 
-
-
-
-
+### Execution Errors
+```
+Error: too many open files
+```
+* This error occurs when the upper limit to open the number of files is too low. To fix the error, increase the upper limit by adding the command `ulimit -S -n 2048` to your `~/.profile` file and relogin.
 
