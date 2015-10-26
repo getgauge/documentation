@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="6.2.3" data-basepath="../.." data-revision="1445315028602">
+    <div class="book" data-level="6.2.3" data-basepath="../.." data-revision="1445825576160">
     
 
 <div class="book-summary">
@@ -1265,7 +1265,10 @@
 <p>There are 3 different types of DataStores based on the lifecycle of when it gets cleared.</p>
 <h3 id="1-scenariostore"><a name="1-scenariostore" class="plugin-anchor" href="#1-scenariostore"><span class="fa fa-link"></span></a>1. ScenarioStore</h3>
 <p>This data store keeps values added to it in the lifecycle of the scenario execution. Values are cleared after every scenario executes</p>
-<pre><code class="lang-java"><span class="hljs-comment">// Adding value</span>
+<pre><code class="lang-java"><span class="hljs-comment">// Import Package</span>
+<span class="hljs-keyword">import</span> com.thoughtworks.gauge.datastore.*;
+
+<span class="hljs-comment">// Adding value</span>
 DataStore scenarioStore = DataStoreFactory.getScenarioDataStore();
 scenarioStore.put(<span class="hljs-string">&quot;element-id&quot;</span>, <span class="hljs-string">&quot;455678&quot;</span>);
 
@@ -1275,7 +1278,10 @@ String elementId = (String) scenarioStore.get(<span class="hljs-string">&quot;el
 </code></pre>
 <h3 id="2-specstore"><a name="2-specstore" class="plugin-anchor" href="#2-specstore"><span class="fa fa-link"></span></a>2. SpecStore</h3>
 <p>This data store keeps values added to it during the lifecycle of the specification execution. Values are cleared after every specification executes</p>
-<pre><code class="lang-java"><span class="hljs-comment">// Adding value</span>
+<pre><code class="lang-java"><span class="hljs-comment">// Import Package</span>
+<span class="hljs-keyword">import</span> com.thoughtworks.gauge.datastore.*;
+
+<span class="hljs-comment">// Adding value</span>
 DataStore specStore = DataStoreFactory.getSpecDataStore();
 specStore.put(<span class="hljs-string">&quot;key&quot;</span>, <span class="hljs-string">&quot;455678&quot;</span>);
 
@@ -1285,7 +1291,10 @@ String elementId = (String) specStore.get(<span class="hljs-string">&quot;key&qu
 </code></pre>
 <h3 id="3-suitestore"><a name="3-suitestore" class="plugin-anchor" href="#3-suitestore"><span class="fa fa-link"></span></a>3. SuiteStore</h3>
 <p>This data store keeps values added to it during the lifecycle of entire suite execution. Values are cleared after entire suite execution.</p>
-<pre><code class="lang-java"><span class="hljs-comment">// Adding value</span>
+<pre><code class="lang-java"><span class="hljs-comment">// Import Package</span>
+<span class="hljs-keyword">import</span> com.thoughtworks.gauge.datastore.*;
+
+<span class="hljs-comment">// Adding value</span>
 DataStore suiteStore = DataStoreFactory.getSuiteDataStore();
 suiteStore.put(<span class="hljs-string">&quot;element-id&quot;</span>, <span class="hljs-string">&quot;455678&quot;</span>);
 
