@@ -5,6 +5,9 @@ There are 3 different types of DataStores based on the lifecycle of when it gets
 ### 1. ScenarioStore
 This data store keeps values added to it in the lifecycle of the scenario execution. Values are cleared after every scenario executes
 ````java
+// Import Package
+import com.thoughtworks.gauge.datastore.*;
+
 // Adding value
 DataStore scenarioStore = DataStoreFactory.getScenarioDataStore();
 scenarioStore.put("element-id", "455678");
@@ -18,6 +21,9 @@ String elementId = (String) scenarioStore.get("element-id");
 This data store keeps values added to it during the lifecycle of the specification execution. Values are cleared after every specification executes
 
 ````java
+// Import Package
+import com.thoughtworks.gauge.datastore.*;
+
 // Adding value
 DataStore specStore = DataStoreFactory.getSpecDataStore();
 specStore.put("key", "455678");
@@ -32,6 +38,9 @@ This data store keeps values added to it during the lifecycle of entire suite ex
 
 
 ````java
+// Import Package
+import com.thoughtworks.gauge.datastore.*;
+
 // Adding value
 DataStore suiteStore = DataStoreFactory.getSuiteDataStore();
 suiteStore.put("element-id", "455678");
