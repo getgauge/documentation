@@ -21,11 +21,6 @@ gauge --install java --file ZIP_FILE_PATH
 ````
 Download the latest version of plugin from the `Releases` section of the respective repository. See [plugin list](list.md) to find the repositories.
 
-### Plugin install location
-* **Windows** - `%APPDATA%\gauge\plugins` on windows
-* **MacOS**   - `<home>/.gauge/plugins`
-* **Linux**   - `<home>/.gauge/plugins`
-
 
 ##Adding plugins to a project
 
@@ -48,6 +43,10 @@ Example:
 ````
 gauge --update java
 ````
+You can also update all the installed plugins by running
+````
+gauge --update-all
+````
 ##Uninstalling plugins
 Plugins can be uninstalled using the `uninstall` flag. The command is
 
@@ -57,3 +56,13 @@ Example:
 ````
 gauge --uninstall java
 ````
+
+## Troubleshooting
+
+Plugins are installed in the `.gauge/plugins` directory in user's home. You can check this directory to manually install / uninstall plugins as well as to verify the installed plugins.
+
+The plugin installation directory for various operating systems are listed below.
+
+* **Windows:** `%APPDATA%\.gauge\plugins`
+* **MacOS:** `~/.gauge/plugins`
+* **Linux:** `~/.gauge/plugins`
