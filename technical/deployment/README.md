@@ -1,21 +1,34 @@
-#### Deployment
+# Deployment
 
-##### Target Machine
+#### Target Machine
 The language runners are installed at the below locations
  - *nix platforms  - `~/.gauge`
  - Windows - `%appdata%\gauge`
 
-##### Installation
+#### Installation
 
-Gauge plugins can be installed via
+Gauge Language and Reporting plugins can be installed via
 
     gauge --install <plugin_name>
 
-The `--install` flag also has a `-f` flag which can point to a local copy of the plugin zip archive. This will not query the Repository for location of the plugin archive.
-
 The plugins are installed under a versioned directory, which allows one target machine to have multiple versions of the same plugin installed. Gauge would pick the highest version compatible with the current Gauge version.
 
-##### Setting up repository
+![install](install.png)
+
+Gauge does following things, when `gauge --install <plugin>` is run
+1. Gauge asks Plugin Repository to give `<plugin>-install.json`.
+2. Receives a Response from Plugin Repository.
+    - Receives a valid `json`,finds the download url from `json` based on OS
+        - Download the Plugin.
+        - Install the plugin in Gauge plugin directory.
+    - Receives an Invalid response
+        - Shows error message and exit.
+
+The `--install` flag also has a `-f` flag which can point to a local copy of the plugin zip archive. This will not query the Repository for location of the plugin archive.
+
+*The IDE plugin installation is dependent on IDE ecosystem.*
+
+#### Setting up repository
 
 Gauge and its plugins are deployed as Github Releases. Each release has an archive containing the binaries for the plugin/ gauge.
 

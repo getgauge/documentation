@@ -15,7 +15,6 @@
        * [Communication](types_of_plugins/communication.md)
        * [Execution](types_of_plugins/execution.md)
        * [Gauge Aware Methods](types_of_plugins/gauge_aware_methods.md)
-       * [Deployment](types_of_plugins/deployment.md)
    * [Reporting Plugins](types_of_plugins/reports.md)
    * [IDE Plugins](types_of_plugins/ide_plugins.md)
 * [API](api.md)
@@ -23,4 +22,5 @@
    * [Reporting Plugin](reporting_plugin.md)
    * [IDE Plugin](ide_plugin.md)
 * [Responsibilities defined](plugin_interaction/README.md)
+* [Deployment](deployment/README.md)
 
