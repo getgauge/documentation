@@ -19,7 +19,7 @@
         
     
     
-    <link rel="next" href="../types_of_plugins/responsibilites.html" />
+    <link rel="next" href="../types_of_plugins/communication.html" />
     
     
     <link rel="prev" href="../types_of_plugins/README.html" />
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1446196579797">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1446201459060">
     
 
 <div class="book-summary">
@@ -278,61 +278,13 @@
                 
     
         
-        <li class="chapter " data-level="2.1.1" data-path="types_of_plugins/responsibilites.html">
-            
-                
-                    <a href="../types_of_plugins/responsibilites.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.1.</b>
-                        
-                         Responsibilites
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.2" data-path="types_of_plugins/consituents.html">
-            
-                
-                    <a href="../types_of_plugins/consituents.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.2.</b>
-                        
-                         Consituents
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.3" data-path="types_of_plugins/installation.html">
-            
-                
-                    <a href="../types_of_plugins/installation.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.3.</b>
-                        
-                         Installation
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.4" data-path="types_of_plugins/communication.html">
+        <li class="chapter " data-level="2.1.1" data-path="types_of_plugins/communication.html">
             
                 
                     <a href="../types_of_plugins/communication.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.4.</b>
+                            <b>2.1.1.</b>
                         
                          Communication
                     </a>
@@ -342,13 +294,13 @@
         </li>
     
         
-        <li class="chapter " data-level="2.1.5" data-path="types_of_plugins/execution.html">
+        <li class="chapter " data-level="2.1.2" data-path="types_of_plugins/execution.html">
             
                 
                     <a href="../types_of_plugins/execution.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.5.</b>
+                            <b>2.1.2.</b>
                         
                          Execution
                     </a>
@@ -358,47 +310,15 @@
         </li>
     
         
-        <li class="chapter " data-level="2.1.6" data-path="types_of_plugins/gauge_aware_methods.html">
+        <li class="chapter " data-level="2.1.3" data-path="types_of_plugins/gauge_aware_methods.html">
             
                 
                     <a href="../types_of_plugins/gauge_aware_methods.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.6.</b>
+                            <b>2.1.3.</b>
                         
                          Gauge Aware Methods
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.7" data-path="types_of_plugins/datastore.html">
-            
-                
-                    <a href="../types_of_plugins/datastore.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.7.</b>
-                        
-                         Datastore
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.8" data-path="types_of_plugins/deployment.html">
-            
-                
-                    <a href="../types_of_plugins/deployment.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.8.</b>
-                        
-                         Deployment
                     </a>
                 
             
@@ -419,7 +339,7 @@
                         
                             <b>2.2.</b>
                         
-                         Reports
+                         Reporting Plugins
                     </a>
                 
             
@@ -533,6 +453,22 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="5" data-path="deployment/README.html">
+            
+                
+                    <a href="../deployment/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Deployment
+                    </a>
+                
+            
+            
+        </li>
+    
 
 
         
@@ -622,10 +558,33 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_25">
+                    <section class="normal" id="section-gitbook_22">
                     
                         <h2 id="language-runners"><a name="language-runners" class="plugin-anchor" href="#language-runners"><span class="fa fa-link"></span></a>Language Runners</h2>
 <p>Gauge allows one to write implementations in multiple languages, and this is made possible via such plugins. Language runners are alive for the full cycle of an execution.</p>
+<h3 id="responsibilites"><a name="responsibilites" class="plugin-anchor" href="#responsibilites"><span class="fa fa-link"></span></a>Responsibilites</h3>
+<ul>
+<li>Execute hooks (when requested to)</li>
+<li>Execute method corresponding to a step</li>
+<li>Send execution response back to Gauge</li>
+<li>Refactor method signatures with changes defined by Gauge</li>
+<li>Initialize a project with template</li>
+<li>Read/write to datastore (currently, datastore is intra process, hence parallel processes cannot use a shared datastore)</li>
+<li>Holds reference to Step text and Method / execution block.</li>
+</ul>
+<h3 id="consituents"><a name="consituents" class="plugin-anchor" href="#consituents"><span class="fa fa-link"></span></a>Consituents</h3>
+<ul>
+<li><strong>Runner binary</strong> : This is responsible for scanning the test library and also invoke methods when requested to.</li>
+<li><strong>Skeleton files (templates)</strong> : These files create a sample <code>hello world</code> project that can be used as a quick-start for creating a new project.</li>
+<li><strong>Metadata file (usually <code>&lt;language&gt;.json</code>)</strong> : Holds meta information about the plugin. Also holds the commands to invoke for <code>init</code> and <code>run</code> phases of the plugin.</li>
+</ul>
+<h3 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h3>
+<p>Installing a plugin happens via Gauge. Gauge&apos;s <code>properties</code> file contains a URL that points to the <code>Gauge-Repository</code>, which holds meta information, which Gauge uses to determine the highest compatible version of the plugin.
+This makes plugin installation a two step process:</p>
+<ul>
+<li>Download <code>&lt;language&gt;-install.json</code>, determine the highest compatible plugin version</li>
+<li>Verify if version is already installed, if not, download the plugin using the URL specified in the <code>&lt;language&gt;-install.json</code>.</li>
+</ul>
 
                     
                     </section>
@@ -639,7 +598,7 @@
         <a href="../types_of_plugins/README.html" class="navigation navigation-prev " aria-label="Previous page: Types of Plugins"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../types_of_plugins/responsibilites.html" class="navigation navigation-next " aria-label="Next page: Responsibilites"><i class="fa fa-angle-right"></i></a>
+        <a href="../types_of_plugins/communication.html" class="navigation navigation-next " aria-label="Next page: Communication"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

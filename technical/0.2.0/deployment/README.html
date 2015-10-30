@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>IDE Plugins | Gauge Technical Documentation</title>
+        <title>Deployment | Gauge Technical Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,8 @@
         
     
     
-    <link rel="next" href="../api.html" />
     
-    
-    <link rel="prev" href="../types_of_plugins/reports.html" />
+    <link rel="prev" href="../plugin_interaction/README.html" />
     
 
         
@@ -38,7 +36,7 @@
 
 
         
-    <div class="book" data-level="2.3" data-basepath=".." data-revision="1446201459060">
+    <div class="book" data-level="5" data-basepath=".." data-revision="1446201459060">
     
 
 <div class="book-summary">
@@ -347,7 +345,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.3" data-path="types_of_plugins/ide_plugins.html">
+        <li class="chapter " data-level="2.3" data-path="types_of_plugins/ide_plugins.html">
             
                 
                     <a href="../types_of_plugins/ide_plugins.html">
@@ -454,7 +452,7 @@
         </li>
     
         
-        <li class="chapter " data-level="5" data-path="deployment/README.html">
+        <li class="chapter active" data-level="5" data-path="deployment/README.html">
             
                 
                     <a href="../deployment/README.html">
@@ -558,20 +556,74 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_21">
+                    <section class="normal" id="section-gitbook_3">
                     
-                        <h2 id="ide-plugins"><a name="ide-plugins" class="plugin-anchor" href="#ide-plugins"><span class="fa fa-link"></span></a>IDE Plugins</h2>
-<h3 id="responsibilities"><a name="responsibilities" class="plugin-anchor" href="#responsibilities"><span class="fa fa-link"></span></a>Responsibilities:</h3>
+                        <h1 id="deployment"><a name="deployment" class="plugin-anchor" href="#deployment"><span class="fa fa-link"></span></a>Deployment</h1>
+<h4 id="target-machine"><a name="target-machine" class="plugin-anchor" href="#target-machine"><span class="fa fa-link"></span></a>Target Machine</h4>
+<p>The language runners are installed at the below locations</p>
 <ul>
-<li>Syntax highlighting</li>
-<li>Autocomplete</li>
-<li>Goto definition</li>
-<li>Refactoring</li>
-<li>Test runner</li>
-<li>Formatting</li>
-<li>Find Usages</li>
+<li>*nix platforms  - <code>~/.gauge</code></li>
+<li>Windows - <code>%appdata%\gauge</code></li>
 </ul>
+<h4 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h4>
+<p>Gauge Language and Reporting plugins can be installed via</p>
+<pre><code>gauge --install &lt;plugin_name&gt;
+</code></pre><p>The plugins are installed under a versioned directory, which allows one target machine to have multiple versions of the same plugin installed. Gauge would pick the highest version compatible with the current Gauge version.</p>
+<p><img src="install.png" alt="install"></p>
+<p>Gauge does following things, when <code>gauge --install &lt;plugin&gt;</code> is run</p>
+<ol>
+<li>Gauge asks Plugin Repository to give <code>&lt;plugin&gt;-install.json</code>.</li>
+<li>Receives a Response from Plugin Repository.<ul>
+<li>Receives a valid <code>json</code>,finds the download url from <code>json</code> based on OS<ul>
+<li>Download the Plugin.</li>
+<li>Install the plugin in Gauge plugin directory.</li>
+</ul>
+</li>
+<li>Receives an Invalid response<ul>
+<li>Shows error message and exit.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>The <code>--install</code> flag also has a <code>-f</code> flag which can point to a local copy of the plugin zip archive. This will not query the Repository for location of the plugin archive.</p>
+<p><em>The IDE plugin installation is dependent on IDE ecosystem.</em></p>
+<h4 id="setting-up-repository"><a name="setting-up-repository" class="plugin-anchor" href="#setting-up-repository"><span class="fa fa-link"></span></a>Setting up repository</h4>
+<p>Gauge and its plugins are deployed as Github Releases. Each release has an archive containing the binaries for the plugin/ gauge.</p>
+<p>Gauge-Repository contains metadata for version compatibility. Every plugin in Gauge ecosystem needs to have a <code>json</code> file with the below format:</p>
+<pre><code>{
+    &quot;name&quot;: &lt;plugin name&gt;,
+    &quot;description&quot;: &lt;plugin description&gt;,
+    &quot;versions&quot;: [
+        {
+            &quot;version&quot;: &lt;plugin version&gt;,
+            &quot;gaugeVersionSupport&quot;: {
+                &quot;minimum&quot;: &lt;minimum gauge version&gt;,
+                &quot;maximum&quot;: &lt;maximum gauge version, empty string for latest&gt;
+            },
 
+            &quot;install&quot;: {
+                &quot;windows&quot;: &lt;array of commands to install on windows, empty array if none&gt;,
+                &quot;linux&quot;: &lt;array of commands to install on linux, empty array if none&gt;,
+                &quot;darwin&quot;: &lt;array of commands to install on darwin, empty array if none&gt;
+            },
+
+            &quot;DownloadUrls&quot;: {
+                &quot;x86&quot;: {
+                    &quot;windows&quot;: &lt;windows_archive_path&gt;,
+                    &quot;linux&quot;: &lt;linux_archive_path&gt;,
+                    &quot;darwin&quot;: &lt;darwin_archive_path&gt;
+                },
+                &quot;x64&quot;: {
+                    &quot;windows&quot;: &lt;windows_x64_archive_path&gt;,
+                    &quot;linux&quot;: &lt;linux_x64_archive_path&gt;,
+                    &quot;darwin&quot;: &lt;darwin_x64_archive_path&gt;
+                }
+            }
+        }
+    }]
+}
+</code></pre>
                     
                     </section>
                 
@@ -581,10 +633,8 @@
         </div>
 
         
-        <a href="../types_of_plugins/reports.html" class="navigation navigation-prev " aria-label="Previous page: Reporting Plugins"><i class="fa fa-angle-left"></i></a>
+        <a href="../plugin_interaction/README.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Responsibilities defined"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../api.html" class="navigation navigation-next " aria-label="Next page: API"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

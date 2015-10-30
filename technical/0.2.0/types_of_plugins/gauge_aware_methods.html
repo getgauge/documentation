@@ -19,7 +19,7 @@
         
     
     
-    <link rel="next" href="../types_of_plugins/datastore.html" />
+    <link rel="next" href="../types_of_plugins/reports.html" />
     
     
     <link rel="prev" href="../types_of_plugins/execution.html" />
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="2.1.6" data-basepath=".." data-revision="1446196579797">
+    <div class="book" data-level="2.1.3" data-basepath=".." data-revision="1446201459060">
     
 
 <div class="book-summary">
@@ -278,61 +278,13 @@
                 
     
         
-        <li class="chapter " data-level="2.1.1" data-path="types_of_plugins/responsibilites.html">
-            
-                
-                    <a href="../types_of_plugins/responsibilites.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.1.</b>
-                        
-                         Responsibilites
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.2" data-path="types_of_plugins/consituents.html">
-            
-                
-                    <a href="../types_of_plugins/consituents.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.2.</b>
-                        
-                         Consituents
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.3" data-path="types_of_plugins/installation.html">
-            
-                
-                    <a href="../types_of_plugins/installation.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.3.</b>
-                        
-                         Installation
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.4" data-path="types_of_plugins/communication.html">
+        <li class="chapter " data-level="2.1.1" data-path="types_of_plugins/communication.html">
             
                 
                     <a href="../types_of_plugins/communication.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.4.</b>
+                            <b>2.1.1.</b>
                         
                          Communication
                     </a>
@@ -342,13 +294,13 @@
         </li>
     
         
-        <li class="chapter " data-level="2.1.5" data-path="types_of_plugins/execution.html">
+        <li class="chapter " data-level="2.1.2" data-path="types_of_plugins/execution.html">
             
                 
                     <a href="../types_of_plugins/execution.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.5.</b>
+                            <b>2.1.2.</b>
                         
                          Execution
                     </a>
@@ -358,47 +310,15 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.1.6" data-path="types_of_plugins/gauge_aware_methods.html">
+        <li class="chapter active" data-level="2.1.3" data-path="types_of_plugins/gauge_aware_methods.html">
             
                 
                     <a href="../types_of_plugins/gauge_aware_methods.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>2.1.6.</b>
+                            <b>2.1.3.</b>
                         
                          Gauge Aware Methods
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.7" data-path="types_of_plugins/datastore.html">
-            
-                
-                    <a href="../types_of_plugins/datastore.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.7.</b>
-                        
-                         Datastore
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.1.8" data-path="types_of_plugins/deployment.html">
-            
-                
-                    <a href="../types_of_plugins/deployment.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.8.</b>
-                        
-                         Deployment
                     </a>
                 
             
@@ -419,7 +339,7 @@
                         
                             <b>2.2.</b>
                         
-                         Reports
+                         Reporting Plugins
                     </a>
                 
             
@@ -533,6 +453,22 @@
             
         </li>
     
+        
+        <li class="chapter " data-level="5" data-path="deployment/README.html">
+            
+                
+                    <a href="../deployment/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Deployment
+                    </a>
+                
+            
+            
+        </li>
+    
 
 
         
@@ -622,7 +558,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_16">
+                    <section class="normal" id="section-gitbook_20">
                     
                         <h4 id="gauge-aware-methods"><a name="gauge-aware-methods" class="plugin-anchor" href="#gauge-aware-methods"><span class="fa fa-link"></span></a>Gauge aware methods</h4>
 <p>These are methods/blocks that Gauge would understand and execute at various points.</p>
@@ -646,6 +582,17 @@
 </li>
 <li><code>after_suite</code></li>
 </ul>
+<h4 id="datastore"><a name="datastore" class="plugin-anchor" href="#datastore"><span class="fa fa-link"></span></a>Datastore</h4>
+<p>Datastore is a way for the tests to exchange data. Datastores are basically a key-value store that have lifecycles attached to it. It is quite similar to <code>Session</code> in web application world.</p>
+<h5 id="types"><a name="types" class="plugin-anchor" href="#types"><span class="fa fa-link"></span></a>Types</h5>
+<ul>
+<li>Suite Datastore : Lives throughout the lifecycle of the entire test suite.</li>
+<li>Spec Datastore : Lives throughout the lifecycle of a spec, it is destroyed after the spec execution completes, and a new one is created</li>
+<li>Scenario Datastore : Lives throughout the lifecycle of a scenario, it is destroyed after the scenario execution completes, and a new one is created</li>
+</ul>
+<blockquote>
+<p>Datastores are In-Memory at the moment, so they are expected to be shared only within the same machine.</p>
+</blockquote>
 
                     
                     </section>
@@ -659,7 +606,7 @@
         <a href="../types_of_plugins/execution.html" class="navigation navigation-prev " aria-label="Previous page: Execution"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../types_of_plugins/datastore.html" class="navigation navigation-next " aria-label="Next page: Datastore"><i class="fa fa-angle-right"></i></a>
+        <a href="../types_of_plugins/reports.html" class="navigation navigation-next " aria-label="Next page: Reporting Plugins"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
