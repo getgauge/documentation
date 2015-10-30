@@ -1,6 +1,15 @@
 # Summary
 
 * [Introduction](README.md)
+* [Set-up](set-up/README.md)
+   * [Gauge](set-up/gauge.md)
+   * [Plugins](set-up/plugins.md)
+       * [Java](set-up/java.md)
+       * [CSharp](set-up/csharp.md)
+           * [Runner](set-up/runner.md)
+       * [Ruby](set-up/ruby.md)
+       * [HTML-Report](set-up/html-report.md)
+       * [XML-Report](set-up/xml-report.md)
 * [Types of Plugins](types_of_plugins/README.md)
    * [Language Runners](types_of_plugins/language_runners.md)
        * [Responsibilites](types_of_plugins/responsibilites.md)
