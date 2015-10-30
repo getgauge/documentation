@@ -22,5 +22,9 @@
        * [Deployment](types_of_plugins/deployment.md)
    * [Reports](types_of_plugins/reports.md)
    * [IDE Plugins](types_of_plugins/ide_plugins.md)
+* [API](api.md)
+   * [Language Plugin](language_plugin_api.md)
+   * [Reporting Plugin](reporting_plugin.md)
+   * [IDE Plugin](ide_plugin.md)
 * [Responsibilities defined](plugin_interaction/README.md)
 
