@@ -10,6 +10,7 @@
        * [Ruby](set-up/ruby.md)
        * [HTML-Report](set-up/html-report.md)
        * [XML-Report](set-up/xml-report.md)
+       * [Intellij Gauge Plugin](set-up/intellij_gauge_plugin.md)
 * [Types of Plugins](types_of_plugins/README.md)
    * [Language Runners](types_of_plugins/language_runners.md)
        * [Communication](types_of_plugins/communication.md)

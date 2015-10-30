@@ -11,7 +11,7 @@ There are three types of plugins present in Gauge :
     - [XML-Report](xml-report.md)
 
 * IDE Plugins
-    - Intellij Gauge Plugin
+    - [Intellij Gauge Plugin](intellij_gauge_plugin.md)
     - Eclipse Gauge Plugin
     - Visual Studio Gauge Plugin
 
