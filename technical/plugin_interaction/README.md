@@ -60,5 +60,7 @@
    - Goto definition
    - Refactoring
    - Test runner
+   - Formatting
+   - Find Usages
 
 Refer to [this page](https://github.com/getgauge/gauge/wiki/IDE-Support) for a detailed IDE feature comparison.
