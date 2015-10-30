@@ -1,8 +1,7 @@
 # Language Plugin
+Gauge will send requests to Language Plugin and Language Plugin will perform actions based on request and send the response back.
 
-### Responsibilities & Request/Response:
-
- - Execute hooks (when requested to)
+#### Execute hooks (when requested to)
 
 |Request                    |Purpose                      |Response                 |
      |---------------------------|-----------------------------|-------------------------|
@@ -15,40 +14,44 @@
      |`StepExecutionStarting`    |Execute `BeforeStep` Hooks    |`ExecutionStatusResponse`|
      |`StepExecutionEnding`      |Execute `AfterStep` Hooks     |`ExecutionStatusResponse`|
 
-
-
- - Execute method corresponding to a step
+#### Execute method corresponding to a step
 
 |Request      |Purpose                               |Response                 |
      |-------------|--------------------------------------|-------------------------|
      |`ExecuteStep`|Execute method corresponding to a step|`ExecutionStatusResponse`|
 
- - Refactor method signatures with changes defined by Gauge
+#### Refactor method signatures with changes defined by Gauge
 
 |Request      |Purpose                               |Response                 |
      |-------------|--------------------------------------|-------------------------|
-     |`StepNameRequest`|Request for implementaion binding details on a Single Step.|`StepNameResponse`|
+     |`StepNameRequest`|Request for step text present in the implementaion for a Step.|`StepNameResponse`|
      |`RefactorRequest`|Refactors the method signature and the step text|`RefactorResponse`|
 
- - Initialize a project with template
- - Read/write to datastore (currently, datastore is intra process, hence parallel processes cannot use a shared datastore)
+#### Read/write to datastore
 
 |Request                |Purpose                            |Response                 |
      |-----------------------|-----------------------------------|-------------------------|
      |`SuiteDataStoreInit`   |initialize Suite level DataStore.  |`ExecutionStatusResponse`|
      |`SpecDataStoreInit`    |initialize Spec level DataStore    |`ExecutionStatusResponse`|
      |`ScenarioDataStoreInit`|initialize Scenario level DataStore|`ExecutionStatusResponse`|
-***All Data Stores should be cleared at their respective levels.***
+*All Data Stores should be cleared at their respective levels.*
 
- - Holds reference to Step text and Method / execution block.
+#### Holds reference to Step text and Method / execution block.
 
 |Request              |Purpose                                                                |Response              |
      |---------------------|-----------------------------------------------------------------------|----------------------|
      |`StepNamesRequest`   |Get all the step names present in the implementaion side.              |`StepNamesResponse`   |
      |`StepValidateRequest`|To check if there is an implementation defined for the given Step Text.|`StepValidateResponse`|
 
-- ShutDown after Execution.
+#### ShutDown after Execution.
 
 |Request             |Purpose                      |Response|
      |--------------------|-----------------------------|--------|
-     |`KillProcessRequest`|Tells the runner to shutdown.|        ||
+     |`KillProcessRequest`|Tells the runner to shutdown.|   -     |
+
+#### Send Response when a unsupported message request is sent.
+
+|Request             |Purpose                      |Response|
+     |--------------------|-----------------------------|--------|
+     |Unknown Request|Request not supported by plugin.|   `UnsupportedMessageResponse`     |
+
