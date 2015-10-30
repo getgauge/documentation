@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Java | Gauge Technical Documentation</title>
+        <title>Intellij Gauge Plugin | Gauge Technical Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../set-up/csharp.html" />
+    <link rel="next" href="../types_of_plugins/README.html" />
     
     
-    <link rel="prev" href="../set-up/plugins.html" />
+    <link rel="prev" href="../set-up/xml-report.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="1.2.1" data-basepath=".." data-revision="1446202686816">
+    <div class="book" data-level="1.2.6" data-basepath=".." data-revision="1446202686816">
     
 
 <div class="book-summary">
@@ -132,7 +132,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.2.1" data-path="set-up/java.html">
+        <li class="chapter " data-level="1.2.1" data-path="set-up/java.html">
             
                 
                     <a href="../set-up/java.html">
@@ -234,7 +234,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2.6" data-path="set-up/intellij_gauge_plugin.html">
+        <li class="chapter active" data-level="1.2.6" data-path="set-up/intellij_gauge_plugin.html">
             
                 
                     <a href="../set-up/intellij_gauge_plugin.html">
@@ -574,34 +574,41 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_13">
+                    <section class="normal" id="section-gitbook_12">
                     
-                        <h1 id="java"><a name="java" class="plugin-anchor" href="#java"><span class="fa fa-link"></span></a>Java</h1>
-<p>This is the java language plugin for Gauge.</p>
-<h3 id="setting-up"><a name="setting-up" class="plugin-anchor" href="#setting-up"><span class="fa fa-link"></span></a>Setting up</h3>
-<p>It contains a launcher component (gauge-java.go) written in golang which is used to start the plugin from gauge.</p>
-<h4 id="requirements"><a name="requirements" class="plugin-anchor" href="#requirements"><span class="fa fa-link"></span></a>Requirements</h4>
+                        <h1 id="intellij-gauge-plugin"><a name="intellij-gauge-plugin" class="plugin-anchor" href="#intellij-gauge-plugin"><span class="fa fa-link"></span></a>Intellij Gauge Plugin</h1>
+<p>This plugin helps to create and execute Gauge project in Intellij.</p>
+<h2 id="setting-up"><a name="setting-up" class="plugin-anchor" href="#setting-up"><span class="fa fa-link"></span></a>Setting up</h2>
 <ul>
-<li><a href="http://golang.org/" target="_blank">Golang</a></li>
-<li><a href="https://www.java.com/en/download/index.jsp" target="_blank">Java</a></li>
-<li><a href="https://maven.apache.org/" target="_blank">Maven</a></li>
-<li><a href="http://getgauge.io" target="_blank">Gauge</a></li>
+<li>Install the intellij sdk</li>
+<li>Install necessary plugins Grammar-kit, Plugin-Devkit, PsiViewer
+<a href="http://confluence.jetbrains.com/display/IntelliJIDEA/Prerequisites" target="_blank">http://confluence.jetbrains.com/display/IntelliJIDEA/Prerequisites</a></li>
+<li>Create a run configuration (Plugin -&gt; Use Classpath of module -&gt; Choose the current module), hit run</li>
+<li>A new instance of intellij will be launched with the plugin installed</li>
 </ul>
-<h4 id="compiling"><a name="compiling" class="plugin-anchor" href="#compiling"><span class="fa fa-link"></span></a>Compiling</h4>
-<pre><code>go run make.go
-</code></pre><p>For cross platform compilation (launcher)</p>
-<pre><code>go run make.go --all-platforms
-</code></pre><h4 id="installing"><a name="installing" class="plugin-anchor" href="#installing"><span class="fa fa-link"></span></a>Installing</h4>
-<p>After compilation</p>
-<pre><code>go run make.go --install
-</code></pre><p>Installing to a CUSTOM_LOCATION</p>
-<pre><code>go run make.go --install --plugin-prefix CUSTOM_LOCATION
-</code></pre><h4 id="creating-distributable"><a name="creating-distributable" class="plugin-anchor" href="#creating-distributable"><span class="fa fa-link"></span></a>Creating distributable</h4>
-<p>Note: Run after compiling</p>
-<pre><code>go run make.go --distro
-</code></pre><p>For distributable across platforms os, windows and linux for bith x86 and x86_64</p>
-<pre><code>go run make.go --distro --all-platforms
-</code></pre><p>New distribution details need to be updated in the java-install.json file in  <a href="https://github.com/getgauge/gauge-repository" target="_blank">gauge plugin repository</a> for a new verison update.</p>
+<h2 id="lexing-and-parsing"><a name="lexing-and-parsing" class="plugin-anchor" href="#lexing-and-parsing"><span class="fa fa-link"></span></a>Lexing and parsing</h2>
+<ul>
+<li>The lexing rules are defined in _SpecLexer.flex and _SpecLexer.java is generated using JFlex</li>
+<li>The grammar rules are defined in specification.bnf and SpecParser.java is generated using grammar kit
+SpecParser builds an structure with PsiElements and we can add custom behavior for each element (eg step has get specstep has getStepValue)</li>
+</ul>
+<h2 id="available-features"><a name="available-features" class="plugin-anchor" href="#available-features"><span class="fa fa-link"></span></a>Available Features</h2>
+<ul>
+<li>Project Creation</li>
+<li>Syntax Highlighting</li>
+<li>Auto completion</li>
+<li>Navigation from step to implementation</li>
+<li>Quick Fix for unimplemented steps</li>
+<li>Find Usages</li>
+<li>Formatting Specification</li>
+<li>Refactoring</li>
+</ul>
+<h2 id="interacting-with-the-core"><a name="interacting-with-the-core" class="plugin-anchor" href="#interacting-with-the-core"><span class="fa fa-link"></span></a>Interacting with the core</h2>
+<p>Auto completion,step value extraction and other api calls are made from the plugin. Each module is associated with an api connection(GaugeConnection).
+This Gauge connection is created during the module initialization phase after the gauge process is started in background. Gauge connection talks to the core using protobuff.</p>
+<h2 id="some-useful-links"><a name="some-useful-links" class="plugin-anchor" href="#some-useful-links"><span class="fa fa-link"></span></a>Some useful links</h2>
+<p><a href="https://theantlrguy.atlassian.net/wiki/display/~admin/Intellij+plugin+development+notes" target="_blank">Antlr guy&apos;s tips</a></p>
+<p><a href="https://code.google.com/p/ide-examples/wiki/IntelliJIdeaPsiCookbook" target="_blank">Psi Cook book</a></p>
 
                     
                     </section>
@@ -612,10 +619,10 @@
         </div>
 
         
-        <a href="../set-up/plugins.html" class="navigation navigation-prev " aria-label="Previous page: Plugins"><i class="fa fa-angle-left"></i></a>
+        <a href="../set-up/xml-report.html" class="navigation navigation-prev " aria-label="Previous page: XML-Report"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../set-up/csharp.html" class="navigation navigation-next " aria-label="Next page: CSharp"><i class="fa fa-angle-right"></i></a>
+        <a href="../types_of_plugins/README.html" class="navigation navigation-next " aria-label="Next page: Types of Plugins"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
