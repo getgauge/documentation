@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="10.1" data-basepath=".." data-revision="1445825576160">
+    <div class="book" data-level="10.1" data-basepath=".." data-revision="1446196016209">
     
 
 <div class="book-summary">
@@ -1271,12 +1271,6 @@
 <p>If plugin should be installed from a zipfile instead of downloading from plugin repository, use the <code>--file</code> or <code>-f</code> flag.</p>
 <pre><code>gauge --install java --file ZIP_FILE_PATH
 </code></pre><p>Download the latest version of plugin from the <code>Releases</code> section of the respective repository. See <a href="list.html">plugin list</a> to find the repositories.</p>
-<h3 id="plugin-install-location"><a name="plugin-install-location" class="plugin-anchor" href="#plugin-install-location"><span class="fa fa-link"></span></a>Plugin install location</h3>
-<ul>
-<li><strong>Windows</strong> - <code>%APPDATA%\gauge\plugins</code> on windows</li>
-<li><strong>MacOS</strong>   - <code>&lt;home&gt;/.gauge/plugins</code></li>
-<li><strong>Linux</strong>   - <code>&lt;home&gt;/.gauge/plugins</code></li>
-</ul>
 <h2 id="adding-plugins-to-a-project"><a name="adding-plugins-to-a-project" class="plugin-anchor" href="#adding-plugins-to-a-project"><span class="fa fa-link"></span></a>Adding plugins to a project</h2>
 <p>Once plugins are installed, they can be added to the project by
 using the <code>add-plugin</code> flag</p>
@@ -1287,12 +1281,22 @@ using the <code>add-plugin</code> flag</p>
 <p><code>gauge --update &lt;plugin-id&gt;</code></p>
 <p>Example:</p>
 <pre><code>gauge --update java
+</code></pre><p>You can also update all the installed plugins by running</p>
+<pre><code>gauge --update-all
 </code></pre><h2 id="uninstalling-plugins"><a name="uninstalling-plugins" class="plugin-anchor" href="#uninstalling-plugins"><span class="fa fa-link"></span></a>Uninstalling plugins</h2>
 <p>Plugins can be uninstalled using the <code>uninstall</code> flag. The command is</p>
 <p><code>gauge --uninstall &lt;plugin-id&gt;</code></p>
 <p>Example:</p>
 <pre><code>gauge --uninstall java
-</code></pre>
+</code></pre><h2 id="troubleshooting"><a name="troubleshooting" class="plugin-anchor" href="#troubleshooting"><span class="fa fa-link"></span></a>Troubleshooting</h2>
+<p>Plugins are installed in the <code>.gauge/plugins</code> directory in user&apos;s home. You can check this directory to manually install / uninstall plugins as well as to verify the installed plugins.</p>
+<p>The plugin installation directory for various operating systems are listed below.</p>
+<ul>
+<li><strong>Windows:</strong> <code>%APPDATA%\.gauge\plugins</code></li>
+<li><strong>MacOS:</strong> <code>~/.gauge/plugins</code></li>
+<li><strong>Linux:</strong> <code>~/.gauge/plugins</code></li>
+</ul>
+
                     
                     </section>
                 
