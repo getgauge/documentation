@@ -22,4 +22,4 @@ Successful login scenario
 
 ````
 
-A tag applied to a spec automatically applies to a scenario. 
+A tag applied to a spec automatically applies to a scenario.

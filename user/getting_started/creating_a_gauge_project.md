@@ -8,9 +8,24 @@ gauge --init language
 ````
 Where **language** is the programming language to write test code in. See [supported programming languages](../test_code/README.md).
 
+**Note:** Currently this command creates the Gauge project in the current directly. If you would like to specify a location, then you will have to manually create that dir and navigate to it before you run `--init langauge`
+
+````
+mkdir <location for Gauge project>
+cd <location for Gauge project>
+
+gauge --init language
+````
+
 **Example:**
 ````
 gauge --init java
+````
+````
+gauge --init csharp
+````
+````
+gauge --init ruby
 ````
 This will initialize a gauge project with all the necessary project files.
 
