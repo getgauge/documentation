@@ -6,8 +6,8 @@
     "github": "https://www.github.com/getgauge/gauge",
     "githubHost": "https://github.com/",
     "plugins": [
-        "anchors",
-        "ga"
+        "anchors@0.4.0",
+        "ga@0.2.1"
     ],
     "pluginsConfig": {
         "ga": {
