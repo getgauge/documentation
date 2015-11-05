@@ -1,6 +1,6 @@
 # Concepts
 
-Concepts provide the ability to combine multiple steps into a single step. It provides a higher level abstraction of a business intent by combining steps.
+Concepts provide the ability to combine multiple steps into a single step. It provides a higher level abstraction of a business intent by combining steps. It's like refactoring out common code to a method except this is targetted at business intent and not code. 
 
 They are defined in **.cpt** format files in the **specs** directory in the project. They can be inside nested directories inside the **specs** directory.
 

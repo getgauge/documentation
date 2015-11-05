@@ -38,7 +38,6 @@ Example:
 ````
 gauge -n=4 -g=2 specs
 
-gauge -n=4 -g=2 specs
 ````
 The above two commands will execute the same group of specifications.
 

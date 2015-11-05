@@ -30,7 +30,7 @@ Learn more about [specifications](../specifications/README.md)
 ### Manifest file
 The **manifest.json** contains gauge specific configurations which includes the information of plugins required in the project.
 
-After project initialization, the `manifest.json` will have the following content. 
+After project initialization, the `manifest.json` will have the following content.
 
 ```
 {
@@ -43,10 +43,10 @@ After project initialization, the `manifest.json` will have the following conten
 
 * **language** : Programming language used for the test code. Gauge uses the corresponding language runner for executing the specs.
 
-* **Plugins** : The gauge plugins used for the project. Some plugins are used by default on each gauge project. The plugins can be added to project by running the following command : 
+* **Plugins** : The gauge plugins used for the project. Some plugins are used by default on each gauge project. The plugins can be added to project by running the following command :
     ```
     gauge --add-plugin {{PLUGIN_NAME}}
-    
+
     ```
     Example :
     ```

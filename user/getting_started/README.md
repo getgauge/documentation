@@ -1,22 +1,24 @@
 # Getting Started
 
-Gauge supports:
+This section will explain the steps needed to get Gauge working.
 
-* First class Command line support
-* [IDE Support](../ide_support/README.md)
+Gauge is a first class command line tool. This means that you can operate entirely from the command line. Or, if you prefer to use an IDE then Gauge also has excellent integration with multiple IDEs.
 
-###Starting with command line :
+The following section describe the steps needed to set up Gauge and get specs working from the command line or [with an IDE](../ide_support/README.md).
 
-* [Download and install](http://getgauge.io/download) gauge
-* Install a gauge [language plugin](../plugins/installation.md)
-* [Create a gauge project](creating_a_gauge_project.md)
+###Using Gauge from command line :
+
+* [Downlod and Install](http://getgauge.io/download) Gauge
+* Install a Gauge [language plugin](../plugins/installation.md)
+* [Create a Gauge project](creating_a_gauge_project.md)
 * [Execute](../execution/README.md) the example spec
 
-###Starting with IDE :
+###Using Gauge with an IDE :
 
-* [Download and install](http://getgauge.io/download) gauge
-* [Install gauge Intellij plugin](../ide_support/intellij_idea.md)
-* [Create a gauge project](../ide_support/features.md)
+* [Download and install](http://getgauge.io/download) Gauge
+* Install a Gauge [language plugin](../plugins/installation.md)
+* [Install Gauge IDE plugin](../ide_support.md)
+* [Create a Gauge project](../ide_support/features.md) via your IDE
 
 
 Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/README.md) for the steps.

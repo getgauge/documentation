@@ -2,7 +2,9 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting_started/README.md)
-   * [Creating a gauge project](getting_started/creating_a_gauge_project.md)
+   * [Install Gauge](getting_started/download_and_install.md)
+   * [Install Language runner](getting_started/install_language_runner.md)
+   * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
    * [Project Structure](getting_started/project_structure.md)
 * [Specifications](specifications/README.md)
    * [Scenarios](specifications/scenarios.md)

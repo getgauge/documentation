@@ -5,7 +5,7 @@ Plugins are an easy way to extend the features of gauge. There are various types
 #### Language Plugins
 
 Also known as **language runners**, these plugins enable the users to write the implemantation of specs in a language of their choice. The language runners that are currently available viz.
-[Java](../test_code/java/java.md), [Ruby](../test_code/ruby/ruby.md), [C#](../test_code/csharp/csharp.md) are all gauge plugins.
+[Java](../test_code/java/java.md), [Ruby](../test_code/ruby/ruby.md), [C#](../test_code/csharp/csharp.md) are all supported Gauge plugins.
 
 
 #### Reporting plugins
