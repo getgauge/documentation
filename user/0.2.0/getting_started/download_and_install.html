@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Environments | Gauge Documentation</title>
+        <title>Install Gauge | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../plugins/README.html" />
+    <link rel="next" href="../getting_started/install_language_runner.html" />
     
     
-    <link rel="prev" href="../dependency_management/maven-plugin.html" />
+    <link rel="prev" href="../getting_started/README.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="9" data-basepath=".." data-revision="1446737074311">
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="1446737074311">
     
 
 <div class="book-summary">
@@ -99,7 +99,7 @@
                 
     
         
-        <li class="chapter " data-level="1.1" data-path="getting_started/download_and_install.html">
+        <li class="chapter active" data-level="1.1" data-path="getting_started/download_and_install.html">
             
                 
                     <a href="../getting_started/download_and_install.html">
@@ -792,7 +792,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="9" data-path="managing_environments/README.html">
+        <li class="chapter " data-level="9" data-path="managing_environments/README.html">
             
                 
                     <a href="../managing_environments/README.html">
@@ -1290,50 +1290,43 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_27">
+                    <section class="normal" id="section-gitbook_22">
                     
-                        <h1 id="environments"><a name="environments" class="plugin-anchor" href="#environments"><span class="fa fa-link"></span></a>Environments</h1>
-<p>Environment specific <a href="https://en.wikipedia.org/wiki/Environment_variable" target="_blank">variables</a> can be managed using property files. The <a href="https://en.wikipedia.org/wiki/.properties" target="_blank">property files</a> have set of key value pairs which are set as environment variables during execution.</p>
-<p>The env directory structure for a <code>java</code> project:</p>
-<pre><code>&#x251C;&#x2500;&#x2500; env
-  &#x2514;&#x2500;&#x2500; default
-     &#x251C;&#x2500;&#x2500; default.properties
-     &#x2514;&#x2500;&#x2500; java.properties
-</code></pre><p>Custom properties can be added to an existing property files or in a newly created one.</p>
-<h2 id="creating-new-environment"><a name="creating-new-environment" class="plugin-anchor" href="#creating-new-environment"><span class="fa fa-link"></span></a>Creating new environment</h2>
-<p>To create an environment called <code>ci</code>:</p>
-<ul>
-<li>Create a directory called <code>ci</code> in <code>env</code> directory</li>
-<li>Add property files (e.g. <code>user.properties</code>)</li>
-</ul>
-<pre><code>&#x251C;&#x2500;&#x2500; env
-   &#x251C;&#x2500;&#x2500; ci
-   &#x2502;  &#x2514;&#x2500;&#x2500; user.properties
-   &#x2514;&#x2500;&#x2500; default
-      &#x251C;&#x2500;&#x2500; default.properties
-      &#x2514;&#x2500;&#x2500; java.properties
-</code></pre><h2 id="executing-with-environment"><a name="executing-with-environment" class="plugin-anchor" href="#executing-with-environment"><span class="fa fa-link"></span></a>Executing with environment</h2>
-<p>The environment is specified using the <code>env</code> flag. For example if <code>ci</code> environment is used during execution</p>
-<pre><code>gauge --env ci specs/
-</code></pre><p>On execution</p>
-<ul>
-<li>The properties from the <code>default</code> directory are first set.</li>
-<li>The properties from the specified environment <code>ci</code>  are then set.</li>
-<li>For common values,  environment specific variables from <code>ci</code> override the default values.</li>
-</ul>
-<p>For e.g.</p>
-<pre><code>gauge_custom_build_path: out/production
-</code></pre><p>present in <strong>env/default/java.properties</strong> is overridden by the</p>
-<pre><code>gauge_custom_build_path: target
-</code></pre><p>present in the <strong>env/ci/java.properties</strong></p>
-<h2 id="configuring-the-properties"><a name="configuring-the-properties" class="plugin-anchor" href="#configuring-the-properties"><span class="fa fa-link"></span></a>Configuring the Properties</h2>
-<p>Certain properties can be configured in <code>env/default/default.properties</code>, which overrides the default properties and are scoped only to the current project.</p>
-<p>These are key value pairs, key being the property name and the value is either the absolute or path relative to project root.</p>
-<p>Example:</p>
-<pre><code>gauge_reports_dir = reports
+                        <h1 id="download-and-install"><a name="download-and-install" class="plugin-anchor" href="#download-and-install"><span class="fa fa-link"></span></a>Download and install</h1>
+<p>This section explains the different ways in which Gauge can be installed. The next step is to <a href=".install_language_runner.html">install language runners</a>.</p>
+<h2 id="windows"><a name="windows" class="plugin-anchor" href="#windows"><span class="fa fa-link"></span></a>Windows</h2>
+<h4 id="using-the-exe"><a name="using-the-exe" class="plugin-anchor" href="#using-the-exe"><span class="fa fa-link"></span></a>Using the exe</h4>
+<p>There are two ways to install Gauge on Windows. Below we show the process using the .exe. The other option is to use chocolatey, as described in the section below.</p>
+<p><a href="http://getgauge.io/get-started" target="_blank">Download</a> the exe based on your system configuration and run it. Click your way through till you&apos;re asked to select your language.</p>
+<p>The Windows installer allows you to select the language plugin(s) as part of the the installation process. A language plugin is essentially the language(s) that you would use to write your tests in. Check the box(es) you want to install. You can select more than one language plugin to install.</p>
+<p><img src="images/install-lang-runner.jpg" alt="Select langauge runner"></p>
+<p>The windows installer installs Gauge to %PROGRAMFILES% by default. But you can select where you want to install Gauge and complete Gauge installation.</p>
+<h4 id="using-chocolatey"><a name="using-chocolatey" class="plugin-anchor" href="#using-chocolatey"><span class="fa fa-link"></span></a>Using Chocolatey</h4>
+<p>Chocolatey is a package manager, very similar to brew for mac. This provides for a simple command line way to install Gauge, if you don&apos;t like to click through a user interface.</p>
+<p>Install Gauge using Chocolatey with the following command</p>
+<pre><code>choco install gauge
+</code></pre><p>If you&apos;re upgrading to a newer version, then use the command:</p>
+<pre><code>choco upgrade gauge
+</code></pre><p>The windows installer installs Gauge to %PROGRAMFILES% by default</p>
+<h2 id="mac"><a name="mac" class="plugin-anchor" href="#mac"><span class="fa fa-link"></span></a>Mac</h2>
+<p>There are 2 ways you can download an install Gauge. We recommend using brew because it&apos;s very simple. However, if you  have limitations then you can use the offline installation instructions.</p>
+<h3 id="home-brew"><a name="home-brew" class="plugin-anchor" href="#home-brew"><span class="fa fa-link"></span></a>Home Brew</h3>
+<p>The following command installs Gauge.</p>
+<p>For this to work, you will need to install <a href="http://brew.sh/" target="_blank">homebrew</a>. If you have brew installed then all you need to run is this command; it will downlaod and install Gauge.  This requires you to be connected to the internet.</p>
+<pre><code>brew update
+brew install gauge
+</code></pre><p>If you already have a version of Gauge then the following command will update to the latest version of Gauge.</p>
+<pre><code>brew update
+brew upgrade gauge
+</code></pre><h3 id="offline-installation"><a name="offline-installation" class="plugin-anchor" href="#offline-installation"><span class="fa fa-link"></span></a>Offline Installation</h3>
+<p>You can <a href="http://getgauge.io/get-started" target="_blank">download the Gauge installer</a>. This is a pkg file, so you can juse click your way through to finish installing Gauge.</p>
+<p>To install a language runner and other plugins, go <a href="">here</a>.</p>
+<h2 id="linux"><a name="linux" class="plugin-anchor" href="#linux"><span class="fa fa-link"></span></a>Linux</h2>
+<p><a href="http://getgauge.io/get-started" target="_blank">Download</a> the zip file. Chooe the archive file appropriate for your installation. And run the command below to install Gauge.</p>
+<pre><code>$ unzip gauge-$VERSION-$OS.$ARCH.zip
+~ $ ./install.sh
+</code></pre><p>Having trouble with installation? Here is a detailed <a href="../troubleshooting/installation.html">installation troubleshooting guide</a> that will help.</p>
 
-logs_directory = GaugeLogs
-</code></pre>
                     
                     </section>
                 
@@ -1343,10 +1336,10 @@ logs_directory = GaugeLogs
         </div>
 
         
-        <a href="../dependency_management/maven-plugin.html" class="navigation navigation-prev " aria-label="Previous page: maven-plugin"><i class="fa fa-angle-left"></i></a>
+        <a href="../getting_started/README.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../plugins/README.html" class="navigation navigation-next " aria-label="Next page: Plugins"><i class="fa fa-angle-right"></i></a>
+        <a href="../getting_started/install_language_runner.html" class="navigation navigation-next " aria-label="Next page: Install Language runner"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

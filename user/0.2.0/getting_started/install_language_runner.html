@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Environments | Gauge Documentation</title>
+        <title>Install Language runner | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../plugins/README.html" />
+    <link rel="next" href="../getting_started/creating_a_gauge_project.html" />
     
     
-    <link rel="prev" href="../dependency_management/maven-plugin.html" />
+    <link rel="prev" href="../getting_started/download_and_install.html" />
     
 
         
@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="9" data-basepath=".." data-revision="1446737074311">
+    <div class="book" data-level="1.2" data-basepath=".." data-revision="1446737074311">
     
 
 <div class="book-summary">
@@ -115,7 +115,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.2" data-path="getting_started/install_language_runner.html">
+        <li class="chapter active" data-level="1.2" data-path="getting_started/install_language_runner.html">
             
                 
                     <a href="../getting_started/install_language_runner.html">
@@ -792,7 +792,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="9" data-path="managing_environments/README.html">
+        <li class="chapter " data-level="9" data-path="managing_environments/README.html">
             
                 
                     <a href="../managing_environments/README.html">
@@ -1290,50 +1290,30 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_27">
+                    <section class="normal" id="section-gitbook_23">
                     
-                        <h1 id="environments"><a name="environments" class="plugin-anchor" href="#environments"><span class="fa fa-link"></span></a>Environments</h1>
-<p>Environment specific <a href="https://en.wikipedia.org/wiki/Environment_variable" target="_blank">variables</a> can be managed using property files. The <a href="https://en.wikipedia.org/wiki/.properties" target="_blank">property files</a> have set of key value pairs which are set as environment variables during execution.</p>
-<p>The env directory structure for a <code>java</code> project:</p>
-<pre><code>&#x251C;&#x2500;&#x2500; env
-  &#x2514;&#x2500;&#x2500; default
-     &#x251C;&#x2500;&#x2500; default.properties
-     &#x2514;&#x2500;&#x2500; java.properties
-</code></pre><p>Custom properties can be added to an existing property files or in a newly created one.</p>
-<h2 id="creating-new-environment"><a name="creating-new-environment" class="plugin-anchor" href="#creating-new-environment"><span class="fa fa-link"></span></a>Creating new environment</h2>
-<p>To create an environment called <code>ci</code>:</p>
-<ul>
-<li>Create a directory called <code>ci</code> in <code>env</code> directory</li>
-<li>Add property files (e.g. <code>user.properties</code>)</li>
-</ul>
-<pre><code>&#x251C;&#x2500;&#x2500; env
-   &#x251C;&#x2500;&#x2500; ci
-   &#x2502;  &#x2514;&#x2500;&#x2500; user.properties
-   &#x2514;&#x2500;&#x2500; default
-      &#x251C;&#x2500;&#x2500; default.properties
-      &#x2514;&#x2500;&#x2500; java.properties
-</code></pre><h2 id="executing-with-environment"><a name="executing-with-environment" class="plugin-anchor" href="#executing-with-environment"><span class="fa fa-link"></span></a>Executing with environment</h2>
-<p>The environment is specified using the <code>env</code> flag. For example if <code>ci</code> environment is used during execution</p>
-<pre><code>gauge --env ci specs/
-</code></pre><p>On execution</p>
-<ul>
-<li>The properties from the <code>default</code> directory are first set.</li>
-<li>The properties from the specified environment <code>ci</code>  are then set.</li>
-<li>For common values,  environment specific variables from <code>ci</code> override the default values.</li>
-</ul>
-<p>For e.g.</p>
-<pre><code>gauge_custom_build_path: out/production
-</code></pre><p>present in <strong>env/default/java.properties</strong> is overridden by the</p>
-<pre><code>gauge_custom_build_path: target
-</code></pre><p>present in the <strong>env/ci/java.properties</strong></p>
-<h2 id="configuring-the-properties"><a name="configuring-the-properties" class="plugin-anchor" href="#configuring-the-properties"><span class="fa fa-link"></span></a>Configuring the Properties</h2>
-<p>Certain properties can be configured in <code>env/default/default.properties</code>, which overrides the default properties and are scoped only to the current project.</p>
-<p>These are key value pairs, key being the property name and the value is either the absolute or path relative to project root.</p>
-<p>Example:</p>
-<pre><code>gauge_reports_dir = reports
+                        <h1 id="install-language-runner"><a name="install-language-runner" class="plugin-anchor" href="#install-language-runner"><span class="fa fa-link"></span></a>Install Language runner</h1>
+<p>Gauge is a first class command line utility. This means that you only <strong>need</strong> one plugin to use Gauge. That is your language runner.</p>
+<p>The langauge runner determines the language you would use to write your tests. Langauge supported currently are <a href="../test_code/java/java.html">Java</a>, <a href="../test_code/csharp/csharp.html">C#</a> ,and <a href="../test_code/ruby/ruby.html">Ruby</a>.</p>
+<p>To install a langauge runner and then initialise the runner, use the following command</p>
+<h4 id="java"><a name="java" class="plugin-anchor" href="#java"><span class="fa fa-link"></span></a>Java</h4>
+<pre><code>gauge install java
+</code></pre><h4 id="csharpc"><a name="csharpc" class="plugin-anchor" href="#csharpc"><span class="fa fa-link"></span></a>CSharp(C#)</h4>
+<pre><code>gauge install csharp
+</code></pre><h4 id="ruby"><a name="ruby" class="plugin-anchor" href="#ruby"><span class="fa fa-link"></span></a>Ruby</h4>
+<pre><code>gauge install ruby
+</code></pre><h1 id="check-your-installation"><a name="check-your-installation" class="plugin-anchor" href="#check-your-installation"><span class="fa fa-link"></span></a>Check your installation</h1>
+<p>You can check the version of your plugin and Gauge core by executing the following command.</p>
+<pre><code>gauge -v
+</code></pre><p>If this enlists a version then you&apos;re intallation and initialisation is has been successful. Your output will look like this:</p>
+<pre><code>Gauge version: &lt;version number&gt;
 
-logs_directory = GaugeLogs
-</code></pre>
+Plugins
+-------
+language(&lt;version number&gt;)
+</code></pre><p>You can read more about plugins, the different types of plugins and how to install and uninstall them.</p>
+<p>If you have Gauge and your langauge runner installed, then see how you can <a href="creating_a_gauge_project.html">create a Gauge project</a>.</p>
+
                     
                     </section>
                 
@@ -1343,10 +1323,10 @@ logs_directory = GaugeLogs
         </div>
 
         
-        <a href="../dependency_management/maven-plugin.html" class="navigation navigation-prev " aria-label="Previous page: maven-plugin"><i class="fa fa-angle-left"></i></a>
+        <a href="../getting_started/download_and_install.html" class="navigation navigation-prev " aria-label="Previous page: Install Gauge"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../plugins/README.html" class="navigation navigation-next " aria-label="Next page: Plugins"><i class="fa fa-angle-right"></i></a>
+        <a href="../getting_started/creating_a_gauge_project.html" class="navigation navigation-next " aria-label="Next page: Creating a Gauge project"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
