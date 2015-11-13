@@ -7,7 +7,7 @@ Here are the sample build files for
 2. [Gradle](#Gradle)
 3. [Ant](#Ant)
 
-###Maven
+###<a name="Maven"></a>Maven
 
 ````xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -50,7 +50,7 @@ Here are the sample build files for
 </project>
 ````
 
-###Gradle
+###<a name="Gradle"></a>Gradle
 ````groovy
 apply plugin: 'java'
 apply plugin: 'application'
@@ -105,7 +105,7 @@ task gauge(dependsOn: 'copyLibs') {
 }
 ````
 
-### Ant Task
+###<a name="Ant"></a>Ant Task
 ````xml
 <target name="specs">
     <exec executable="gauge">
