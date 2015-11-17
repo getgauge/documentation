@@ -47,3 +47,15 @@ Then fill the scenario name in the template.
 
 This formats the specification including indentation of tables and steps.
 
+##6. HTML Preview Tab
+* A specification file, written in markdown can be viewed as an HTML preview.
+
+This is a spec file in markdown.
+
+![spec text](intellij-screenshots/html preview/spec_text.png)
+
+On click of the `HTML Preview` tab at the bottom of the editor, it shows the HTML equivalent preview of spec file.
+
+![spec text](intellij-screenshots/html preview/spec_markdown.png)
+
+Since specs are written in markdown, they can be converted to HTML using any markdown to HTML convertors.
