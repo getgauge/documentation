@@ -1,6 +1,6 @@
-# Intellij Idea
+# Intellij IDEA
 
-Gauge projects can be created and executed from intellij. The plugin can be downloaded from the jetbrains plugin repository.
+Gauge projects can be created and executed from Intellij IDEA. The plugin can be downloaded from the JetBrains plugin repository.
 
 This plugin supports only [java](../test_code/java/java.md).
 
@@ -9,7 +9,7 @@ This plugin supports only [java](../test_code/java/java.md).
 
 Plugin can be installed by downloading from Jetbrains plugin repository.
 
-Steps to install Gauge Intellij plugin from IDE:
+Steps to install Gauge Intellij IDEA plugin from IDE:
 
 * Open the Settings dialog (e.g. ⌘ Comma).
 * In the left-hand pane, select Plugins.
@@ -29,4 +29,4 @@ To install plugin by downloading it manually or to update plugin, follow the ste
 
 Create a new Gauge project and start writing your tests.
 
-Explore all the [features of Gauge IntelliJ plugin](features.md) now!
+Explore all the [features of Gauge Intellij IDEA plugin](features.md) now!
