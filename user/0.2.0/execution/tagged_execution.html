@@ -38,7 +38,7 @@
 
 
         
-    <div class="book" data-level="7.2" data-basepath=".." data-revision="1447744875707">
+    <div class="book" data-level="7.2" data-basepath=".." data-revision="1448074777604">
     
 
 <div class="book-summary">
@@ -1305,9 +1305,12 @@
 </code></pre><h3 id="tags-can-be-selected-using-expressions"><a name="tags-can-be-selected-using-expressions" class="plugin-anchor" href="#tags-can-be-selected-using-expressions"><span class="fa fa-link"></span></a>Tags can be selected using expressions</h3>
 <p><strong>Examples</strong></p>
 <ul>
+<li><strong>!TagA:</strong>  Selects specs/scenarios that do not have TagA.</li>
 <li><strong>TagA &amp; TagB:</strong>  Selects specs/scenarios that have both TagA and TagB.</li>
+<li><strong>TagA &amp; !TagB:</strong>  Selects specs/scenarios that have TagA and not TagB.</li>
 <li><strong>TagA | TagB:</strong>  Selects specs/scenarios that have either TagA or TagB.</li>
 <li><strong>(TagA &amp; TagB) | TagC:</strong>  Selects specs/scenarios that have either TagC or both the tags TagA and TagB</li>
+<li><strong>!(TagA &amp; TagB) | TagC:</strong>  Selects specs/scenarios that have either TagC or do not have both the tags TagA and TagB</li>
 <li><strong>(TagA | TagB) &amp; TagC:</strong>  Selects specs/scenarios that either TagA and TagC or TagB and TagC</li>
 </ul>
 
