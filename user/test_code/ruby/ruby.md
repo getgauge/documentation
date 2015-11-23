@@ -27,7 +27,7 @@ end
 **Step:**
 
 ````
-Create following "admin" users
+* Create following "admin" users
 |id |   name  |
 |---|---------|
 |123| prateek |
