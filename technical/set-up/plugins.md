@@ -17,3 +17,4 @@ There are three types of plugins present in Gauge :
 
 * Other Plugins
     - Maven Plugin
+    - Gradle Plugin

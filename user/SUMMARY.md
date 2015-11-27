@@ -42,6 +42,7 @@
    * [Parallel Execution](execution/parallel_execution.md)
 * [Dependency Management](dependency_management/README.md)
    * [maven-plugin](dependency_management/maven-plugin.md)
+   * [gradle-plugin](dependency_management/gradle-plugin.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
    * [Installation](plugins/installation.md)

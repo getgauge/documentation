@@ -21,4 +21,5 @@ The following are the list of plugins supported by Gauge.
 ## Other
 
 * [Maven](https://github.com/getgauge/gauge-maven-plugin)
+* [Gradle](https://github.com/manupsunny/gauge-gradle-plugin)
 
