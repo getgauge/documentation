@@ -21,7 +21,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0-SNAPSHOT'
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0.0'
         classpath files("$projectDir/libs")
     }
 }
@@ -76,6 +76,6 @@ The following plugin properties can be additionally set:
 |additionalFlags| -PadditionalFlags="--verbose" | Add additional gauge flags to execution|
 
 
-See gauge's [command line interface](../cli/README.md) for list of all flags that be used with **-DadditionalFlags** option.
+See gauge's [command line interface](../cli/README.md) for list of all flags that be used with **-PadditionalFlags** option.
 
 
