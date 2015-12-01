@@ -3,9 +3,11 @@
 You can use Gauge with any of the build tools that you like.
 
 Here are the sample build files for
-1. [Maven](#Maven)
-2. [Gradle](#Gradle)
-3. [Ant](#Ant)
+1. [Maven](#a-namemavenamaven)
+2. [Gradle](#a-namegradleagradle)
+3. [Ant](#a-nameantaant-task)
+
+For more details, please take a look at the [Dependency Management](../../dependency_management/README.md) section.
 
 ###<a name="Maven"></a>Maven
 
@@ -53,6 +55,7 @@ Here are the sample build files for
 ###<a name="Gradle"></a>Gradle
 ````groovy
 apply plugin: 'java'
+apply plugin: 'gauge'
 apply plugin: 'application'
 
 group = "my-gauge-tests"
@@ -60,14 +63,12 @@ version = "1.0.0"
 
 description = "My Gauge Tests"
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
-
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0.0'
         classpath files("$projectDir/libs")
     }
 }
@@ -76,32 +77,17 @@ repositories {
     mavenCentral()
 }
 
-sourceSets {
-    main.java.srcDir 'src'
-}
-
 dependencies {
-    compile(
-            'com.thoughtworks.gauge:gauge-java:0.2.2'
-    )
 }
 
-def executeGauge() {
-    exec {
-        executable "gauge"
-        args "specs"
-    }
-}
-
-task copyLibs(type: Copy) {
-    from configurations.runtime
-    into "$projectDir/libs"
-}
-
-task gauge(dependsOn: 'copyLibs') {
-    doLast  {
-        executeGauge()
-    }
+// configure gauge task here (optional)
+gauge {
+    specsDir = 'specs'
+    inParallel = true
+    nodes = 2
+    env = 'dev'
+    tags = 'tag1'
+    additionalFlags = '--verbose'
 }
 ````
 
