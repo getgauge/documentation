@@ -9,7 +9,7 @@ Gauge projects can be created and executed in Visual Studio using the Visual Stu
 * Click on `Download` and select `Install` option.
 * Restart Visual Studio in order for the changes to take effect.
 
-The extension resides on the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/d34964c5-3bf8-4138-be63-01214cb1db3e).
+The extension resides on the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/dd8ea767-aa75-4771-98f4-6c8a9055ca92).
 
 ![install plugin](visual_studio_screenshots/VS_Installation.png "install Gauge plugin")
 
