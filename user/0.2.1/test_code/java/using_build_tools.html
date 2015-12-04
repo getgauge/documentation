@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="6.2.7" data-chapter-title="Using build tools" data-filepath="test_code/java/using_build_tools.md" data-basepath="../.." data-revision="Tue Nov 24 2015 06:04:19 GMT-0800 (PST)">
+    <div class="book" data-level="6.2.7" data-chapter-title="Using build tools" data-filepath="test_code/java/using_build_tools.md" data-basepath="../.." data-revision="Fri Dec 04 2015 07:18:08 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -756,6 +756,21 @@
             
         </li>
     
+        <li class="chapter " data-level="8.2" data-path="dependency_management/gradle-plugin.html">
+            
+                
+                    <a href="../../dependency_management/gradle-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        gradle-plugin
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -1185,10 +1200,11 @@
 <p>You can use Gauge with any of the build tools that you like.</p>
 <p>Here are the sample build files for</p>
 <ol>
-<li><a href="#Maven">Maven</a></li>
-<li><a href="#Gradle">Gradle</a></li>
-<li><a href="#Ant">Ant</a></li>
+<li><a href="#a-namemavenamaven">Maven</a></li>
+<li><a href="#a-namegradleagradle">Gradle</a></li>
+<li><a href="#a-nameantaant-task">Ant</a></li>
 </ol>
+<p>For more details, please take a look at the <a href="../../dependency_management/index.html">Dependency Management</a> section.</p>
 <h3 id="maven"><a name="maven" class="plugin-anchor" href="#maven"><span class="fa fa-link"></span></a><a name="Maven"></a>Maven</h3>
 <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">project</span> <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="hljs-attribute">xmlns:xsi</span>=<span class="hljs-value">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
          <span class="hljs-attribute">xsi:schemaLocation</span>=<span class="hljs-value">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span>
@@ -1231,6 +1247,7 @@
 </code></pre>
 <h3 id="gradle"><a name="gradle" class="plugin-anchor" href="#gradle"><span class="fa fa-link"></span></a><a name="Gradle"></a>Gradle</h3>
 <pre><code class="lang-groovy">apply <span class="hljs-string">plugin:</span> <span class="hljs-string">&apos;java&apos;</span>
+apply <span class="hljs-string">plugin:</span> <span class="hljs-string">&apos;gauge&apos;</span>
 apply <span class="hljs-string">plugin:</span> <span class="hljs-string">&apos;application&apos;</span>
 
 group = <span class="hljs-string">&quot;my-gauge-tests&quot;</span>
@@ -1238,14 +1255,12 @@ version = <span class="hljs-string">&quot;1.0.0&quot;</span>
 
 description = <span class="hljs-string">&quot;My Gauge Tests&quot;</span>
 
-sourceCompatibility = <span class="hljs-number">1.7</span>
-targetCompatibility = <span class="hljs-number">1.7</span>
-
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
+        classpath <span class="hljs-string">&apos;com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0.0&apos;</span>
         classpath files(<span class="hljs-string">&quot;$projectDir/libs&quot;</span>)
     }
 }
@@ -1254,32 +1269,17 @@ repositories {
     mavenCentral()
 }
 
-sourceSets {
-    main.java.srcDir <span class="hljs-string">&apos;src&apos;</span>
-}
-
 dependencies {
-    compile(
-            <span class="hljs-string">&apos;com.thoughtworks.gauge:gauge-java:0.2.2&apos;</span>
-    )
 }
 
-<span class="hljs-keyword">def</span> executeGauge() {
-    exec {
-        executable <span class="hljs-string">&quot;gauge&quot;</span>
-        args <span class="hljs-string">&quot;specs&quot;</span>
-    }
-}
-
-task copyLibs(<span class="hljs-string">type:</span> Copy) {
-    from configurations.runtime
-    into <span class="hljs-string">&quot;$projectDir/libs&quot;</span>
-}
-
-task gauge(<span class="hljs-string">dependsOn:</span> <span class="hljs-string">&apos;copyLibs&apos;</span>) {
-    doLast  {
-        executeGauge()
-    }
+<span class="hljs-comment">// configure gauge task here (optional)</span>
+gauge {
+    specsDir = <span class="hljs-string">&apos;specs&apos;</span>
+    inParallel = <span class="hljs-literal">true</span>
+    nodes = <span class="hljs-number">2</span>
+    env = <span class="hljs-string">&apos;dev&apos;</span>
+    tags = <span class="hljs-string">&apos;tag1&apos;</span>
+    additionalFlags = <span class="hljs-string">&apos;--verbose&apos;</span>
 }
 </code></pre>
 <h3 id="ant-task"><a name="ant-task" class="plugin-anchor" href="#ant-task"><span class="fa fa-link"></span></a><a name="Ant"></a>Ant Task</h3>
