@@ -53,19 +53,16 @@ gradle gauge
 
 #### Execute specs in parallel
 ```
-gradle gauge -PinParallel=true -PspecsDir=specs
+gradle gauge -PspecsDir=specs -PinParallel=true
 ```
 #### Execute specs by tags
 ```
-gradle gauge -Ptags="!in-progress" -PspecsDir=specs
+gradle gauge -PspecsDir=specs -Ptags="!in-progress"
 ```
 #### Specifying execution environment
 ```
-gradle gauge -Penv="dev" -PspecsDir=specs
+gradle gauge -PspecsDir=specs -Penv="dev"
 ```
-
->Note: Make sure you are passing specsDir parameter as the last one
-
 ### All additional Properties
 The following plugin properties can be additionally set:
 
