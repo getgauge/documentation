@@ -12,7 +12,7 @@ apply plugin: 'gauge'
 apply plugin: 'application'
 
 group = "my-gauge-tests"
-version = "1.0.0"
+version = "1.1.0"
 
 description = "My Gauge Tests"
 
@@ -21,7 +21,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0.0'
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.1.0'
         classpath files("$projectDir/libs")
     }
 }
