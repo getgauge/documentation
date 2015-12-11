@@ -12,7 +12,7 @@ apply plugin: 'gauge'
 apply plugin: 'application'
 
 group = "my-gauge-tests"
-version = "1.0.0"
+version = "1.1.0"
 
 description = "My Gauge Tests"
 
@@ -21,7 +21,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0.0'
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.1.0'
         classpath files("$projectDir/libs")
     }
 }
@@ -53,16 +53,19 @@ gradle gauge
 
 #### Execute specs in parallel
 ```
-gradle gauge -PspecsDir=specs -PinParallel=true
+gradle gauge -PinParallel=true -PspecsDir=specs
 ```
 #### Execute specs by tags
 ```
-gradle gauge -PspecsDir=specs -Ptags="!in-progress"
+gradle gauge -Ptags="!in-progress" -PspecsDir=specs
 ```
 #### Specifying execution environment
 ```
-gradle gauge -PspecsDir=specs -Penv="dev"
+gradle gauge -Penv="dev" -PspecsDir=specs
 ```
+
+>Note: Make sure you are passing specsDir parameter as the last one
+
 ### All additional Properties
 The following plugin properties can be additionally set:
 
