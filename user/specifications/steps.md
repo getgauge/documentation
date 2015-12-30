@@ -16,7 +16,4 @@ See [test code](../test_code/README.md) to understand how to write step implemen
 The values written in __quotes__ are parameters which are passed into the underlying step implementation as a language specific structure.
 
 ###Learn more
-* [Contexts](contexts.md)
 * [Parameters](parameters.md)
-
-
