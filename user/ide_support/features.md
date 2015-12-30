@@ -8,6 +8,7 @@
 * [Parallel Execution](#52-parallel-execution)
 * [Run configurations](#6-run-configuration)
 * [Rephrase steps](#7-rephrase-steps)
+* [Find Usages](#8-find-usages)
 * Navigation from step to implementation (cmd/ctrl + b)
 
 ###1. Project Creation
@@ -113,8 +114,9 @@ You can edit the run configuration to make changes to:
 * The parameters will be in ```< >``` in the rephrase dialog. They can be reordered,removed or new parameters can be added.
 * The rephrase change will reflect across **all the specs** in the project.
 
+###8. Find Usages
+* Press **cmd/ctrl+alt+F7** on step/concept to see the usages.
 
-
-
+![find usages](intellij-screenshots/find_usages/find_usages.gif "find usages")
 
 
