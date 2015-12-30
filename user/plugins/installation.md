@@ -43,6 +43,10 @@ Example:
 ````
 gauge --update java
 ````
+To update a plugin to a specific version, use the `--plugin-version` flag.
+````
+gauge --update java --plugin-version 0.3.2
+````
 You can also update all the installed plugins by running
 ````
 gauge --update-all
@@ -56,6 +60,12 @@ Example:
 ````
 gauge --uninstall java
 ````
+
+To uninstall a specific version of the plugin, use the `--plugin-version` flag.
+````
+gauge --uninstall java --plugin-version 0.3.2
+````
+
 
 ## Troubleshooting
 
