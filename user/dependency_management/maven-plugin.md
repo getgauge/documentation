@@ -95,7 +95,7 @@ The following plugin properties can be additionally set:
 |inParallel| -DinParallel=true | Execute specs in parallel|
 |nodes    | -Dnodes=3 | Number of parallel execution streams. Use with ```parallel```|
 |env      | -Denv=qa  | gauge env to run against  |
-|additionalFlags| -DadditionalFlags="--verbose" | Add additional gauge flags to execution|
+|additionalFlags| -Dflags="--verbose" | Add additional gauge flags to execution|
 
 
 See gauge's [command line interface](../cli/README.md) for list of all flags that be used with **-DadditionalFlags** option.
