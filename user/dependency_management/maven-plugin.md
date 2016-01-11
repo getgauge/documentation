@@ -95,6 +95,7 @@ The following plugin properties can be additionally set:
 |inParallel| -DinParallel=true | Execute specs in parallel|
 |nodes    | -Dnodes=3 | Number of parallel execution streams. Use with ```parallel```|
 |env      | -Denv=qa  | gauge env to run against  |
+|dir  | -Ddir=. | Set working directory for gauge.  Default is project.basedir. |  
 |flags| -Dflags="--verbose" | Add additional gauge flags to execution|
 
 
