@@ -8,7 +8,7 @@ Here is a list of flags that can be used with `gauge`.
 | ------| ----------- |-----|
 |--add-plugin| Adds the specified non-language plugin to the current project.|```gauge --add-plugin xml-report```|
 |  --api-port  |    Specifies the api port to be used.| ``` gauge --daemonize --api-port 7777```|
-| --check | Checks for parse and validation errors. | ```gauge --check specs```|
+| --validate | Check for validation and parse errors. | ```gauge --validate specs```|
 |  --daemonize    |  Run as a **daemon**.|```gauge --daemonize```|
 |  --dir="."|Set the working directory for the current command, accepts a path relative to current directory.|```gauge --dir=PATH specs```|
 |  --env | Specifies the **environment**. If not specified, default will be used.|```gauge --env="chrome" specs```|
@@ -18,6 +18,7 @@ Here is a list of flags that can be used with `gauge`.
 |  --init| Initializes project structure in the current directory.|```gauge --init java```|
 |  --install |  Downloads and installs a plugin.|```gauge --install java```|
 |  --install-all |  Installs all the plugins specified in project manifest, if not installed.|```gauge --install-all```|
+|--list-templates | Lists all the Gauge templates available. | ```gauge --list-templates```|
 |  --log-level |     Set level of logging to debug, info, warning, error or critical.|```gauge --log-level="debug" specs```|
 |  -n          |Specify number of **parallel execution** streams.|```gauge -p -n=4 specs``` |
 |  --parallel, -p |    Execute specs in parallel.|```gauge -p specs```|
