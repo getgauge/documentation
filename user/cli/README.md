@@ -27,11 +27,11 @@ Here is a list of flags that can be used with `gauge`.
 |  --refactor   |      **Refactor/Rephrase** steps.| ```gauge --refactor OLD_STEP NEW_STEP```|
 |  --simple-console  | Removes colouring and simplifies the console output.|```gauge --simple-console specs```|
 |  --sort, -s          |       Run specs in Alphabetical Order.|```gauge -s specs```|
-| --strategy="eager" | Set the parallelization strategy for execution. Should be used with -p flag. Possible values are: eager, lazy. | ```gauge -p --strategy="lazy" specs``` |
+| --strategy="eager" | Set the parallelization strategy for execution. Should be used with -p flag. Possible values are: eager, lazy. | ```gauge -p --strategy="eager" specs``` |
 |  --table-rows      |     Executes the specs and scenarios only for the selected rows of data table.| ```gauge --table-rows "1-3" specs/hello.spec ```|
 |  --tags    | Executes the specs/ scenarios tagged with given tags. This filtering can also be done based on **tag expression**.| ```gauge --tags tag1,tag2 specs```<br>```gauge --tags "tag1 & tag2" specs```|
 |  --check-updates  |Checks for Gauge and plugins updates. | ```gauge --check-updates```|
 |  --update  |Updates a plugin. | ```gauge --update java```|
 |  --update-all  |Updates all the installed Gauge plugins. | ```gauge --update-all```|
 |  -v, --version, -version   | Print the current version and exit.| ```gauge --version```|
-|  --verbose |       Enable verbose logging for debugging.|```gauge --verbose specs```|
+|  --verbose |  Enable step level reporting on console, default being scenario level. | ```gauge --verbose specs```|
