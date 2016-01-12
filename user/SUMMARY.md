@@ -6,6 +6,7 @@
    * [Install Language runner](getting_started/install_language_runner.md)
    * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
    * [Project Structure](getting_started/project_structure.md)
+   * [Gauge Project Templates](getting_started/gauge_templates.md)
 * [Specifications](specifications/README.md)
    * [Steps](specifications/steps.md)
    * [Contexts](specifications/contexts.md)
