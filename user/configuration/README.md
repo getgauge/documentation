@@ -12,6 +12,16 @@ This property is set to an url, which acts as plugin repository for Gauge.
 gauge_repository_url = http://raw.github.com/getgauge/gauge-repository/master
 ```
 
+###gauge_templates_url
+
+This property is set to an url, which acts as template repository for Gauge.
+
+**Please do not change this url** or it will break the project initialization using templates.
+
+```
+gauge_templates_url = https://dl.bintray.com/gauge/Templates
+```
+
 ###runner_connection_timeout
 
 This property sets the timeout in milliseconds for making a connection to the langauge runner.

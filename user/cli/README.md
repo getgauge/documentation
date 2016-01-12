@@ -10,7 +10,7 @@ Here is a list of flags that can be used with `gauge`.
 |  --api-port  |    Specifies the api port to be used.| ``` gauge --daemonize --api-port 7777```|
 | --validate | Check for validation and parse errors. | ```gauge --validate specs```|
 |  --daemonize    |  Run as a **daemon**.|```gauge --daemonize```|
-|  --dir="."|Set the working directory for the current command, accepts a path relative to current directory.|```gauge --dir=PATH specs```|
+|  --dir|Set the working directory for the current command, accepts a path relative to current directory.|```gauge --dir=PATH specs```|
 |  --env | Specifies the **environment**. If not specified, default will be used.|```gauge --env="chrome" specs```|
 |  --file, -f    | Installs the plugin from zip file. This is used with --install.|```gauge -f PATH_TO_ZIP_FILE --install java```|
 |  --format      |Formats the specified spec files. |```gauge --format specs``` |
