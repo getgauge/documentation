@@ -8,7 +8,7 @@ The following section describe the steps needed to set up Gauge and get specs wo
 
 ###Using Gauge from command line :
 
-* [Downlod and Install](http://getgauge.io/download) Gauge
+* [Downlod and Install](http://getgauge.io/get-started) Gauge
 * Install a Gauge [language plugin](../plugins/installation.md)
 * [Create a Gauge project](creating_a_gauge_project.md)
 * [Execute](../execution/README.md) the example spec
