@@ -5,7 +5,7 @@
 - Go to `File` -> `New Project`.
 - Choose `Gauge Test Project` under Visual C# Test category.
 
-![ProjectCreation](ide_support/visual_studio_screenshots/features/Create_Project.png
+![ProjectCreation](visual_studio_screenshots/features/Create_Project.png
 "Create New Project")
 
 - Choose the Project location and Project Name.
@@ -26,7 +26,7 @@ Gauge specs are in [Markdown](http://daringfireball.net/projects/markdown/syntax
 
 Steps with missing implementation are also highlighted.
 
-![syntax highlighting](ide_support/visual_studio_screenshots/features/Syntax_highlighting.png
+![syntax highlighting](visual_studio_screenshots/features/Syntax_highlighting.png
 "syntax highlighting")
 
 ### Autocomplete
@@ -35,7 +35,7 @@ This plugin hooks into VisualStudio Intellisense, and brings in autocompletion o
 
 Hint: Hit <kbd>Ctrl</kbd> + <kbd>Space</kbd> to bring up the Intellisense menu.
 
-![AutoComplete](ide_support/visual_studio_screenshots/features/AutoComplete.png
+![AutoComplete](visual_studio_screenshots/features/AutoComplete.png
 "Auto Complete")
 
 ### Navigation
@@ -48,7 +48,7 @@ Usage: `Right Click` -> `Go to Declaration` or hit <kbd>F12</kbd>
 
 Implement an unimplemented step - generates a method template, with a `Step` attribute having this Step Text.
 
-![Quick fix](ide_support/visual_studio_screenshots/features/quickfix/QuickFix.gif
+![Quick fix](visual_studio_screenshots/features/quickfix/QuickFix.gif
 "Quick Fix")
 
 ### Test Runner
@@ -56,7 +56,7 @@ Implement an unimplemented step - generates a method template, with a `Step` att
 Open the Test Explorer : `Menu` -> `Test` -> `Windows` -> `Test Explorer`
 All the scenarios in the project should be listed. Run one or more of these tests.
 
-![Test Explorer](ide_support/visual_studio_screenshots/features/TestExplorer.png
+![Test Explorer](visual_studio_screenshots/features/TestExplorer.png
 "Test Explorer")
 
 ### Create Spec and Concept files
@@ -65,6 +65,6 @@ All the scenarios in the project should be listed. Run one or more of these test
 * Choose `Specification` or `Concept` file type.
 * Enter file name and click `Add`.
 
-![Create File Type](ide_support/visual_studio_screenshots/features/Create_FileType.png
+![Create File Type](visual_studio_screenshots/features/Create_FileType.png
 "Create FileType")
 
