@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Visual Studio | Gauge Documentation</title>
+        <title>Features | Gauge Documentation</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../ide_support/visual_studio_features.html" />
+    <link rel="next" href="../ide_support/eclipse.html" />
     
     
-    <link rel="prev" href="../ide_support/other_usability_features.html" />
+    <link rel="prev" href="../ide_support/visual_studio.html" />
     
 
         
@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="11.2" data-chapter-title="Visual Studio" data-filepath="ide_support/visual_studio.md" data-basepath=".." data-revision="Sun Jan 31 2016 05:11:04 GMT-0800 (PST)">
+    <div class="book" data-level="11.2.1" data-chapter-title="Features" data-filepath="ide_support/visual_studio_features.md" data-basepath=".." data-revision="Sun Jan 31 2016 05:11:04 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -963,7 +963,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.2" data-path="ide_support/visual_studio.html">
+        <li class="chapter " data-level="11.2" data-path="ide_support/visual_studio.html">
             
                 
                     <a href="../ide_support/visual_studio.html">
@@ -979,7 +979,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.2.1" data-path="ide_support/visual_studio_features.html">
+        <li class="chapter active" data-level="11.2.1" data-path="ide_support/visual_studio_features.html">
             
                 
                     <a href="../ide_support/visual_studio_features.html">
@@ -1220,17 +1220,47 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="visual-studio"><a name="visual-studio" class="plugin-anchor" href="#visual-studio"><span class="fa fa-link"></span></a>Visual Studio</h1>
-<p>Gauge projects can be created and executed in Visual Studio using the Visual Studio plugin for Gauge. This plugin can be installed from Visual Studio Gallery.</p>
-<h2 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h2>
+                        <h1 id="features"><a name="features" class="plugin-anchor" href="#features"><span class="fa fa-link"></span></a>Features</h1>
+<h3 id="creating-a-new-gauge-project"><a name="creating-a-new-gauge-project" class="plugin-anchor" href="#creating-a-new-gauge-project"><span class="fa fa-link"></span></a>Creating a new Gauge Project</h3>
 <ul>
-<li>Open Visual Studio Extension Manager from <code>Tools</code> -&gt; <code>Extensions and Updates</code>.</li>
-<li>Go to <code>Visual Studio Gallery</code> and search for <code>Gauge VS2013</code>.</li>
-<li>Click on <code>Download</code> and select <code>Install</code> option.</li>
-<li>Restart Visual Studio in order for the changes to take effect.</li>
+<li>Go to <code>File</code> -&gt; <code>New Project</code>.</li>
+<li>Choose <code>Gauge Test Project</code> under Visual C# Test category.</li>
 </ul>
-<p>The extension resides on the <a href="https://visualstudiogallery.msdn.microsoft.com/dd8ea767-aa75-4771-98f4-6c8a9055ca92" target="_blank">Visual Studio Gallery</a>.</p>
-<p><img src="visual_studio_screenshots/VS_Installation.png" alt="install plugin" title="install Gauge plugin"></p>
+<p><img src="visual_studio_screenshots/features/Create_Project.png" alt="ProjectCreation" title="Create New Project"></p>
+<ul>
+<li>Choose the Project location and Project Name.</li>
+<li>Click <code>OK</code>.</li>
+</ul>
+<p>This should setup a new Gauge project, and add the required meta data for Gauge to execute this project.</p>
+<p>Alternately, you can create a Gauge project from command-line as:</p>
+<pre><code>mkdir &lt;project_name&gt;
+gauge --init csharp
+</code></pre><p>This creates <code>&lt;project_name&gt;.sln</code> file which can be opened with Visual Studio.</p>
+<h3 id="syntax-highlighting"><a name="syntax-highlighting" class="plugin-anchor" href="#syntax-highlighting"><span class="fa fa-link"></span></a>Syntax Highlighting</h3>
+<p>Gauge specs are in <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown</a> syntax. This plugin highlights Specifications, Scenarios, Steps and Tags.</p>
+<p>Steps with missing implementation are also highlighted.</p>
+<p><img src="visual_studio_screenshots/features/Syntax_highlighting.png" alt="syntax highlighting" title="syntax highlighting"></p>
+<h3 id="autocomplete"><a name="autocomplete" class="plugin-anchor" href="#autocomplete"><span class="fa fa-link"></span></a>Autocomplete</h3>
+<p>This plugin hooks into VisualStudio Intellisense, and brings in autocompletion of Step text. The step texts brought in is a union of steps already defined, concepts defined, and step text from implementation.</p>
+<p>Hint: Hit <kbd>Ctrl</kbd> + <kbd>Space</kbd> to bring up the Intellisense menu.</p>
+<p><img src="visual_studio_screenshots/features/AutoComplete.png" alt="AutoComplete" title="Auto Complete"></p>
+<h3 id="navigation"><a name="navigation" class="plugin-anchor" href="#navigation"><span class="fa fa-link"></span></a>Navigation</h3>
+<p>Jump from Step text to it&apos;s implementation.</p>
+<p>Usage: <code>Right Click</code> -&gt; <code>Go to Declaration</code> or hit <kbd>F12</kbd></p>
+<h3 id="smart-tag"><a name="smart-tag" class="plugin-anchor" href="#smart-tag"><span class="fa fa-link"></span></a>Smart Tag</h3>
+<p>Implement an unimplemented step - generates a method template, with a <code>Step</code> attribute having this Step Text.</p>
+<p><img src="visual_studio_screenshots/features/quickfix/QuickFix.gif" alt="Quick fix" title="Quick Fix"></p>
+<h3 id="test-runner"><a name="test-runner" class="plugin-anchor" href="#test-runner"><span class="fa fa-link"></span></a>Test Runner</h3>
+<p>Open the Test Explorer : <code>Menu</code> -&gt; <code>Test</code> -&gt; <code>Windows</code> -&gt; <code>Test Explorer</code>
+All the scenarios in the project should be listed. Run one or more of these tests.</p>
+<p><img src="visual_studio_screenshots/features/TestExplorer.png" alt="Test Explorer" title="Test Explorer"></p>
+<h3 id="create-spec-and-concept-files"><a name="create-spec-and-concept-files" class="plugin-anchor" href="#create-spec-and-concept-files"><span class="fa fa-link"></span></a>Create Spec and Concept files</h3>
+<ul>
+<li>You can right-click on <code>specs</code> directory or any nested directory, choose <code>Add</code> -&gt; <code>New Item</code> -&gt; Go to <code>Gauge</code> under <code>Visual C# Items</code>.</li>
+<li>Choose <code>Specification</code> or <code>Concept</code> file type.</li>
+<li>Enter file name and click <code>Add</code>.</li>
+</ul>
+<p><img src="visual_studio_screenshots/features/Create_FileType.png" alt="Create File Type" title="Create FileType"></p>
 
                     
                     </section>
@@ -1241,10 +1271,10 @@
         </div>
 
         
-        <a href="../ide_support/other_usability_features.html" class="navigation navigation-prev " aria-label="Previous page: Other usability features"><i class="fa fa-angle-left"></i></a>
+        <a href="../ide_support/visual_studio.html" class="navigation navigation-prev " aria-label="Previous page: Visual Studio"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../ide_support/visual_studio_features.html" class="navigation navigation-next " aria-label="Next page: Features"><i class="fa fa-angle-right"></i></a>
+        <a href="../ide_support/eclipse.html" class="navigation navigation-next " aria-label="Next page: Eclipse"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
