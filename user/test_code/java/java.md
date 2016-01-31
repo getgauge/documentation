@@ -75,7 +75,7 @@ The number and type of parameters for all the steps names must match the number 
 public class Users {
 
     @Step({"Create a user <username>", "Create another user <username>"})
-    public void helloWorld(String role, Table table) {
+    public void helloWorld(String role) {
         // Step implementation
     }
 }
