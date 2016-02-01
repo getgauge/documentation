@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="1.5" data-chapter-title="Gauge Project Templates" data-filepath="getting_started/gauge_templates.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:27:19 GMT-0800 (PST)">
+    <div class="book" data-level="1.5" data-chapter-title="Gauge Project Templates" data-filepath="getting_started/gauge_templates.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:40:31 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1221,16 +1221,16 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="gauge-project-templates"><a name="gauge-project-templates" class="plugin-anchor" href="#gauge-project-templates"><span class="fa fa-link"></span></a>Gauge Project Templates</h1>
-<p>The Gauge Templates can be used to bootstrap the process of initializing a Gauge project along with a suitable build dependency tool, webdriver etc.</p>
+<p>Gauge provides templates that can be used to bootstrap the process of initializing a Gauge project along with a suitable build dependency tool, webdriver etc.</p>
 <p>To list all the Gauge project templates available, run the following command:</p>
-<pre><code>gauge --list-templates
+<pre><code>$ gauge --list-templates
 </code></pre><p>These templates can also be found in <a href="https://bintray.com/gauge/Templates/gauge-templates/view#files" target="_blank">Bintray Gauge Templates</a>.</p>
 <h2 id="initialize-a-gauge-project-with-template"><a name="initialize-a-gauge-project-with-template" class="plugin-anchor" href="#initialize-a-gauge-project-with-template"><span class="fa fa-link"></span></a>Initialize a Gauge project with Template</h2>
-<p>Say you want to initialize a Gauge project with Maven as build tool and selenium Webdriver as a driver of choice. You can quickly setup such project which is ready to start writing tests with selenium by using <code>java_maven_selenium</code> Gauge template.</p>
-<p>To do this, run the following command:</p>
-<pre><code>gauge --init java_maven_selenium
-</code></pre><p>This will download the Gauge template <code>java_maven_selenium</code> and setup your project ready to use.</p>
-<p>Now, start writing your <a href="../specifications/index.html">Specifications</a> and execute them.</p>
+<p>Say you want to initialize  as a driver of choice. You can quickly setup such project which is ready to start writing tests with selenium by using <code>java_maven_selenium</code> Gauge template.</p>
+<p>To initialize a Gauge project with a template, choose a name from the list shown on running <code>gauge --list-templates</code> and pass that name as an argument when initializing the Gauge project. For example, to create a Gauge project with the <code>java_maven_selenium</code> template, you need to run this command:</p>
+<pre><code>$ gauge --init java_maven_selenium
+</code></pre><p>This template creates a Gauge project with Maven as build tool and the selenium Webdriver. This will download the Gauge template <code>java_maven_selenium</code> and setup your project with useful sample code.</p>
+<p>Now, you can start writing <a href="../specifications/index.html">Specifications</a> and execute them.</p>
 
                     
                     </section>

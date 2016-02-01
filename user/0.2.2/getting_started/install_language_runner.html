@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="1.2" data-chapter-title="Install Language runner" data-filepath="getting_started/install_language_runner.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:27:19 GMT-0800 (PST)">
+    <div class="book" data-level="1.2" data-chapter-title="Install Language runner" data-filepath="getting_started/install_language_runner.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:40:31 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1222,17 +1222,23 @@
                     
                         <h1 id="install-language-runner"><a name="install-language-runner" class="plugin-anchor" href="#install-language-runner"><span class="fa fa-link"></span></a>Install Language runner</h1>
 <p>Gauge is a first class command line utility. This means that you only <strong>need</strong> one plugin to use Gauge. That is your language runner.</p>
-<p>The langauge runner determines the language you would use to write your tests. Langauge supported currently are <a href="../test_code/java/java.html">Java</a>, <a href="../test_code/csharp/csharp.html">C#</a> ,and <a href="../test_code/ruby/ruby.html">Ruby</a>.</p>
+<p>The langauge runner determines the language you would use to write your tests. Langauge supported currently are <a href="../test_code/java/java.html">Java</a>, <a href="../test_code/csharp/csharp.html">C#</a>, and <a href="../test_code/ruby/ruby.html">Ruby</a>.</p>
 <p>To install a langauge runner and then initialise the runner, use the following command</p>
-<h4 id="java"><a name="java" class="plugin-anchor" href="#java"><span class="fa fa-link"></span></a>Java</h4>
-<pre><code>gauge install java
-</code></pre><h4 id="csharpc"><a name="csharpc" class="plugin-anchor" href="#csharpc"><span class="fa fa-link"></span></a>CSharp(C#)</h4>
-<pre><code>gauge install csharp
-</code></pre><h4 id="ruby"><a name="ruby" class="plugin-anchor" href="#ruby"><span class="fa fa-link"></span></a>Ruby</h4>
-<pre><code>gauge install ruby
-</code></pre><h1 id="check-your-installation"><a name="check-your-installation" class="plugin-anchor" href="#check-your-installation"><span class="fa fa-link"></span></a>Check your installation</h1>
+<h2 id="java"><a name="java" class="plugin-anchor" href="#java"><span class="fa fa-link"></span></a>Java</h2>
+<pre><code>$ gauge --install java
+</code></pre><h2 id="csharpc"><a name="csharpc" class="plugin-anchor" href="#csharpc"><span class="fa fa-link"></span></a>CSharp(C#)</h2>
+<pre><code>$ gauge --install csharp
+</code></pre><h2 id="ruby"><a name="ruby" class="plugin-anchor" href="#ruby"><span class="fa fa-link"></span></a>Ruby</h2>
+<pre><code>$ gauge --install ruby
+</code></pre><h2 id="community-contributed-language-runners"><a name="community-contributed-language-runners" class="plugin-anchor" href="#community-contributed-language-runners"><span class="fa fa-link"></span></a>Community contributed language runners</h2>
+<p>The Gauge community maintains some language runners as well. Here is a list of additional language runners that you can use in your project:</p>
+<h3 id="javascript"><a name="javascript" class="plugin-anchor" href="#javascript"><span class="fa fa-link"></span></a>JavaScript</h3>
+<p>You can install JavaScript language runner in your project using:</p>
+<pre><code>$ gauge --install js
+</code></pre><p>For more information, see the <a href="http://github.com/getgauge-contrib/gauge-js" target="_blank">Gauge JavaScript project page</a>.</p>
+<h1 id="check-your-installation"><a name="check-your-installation" class="plugin-anchor" href="#check-your-installation"><span class="fa fa-link"></span></a>Check your installation</h1>
 <p>You can check the version of your plugin and Gauge core by executing the following command.</p>
-<pre><code>gauge -v
+<pre><code>$ gauge -v
 </code></pre><p>If this enlists a version then you&apos;re intallation and initialisation is has been successful. Your output will look like this:</p>
 <pre><code>Gauge version: &lt;version number&gt;
 
