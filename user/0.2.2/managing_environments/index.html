@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="9" data-chapter-title="Environments" data-filepath="managing_environments/README.md" data-basepath=".." data-revision="Sun Jan 31 2016 05:11:04 GMT-0800 (PST)">
+    <div class="book" data-level="9" data-chapter-title="Environments" data-filepath="managing_environments/README.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:27:19 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1236,32 +1236,83 @@
 </ul>
 <pre><code>&#x251C;&#x2500;&#x2500; env
    &#x251C;&#x2500;&#x2500; ci
-   &#x2502;  &#x2514;&#x2500;&#x2500; user.properties
-   &#x2514;&#x2500;&#x2500; default
+      |&#x2500;&#x2500; user.properties
+   |&#x2500;&#x2500; default
       &#x251C;&#x2500;&#x2500; default.properties
       &#x2514;&#x2500;&#x2500; java.properties
 </code></pre><h2 id="executing-with-environment"><a name="executing-with-environment" class="plugin-anchor" href="#executing-with-environment"><span class="fa fa-link"></span></a>Executing with environment</h2>
 <p>The environment is specified using the <code>env</code> flag. For example if <code>ci</code> environment is used during execution</p>
-<pre><code>gauge --env ci specs/
-</code></pre><p>On execution</p>
-<ul>
-<li>The properties from the <code>default</code> directory are first set.</li>
-<li>The properties from the specified environment <code>ci</code>  are then set.</li>
-<li>For common values,  environment specific variables from <code>ci</code> override the default values.</li>
-</ul>
-<p>For e.g.</p>
-<pre><code>gauge_custom_build_path: out/production
-</code></pre><p>present in <strong>env/default/java.properties</strong> is overridden by the</p>
-<pre><code>gauge_custom_build_path: target
-</code></pre><p>present in the <strong>env/ci/java.properties</strong></p>
-<h2 id="configuring-the-properties"><a name="configuring-the-properties" class="plugin-anchor" href="#configuring-the-properties"><span class="fa fa-link"></span></a>Configuring the Properties</h2>
+<pre><code>gauge --env ci specs
+</code></pre><h2 id="configuring-the-properties"><a name="configuring-the-properties" class="plugin-anchor" href="#configuring-the-properties"><span class="fa fa-link"></span></a>Configuring the Properties</h2>
 <p>Certain properties can be configured in <code>env/default/default.properties</code>, which overrides the default properties and are scoped only to the current project.</p>
 <p>These are key value pairs, key being the property name and the value is either the absolute or path relative to project root.</p>
 <p>Example:</p>
 <pre><code>gauge_reports_dir = reports
 
 logs_directory = GaugeLogs
-</code></pre>
+</code></pre><h2 id="precedence-of-environments"><a name="precedence-of-environments" class="plugin-anchor" href="#precedence-of-environments"><span class="fa fa-link"></span></a>Precedence of Environments</h2>
+<p>Precedence to the env variable value is given in the below order.</p>
+<ol>
+<li>User shell / OS env variable values</li>
+<li>Project environment passed in the <code>--env</code> flag</li>
+<li>Gauge default env variable values, as below</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gauge_reports_dir</td>
+<td>reports</td>
+</tr>
+<tr>
+<td>overwrite_reports</td>
+<td>true</td>
+</tr>
+<tr>
+<td>screenshot_on_failure</td>
+<td>true</td>
+</tr>
+<tr>
+<td>logs_directory</td>
+<td>logs</td>
+</tr>
+</tbody>
+</table>
+<p>Gauge loads the enviroment variables as below.</p>
+<ul>
+<li>When Gauge starts, the default values will be loaded.</li>
+<li>Gauge will then load the environment passed by the user in the <code>--env</code> flag. If this flag is not passed by the user, <code>default</code> environment will be loaded.</li>
+<li>These values can be overwritten by explicitly setting the respective OS environment variables.</li>
+<li>If the environment mentioned in the <code>--env</code> flag is not found in the project, Gauge will end with a non-zero exit code.</li>
+<li>Gauge project doesn&apos;t need to have a <code>default</code> env since Gauge will use the above values as default. User can still set the <code>default</code> env to either overwrite or add new env variables, but doesn&apos;t want to pass the <code>--env</code> flag.</li>
+</ul>
+<h3 id="examples"><a name="examples" class="plugin-anchor" href="#examples"><span class="fa fa-link"></span></a>Examples</h3>
+<ul>
+<li>User executes <code>gauge specs</code><ul>
+<li>If <code>&lt;project_root&gt;/env/default</code> is <strong>not</strong> present, Gauge will load the default values mentioned in the table above.</li>
+<li>If <code>&lt;project_root&gt;/env/default</code> is present, Gauge will load the default values and overwrite them with the values mentioned in the <code>default</code> environment.</li>
+</ul>
+</li>
+<li>User executes <code>gauge --env=java_ci specs</code><ul>
+<li>If <code>&lt;project_root&gt;/env/java_ci</code> is <strong>not</strong> present, Gauge will end with a non-zero exit code.</li>
+<li>If <code>&lt;project_root&gt;/env/java_ci</code> is present, Gauge will load the default values and overwrite them with the values mentioned in the <code>java_ci</code> environment.</li>
+</ul>
+</li>
+<li>User executes <code>gauge_reports_dir=newReportsDir gauge specs</code> or user explicitly sets <code>gauge_reports_dir=newReportsDir</code> in shell and then runs <code>gauge specs</code><ul>
+<li>Gauge will load all the default values except for the variable <code>gauge_reports_dir</code>. This variable&apos;s value will still continue to be <code>newReportsDir</code>.</li>
+</ul>
+</li>
+<li>User executes <code>gauge_reports_dir=newReportsDir gauge --env=java_ci specs</code> or user explicitly sets <code>gauge_reports_dir=newReportsDir</code> in shell and then runs <code>gauge --env=java_ci specs</code><ul>
+<li>Gauge will load all the default values and overwrite them with the values mentioned in the <code>java_ci</code> environment, except for the variable <code>gauge_reports_dir</code>. This variable&apos;s value will still continue to be <code>newReportsDir</code>.</li>
+</ul>
+</li>
+</ul>
+
                     
                     </section>
                 
