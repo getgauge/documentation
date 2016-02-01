@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="7.2" data-chapter-title="Tagged Execution" data-filepath="execution/tagged_execution.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:40:31 GMT-0800 (PST)">
+    <div class="book" data-level="7.2" data-chapter-title="Tagged Execution" data-filepath="execution/tagged_execution.md" data-basepath=".." data-revision="Mon Feb 01 2016 04:02:20 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1222,16 +1222,16 @@
                     
                         <h1 id="tagged-execution"><a name="tagged-execution" class="plugin-anchor" href="#tagged-execution"><span class="fa fa-link"></span></a>Tagged Execution</h1>
 <p>Tags allow you to filter the specs and scenarios quickly for execution. To execute all the specs and scenarios which are labelled with certain tags, use the following command.</p>
-<pre><code>gauge --tags tag1,tag2 specs
-</code></pre><p>or</p>
-<pre><code>gauge --tags &quot;tag1, tag2&quot; specs
-</code></pre><p>This executes only the scenarios and specifications which are tagged with tag1 and tag2.</p>
+<pre><code>$ gauge --tags tag1,tag2 specs
+</code></pre><p>or,</p>
+<pre><code>$ gauge --tags &quot;tag1, tag2&quot; specs
+</code></pre><p>This executes only the scenarios and specifications which are tagged with <code>tag1</code> and <code>tag2</code>.</p>
 <p>Example:</p>
 <p><img src="../specifications/images/spec.png" alt="Spec" title="Specification"></p>
-<p>In the above spec, if all the scenarios tagged with &quot;search&quot; and &quot;admin&quot; should be executed, then use the following command.</p>
-<pre><code>gauge --tags &quot;search &amp; admin&quot; SPEC_FILE_NAME
-</code></pre><h3 id="tags-can-be-selected-using-expressions"><a name="tags-can-be-selected-using-expressions" class="plugin-anchor" href="#tags-can-be-selected-using-expressions"><span class="fa fa-link"></span></a>Tags can be selected using expressions</h3>
-<p><strong>Examples</strong></p>
+<p>In the above spec, if all the scenarios tagged with &quot;search&quot; and &quot;admin&quot; should be executed, then use the following command:</p>
+<pre><code>$ gauge --tags &quot;search &amp; admin&quot; SPEC_FILE_NAME
+</code></pre><h2 id="tag-expressions"><a name="tag-expressions" class="plugin-anchor" href="#tag-expressions"><span class="fa fa-link"></span></a>Tag expressions</h2>
+<p>Tags can be selected using expressions. Like:</p>
 <ul>
 <li><strong>!TagA:</strong>  Selects specs/scenarios that do not have TagA.</li>
 <li><strong>TagA &amp; TagB:</strong>  Selects specs/scenarios that have both TagA and TagB.</li>

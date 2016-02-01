@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="7" data-chapter-title="Execution" data-filepath="execution/README.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:40:31 GMT-0800 (PST)">
+    <div class="book" data-level="7" data-chapter-title="Execution" data-filepath="execution/README.md" data-basepath=".." data-revision="Mon Feb 01 2016 04:02:20 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1222,18 +1222,18 @@
                     
                         <h1 id="execution"><a name="execution" class="plugin-anchor" href="#execution"><span class="fa fa-link"></span></a>Execution</h1>
 <p>To execute a spec or set of specs in a directory use the following command.</p>
-<pre><code>gauge specs/login_test.spec
+<pre><code>$ gauge specs/login_test.spec
 </code></pre><p>or</p>
-<pre><code>gauge specs/
+<pre><code>$ gauge specs/
 </code></pre><p>This will give a colored console output with details of the execution as well an execution summary.</p>
 <h2 id="single-scenario-execution"><a name="single-scenario-execution" class="plugin-anchor" href="#single-scenario-execution"><span class="fa fa-link"></span></a>Single scenario execution</h2>
 <p>A single scenario of a specification can be executed by specifying the index of that scenario in the spec (index starts from 0). To execute a single scenario in a spec use the following command.</p>
-<pre><code>gauge specs/login_test.spec:3
+<pre><code>$ gauge specs/login_test.spec:3
 </code></pre><p>or</p>
-<pre><code>gauge login_test.spec:3
-</code></pre><p>This executes only the scenario with index 3 in login_test.spec.</p>
+<pre><code>$ gauge login_test.spec:3
+</code></pre><p>This executes only the scenario with index <code>3</code> in <code>login_test.spec</code>.</p>
 <p>Multiple scenarios can be executed selectively as follows :</p>
-<pre><code>gauge specs/helloworld.spec:4 specs/helloworld.spec:7
+<pre><code>$ gauge specs/helloworld.spec:4 specs/helloworld.spec:7
 </code></pre><p>These scenarios can also belong to different specifications.</p>
 <h2 id="errors-during-execution"><a name="errors-during-execution" class="plugin-anchor" href="#errors-during-execution"><span class="fa fa-link"></span></a>Errors during execution</h2>
 <h3 id="1-parse-error-in-a-spec-file"><a name="1-parse-error-in-a-spec-file" class="plugin-anchor" href="#1-parse-error-in-a-spec-file"><span class="fa fa-link"></span></a>1. Parse error in a spec file:</h3>

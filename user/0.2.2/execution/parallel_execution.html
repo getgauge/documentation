@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="7.4" data-chapter-title="Parallel Execution" data-filepath="execution/parallel_execution.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:40:31 GMT-0800 (PST)">
+    <div class="book" data-level="7.4" data-chapter-title="Parallel Execution" data-filepath="execution/parallel_execution.md" data-basepath=".." data-revision="Mon Feb 01 2016 04:02:20 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1223,36 +1223,35 @@
                         <h1 id="parallel-execution"><a name="parallel-execution" class="plugin-anchor" href="#parallel-execution"><span class="fa fa-link"></span></a>Parallel Execution</h1>
 <p>Specs can be executed in parallel to run the tests faster and distribute the load.</p>
 <p>This can be done by the command:</p>
-<pre><code>gauge --parallel specs
-or
-gauge -p specs
+<pre><code>$ gauge --parallel specs
+</code></pre><p>or,</p>
+<pre><code>$ gauge -p specs
 </code></pre><p>This creates a number of execution streams depending on the number of cores of the machine and distribute the load among workers.</p>
 <p>The number of parallel execution streams can be specified by <code>-n</code> flag.</p>
 <p>Example:</p>
-<pre><code>gauge --parallel -n=4 specs
+<pre><code>$ gauge --parallel -n=4 specs
 </code></pre><p>This creates four parallel execution streams.</p>
-<p><strong>Note</strong>:
-The number of streams should be specified depending on the machine, beyond which it affects the performance of the system.</p>
+<p><strong>Note:</strong> The number of streams should be specified depending on number of CPU cores available on the machine, beyond which it affects the performance of the system.</p>
 <h2 id="run-your-test-suite-with-lazy-assignment-of-tests"><a name="run-your-test-suite-with-lazy-assignment-of-tests" class="plugin-anchor" href="#run-your-test-suite-with-lazy-assignment-of-tests"><span class="fa fa-link"></span></a>Run your test suite with lazy assignment of tests</h2>
 <p>This features allows you to dynamically allocate your specs to streams during execution instead of at the start of execution.</p>
 <p>This allows Gauge to optimise the resources on your agent/execution environment. This is useful because some specs may take much longer than other, either because of the number of scenarios in them or the nature of the feature under test</p>
 <p>The following command will assign tests lazily across the specified number of streams:</p>
-<pre><code>gauge -n=4 --strategy=&quot;lazy&quot; specs
-or
-gauge -n=4 specs
+<pre><code>$ gauge -n=4 --strategy=&quot;lazy&quot; specs
+</code></pre><p>or,</p>
+<pre><code>$ gauge -n=4 specs
 </code></pre><p>Say you have 100 tests, which you have chosen to run across 4 streams/cores; lazy assignment will dynamically, during execution, assign the next spec in line to the stream that has completed it&apos;s previous execution and is waiting for more work.</p>
 <p>Lazy assignment of tests is the default behaviour.</p>
 <p>Another strategy called <code>eager</code> can also be useful depending on need. In this case, the 100 tests are distributed before execution, thus making them an equal number based distribution.</p>
-<pre><code>gauge -n=4 --strategy=&quot;eager&quot; specs
-</code></pre><p><em>Note:</em> The &apos;lazy&apos; assignment strategy only works when you do NOT use the -g flag. This is because grouping is dependent on allocation of tests before the start of execution. Using this in conjunction with a lazy strategy will have no impact on your test suite execution.</p>
+<pre><code>$ gauge -n=4 --strategy=&quot;eager&quot; specs
+</code></pre><p><strong>Note:</strong> The &apos;lazy&apos; assignment strategy only works when you do NOT use the -g flag. This is because grouping is dependent on allocation of tests before the start of execution. Using this in conjunction with a lazy strategy will have no impact on your test suite execution.</p>
 <h2 id="rerun-one-execution-stream"><a name="rerun-one-execution-stream" class="plugin-anchor" href="#rerun-one-execution-stream"><span class="fa fa-link"></span></a>Rerun one execution stream</h2>
 <p>Specifications can be distributed into groups and <code>--group</code> | <code>-g</code> flag provides the ability to execute a specific group.</p>
 <p>This can be done by the command:</p>
-<pre><code>gauge -n=4 -g=2 specs
-</code></pre><p>This creates 4 groups (provided by -n flag) of specification and selects the 2nd group (provided by -g flag) for execution.</p>
+<pre><code>$ gauge -n=4 -g=2 specs
+</code></pre><p>This creates 4 groups (provided by <code>-n</code> flag) of specification and selects the 2nd group (provided by <code>-g</code> flag) for execution.</p>
 <p>Specifications are sorted by alphabetical order and then distributed into groups, which guarantees that every group will have the same set of specifications, no matter how many times it is being executed.</p>
 <p>Example:</p>
-<pre><code>gauge -n=4 -g=2 specs
+<pre><code>$ gauge -n=4 -g=2 specs
 </code></pre><p>The above two commands will execute the same group of specifications.</p>
 
                     

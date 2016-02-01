@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="7.1" data-chapter-title="Table driven execution" data-filepath="execution/table_driven_execution.md" data-basepath=".." data-revision="Sun Jan 31 2016 22:40:31 GMT-0800 (PST)">
+    <div class="book" data-level="7.1" data-chapter-title="Table driven execution" data-filepath="execution/table_driven_execution.md" data-basepath=".." data-revision="Mon Feb 01 2016 04:02:20 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1248,7 +1248,7 @@ Second Scenario
 * Say &quot;namaste&quot; to &lt;name&gt;
 </code></pre><p>In the above example the step uses the <code>name</code> column from the data table as a dynamic parameter.</p>
 <p>Both <code>Scenario</code> and <code>Second Scenario</code> are executed first for the first row values <code>1, vishnu</code> and then consecutively for the second and third row values from the table.</p>
-<h3 id="external-csv-for-data-table"><a name="external-csv-for-data-table" class="plugin-anchor" href="#external-csv-for-data-table"><span class="fa fa-link"></span></a>External CSV for data table</h3>
+<h2 id="external-csv-for-data-table"><a name="external-csv-for-data-table" class="plugin-anchor" href="#external-csv-for-data-table"><span class="fa fa-link"></span></a>External CSV for data table</h2>
 <p>Data Tables for a specification can also be passed from an external <a href="http://en.wikipedia.org/wiki/Comma-separated_values" target="_blank">CSV file</a>. The parameter contains a prefix table and the path to the csv file.</p>
 <p><strong>Prefix</strong> : The prefix is table</p>
 <p><strong>Value</strong> : The value is the path to the csv file. This can be absolute file path or relative to project.</p>
@@ -1269,18 +1269,18 @@ Second Scenario
 <pre><code>Id,Name
 1,The Way to Go On
 2,Ivo Jay Balbaert
-</code></pre><p><strong><em>The first row is considered as table headers. Following rows are considered as the row values.</em></strong></p>
-<h3 id="execute-selected-data-table-rows"><a name="execute-selected-data-table-rows" class="plugin-anchor" href="#execute-selected-data-table-rows"><span class="fa fa-link"></span></a>Execute selected data table rows</h3>
+</code></pre><p><strong>The first row is considered as table header. Following rows are considered as the row values.</strong></p>
+<h2 id="execute-selected-data-table-rows"><a name="execute-selected-data-table-rows" class="plugin-anchor" href="#execute-selected-data-table-rows"><span class="fa fa-link"></span></a>Execute selected data table rows</h2>
 <p>By default, scenarios in a spec are run against all the data table rows. It can be run against selected data table rows with flag <code>--table-rows</code> and specifying the row number against which the scenarios should be executed.</p>
 <p>Example:</p>
-<pre><code>gauge --table-rows &quot;1&quot; specs/hello.spec
+<pre><code>$ gauge --table-rows &quot;1&quot; specs/hello.spec
 </code></pre><p>Range of table rows can also be specified, against which the scenarios are run.</p>
 <p>Example:</p>
-<pre><code>gauge --table-rows &quot;1-3&quot; specs/hello.spec
+<pre><code>$ gauge --table-rows &quot;1-3&quot; specs/hello.spec
 </code></pre><p>This executes the scenarios against table rows 1, 2, 3.</p>
 <h3 id="data-table-values-in-inline-tables"><a name="data-table-values-in-inline-tables" class="plugin-anchor" href="#data-table-values-in-inline-tables"><span class="fa fa-link"></span></a>Data Table values in inline tables</h3>
 <p>Dynamic values from the data table can also be referred in table parameters passed into steps</p>
-<p>Example</p>
+<p>Example:</p>
 <pre><code>Create projects
 ===============
 
