@@ -13,8 +13,5 @@ You can learn how to use gauge with other libraries from some of the example pro
 ## Gauge with Ruby plugin
 * [Web app testing using Webdriver](https://github.com/getgauge/gauge-example-ruby)
 
-## Gauge with csharp plugin
+## Gauge with CSharp plugin
 * [Web app testing using Webdriver](https://github.com/getgauge/gauge-example-csharp)
-
-
-

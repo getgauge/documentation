@@ -32,7 +32,7 @@ In the above example the step uses the `name` column from the data table as a dy
 
 Both `Scenario` and `Second Scenario` are executed first for the first row values `1, vishnu` and then consecutively for the second and third row values from the table.
 
-### External CSV for data table
+## External CSV for data table
 
 Data Tables for a specification can also be passed from an external [CSV file](http://en.wikipedia.org/wiki/Comma-separated_values). The parameter contains a prefix table and the path to the csv file.
 
@@ -41,7 +41,8 @@ Data Tables for a specification can also be passed from an external [CSV file](h
 **Value** : The value is the path to the csv file. This can be absolute file path or relative to project.
 
 Example:
-````
+
+```
 Table Driven execution
 =====================
 
@@ -54,7 +55,8 @@ Scenario
 Second Scenario
 ---------------
 * Say "namaste" to <name>
-````
+```
+
 Sample csv file :
 
 ```
@@ -62,29 +64,32 @@ Id,Name
 1,The Way to Go On
 2,Ivo Jay Balbaert
 ```
-***The first row is considered as table headers. Following rows are considered as the row values.***
 
-###Execute selected data table rows
+**The first row is considered as table header. Following rows are considered as the row values.**
+
+##Execute selected data table rows
 By default, scenarios in a spec are run against all the data table rows. It can be run against selected data table rows with flag `--table-rows` and specifying the row number against which the scenarios should be executed.
 
 Example:
 ````
-gauge --table-rows "1" specs/hello.spec
+$ gauge --table-rows "1" specs/hello.spec
 ````
 
 Range of table rows can also be specified, against which the scenarios are run.
 
 Example:
 ````
-gauge --table-rows "1-3" specs/hello.spec
+$ gauge --table-rows "1-3" specs/hello.spec
 ````
+
 This executes the scenarios against table rows 1, 2, 3.
 
 ### Data Table values in inline tables
 Dynamic values from the data table can also be referred in table parameters passed into steps
 
-Example
-````
+Example:
+
+```
 Create projects
 ===============
 
@@ -101,7 +106,6 @@ first scenario
      |------------|----------|
      | Gauge java | <name>   |
      | Gauge ruby | <name>   |
-
-````
+```
 
 In the above example the table parameter uses a dynamic value from the data table.

@@ -1,8 +1,8 @@
 # Gauge Configuration
 
-All the Gauge specific internal configurations are stored    in **gauge.properties** file present in your Gauge install location (GAUGE_ROOT). These properties are key value pairs.
+All the Gauge specific internal configurations are stored in `gauge.properties` file present in your Gauge install location (`GAUGE_ROOT`). These properties are key value pairs.
 
-###gauge_repository_url
+##gauge_repository_url
 
 This property is set to an url, which acts as plugin repository for Gauge.
 
@@ -12,7 +12,7 @@ This property is set to an url, which acts as plugin repository for Gauge.
 gauge_repository_url = http://raw.github.com/getgauge/gauge-repository/master
 ```
 
-###gauge_templates_url
+##gauge_templates_url
 
 This property is set to an url, which acts as template repository for Gauge.
 
