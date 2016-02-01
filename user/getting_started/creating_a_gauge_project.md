@@ -3,30 +3,35 @@
 ## Command line
 To create or initialize a Gauge project use the `gauge --init` command. In an empty directory run
 
-````
-gauge --init language
-````
-Where **language** is the programming language to write test code in. See [supported programming languages](../test_code/README.md).
+```
+$ gauge --init <language>
+```
 
-**Note:** Currently this command creates the Gauge project in the current directly. If you would like to specify a location, then you will have to manually create that dir and navigate to it before you run `--init langauge`
+Replace *<language>* with the programming language in which you want to write the test code. See [supported programming languages](../test_code/README.md).
 
-````
-mkdir <location for Gauge project>
-cd <location for Gauge project>
+**Note:** Currently this command creates the Gauge project in the current directory. If you would like to specify a location, then you will have to manually create that dir and navigate to it before you run `--init langauge`
 
-gauge --init language
-````
+```
+$ mkdir <location for Gauge project>
+$ cd <location for Gauge project>
 
-**Example:**
-````
-gauge --init java
-````
-````
-gauge --init csharp
-````
-````
-gauge --init ruby
-````
+$ gauge --init <language>
+```
+
+**Examples:**
+
+```
+$ gauge --init java
+```
+
+```
+$ gauge --init csharp
+```
+
+```
+$ gauge --init ruby
+```
+
 This will initialize a gauge project with all the necessary project files.
 
 ![init](images/gauge-init.png "init")

@@ -2,32 +2,50 @@
 
 Gauge is a first class command line utility. This means that you only **need** one plugin to use Gauge. That is your language runner.
 
-The langauge runner determines the language you would use to write your tests. Langauge supported currently are [Java](../test_code/java/java.md), [C#](../test_code/csharp/csharp.md) ,and [Ruby](../test_code/ruby/ruby.md).
+The langauge runner determines the language you would use to write your tests. Langauge supported currently are [Java](../test_code/java/java.md), [C#](../test_code/csharp/csharp.md), and [Ruby](../test_code/ruby/ruby.md).
 
 To install a langauge runner and then initialise the runner, use the following command
 
-####Java
-```
-gauge install java
+##Java
 
 ```
-#### CSharp(C#)
+$ gauge --install java
 ```
-gauge install csharp
+
+## CSharp(C#)
 
 ```
-####Ruby
+$ gauge --install csharp
 ```
-gauge install ruby
+
+##Ruby
 
 ```
+$ gauge --install ruby
+```
+
+## Community contributed language runners
+
+The Gauge community maintains some language runners as well. Here is a list of additional language runners that you can use in your project:
+
+### JavaScript
+
+You can install JavaScript language runner in your project using:
+
+```
+$ gauge --install js
+```
+
+For more information, see the [Gauge JavaScript project page](http://github.com/getgauge-contrib/gauge-js).
 
 # Check your installation
 
 You can check the version of your plugin and Gauge core by executing the following command.
+
 ```
-gauge -v
+$ gauge -v
 ```
+
 If this enlists a version then you're intallation and initialisation is has been successful. Your output will look like this:
 ```
 Gauge version: <version number>

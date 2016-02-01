@@ -4,14 +4,15 @@ On initialization of a gauge project for a particular language a project skeleto
 
 ##1. Common Gauge files
 
-````
+```
 ├── env
 │  └── default
 │     └── default.properties
 ├── manifest.json
 ├── specs
    └── hello_world.spec
-````
+```
+
 ### Env Directory
 The env directory contains multiple environment specific directories. Each directory has  [.property files](https://en.wikipedia.org/wiki/.properties) which define the environment variables set during execution for that specific environment.
 

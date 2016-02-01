@@ -20,7 +20,7 @@ Certain features of Gauge make it stand unique amongst others.
 * Open Source, so it could be shared freely and improved by others as well
 * Simple, Flexible and Rich Syntax
 * Helps you create Maintainable and Understandable test suites
-* Extensible through [Plugins](plugins/README.html) and Hackable
+* Extensible through [plugins](plugins/README.md) and Hackable
 * Supports External Data Sources
 * [IDE Support](ide_support/README.md)
 
@@ -37,4 +37,3 @@ Certain features of Gauge make it stand unique amongst others.
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
 * [IDE Support](ide_support/README.md)
-
