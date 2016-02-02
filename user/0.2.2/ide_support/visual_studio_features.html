@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="11.2.1" data-chapter-title="Features" data-filepath="ide_support/visual_studio_features.md" data-basepath=".." data-revision="Mon Feb 01 2016 04:02:20 GMT-0800 (PST)">
+    <div class="book" data-level="11.2.1" data-chapter-title="Features" data-filepath="ide_support/visual_studio_features.md" data-basepath=".." data-revision="Mon Feb 01 2016 22:14:30 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1221,7 +1221,7 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="features"><a name="features" class="plugin-anchor" href="#features"><span class="fa fa-link"></span></a>Features</h1>
-<h3 id="creating-a-new-gauge-project"><a name="creating-a-new-gauge-project" class="plugin-anchor" href="#creating-a-new-gauge-project"><span class="fa fa-link"></span></a>Creating a new Gauge Project</h3>
+<h2 id="creating-a-new-gauge-project"><a name="creating-a-new-gauge-project" class="plugin-anchor" href="#creating-a-new-gauge-project"><span class="fa fa-link"></span></a>Creating a new Gauge Project</h2>
 <ul>
 <li>Go to <code>File</code> -&gt; <code>New Project</code>.</li>
 <li>Choose <code>Gauge Test Project</code> under Visual C# Test category.</li>
@@ -1233,28 +1233,29 @@
 </ul>
 <p>This should setup a new Gauge project, and add the required meta data for Gauge to execute this project.</p>
 <p>Alternately, you can create a Gauge project from command-line as:</p>
-<pre><code>mkdir &lt;project_name&gt;
-gauge --init csharp
+<pre><code>$ mkdir &lt;project_name&gt;
+$ cd &lt;project_name&gt;
+$ gauge --init csharp
 </code></pre><p>This creates <code>&lt;project_name&gt;.sln</code> file which can be opened with Visual Studio.</p>
-<h3 id="syntax-highlighting"><a name="syntax-highlighting" class="plugin-anchor" href="#syntax-highlighting"><span class="fa fa-link"></span></a>Syntax Highlighting</h3>
+<h2 id="syntax-highlighting"><a name="syntax-highlighting" class="plugin-anchor" href="#syntax-highlighting"><span class="fa fa-link"></span></a>Syntax Highlighting</h2>
 <p>Gauge specs are in <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown</a> syntax. This plugin highlights Specifications, Scenarios, Steps and Tags.</p>
 <p>Steps with missing implementation are also highlighted.</p>
 <p><img src="visual_studio_screenshots/features/Syntax_highlighting.png" alt="syntax highlighting" title="syntax highlighting"></p>
-<h3 id="autocomplete"><a name="autocomplete" class="plugin-anchor" href="#autocomplete"><span class="fa fa-link"></span></a>Autocomplete</h3>
+<h2 id="autocomplete"><a name="autocomplete" class="plugin-anchor" href="#autocomplete"><span class="fa fa-link"></span></a>Autocomplete</h2>
 <p>This plugin hooks into VisualStudio Intellisense, and brings in autocompletion of Step text. The step texts brought in is a union of steps already defined, concepts defined, and step text from implementation.</p>
-<p>Hint: Hit <kbd>Ctrl</kbd> + <kbd>Space</kbd> to bring up the Intellisense menu.</p>
+<p><em>Hint:</em> Hit <kbd>Ctrl</kbd> + <kbd>Space</kbd> to bring up the Intellisense menu.</p>
 <p><img src="visual_studio_screenshots/features/AutoComplete.png" alt="AutoComplete" title="Auto Complete"></p>
-<h3 id="navigation"><a name="navigation" class="plugin-anchor" href="#navigation"><span class="fa fa-link"></span></a>Navigation</h3>
+<h2 id="navigation"><a name="navigation" class="plugin-anchor" href="#navigation"><span class="fa fa-link"></span></a>Navigation</h2>
 <p>Jump from Step text to it&apos;s implementation.</p>
 <p>Usage: <code>Right Click</code> -&gt; <code>Go to Declaration</code> or hit <kbd>F12</kbd></p>
-<h3 id="smart-tag"><a name="smart-tag" class="plugin-anchor" href="#smart-tag"><span class="fa fa-link"></span></a>Smart Tag</h3>
+<h2 id="smart-tag"><a name="smart-tag" class="plugin-anchor" href="#smart-tag"><span class="fa fa-link"></span></a>Smart Tag</h2>
 <p>Implement an unimplemented step - generates a method template, with a <code>Step</code> attribute having this Step Text.</p>
 <p><img src="visual_studio_screenshots/features/quickfix/QuickFix.gif" alt="Quick fix" title="Quick Fix"></p>
-<h3 id="test-runner"><a name="test-runner" class="plugin-anchor" href="#test-runner"><span class="fa fa-link"></span></a>Test Runner</h3>
+<h2 id="test-runner"><a name="test-runner" class="plugin-anchor" href="#test-runner"><span class="fa fa-link"></span></a>Test Runner</h2>
 <p>Open the Test Explorer : <code>Menu</code> -&gt; <code>Test</code> -&gt; <code>Windows</code> -&gt; <code>Test Explorer</code>
 All the scenarios in the project should be listed. Run one or more of these tests.</p>
 <p><img src="visual_studio_screenshots/features/TestExplorer.png" alt="Test Explorer" title="Test Explorer"></p>
-<h3 id="create-spec-and-concept-files"><a name="create-spec-and-concept-files" class="plugin-anchor" href="#create-spec-and-concept-files"><span class="fa fa-link"></span></a>Create Spec and Concept files</h3>
+<h2 id="create-spec-and-concept-files"><a name="create-spec-and-concept-files" class="plugin-anchor" href="#create-spec-and-concept-files"><span class="fa fa-link"></span></a>Create Spec and Concept files</h2>
 <ul>
 <li>You can right-click on <code>specs</code> directory or any nested directory, choose <code>Add</code> -&gt; <code>New Item</code> -&gt; Go to <code>Gauge</code> under <code>Visual C# Items</code>.</li>
 <li>Choose <code>Specification</code> or <code>Concept</code> file type.</li>
