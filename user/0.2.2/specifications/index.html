@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="2" data-chapter-title="Specifications" data-filepath="specifications/README.md" data-basepath=".." data-revision="Mon Feb 01 2016 22:14:30 GMT-0800 (PST)">
+    <div class="book" data-level="2" data-chapter-title="Specifications" data-filepath="specifications/README.md" data-basepath=".." data-revision="Mon Feb 01 2016 22:34:37 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1221,22 +1221,20 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="specifications"><a name="specifications" class="plugin-anchor" href="#specifications"><span class="fa fa-link"></span></a>Specifications</h1>
-<p><strong>Specifications</strong> are business layer test cases which can also act as your feature documentation. They are written in the Business language. Typically a spec or specification describe a particular feature of the application under test.</p>
+<p><strong>Specifications</strong>(Spec) are business layer test cases which can also act as your feature documentation. They are written in the business language. Typically a spec or specification describe a particular feature of the application under test.</p>
 <ul>
-<li><p>They are written in a <strong>.spec</strong> file. Gauge also supports <strong>.md</strong> file format.</p>
-</li>
-<li><p>The Markup for a Specification file is based on <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a> syntax.</p>
-</li>
+<li>They are written in a <strong>.spec</strong> file. Gauge also supports <strong>.md</strong> file format.</li>
+<li>The Markup for a Specification file is based on <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a> syntax.</li>
 </ul>
-<h4 id="a-simple-spec"><a name="a-simple-spec" class="plugin-anchor" href="#a-simple-spec"><span class="fa fa-link"></span></a>A simple Spec:</h4>
+<h2 id="a-simple-spec"><a name="a-simple-spec" class="plugin-anchor" href="#a-simple-spec"><span class="fa fa-link"></span></a>A simple Spec</h2>
 <p><img src="images/spec.png" alt="Spec" title="Specification"></p>
 <h2 id="specification-heading"><a name="specification-heading" class="plugin-anchor" href="#specification-heading"><span class="fa fa-link"></span></a>Specification Heading</h2>
 <p>A Spec must begins with a spec heading and a single specification can contain only one spec heading.</p>
-<p>It is written in <strong>H1</strong> syntax of markdown. This can be in two forms</p>
+<p>It is written in <strong><code>&lt;H1&gt;</code></strong> syntax of markdown. This can be in two forms:</p>
 <pre><code>Spec Heading
 ============
 </code></pre><p> or</p>
-<pre><code>#Spec Heading
+<pre><code># Spec Heading
 </code></pre><ul>
 <li>Every spec must contain one or more <a href="scenarios.html">scenarios</a>.</li>
 <li>Every spec can be marked with labels using <a href="tags.html">tags</a>.</li>
@@ -1244,14 +1242,14 @@
 <h2 id="scenarios"><a name="scenarios" class="plugin-anchor" href="#scenarios"><span class="fa fa-link"></span></a>Scenarios</h2>
 <p>Each scenario represents a single flow in a particular specification.</p>
 <p>Consider the above example, <strong>successful search</strong> and <strong>unsuccessful search</strong> are 2 scenarios for the <strong>search specification</strong>. In business language terms they represent the entire search feature in the app.</p>
-<p>Learn more about the structure of a <a href="scenarios.html">Scenario</a></p>
+<p>Learn more about the structure of a <a href="scenarios.html">Scenario</a>.</p>
 <h2 id="steps"><a name="steps" class="plugin-anchor" href="#steps"><span class="fa fa-link"></span></a>Steps</h2>
 <p>Steps are the executable part of the specification. They have underlying implementations in the programming language for execution of the specs.</p>
 <p>They are written inside a specification (<a href="contexts.html">context steps</a>) or a scenario.</p>
-<h4 id="example"><a name="example" class="plugin-anchor" href="#example"><span class="fa fa-link"></span></a>Example</h4>
+<p>Example:</p>
 <pre><code>* Search for product &quot;die hard&quot;
 * User &quot;admin&quot; must be logged in
-</code></pre><h3 id="learn-more"><a name="learn-more" class="plugin-anchor" href="#learn-more"><span class="fa fa-link"></span></a>Learn more</h3>
+</code></pre><h2 id="further-reading"><a name="further-reading" class="plugin-anchor" href="#further-reading"><span class="fa fa-link"></span></a>Further reading</h2>
 <ul>
 <li><a href="scenarios.html">Scenarios</a></li>
 <li><a href="steps.html">Steps</a></li>

@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="2.5" data-chapter-title="Parameters" data-filepath="specifications/parameters.md" data-basepath=".." data-revision="Mon Feb 01 2016 22:14:30 GMT-0800 (PST)">
+    <div class="book" data-level="2.5" data-chapter-title="Parameters" data-filepath="specifications/parameters.md" data-basepath=".." data-revision="Mon Feb 01 2016 22:34:37 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -1224,14 +1224,14 @@
 <p>Steps can be defined to take values as parameters so that they can be re-used with different parameter values.</p>
 <pre><code>* Check &quot;product 1&quot; exists
 * Check &quot;product 2&quot; exists
-</code></pre><p><strong><em>The underlying <a href="../test_code/index.html">step implementation</a> in code must also take the same number of parameters as passed from the step</em></strong></p>
+</code></pre><p>The underlying <a href="../test_code/index.html">step implementation</a> in code must also take the same number of parameters as passed from the step.</p>
 <p>The parameters passed into a step can be of different types:</p>
 <h2 id="simple-parameters"><a name="simple-parameters" class="plugin-anchor" href="#simple-parameters"><span class="fa fa-link"></span></a>Simple parameters</h2>
 <p>They are values passed into the steps in double quotes.</p>
 <pre><code>* Create a &#x201C;gauge-java&#x201D; project
 * Write &#x201C;100&#x201D; line specification
 </code></pre><h2 id="table-parameter"><a name="table-parameter" class="plugin-anchor" href="#table-parameter"><span class="fa fa-link"></span></a>Table Parameter</h2>
-<p>Tables or <strong>inline tables</strong> can be passed to steps as parameters. They will be available as a language specific table data structure in the underlying implementation.</p>
+<p>Tables or inline tables can be passed to steps as parameters. They will be available as a language specific table data structure in the underlying implementation.</p>
 <ul>
 <li>Table parameters are written in Multi-markdown table formats.</li>
 <li>The first row contain the table headers. Following rows contains the row values.</li>
@@ -1257,7 +1257,7 @@
 <p><strong>Value</strong> : This defines the value for the type of special parameter.</p>
 <pre><code>&lt;prefix:value&gt;
 </code></pre><p>The different special parameter types are:</p>
-<h4 id="1-file"><a name="1-file" class="plugin-anchor" href="#1-file"><span class="fa fa-link"></span></a>1. File</h4>
+<h3 id="file"><a name="file" class="plugin-anchor" href="#file"><span class="fa fa-link"></span></a>File</h3>
 <p>These are used to read files and pass the file content as a string parameter to the underlying steps.</p>
 <p>The prefix and value are below:</p>
 <p><strong>Prefix</strong> : The prefix is <strong><em>file</em></strong></p>
@@ -1265,17 +1265,17 @@
 <pre><code>* Verify email text is &lt;file:email.txt&gt;
 * Check if &lt;file:/work/content.txt&gt; is visible
 </code></pre><p>The path to the file can be the relative path from the Gauge project or an absolute path to the file.</p>
-<h4 id="2-table"><a name="2-table" class="plugin-anchor" href="#2-table"><span class="fa fa-link"></span></a>2. Table</h4>
+<h3 id="table"><a name="table" class="plugin-anchor" href="#table"><span class="fa fa-link"></span></a>Table</h3>
 <p>Tables are used to pass table value into steps read from an external CSV file. The parameter text in the step contains a  prefix table and the path to the csv file.</p>
 <p><strong>Prefix</strong> : The prefix is <strong><em>table</em></strong></p>
 <p><strong>Value</strong>  : The value is the path to the csv file.</p>
 <pre><code>* Step that takes a table &lt;table:data.csv&gt;
 * Check if the following users exist &lt;table : /Users/john/work/users.csv&gt;
-</code></pre><p><strong>Sample csv file </strong>:</p>
+</code></pre><p><strong>Sample csv file</strong>:</p>
 <pre><code>Id,Name
 1,The Way to Go On
 2,Ivo Jay Balbaert
-</code></pre><p><strong><em>The first row is considered as table headers. Following rows are considered as the row values.</em></strong></p>
+</code></pre><p>The first row is considered as table header. Following rows are considered as the row values.</p>
 
                     
                     </section>
