@@ -1,6 +1,7 @@
 # Specifications
 
-**Specifications**(Spec) are business layer test cases which can also act as your feature documentation. They are written in the business language. Typically a spec or specification describe a particular feature of the application under test.
+**Specifications** (spec) are business layer test cases which can also act as your feature documentation. They are written in the business language. Typically a spec or specification describe a particular feature of the application under test.
+
 * They are written in a **.spec** file. Gauge also supports **.md** file format.
 * The Markup for a Specification file is based on [markdown](https://en.wikipedia.org/wiki/Markdown) syntax.
 
