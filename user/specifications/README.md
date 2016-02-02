@@ -1,14 +1,10 @@
-#Specifications
+# Specifications
 
-
-**Specifications** are business layer test cases which can also act as your feature documentation. They are written in the Business language. Typically a spec or specification describe a particular feature of the application under test.
-
+**Specifications**(Spec) are business layer test cases which can also act as your feature documentation. They are written in the business language. Typically a spec or specification describe a particular feature of the application under test.
 * They are written in a **.spec** file. Gauge also supports **.md** file format.
-
 * The Markup for a Specification file is based on [markdown](https://en.wikipedia.org/wiki/Markdown) syntax.
 
-
-#### A simple Spec:
+## A simple Spec
 
 ![Spec](images/spec.png "Specification")
 
@@ -17,21 +13,21 @@
 
 A Spec must begins with a spec heading and a single specification can contain only one spec heading.
 
-It is written in **H1** syntax of markdown. This can be in two forms
+It is written in **`<H1>`** syntax of markdown. This can be in two forms:
 
-````
+```
 Spec Heading
 ============
-````
+```
+
  or
 
-````
-#Spec Heading
-````
+```
+# Spec Heading
+```
 
 * Every spec must contain one or more [scenarios](scenarios.md).
 * Every spec can be marked with labels using [tags](tags.md).
-
 
 ## Scenarios
 
@@ -39,7 +35,7 @@ Each scenario represents a single flow in a particular specification.
 
 Consider the above example, **successful search** and **unsuccessful search** are 2 scenarios for the **search specification**. In business language terms they represent the entire search feature in the app.
 
-Learn more about the structure of a [Scenario](scenarios.md)
+Learn more about the structure of a [Scenario](scenarios.md).
 
 ## Steps
 
@@ -47,21 +43,15 @@ Steps are the executable part of the specification. They have underlying impleme
 
 They are written inside a specification ([context steps](contexts.md)) or a scenario.
 
-#### Example
-````
+Example:
+
+```
 * Search for product "die hard"
 * User "admin" must be logged in
-````
+```
 
-### Learn more
+## Further reading
+
  * [Scenarios](scenarios.md)
  * [Steps](steps.md)
  * [Test code](../test_code/README.md)
-
-
-
-
-
-
-
-

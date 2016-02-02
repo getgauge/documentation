@@ -7,10 +7,11 @@ Tags are used to associate labels with specifications or scenarios. Tags are wri
 
 They help in filtering specs or scenarios based on tags used.
 
-####Example
+## Example
 
 Both the **Login specification** and the scenario **Successful login scenario** have tags in the below example.
-````
+
+```
 Login specification
 ===================
  Tags: login, admin, user-abc
@@ -19,7 +20,6 @@ Login specification
 Successful login scenario
 -------------------------
  Tags: login-success, admin
-
-````
+```
 
 A tag applied to a spec automatically applies to a scenario.
