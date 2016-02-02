@@ -15,9 +15,7 @@
 * Enter a project name, you may choose a different workspace if needed. Click "Finish"
 * You should now see a Gauge project created.
 
-````
-Note: If gauge-java is not installed, it will download it for the first time.
-````
+*Note:* If gauge-java is not installed, it will download it for the first time.
 
 ![creation](eclipse-screenshots/create-new-gauge-project.gif "Project Creation")
 
@@ -36,7 +34,7 @@ Elements that are highlighted:
 
 ## Auto Completion
 
-The plugin can bring up a list of Steps that are defined/used in the project. The autocompletion works by pressing <kbc>Ctrl</kbd>+<kbd>Space</kbd>.
+The plugin can bring up a list of Steps that are defined/used in the project. The autocompletion works by pressing <kbd>Ctrl</kbd>+<kbd>Space</kbd>.
 
 ![autocomplete](eclipse-screenshots/auto-complete.gif "Auto Complete")
 
@@ -69,5 +67,3 @@ The plugin allows user to execute Gauge Specs from within Eclipse. There are var
 ![test-execution](eclipse-screenshots/test-execution.gif "Test Execution")
 
 ![run-configuration](eclipse-screenshots/run-configuration.png "Run Configuration")
-
-

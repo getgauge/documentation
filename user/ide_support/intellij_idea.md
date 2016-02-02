@@ -1,4 +1,4 @@
-# Intellij IDEA
+# IntelliJ IDEA
 
 Gauge projects can be created and executed from Intellij IDEA. The plugin can be downloaded from the JetBrains plugin repository.
 
@@ -21,9 +21,7 @@ Steps to install Gauge Intellij IDEA plugin from IDE:
 * Click Close.
 * Click OK in the Settings dialog and restart IntelliJ IDEA for the changes to take effect.
 
-````
-Note: The plugin you have installed is automatically enabled. When necessary, you can disable it as described in Enabling and Disabling Plugins.
-```
+*Note:* The plugin you have installed is automatically enabled. When necessary, you can disable it as described in Enabling and Disabling plugins.
 
 To install plugin by downloading it manually or to update plugin, follow the steps [here](https://www.jetbrains.com/idea/help/installing-updating-and-uninstalling-repository-plugins.html#d645926e261).
 

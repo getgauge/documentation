@@ -1,6 +1,6 @@
 # IDE Support
 
-The Listed IDE plugins are available for gauge to make writing specs and test code simpler.
+The listed IDE plugins are available for gauge to make writing specs and test code simpler.
 
 * [Intellij IDEA](intellij_idea.md)
 * [Visual Studio](visual_studio.md)
