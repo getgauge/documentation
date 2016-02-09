@@ -56,6 +56,6 @@ language(<version number>)
 
 ```
 
-You can read more about plugins, the different types of plugins and how to install and uninstall them.
+You can read more about plugins [here](../plugins/index.html).
 
 If you have Gauge and your langauge runner installed, then see how you can [create a Gauge project](creating_a_gauge_project.md).
