@@ -17,6 +17,7 @@
    * [Tear Down Steps](specifications/tear_down_steps.md)
 * [Syntax Cheat Sheet](cheat_sheet/README.md)
 * [Gauge Configuration](configuration/README.md)
+   * [Configuring Proxy](configuration/configuring_proxy.md)
 * [Command Line Interface](cli/README.md)
 * [Step implementations](test_code/README.md)
    * [Step Name Template](test_code/step_name_template.md)
