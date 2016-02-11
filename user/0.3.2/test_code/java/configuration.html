@@ -1,0 +1,1323 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Configuration | Gauge Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../test_code/java/custom_messages_in_reports.html" />
+    
+    
+    <link rel="prev" href="../../test_code/java/custom_screenshots_support.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="6.2.5" data-chapter-title="Configuration" data-filepath="test_code/java/configuration.md" data-basepath="../.." data-revision="Wed Feb 10 2016 23:46:44 GMT-0800 (PST)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="http://getgauge.io" target="blank" class="custom-link">Home</a>
+                </li>
+            
+                
+                <li>
+                    <a href="http://github.com/getgauge/gauge" target="blank" class="custom-link">Github</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting_started/index.html">
+            
+                
+                    <a href="../../getting_started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting Started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting_started/download_and_install.html">
+            
+                
+                    <a href="../../getting_started/download_and_install.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Install Gauge
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting_started/install_language_runner.html">
+            
+                
+                    <a href="../../getting_started/install_language_runner.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Install Language runner
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="getting_started/creating_a_gauge_project.html">
+            
+                
+                    <a href="../../getting_started/creating_a_gauge_project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Creating a Gauge project
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="getting_started/project_structure.html">
+            
+                
+                    <a href="../../getting_started/project_structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Project Structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="getting_started/gauge_templates.html">
+            
+                
+                    <a href="../../getting_started/gauge_templates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Gauge Project Templates
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="specifications/index.html">
+            
+                
+                    <a href="../../specifications/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Specifications
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="specifications/steps.html">
+            
+                
+                    <a href="../../specifications/steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Steps
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="specifications/contexts.html">
+            
+                
+                    <a href="../../specifications/contexts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Contexts
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="specifications/scenarios.html">
+            
+                
+                    <a href="../../specifications/scenarios.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Scenarios
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="specifications/tags.html">
+            
+                
+                    <a href="../../specifications/tags.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Tags
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="specifications/parameters.html">
+            
+                
+                    <a href="../../specifications/parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="specifications/concepts.html">
+            
+                
+                    <a href="../../specifications/concepts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Concepts
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="specifications/tear_down_steps.html">
+            
+                
+                    <a href="../../specifications/tear_down_steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Tear Down Steps
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="cheat_sheet/index.html">
+            
+                
+                    <a href="../../cheat_sheet/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Syntax Cheat Sheet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="configuration/index.html">
+            
+                
+                    <a href="../../configuration/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Gauge Configuration
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="configuration/configuring_proxy.html">
+            
+                
+                    <a href="../../configuration/configuring_proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Configuring Proxy
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="cli/index.html">
+            
+                
+                    <a href="../../cli/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Command Line Interface
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="test_code/index.html">
+            
+                
+                    <a href="../../test_code/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Step implementations
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="test_code/step_name_template.html">
+            
+                
+                    <a href="../../test_code/step_name_template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Step Name Template
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="test_code/java/java.html">
+            
+                
+                    <a href="../../test_code/java/java.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Java
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="test_code/java/execution_hooks.html">
+            
+                
+                    <a href="../../test_code/java/execution_hooks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.1.</b>
+                        
+                        Execution hooks java
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="test_code/java/java_project_files.html">
+            
+                
+                    <a href="../../test_code/java/java_project_files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.2.</b>
+                        
+                        Java project files
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="test_code/java/data_store_to_share_data.html">
+            
+                
+                    <a href="../../test_code/java/data_store_to_share_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.3.</b>
+                        
+                        DataStore to share data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.4" data-path="test_code/java/custom_screenshots_support.html">
+            
+                
+                    <a href="../../test_code/java/custom_screenshots_support.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.4.</b>
+                        
+                        Custom Screenshots
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2.5" data-path="test_code/java/configuration.html">
+            
+                
+                    <a href="../../test_code/java/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.6" data-path="test_code/java/custom_messages_in_reports.html">
+            
+                
+                    <a href="../../test_code/java/custom_messages_in_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.6.</b>
+                        
+                        Custom messages in reports
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.7" data-path="test_code/java/using_build_tools.html">
+            
+                
+                    <a href="../../test_code/java/using_build_tools.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.7.</b>
+                        
+                        Using build tools
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="test_code/ruby/ruby.html">
+            
+                
+                    <a href="../../test_code/ruby/ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Ruby
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="test_code/ruby/execution_hooks_ruby.html">
+            
+                
+                    <a href="../../test_code/ruby/execution_hooks_ruby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.1.</b>
+                        
+                        Execution Hooks Ruby
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="test_code/ruby/ruby_project_files.html">
+            
+                
+                    <a href="../../test_code/ruby/ruby_project_files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.2.</b>
+                        
+                        Ruby Project files
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="test_code/csharp/csharp.html">
+            
+                
+                    <a href="../../test_code/csharp/csharp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        C#
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="test_code/csharp/execution_hooks_c.html">
+            
+                
+                    <a href="../../test_code/csharp/execution_hooks_c.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.1.</b>
+                        
+                        Execution hooks C#
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="test_code/csharp/c_project_files.html">
+            
+                
+                    <a href="../../test_code/csharp/c_project_files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.2.</b>
+                        
+                        C# Project files
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="test_code/csharp/datastore_to_share_data.html">
+            
+                
+                    <a href="../../test_code/csharp/datastore_to_share_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.3.</b>
+                        
+                        DataStore to share data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.4" data-path="test_code/csharp/custom_screenshot.html">
+            
+                
+                    <a href="../../test_code/csharp/custom_screenshot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.4.</b>
+                        
+                        Custom Screenshots
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.5" data-path="test_code/csharp/custom_messages_in_reports.html">
+            
+                
+                    <a href="../../test_code/csharp/custom_messages_in_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.5.</b>
+                        
+                        Custom messages in reports
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="execution/index.html">
+            
+                
+                    <a href="../../execution/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Execution
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="execution/table_driven_execution.html">
+            
+                
+                    <a href="../../execution/table_driven_execution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Table driven execution
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="execution/tagged_execution.html">
+            
+                
+                    <a href="../../execution/tagged_execution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Tagged Execution
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="execution/execution_hooks.html">
+            
+                
+                    <a href="../../execution/execution_hooks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Execution hooks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="execution/parallel_execution.html">
+            
+                
+                    <a href="../../execution/parallel_execution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Parallel Execution
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="dependency_management/index.html">
+            
+                
+                    <a href="../../dependency_management/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Dependency Management
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="dependency_management/maven-plugin.html">
+            
+                
+                    <a href="../../dependency_management/maven-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        maven-plugin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="dependency_management/gradle-plugin.html">
+            
+                
+                    <a href="../../dependency_management/gradle-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        gradle-plugin
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="managing_environments/index.html">
+            
+                
+                    <a href="../../managing_environments/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Environments
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="plugins/index.html">
+            
+                
+                    <a href="../../plugins/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Plugins
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="plugins/installation.html">
+            
+                
+                    <a href="../../plugins/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="plugins/list.html">
+            
+                
+                    <a href="../../plugins/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Plugins list
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="plugins/html_report_plugin.html">
+            
+                
+                    <a href="../../plugins/html_report_plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        HTML Report plugin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="plugins/xml_report_plugin.html">
+            
+                
+                    <a href="../../plugins/xml_report_plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        XML Report plugin
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="ide_support/index.html">
+            
+                
+                    <a href="../../ide_support/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        IDE Support
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="ide_support/intellij_idea.html">
+            
+                
+                    <a href="../../ide_support/intellij_idea.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Intellij Idea
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1" data-path="ide_support/features.html">
+            
+                
+                    <a href="../../ide_support/features.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.1.</b>
+                        
+                        Features
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.2" data-path="ide_support/other_usability_features.html">
+            
+                
+                    <a href="../../ide_support/other_usability_features.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.2.</b>
+                        
+                        Other usability features
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="ide_support/visual_studio.html">
+            
+                
+                    <a href="../../ide_support/visual_studio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Visual Studio
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.2.1" data-path="ide_support/visual_studio_features.html">
+            
+                
+                    <a href="../../ide_support/visual_studio_features.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.1.</b>
+                        
+                        Features
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="ide_support/eclipse.html">
+            
+                
+                    <a href="../../ide_support/eclipse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Eclipse
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="ide_support/gauge_eclipse_plugin_features.html">
+            
+                
+                    <a href="../../ide_support/gauge_eclipse_plugin_features.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Features
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="integration_with_ci/index.html">
+            
+                
+                    <a href="../../integration_with_ci/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Integration with CI
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="integration_with_ci/go.html">
+            
+                
+                    <a href="../../integration_with_ci/go.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        Go
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="troubleshooting/troubleshooting.html">
+            
+                
+                    <a href="../../troubleshooting/troubleshooting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Troubleshooting
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1" data-path="troubleshooting/logs.html">
+            
+                
+                    <a href="../../troubleshooting/logs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                        Logs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="troubleshooting/installation.html">
+            
+                
+                    <a href="../../troubleshooting/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="troubleshooting/execution.html">
+            
+                
+                    <a href="../../troubleshooting/execution.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                        Execution
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.4" data-path="troubleshooting/intellij.html">
+            
+                
+                    <a href="../../troubleshooting/intellij.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.4.</b>
+                        
+                        Intellij idea
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="examples/examples.html">
+            
+                
+                    <a href="../../examples/examples.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        Example Projects
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="previous_versions/index.html">
+            
+                
+                    <a href="../../previous_versions/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        Previous Versions
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Gauge Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><span class="fa fa-link"></span></a>Configuration</h1>
+<p>Java Specific configuration changes can be made in the <strong><em>env/default/java.properties</em></strong> file.</p>
+<p>The following configurations can be made:</p>
+<h3 id="gaugejavahome"><a name="gaugejavahome" class="plugin-anchor" href="#gaugejavahome"><span class="fa fa-link"></span></a>gauge_java_home</h3>
+<p>Specify an alternate Java home if you want to use a custom version.</p>
+<p>Example:</p>
+<pre><code>gauge_java_home = PATH_TO_JAVA_HOME
+</code></pre><h3 id="gaugecustom-buildpath"><a name="gaugecustom-buildpath" class="plugin-anchor" href="#gaugecustom-buildpath"><span class="fa fa-link"></span></a>gauge_custom _build_path</h3>
+<pre><code>Note: IntelliJ and Eclipse out directory will be usually auto-detected.
+</code></pre><p>Use this property if you need to override the build path for the project.</p>
+<p>Example:</p>
+<pre><code>gauge_custom_build_path = PATH_TO_CUSTOM_BUILDPATH
+</code></pre><h3 id="gaugeadditionallibs"><a name="gaugeadditionallibs" class="plugin-anchor" href="#gaugeadditionallibs"><span class="fa fa-link"></span></a>gauge_additional_libs</h3>
+<ul>
+<li>Specify the directory where additional libraries are kept.</li>
+<li>You can specify multiple directory names separated with a comma <strong>&apos;,&apos;</strong></li>
+<li><strong><em>libs</em></strong> directory in the gauge project is added by default.</li>
+</ul>
+<p>Example:</p>
+<pre><code>gauge_additional_libs = libs/*, PATH_TO_NEW_LIBRARY
+</code></pre><h3 id="gaugejvmargs"><a name="gaugejvmargs" class="plugin-anchor" href="#gaugejvmargs"><span class="fa fa-link"></span></a>gauge_jvm_args</h3>
+<p>Specify the JVM arguments passed to java while launching.</p>
+<h3 id="gaugeclearstatelevel"><a name="gaugeclearstatelevel" class="plugin-anchor" href="#gaugeclearstatelevel"><span class="fa fa-link"></span></a>gauge_clear_state_level</h3>
+<p>Specify the level at which cached objects should get removed while execution.</p>
+<p>Possible values for this property are <code>suite</code>,<code>spec</code> and <code>scenario</code>. By default, Gauge clears state at scenario level.</p>
+<p>Example:</p>
+<pre><code>gauge_clear_state_level = spec
+</code></pre><p>This clears the objects after the execution of each specification, so that new objects are created for next execution.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../test_code/java/custom_screenshots_support.html" class="navigation navigation-prev " aria-label="Previous page: Custom Screenshots"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../test_code/java/custom_messages_in_reports.html" class="navigation navigation-next " aria-label="Next page: Custom messages in reports"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-54838477-1","configuration":"auto"},"anchors":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-54838477-1', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>
