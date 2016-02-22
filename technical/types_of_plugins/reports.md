@@ -12,6 +12,4 @@ The view of this report is an angular-js application that binds the JSON output.
 
 #### JUnit style report
 
-> Note: This plugin is still "work in progress".
-
 Conceptually everything is similar to the HTML report, except that instead of a JSON and angular-js view, this plugin serializes the result into a JUnit format XML.
