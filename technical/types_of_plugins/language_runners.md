@@ -18,6 +18,57 @@ Gauge allows one to write implementations in multiple languages, and this is mad
 - **Skeleton files (templates)** : These files create a sample `hello world` project that can be used as a quick-start for creating a new project.
 - **Metadata file (usually `<language>.json`)** : Holds meta information about the plugin. Also holds the commands to invoke for `init` and `run` phases of the plugin.
 
+#### Format of a Metadata file(`<langauge>.json`)
+```json
+{
+    "id": "{plugin-name}",
+    "version": "{plugin-version}",
+    "description": "{plugin-description}",
+    // Commands to execute pre-installation
+    "preInstall": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+    },
+    // Commands to execute post-installation
+    "postInstall": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+    },
+    // Commands to invoke for run phase of the plugin
+    "run": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+    },
+    // Commands to invoke for init phase of the plugin
+    "init": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+    },
+    // Commands to execute pre-uninstallation
+    "preUnInstall": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+    },
+    // Commands to execute post-uninstallation
+    "postUnInstall": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+    },
+    // Location of libraries for the plugin relative to plugin directory
+    "lib": "{libs}",
+    "gaugeVersionSupport": {
+        "minimum": "{minimum gauge version supported}",  // mandatory
+        "maximum": "{maximum gauge version supported}"   // optional
+    }
+}
+```
+
 ### Installation
 
 Installing a plugin happens via Gauge. Gauge's `properties` file contains a URL that points to the `Gauge-Repository`, which holds meta information, which Gauge uses to determine the highest compatible version of the plugin.
