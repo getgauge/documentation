@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="2.1" data-chapter-title="Language Runners" data-filepath="types_of_plugins/language_runners.md" data-basepath=".." data-revision="Wed Feb 10 2016 23:46:53 GMT-0800 (PST)">
+    <div class="book" data-level="2.1" data-chapter-title="Language Runners" data-filepath="types_of_plugins/language_runners.md" data-basepath=".." data-revision="Fri Feb 26 2016 01:20:44 GMT-0800 (PST)">
     
 
 <div class="book-summary">
@@ -524,6 +524,55 @@
 <li><strong>Skeleton files (templates)</strong> : These files create a sample <code>hello world</code> project that can be used as a quick-start for creating a new project.</li>
 <li><strong>Metadata file (usually <code>&lt;language&gt;.json</code>)</strong> : Holds meta information about the plugin. Also holds the commands to invoke for <code>init</code> and <code>run</code> phases of the plugin.</li>
 </ul>
+<h4 id="format-of-a-metadata-filelangaugejson"><a name="format-of-a-metadata-filelangaugejson" class="plugin-anchor" href="#format-of-a-metadata-filelangaugejson"><span class="fa fa-link"></span></a>Format of a Metadata file(<code>&lt;langauge&gt;.json</code>)</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;{plugin-name}&quot;</span>,
+    <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;{plugin-version}&quot;</span>,
+    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;{plugin-description}&quot;</span>,
+    <span class="hljs-comment">// Commands to execute pre-installation</span>
+    <span class="hljs-string">&quot;preInstall&quot;</span>: {
+        <span class="hljs-string">&quot;windows&quot;</span>: [],
+        <span class="hljs-string">&quot;linux&quot;</span>: [],
+        <span class="hljs-string">&quot;darwin&quot;</span>: []
+    },
+    <span class="hljs-comment">// Commands to execute post-installation</span>
+    <span class="hljs-string">&quot;postInstall&quot;</span>: {
+        <span class="hljs-string">&quot;windows&quot;</span>: [],
+        <span class="hljs-string">&quot;linux&quot;</span>: [],
+        <span class="hljs-string">&quot;darwin&quot;</span>: []
+    },
+    <span class="hljs-comment">// Commands to invoke for run phase of the plugin</span>
+    <span class="hljs-string">&quot;run&quot;</span>: {
+        <span class="hljs-string">&quot;windows&quot;</span>: [],
+        <span class="hljs-string">&quot;linux&quot;</span>: [],
+        <span class="hljs-string">&quot;darwin&quot;</span>: []
+    },
+    <span class="hljs-comment">// Commands to invoke for init phase of the plugin</span>
+    <span class="hljs-string">&quot;init&quot;</span>: {
+        <span class="hljs-string">&quot;windows&quot;</span>: [],
+        <span class="hljs-string">&quot;linux&quot;</span>: [],
+        <span class="hljs-string">&quot;darwin&quot;</span>: []
+    },
+    <span class="hljs-comment">// Commands to execute pre-uninstallation</span>
+    <span class="hljs-string">&quot;preUnInstall&quot;</span>: {
+        <span class="hljs-string">&quot;windows&quot;</span>: [],
+        <span class="hljs-string">&quot;linux&quot;</span>: [],
+        <span class="hljs-string">&quot;darwin&quot;</span>: []
+    },
+    <span class="hljs-comment">// Commands to execute post-uninstallation</span>
+    <span class="hljs-string">&quot;postUnInstall&quot;</span>: {
+        <span class="hljs-string">&quot;windows&quot;</span>: [],
+        <span class="hljs-string">&quot;linux&quot;</span>: [],
+        <span class="hljs-string">&quot;darwin&quot;</span>: []
+    },
+    <span class="hljs-comment">// Location of libraries for the plugin relative to plugin directory</span>
+    <span class="hljs-string">&quot;lib&quot;</span>: <span class="hljs-string">&quot;{libs}&quot;</span>,
+    <span class="hljs-string">&quot;gaugeVersionSupport&quot;</span>: {
+        <span class="hljs-string">&quot;minimum&quot;</span>: <span class="hljs-string">&quot;{minimum gauge version supported}&quot;</span>,  <span class="hljs-comment">// mandatory</span>
+        <span class="hljs-string">&quot;maximum&quot;</span>: <span class="hljs-string">&quot;{maximum gauge version supported}&quot;</span>   <span class="hljs-comment">// optional</span>
+    }
+}
+</code></pre>
 <h3 id="installation"><a name="installation" class="plugin-anchor" href="#installation"><span class="fa fa-link"></span></a>Installation</h3>
 <p>Installing a plugin happens via Gauge. Gauge&apos;s <code>properties</code> file contains a URL that points to the <code>Gauge-Repository</code>, which holds meta information, which Gauge uses to determine the highest compatible version of the plugin.
 This makes plugin installation a two step process:</p>
