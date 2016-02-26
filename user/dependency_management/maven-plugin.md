@@ -7,7 +7,7 @@ Use the gauge-maven-plugin to execute specifications in your gauge java project 
 ```bash
 mvn archetype:generate -DgroupId={projectGroupId}
 -DartifactId={projectArtifactId}
--DarchetypeArtifactId=gauge-maven-plugin
+-DarchetypeArtifactId=gauge-archetype-java
 -DarchetypeGroupId=com.thoughtworks.gauge.maven
 
 ```
@@ -95,7 +95,7 @@ The following plugin properties can be additionally set:
 |inParallel| -DinParallel=true | Execute specs in parallel|
 |nodes    | -Dnodes=3 | Number of parallel execution streams. Use with ```parallel```|
 |env      | -Denv=qa  | gauge env to run against  |
-|dir  | -Ddir=. | Set working directory for gauge.  Default is project.basedir. |  
+|dir  | -Ddir=. | Set working directory for gauge.  Default is project.basedir. |
 |flags| -Dflags="--verbose" | Add additional gauge flags to execution|
 
 
