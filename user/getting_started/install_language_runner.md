@@ -38,6 +38,16 @@ $ gauge --install js
 
 For more information, see the [Gauge JavaScript project page](http://github.com/getgauge-contrib/gauge-js).
 
+### Python
+
+You can install Python language runner in your project using:
+
+```
+$ gauge --install python
+```
+
+For more information, see the [Gauge Python project page](http://github.com/kashishm/gauge-python).
+
 # Check your installation
 
 You can check the version of your plugin and Gauge core by executing the following command.
