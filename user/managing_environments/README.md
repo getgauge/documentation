@@ -56,6 +56,7 @@ logs_directory = GaugeLogs
 Precedence to the env variable value is given in the below order.
    1. User shell / OS env variable values
    2. Project environment passed in the `--env` flag
+   3. Project environment present in the `env/default` dir (if present)
    3. Gauge default env variable values, as below
 
 |Property | Value|
@@ -67,8 +68,9 @@ Precedence to the env variable value is given in the below order.
 
 Gauge loads the enviroment variables as below.
 
-  *  When Gauge starts, the default values will be loaded.
-  * Gauge will then load the environment passed by the user in the `--env` flag. If this flag is not passed by the user, `default` environment will be loaded.
+  *  When Gauge starts, the environment passed by the user in the `--env` flag will be loaded. If this flag is not passed by the user, `default` environment will be loaded.
+  * Gauge will then load the `default` environment. Only the values which are not yet set will be loaded. This step won't overwrite the variables which are set in step 1.
+  * Finally, Gauge will load the environment variables which are not yet set, as per the table above.
   * These values can be overwritten by explicitly setting the respective OS environment variables.
   * If the environment mentioned in the `--env` flag is not found in the project, Gauge will end with a non-zero exit code.
   * Gauge project doesn't need to have a `default` env since Gauge will use the above values as default. User can still set the `default` env to either overwrite or add new env variables, but doesn't want to pass the `--env` flag.
@@ -77,13 +79,13 @@ Gauge loads the enviroment variables as below.
 ### Examples
 
   * User executes `gauge specs`
-    * If `<project_root>/env/default` is **not** present, Gauge will load the default values mentioned in the table above.
-    * If `<project_root>/env/default` is present, Gauge will load the default values and overwrite them with the values mentioned in the `default` environment.
+    * If `<project_root>/env/default` is **not** present, Gauge will set the default env variables with values mentioned in the table above.
+    * If `<project_root>/env/default` is present, Gauge will set the env variables mentioned in the `default` environment. It will then set any env variable (which is not already set) as per the table above.
   * User executes `gauge --env=java_ci specs`
      * If `<project_root>/env/java_ci` is **not** present, Gauge will end with a non-zero exit code.
-     * If `<project_root>/env/java_ci` is present, Gauge will load the default values and overwrite them with the values mentioned in the `java_ci` environment.
+     * If `<project_root>/env/java_ci` is present, Gauge will set the env variables mentioned in the `java_ci` environment. It will then load other variables from the `default` environment which are not already set. Finally, it will the set the env vars with values mentioned in the table above (if they are not already set).
   * User executes `gauge_reports_dir=newReportsDir gauge specs` or user explicitly sets `gauge_reports_dir=newReportsDir` in shell and then runs `gauge specs`
-    * Gauge will load all the default values except for the variable `gauge_reports_dir`. This variable's value will still continue to be `newReportsDir`.
+    * Gauge will set all the default env variables from `env/default` directory and then from the above table, except for the variable `gauge_reports_dir`. This variable's value will still continue to be `newReportsDir`.
   * User executes `gauge_reports_dir=newReportsDir gauge --env=java_ci specs` or user explicitly sets `gauge_reports_dir=newReportsDir` in shell and then runs `gauge --env=java_ci specs`
-    * Gauge will load all the default values and overwrite them with the values mentioned in the `java_ci` environment, except for the variable `gauge_reports_dir`. This variable's value will still continue to be `newReportsDir`.
+    * Gauge will set the env variables mentioned in the `java_ci` environment. It will then load other variables from the `default` environment which are not already set. Finally, it will the set the env vars with values mentioned in the table above (if they are not already set). However variable `gauge_reports_dir`, which is explicitly set in the shell will not be overwritten. This variable's value will still continue to be `newReportsDir`.
 
