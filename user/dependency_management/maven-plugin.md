@@ -39,6 +39,7 @@ The generated **pom.xml** in the project will have the** gauge-java** dependency
     </dependencies>
 
     <build>
+        <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>com.thoughtworks.gauge.maven</groupId>
