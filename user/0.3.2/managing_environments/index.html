@@ -52,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="9" data-chapter-title="Environments" data-filepath="managing_environments/README.md" data-basepath=".." data-revision="Sun Mar 13 2016 23:00:54 GMT-0700 (PDT)">
+    <div class="book" data-level="9" data-chapter-title="Environments" data-filepath="managing_environments/README.md" data-basepath=".." data-revision="Wed Mar 23 2016 03:01:52 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -1276,6 +1276,7 @@ logs_directory = GaugeLogs
 <ol>
 <li>User shell / OS env variable values</li>
 <li>Project environment passed in the <code>--env</code> flag</li>
+<li>Project environment present in the <code>env/default</code> dir (if present)</li>
 <li>Gauge default env variable values, as below</li>
 </ol>
 <table>
@@ -1306,8 +1307,9 @@ logs_directory = GaugeLogs
 </table>
 <p>Gauge loads the enviroment variables as below.</p>
 <ul>
-<li>When Gauge starts, the default values will be loaded.</li>
-<li>Gauge will then load the environment passed by the user in the <code>--env</code> flag. If this flag is not passed by the user, <code>default</code> environment will be loaded.</li>
+<li>When Gauge starts, the environment passed by the user in the <code>--env</code> flag will be loaded. If this flag is not passed by the user, <code>default</code> environment will be loaded.</li>
+<li>Gauge will then load the <code>default</code> environment. Only the values which are not yet set will be loaded. This step won&apos;t overwrite the variables which are set in step 1.</li>
+<li>Finally, Gauge will load the environment variables which are not yet set, as per the table above.</li>
 <li>These values can be overwritten by explicitly setting the respective OS environment variables.</li>
 <li>If the environment mentioned in the <code>--env</code> flag is not found in the project, Gauge will end with a non-zero exit code.</li>
 <li>Gauge project doesn&apos;t need to have a <code>default</code> env since Gauge will use the above values as default. User can still set the <code>default</code> env to either overwrite or add new env variables, but doesn&apos;t want to pass the <code>--env</code> flag.</li>
@@ -1315,21 +1317,21 @@ logs_directory = GaugeLogs
 <h3 id="examples"><a name="examples" class="plugin-anchor" href="#examples"><span class="fa fa-link"></span></a>Examples</h3>
 <ul>
 <li>User executes <code>gauge specs</code><ul>
-<li>If <code>&lt;project_root&gt;/env/default</code> is <strong>not</strong> present, Gauge will load the default values mentioned in the table above.</li>
-<li>If <code>&lt;project_root&gt;/env/default</code> is present, Gauge will load the default values and overwrite them with the values mentioned in the <code>default</code> environment.</li>
+<li>If <code>&lt;project_root&gt;/env/default</code> is <strong>not</strong> present, Gauge will set the default env variables with values mentioned in the table above.</li>
+<li>If <code>&lt;project_root&gt;/env/default</code> is present, Gauge will set the env variables mentioned in the <code>default</code> environment. It will then set any env variable (which is not already set) as per the table above.</li>
 </ul>
 </li>
 <li>User executes <code>gauge --env=java_ci specs</code><ul>
 <li>If <code>&lt;project_root&gt;/env/java_ci</code> is <strong>not</strong> present, Gauge will end with a non-zero exit code.</li>
-<li>If <code>&lt;project_root&gt;/env/java_ci</code> is present, Gauge will load the default values and overwrite them with the values mentioned in the <code>java_ci</code> environment.</li>
+<li>If <code>&lt;project_root&gt;/env/java_ci</code> is present, Gauge will set the env variables mentioned in the <code>java_ci</code> environment. It will then load other variables from the <code>default</code> environment which are not already set. Finally, it will the set the env vars with values mentioned in the table above (if they are not already set).</li>
 </ul>
 </li>
 <li>User executes <code>gauge_reports_dir=newReportsDir gauge specs</code> or user explicitly sets <code>gauge_reports_dir=newReportsDir</code> in shell and then runs <code>gauge specs</code><ul>
-<li>Gauge will load all the default values except for the variable <code>gauge_reports_dir</code>. This variable&apos;s value will still continue to be <code>newReportsDir</code>.</li>
+<li>Gauge will set all the default env variables from <code>env/default</code> directory and then from the above table, except for the variable <code>gauge_reports_dir</code>. This variable&apos;s value will still continue to be <code>newReportsDir</code>.</li>
 </ul>
 </li>
 <li>User executes <code>gauge_reports_dir=newReportsDir gauge --env=java_ci specs</code> or user explicitly sets <code>gauge_reports_dir=newReportsDir</code> in shell and then runs <code>gauge --env=java_ci specs</code><ul>
-<li>Gauge will load all the default values and overwrite them with the values mentioned in the <code>java_ci</code> environment, except for the variable <code>gauge_reports_dir</code>. This variable&apos;s value will still continue to be <code>newReportsDir</code>.</li>
+<li>Gauge will set the env variables mentioned in the <code>java_ci</code> environment. It will then load other variables from the <code>default</code> environment which are not already set. Finally, it will the set the env vars with values mentioned in the table above (if they are not already set). However variable <code>gauge_reports_dir</code>, which is explicitly set in the shell will not be overwritten. This variable&apos;s value will still continue to be <code>newReportsDir</code>.</li>
 </ul>
 </li>
 </ul>
