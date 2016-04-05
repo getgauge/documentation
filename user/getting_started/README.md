@@ -6,19 +6,20 @@ Gauge is a first class command line tool. This means that you can operate entire
 
 The following section describe the steps needed to set up Gauge and get specs working from the command line or [with an IDE](../ide_support/README.md).
 
-## Using Gauge from command line
+## Pre-requiste
 
 * [Downlod and Install](http://getgauge.io/get-started) Gauge
 * Install a Gauge [language plugin](../plugins/installation.md)
+
+## Using Gauge from command line
+
 * [Create a Gauge project](creating_a_gauge_project.md)
 * [Execute](../execution/README.md) the example spec
 
 ## Using Gauge with an IDE
 
-* [Download and install](http://getgauge.io/download) Gauge
-* Install a Gauge [language plugin](../plugins/installation.md)
 * [Install Gauge IDE plugin](../ide_support.md)
-* [Create a Gauge project](../ide_support/features.md) via your IDE
+* [Create and execute a Gauge project](../ide_support/README.md) via your IDE
 
 
 Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/README.md) for the steps.
