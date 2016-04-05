@@ -2,20 +2,30 @@
 
 ## Repositories
 
-* [Gauge](https://github.com/getgauge)
+* [Gauge](https://github.com/getgauge), the core repository.
 
-    This the core repository. The Binaries generated are
+    **Prerequisite**
+
+        Golang
+
+    **The Binaries generated are**
+
         gauge/gauge.exe
         gauge_screenshot/gauge_screenshot.exe
 
 
 * [Gauge-proto](https://github.com/getgauge/gauge-proto)
 
-This is a repository which contains the  [google protobuff](https://github.com/google/protobuf) messages. An IDL that defines contracts between plugins and gauge core.
+    This is a repository which contains the  [google protobuff](https://github.com/google/protobuf) messages. An IDL that defines contracts between plugins and gauge core.
 
-Several components uses this repository as a sub module. It takes gauge_proto compiles it into the specific language.
+    Several components uses this repository as a sub module. It takes gauge_proto compiles it into the specific language.
 
 * [Common](https://github.com/getgauge/common)
+
+    **Prerequisite**
+
+        Golang
+
 
     Shared utility code between components written in Golang.
 

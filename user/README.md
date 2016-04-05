@@ -7,7 +7,7 @@ Gauge champions the idea of **living/executable documentation**.
 Some of its key features include:
 
 * A rich markup based on [markdown](https://en.wikipedia.org/wiki/Markdown)
-* Support for writing test code in any programming language. See [Test Code](test_code/README.md) for currently supported languages.
+* Support for writing test code in multiple programming languages. Currently [supported languages]((test_code/README.md).
 * A modular architecture with [plugin](plugins/README.md) support.
 * Consistency across language implementations.
 
@@ -24,16 +24,17 @@ Certain features of Gauge make it stand unique amongst others.
 * Supports External Data Sources
 * [IDE Support](ide_support/README.md)
 
-## Get started quickly
+## Looking for examples?
+* [Getting started in 3 steps - Java](https://github.com/getgauge/gauge/wiki/Getting-Started-in-3-Steps)
+* Other [example projects](examples/examples.md)
 
-* Get gauge installers from the [download page](http://getgauge.io/download.html).
-* [Create a gauge project](getting_started/creating_a_gauge_project.md)
-* [Execute Specifications](execution/README.md)
-
-
-## Learn more about using gauge
+## Key features
 * [Specifications](specifications/README.md)
 * [Steps](specifications/steps.md)
 * [Environments](managing_environments/README.md)
 * [Plugins](plugins/README.md)
 * [IDE Support](ide_support/README.md)
+
+##Help
+
+Refer our [Troubleshooting](troubleshooting/troubleshooting.md) guide.
