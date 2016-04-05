@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Getting Started](getting_started/README.md)
    * [Install Gauge](getting_started/download_and_install.md)
-   * [Install Language runner](getting_started/install_language_runner.md)
+   * [Install Language runner](getting_started/install_language_runners.md)
    * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
    * [Project Structure](getting_started/project_structure.md)
    * [Gauge Project Templates](getting_started/gauge_templates.md)

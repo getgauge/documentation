@@ -2,7 +2,7 @@
 
 There is an eclipse plugin that helps in authoring Java implementation of Gauge specs.
 
-This plugin only supports [Java](../test_code/java.md).
+This plugin only supports [Java](../test_code/java/java.md).
 
 ## Versions supported
 

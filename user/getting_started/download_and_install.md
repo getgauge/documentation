@@ -1,6 +1,6 @@
  # Download and install
 
-This section explains the different ways in which Gauge can be installed. The next step is to [install language runners](install_language_runner.md).
+This section explains the different ways in which Gauge can be installed. The next step is to [install language runners](install_language_runners.md).
 
 ##Windows
 

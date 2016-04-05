@@ -18,7 +18,7 @@ The following section describe the steps needed to set up Gauge and get specs wo
 
 ## Using Gauge with an IDE
 
-* [Install Gauge IDE plugin](../ide_support.md)
+* [Install Gauge IDE plugin](../ide_support/README.md)
 * [Create and execute a Gauge project](../ide_support/README.md) via your IDE
 
 
