@@ -15,7 +15,7 @@ This repository hosts three projects, `Core`, `Lib` and `Runner`.
 ## Gauge CSharp Runner
 `Runner` is an executable that is invoked by Gauge Core. The `Runner` acts a bridge between C# test code and Gauge's API.
 
-Read more about `Runner` [here](Runner.md).
+Read more about `Runner` [here](runner.md).
 
 ## Gauge-Proto
 This is a submodule of the repository `https://github.com/getgauge/gauge-proto`. This repository holds the `.proto` files that act as contracts between Gauge and the plugins. This submodule needs to be fetched to generate the protobuf classes.
