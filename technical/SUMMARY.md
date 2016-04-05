@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * [Overview](overview.md)
+   * [Projects in Gauge ecosystem](overview.md)
 * [Set-up](set-up/README.md)
    * [Gauge](set-up/gauge.md)
    * [Plugins](set-up/plugins.md)

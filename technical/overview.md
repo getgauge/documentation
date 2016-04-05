@@ -1,5 +1,4 @@
-# Overview
-
+# Gauge ecosystem
 ## Repositories
 
 * [Gauge](https://github.com/getgauge), the core repository.
@@ -13,7 +12,6 @@
         gauge/gauge.exe
         gauge_screenshot/gauge_screenshot.exe
 
-
 * [Gauge-proto](https://github.com/getgauge/gauge-proto)
 
     This is a repository which contains the  [google protobuff](https://github.com/google/protobuf) messages. An IDL that defines contracts between plugins and gauge core.
@@ -22,35 +20,65 @@
 
 * [Common](https://github.com/getgauge/common)
 
-    **Prerequisite**
+    This is a shared utility code between components written in Golang.
+
+    > Prerequisite
 
         Golang
 
 
-    Shared utility code between components written in Golang.
-
 * Language runners
 
     Enables gauge support for a specific language. Below is a list of all currently supported language runners.
-    1. [Java](https://github.com/getgauge/gauge-java)
-    2. [C#](https://github.com/getgauge/gauge-csharp)
-    3. [Ruby](https://github.com/getgauge/gauge-ruby)
-    4. [Javascript](https://github.com/getgauge-contrib/gauge-js)
-    5. [Python](https://github.com/kashishm/gauge-python)
+    * [Java](https://github.com/getgauge/gauge-java)
+    * [C#](https://github.com/getgauge/gauge-csharp)
+    * [Ruby](https://github.com/getgauge/gauge-ruby)
+    * [Javascript](https://github.com/getgauge-contrib/gauge-js)
+    * [Python](https://github.com/kashishm/gauge-python)
 
-            Javascript and Python are community contributed language runners.
+> Notes:
+1. Javascript and Python are community contributed language runners.
+2. A language runner can invoke [gauge_screenshot](https://github.com/getgauge/gauge_screenshot)/custom_implementation to take screen shots on failure.
 
 
 * Reporting plugins
 
     The summary of the test result can be viewed in the following formats
-    1. [Html](https://github.com/getgauge/html-report)
-    2. [Xml](https://github.com/getgauge/xml-report)
+    * [Html](https://github.com/getgauge/html-report)
+    * [Xml](https://github.com/getgauge/xml-report)
 
 * IDE Plugins
 
     Enables gauge support in IDE. Below is the list of all supported IDEs.
-    1. [IntelliJ](https://github.com/getgauge/Intellij-Plugin)
-    2. [Visual Studio C#](https://github.com/getgauge/gauge-visualstudio)
-    3. [Eclipse](https://github.com/getgauge/gauge-eclipse)
+    * [IntelliJ](https://github.com/getgauge/Intellij-Plugin)
+    * [Visual Studio C#](https://github.com/getgauge/gauge-visualstudio)
+    * [Eclipse](https://github.com/getgauge/gauge-eclipse)
 
+* [Gauge-repository](https://github.com/getgauge/gauge-repository)
+
+    This repository contains the meta-data of language runner and reporting plugins which is used during installation and upgrades.
+
+* [Gauge-maven-plugin](https://github.com/getgauge/gauge-maven-plugin)
+
+    This plugin is used to integrate gauge with maven so that the specs can be run using maven.
+
+* [Gauge-mvn-archetypes](https://github.com/getgauge/gauge-mvn-archetypes)
+
+    One can create projects using several templates. This contains the template of Maven archetypes for Gauge.
+
+* Examples
+
+    * [gauge-example-java](https://github.com/getgauge/gauge-example-java) - a sample project illustrating Gauge features using webdriver
+
+    * [gauge-example-groovy](https://github.com/getgauge/gauge-example-groovy) - a sample project, illustrating test automation using Gauge, with Groovy support.
+
+    * [gauge-example-ruby](https://github.com/getgauge/gauge-example-ruby) - a sample project, illustrating test automation using Gauge, with ruby support.
+
+    * [gauge-example-csharp](https://github.com/getgauge/gauge-example-csharp) - a sample project illustrating Gauge features, using C#
+
+    * [gauge-example-sahi](https://github.com/getgauge/gauge-example-sahi)
+A sample project illustrating Gauge features using sahi to run browser tests.
+
+* [Documentation](https://github.com/getgauge/documentation)
+
+    [Gitbook](https://github.com/GitbookIO/editor-legacy/releases) is used to edit and contribute to the documentation

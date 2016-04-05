@@ -5,4 +5,4 @@ Extensibility is one of the core features of Gauge, and hence it is built with p
 
 This document illustrates various plugins that Gauge supports, along with other concepts that are applicable at various contexts.
 
-_List of Projects in Gauge ecosystem [overview](overview.md)_
+_[List of Projects in Gauge ecosystem](overview.md)_
