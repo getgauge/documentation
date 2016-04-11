@@ -1,4 +1,5 @@
 # Gauge ecosystem
+
 ## Repositories
 
 * [Gauge](https://github.com/getgauge), the core repository.
@@ -82,3 +83,6 @@ A sample project illustrating Gauge features using sahi to run browser tests.
 * [Documentation](https://github.com/getgauge/documentation)
 
     [Gitbook](https://github.com/GitbookIO/editor-legacy/releases) is used to edit and contribute to the documentation
+
+[Set-up](set-up/readme.md) will help you get started...
+
