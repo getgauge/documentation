@@ -8,7 +8,7 @@
            * [Install with chocolatey](getting_started/install_with_chocolatey.md)
        * [Install on Mac](getting_started/install_on_mac.md)
        * [Install on Linux](getting_started/install_on_linux.md)
-   * [Install Language runner](getting_started/install_language_runners.md)
+   * [Install language runners](getting_started/install_language_runners)
    * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
    * [Project Structure](getting_started/project_structure.md)
    * [Gauge Project Templates](getting_started/gauge_templates.md)
