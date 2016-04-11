@@ -68,7 +68,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.0.0'
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.2.0'
         classpath files("$projectDir/libs")
     }
 }
@@ -89,6 +89,15 @@ gauge {
     tags = 'tag1'
     additionalFlags = '--verbose'
 }
+
+// copying required dependencies for Gauge (required)
+task copyLibs {
+    copy {
+        from configurations.runtime
+        into "$projectDir/libs"
+    }
+}
+
 ````
 
 ###<a name="Ant"></a>Ant Task

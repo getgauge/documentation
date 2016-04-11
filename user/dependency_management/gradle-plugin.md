@@ -12,7 +12,7 @@ apply plugin: 'gauge'
 apply plugin: 'application'
 
 group = "my-gauge-tests"
-version = "1.1.0"
+version = "1.2.0"
 
 description = "My Gauge Tests"
 
@@ -41,6 +41,14 @@ gauge {
     env = 'dev'
     tags = 'tag1'
     additionalFlags = '--verbose'
+}
+
+// copying required dependencies for Gauge (required)
+task copyLibs {
+    copy {
+        from configurations.runtime
+        into "$projectDir/libs"
+    }
 }
 
 ````
