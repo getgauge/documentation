@@ -4,13 +4,6 @@ Gauge is a light weight cross-platform test automation tool. It provides the abi
 
 Gauge champions the idea of **living/executable documentation**.
 
-Some of its key features include:
-
-* A rich markup based on [markdown](https://en.wikipedia.org/wiki/Markdown)
-* Support for writing test code in multiple programming languages. Currently [supported languages]((test_code/README.md).
-* A modular architecture with [plugin](plugins/README.md) support.
-* Consistency across language implementations.
-
 Read [**Why Gauge**](why_gauge.md) can be used and more about the [Gauge domain](gauge_domain.md).
 
 ## Looking for examples?
