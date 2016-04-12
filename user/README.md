@@ -11,29 +11,11 @@ Some of its key features include:
 * A modular architecture with [plugin](plugins/README.md) support.
 * Consistency across language implementations.
 
-## Why Gauge?
-
-Certain features of Gauge make it stand unique amongst others.
-
-* Consistent Cross Platform/Language Support
-* Business Language Tests : Supports the concept of executable documentation
-* Open Source, so it could be shared freely and improved by others as well
-* Simple, Flexible and Rich Syntax
-* Helps you create Maintainable and Understandable test suites
-* Extensible through [plugins](plugins/README.md) and Hackable
-* Supports External Data Sources
-* [IDE Support](ide_support/README.md)
+Read [**Why Gauge**](why_gauge.md) can be used and more about the [Gauge domain](gauge_domain.md).
 
 ## Looking for examples?
 * [Getting started in 3 steps - Java](https://github.com/getgauge/gauge/wiki/Getting-Started-in-3-Steps)
 * Other [example projects](examples/examples.md)
-
-## Key features
-* [Specifications](specifications/README.md)
-* [Steps](specifications/steps.md)
-* [Environments](managing_environments/README.md)
-* [Plugins](plugins/README.md)
-* [IDE Support](ide_support/README.md)
 
 ##Help
 

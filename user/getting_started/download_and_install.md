@@ -1,9 +1,9 @@
-# Download and install
+# Installation
 
-This section explains Gauge installation in three major operating systems.
+Gauge installation can be broadly classified into the following sections
+* [Install Gauge on operating system](install_on_operating_system)
+* [Install language runners](install_language_runners.md)
+* [Install plugins](install_plugins.md)
+* [Check your installation](check_installation.md)
 
-* [Windows](install_on_windows.md)
-* [Mac](install_on_mac.md)
-* [Linux](install_on_linux.md)
 
-The next step is to [install language runners](install_language_runners.md).
