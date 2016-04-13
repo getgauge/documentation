@@ -68,7 +68,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.2.0'
+        classpath 'com.thoughtworks.gauge.gradle:gauge-gradle-plugin:1.4.0'
         classpath files("$projectDir/libs")
     }
 }
