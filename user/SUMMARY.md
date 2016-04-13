@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
    * [Why Gauge](why_gauge.md)
-   * [Gauge domain](gauge_domain)
+   * [Gauge domain](gauge_domain.md)
 * [Getting Started](getting_started/README.md)
    * [Install Gauge](getting_started/download_and_install.md)
        * [Install on operating system](getting_started/install_on_operating_system.md)

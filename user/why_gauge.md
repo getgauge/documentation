@@ -2,7 +2,9 @@
 
 The communication breakdowns between Developers and Business Stakeholders is a common risk of software development.
 
-[BDD](http://agilecoach.typepad.com/agile-coaching/2012/03/bdd-in-a-nutshell.html) tools allow business analysts to write down behavioral requirements in a way that will also be understood by developers and help bridge the gap. Certain features of Gauge make it stand unique amongst others.
+Gauge is an advanced automation tool that allows requirements to be written in a way that will be understood by all roles in a project and help bridge the gap.
+
+Features of Gauge that make it stand unique amongst others.
 
 Some of its key features include:
 
