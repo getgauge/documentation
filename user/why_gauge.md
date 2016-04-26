@@ -14,7 +14,7 @@ Some of its key features include:
 * Consistent Cross Platform/Language Support for writing test code. Currently [supported languages]((test_code/README.md).
 * Open Source, so it could be shared freely and improved by others as well
 * A modular architecture with [plugin](plugins/README.md) support.
-* Extensible through [plugins](plugins/README.md) and Hackable
+* Extensible through [plugins](plugins/README.md)
 * Supports External Data Sources
 * Helps you create Maintainable and Understandable test suites
 * [IDE Support](ide_support/README.md)
