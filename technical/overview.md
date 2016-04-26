@@ -84,5 +84,5 @@ A sample project illustrating Gauge features using sahi to run browser tests.
 
     [Gitbook](https://github.com/GitbookIO/editor-legacy/releases) is used to edit and contribute to the documentation
 
-[Set-up](set-up/readme.md) will help you get started...
+[Set-up](set-up/README.md) will help you get started...
 
