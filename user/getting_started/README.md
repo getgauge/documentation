@@ -18,11 +18,11 @@ The following section describe the steps needed to set up Gauge and get specs wo
 
 ## Using Gauge with an IDE
 
-* [Install Gauge IDE plugin](../ide_support.md)
+* [Install Gauge IDE plugin](../ide_support/README.md)
 * [Create and execute a Gauge project](../ide_support/README.md) via your IDE
 
 
-Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/README.md) for the steps.
+Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/step_implementations.md) for the steps.
 
 If Gauge is already installed, you can check the current version of gauge and all its plugins by `--version` or `-v` flag.
 

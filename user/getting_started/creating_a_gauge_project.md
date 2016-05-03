@@ -7,7 +7,7 @@ To create or initialize a Gauge project use the `gauge --init` command. In an em
 $ gauge --init <language>
 ```
 
-Replace *<language>* with the programming language in which you want to write the test code. See [supported programming languages](../test_code/README.md).
+Replace *<language>* with the programming language in which you want to write the test code. See [supported programming languages](../test_code/step_implementations.md).
 
 **Note:** Currently this command creates the Gauge project in the current directory. If you would like to specify a location, then you will have to manually create that dir and navigate to it before you run `--init langauge`
 
@@ -47,5 +47,5 @@ Note: This will download and install the specific language plugin if it is not c
 * [Gauge project structure](project_structure.md)
 * [Executing Specs](../execution/README.md)
 * [Specifications](../specifications/README.md)
-* [Test code](../test_code/README.md)
+* [Test code](../test_code/step_implementations.md)
 * [IDE support](../ide_support/README.md)

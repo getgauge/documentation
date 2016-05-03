@@ -7,7 +7,7 @@ Here are the sample build files for
 2. [Gradle](#a-namegradleagradle)
 3. [Ant](#a-nameantaant-task)
 
-For more details, please take a look at the [Dependency Management](../../dependency_management/README.md) section.
+For more details, please take a look at the [Dependency Management](../dependency_management/README.md) section.
 
 ###<a name="Maven"></a>Maven
 

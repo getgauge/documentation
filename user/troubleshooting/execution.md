@@ -9,7 +9,7 @@ It is advised to use the latest version of gauge and [gauge plugins](../plugins/
 
 ````
 These generally occur if step implementation is not found for a particular step.
-* Ensure the [test_code](../test_code/README.md) for the step has been added.
+* Ensure the [test_code](../test_code/step_implementations.md) for the step has been added.
 * The [step_template](../test_code/step_name_template.md) marking the step in code is case sensitive and should match the step usage in the spec file.
 
 
