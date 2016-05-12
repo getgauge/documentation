@@ -1,3 +1,7 @@
+---
+title: Tear Down Steps
+---
+
 # Tear Down Steps
 
 __Tear Down Steps__ are the steps defined in a spec  after the last scenario.

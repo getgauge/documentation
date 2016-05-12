@@ -1,3 +1,7 @@
+---
+title: "Command Line Interface"
+---
+
 # Command Line Interface
 
 Gauge has **first-class command line support**. If you have gauge installed, running `gauge` in terminal gives you command usage and all the flags it supports.

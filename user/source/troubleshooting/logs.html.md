@@ -1,3 +1,7 @@
+---
+title: Logs
+---
+
 # Logs
 
 * Gauge logs are created under the ```logs``` directory in the project.

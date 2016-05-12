@@ -1,3 +1,7 @@
+---
+title: Gauge Eclipse
+---
+
 # Gauge Eclipse plugin Features
 
 * [Project Creation](#project-creation)

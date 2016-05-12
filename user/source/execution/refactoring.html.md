@@ -1,3 +1,6 @@
+---
+title: Refactoring
+---
 # Refactoring
 
 ## Rephrase steps

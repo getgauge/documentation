@@ -1,3 +1,7 @@
+---
+title: Installation
+---
+
 # Troubleshooting
 
 ## Gauge Installation

@@ -1,3 +1,7 @@
+---
+title: Step Name Template
+---
+
 # Step Name Template
 
 The step name template is a simple generic representation for a step. It is used while defining language implementations for steps.

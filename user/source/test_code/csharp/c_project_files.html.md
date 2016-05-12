@@ -1,3 +1,7 @@
+---
+title: C# Project Structure
+---
+
 # C# Project files
 
 When creating a new Gauge C# project, the csharp specific project files created in the project are:

@@ -1,3 +1,7 @@
+---
+title: Gauge IntelliJ Idea
+---
+
 # Gauge IntelliJ idea plugin Features
 
 * [Project Creation](#1-project-creation)

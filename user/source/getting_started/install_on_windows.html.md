@@ -1,3 +1,7 @@
+---
+title: Install Gauge on Windows
+---
+
 ## Install Gauge on Windows
 There are two ways to install Gauge on Windows.
 

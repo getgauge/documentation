@@ -1,3 +1,7 @@
+---
+title: Welcome
+---
+ 
 # Welcome to Gauge
 
 Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language.

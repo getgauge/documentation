@@ -1,3 +1,7 @@
+---
+title: Understanding Gauge domain 
+---
+
 ## Gauge domain
 
 * [Specifications](specifications/README.md)

@@ -1,3 +1,7 @@
+---
+title: XML Report
+---
+
 # XML Report
 XML Report plugin creates JUnit XML test result document that can be read by tools such as Go, Jenkins.
 When the specs are executed, the xml report is generated in reports directory in the project. The format of XML report is based on [JUnit XML Schema](https://windyroad.com.au/dl/Open%20Source/JUnit.xsd)

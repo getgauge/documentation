@@ -1,3 +1,7 @@
+---
+title: List of plugins
+---
+
 # All plugins
 
 The following are the list of plugins supported by Gauge.

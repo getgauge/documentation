@@ -1,3 +1,7 @@
+---
+title: Custom Screenshots
+--- 
+
 # Taking Custom Screenshots
 
 * By default gauge captures the display screen on failure it this feature has been enabled.

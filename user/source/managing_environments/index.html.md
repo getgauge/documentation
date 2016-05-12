@@ -1,4 +1,8 @@
-# Environments
+---
+title: Managing Environments
+---
+
+# Managing Environments
 
 Environment specific [variables](https://en.wikipedia.org/wiki/Environment_variable) can be managed using property files. The [property files](https://en.wikipedia.org/wiki/.properties) have set of key value pairs which are set as environment variables during execution.
 

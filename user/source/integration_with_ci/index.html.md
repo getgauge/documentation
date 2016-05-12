@@ -1,3 +1,7 @@
+---
+title: Integration with CI
+---
+
 # Integration with CI
 
 Gauge can be easily integrated with any [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) environment.

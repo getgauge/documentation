@@ -1,3 +1,7 @@
+---
+title: Example Projects
+---
+
 # Example Projects
 
 You can learn how to use gauge with other libraries from some of the example projects mentioned below.

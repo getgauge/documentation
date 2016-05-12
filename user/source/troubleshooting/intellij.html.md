@@ -1,3 +1,7 @@
+---
+title: Intellij idea plugin
+---
+
 # Intellij idea plugin
 
 It is advised to use the latest version of [gauge](http://getgauge.io/download) and [Intellij-gauge](https://plugins.jetbrains.com/plugin/7535?pr=idea).

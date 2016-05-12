@@ -1,3 +1,7 @@
+---
+title : Executing a group of specification
+---
+
 # Executing a group of specification
 Specifications can be distributed into groups and `--group` | `-g` flag provides the ability to execute a specific group.
 

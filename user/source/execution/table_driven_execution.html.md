@@ -1,3 +1,7 @@
+---
+title: Table driven execution
+---
+
 # Table driven execution
 When a scenario or multiple scenarios in a specification are to be executed for multiple sets of data then Data table execution can be used.
 

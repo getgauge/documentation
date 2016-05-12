@@ -1,3 +1,7 @@
+---
+title: Data Store
+---
+
 # Data Store
  Data (Objects) can be shared in steps defined in different classes at runtime using DataStores exposed by Gauge.
 

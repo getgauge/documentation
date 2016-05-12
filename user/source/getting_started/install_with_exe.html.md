@@ -1,3 +1,7 @@
+---
+title: Using Windows Installer
+---
+
 ### Using the exe
 
 [Download](http://getgauge.io/get-started) the exe based on your system configuration and run it. Click your way through till you're asked to select your language.

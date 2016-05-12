@@ -1,4 +1,8 @@
-# Go
+---
+title: GoCD
+---
+
+# GoCD
 [Go](http://www.go.cd/), is a continuous integration and deployment tool.
 
 ##Integrating Gauge with Go

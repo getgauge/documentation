@@ -1,3 +1,7 @@
+---
+title: Scenarios
+---
+
 # Scenarios
 
 Each scenario represents a single flow in a particular specification. A specification must contain at least one scenario.

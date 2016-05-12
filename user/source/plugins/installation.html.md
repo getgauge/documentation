@@ -1,4 +1,8 @@
-# Installation
+---
+title: Plugin Installation
+---
+
+# Plugin Installation
 
 Plugins are installed using the flag `install`, this checks our plugin repository and downloads them.
 

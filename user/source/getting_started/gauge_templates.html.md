@@ -1,3 +1,7 @@
+---
+title: Gauge Project Templates
+---
+
 # Gauge Project Templates
 
 Gauge provides templates that can be used to bootstrap the process of initializing a Gauge project along with a suitable build dependency tool, webdriver etc.

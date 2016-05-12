@@ -1,3 +1,6 @@
+---
+title: Specifications
+---
 # Specifications
 
 **Specifications** (spec) are business layer test cases which can also act as your feature documentation. They are written in the business language. Typically a spec or specification describe a particular feature of the application under test.

@@ -1,3 +1,7 @@
+---
+title: Plugins
+---
+
 # Plugins
 
 Plugins are an easy way to extend the features of gauge. There are various types of plugins that gauge currently supports.

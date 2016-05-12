@@ -1,3 +1,7 @@
+---
+title: IDE Support
+---
+
 # IDE Support
 
 The listed IDE plugins are available for gauge to make writing specs and test code simpler.

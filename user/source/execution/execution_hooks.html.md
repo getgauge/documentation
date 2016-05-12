@@ -1,3 +1,7 @@
+---
+title: Execution Hooks
+---
+
 # Execution hooks
 
 Test execution hooks can be used to run arbitrary test code as different levels during the test suite execution.

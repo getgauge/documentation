@@ -1,3 +1,6 @@
+---
+title: "Syntax Cheat Sheet"
+---
 # Syntax Cheat Sheet
 
 ####Specification

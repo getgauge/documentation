@@ -1,3 +1,7 @@
+---
+title: IntelliJ IDEA Installation
+---
+
 # IntelliJ IDEA
 
 Gauge projects can be created and executed from Intellij IDEA. The plugin can be downloaded from the JetBrains plugin repository.

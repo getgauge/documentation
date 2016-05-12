@@ -1,3 +1,7 @@
+---
+title: Additional Usability features
+---
+
 # Additional Usability features
 
 The intellij idea gauge plugin comes with more features to simplify writing specifications.

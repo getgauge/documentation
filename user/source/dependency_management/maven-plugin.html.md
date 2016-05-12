@@ -1,4 +1,8 @@
-# Gauge-maven-plugin
+---
+title: Gauge Maven Plugin
+---
+
+# Gauge Maven Plugin
 
 Use the gauge-maven-plugin to execute specifications in your gauge java project and manage dependencies using [maven](https://maven.apache.org/).
 

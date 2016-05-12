@@ -1,3 +1,7 @@
+---
+title: Gauge Visual Studio Features
+---
+
 # Features
 
 ## Creating a new Gauge Project

@@ -1,3 +1,7 @@
+---
+title: "Gauge Configuration"
+---
+
 # Gauge Configuration
 
 All the Gauge specific internal configurations are stored in `gauge.properties` file present in your Gauge install location (`GAUGE_ROOT`). These properties are key value pairs.

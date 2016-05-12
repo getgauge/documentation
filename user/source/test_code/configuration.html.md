@@ -1,3 +1,7 @@
+---
+title: Project Configuration
+---
+
 # Configuration
 
 ## Java

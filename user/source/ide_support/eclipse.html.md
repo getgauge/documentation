@@ -1,3 +1,7 @@
+---
+title: Eclipse
+--- 
+ 
 # Eclipse
 
 There is an eclipse plugin that helps in authoring Java implementation of Gauge specs.

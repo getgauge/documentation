@@ -1,3 +1,7 @@
+---
+title: Visual Studio
+---
+
 # Visual Studio
 
 Gauge projects can be created and executed in Visual Studio using the Visual Studio plugin for Gauge. This plugin can be installed from Visual Studio Gallery.

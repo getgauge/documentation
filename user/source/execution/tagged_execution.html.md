@@ -1,3 +1,7 @@
+---
+title: Tagged Execution
+---
+
 # Tagged Execution
 
 Tags allow you to filter the specs and scenarios quickly for execution. To execute all the specs and scenarios which are labelled with certain tags, use the following command.

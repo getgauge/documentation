@@ -42,6 +42,7 @@ end
 helpers do
   def print_toc(sitemap)
     tree = {}
+    page_title = {}
 
     sitemap.resources.select{|r| r.path.end_with? ".html"}.each do |r|
       current = tree
@@ -49,29 +50,33 @@ helpers do
       path.split("/").inject("") do |sub_path,dir|
         sub_path = File.join(sub_path, dir)
         current[sub_path] ||= {}
-        current  = current[sub_path]
+        current = current[sub_path]
+        page_title[sub_path] = r.data.title || "TITLE NOT SET"
         sub_path
       end
     end
-    return print_tree false, tree 
+    p page_title
+    return print_tree false, tree, page_title 
   end
   
   private
   
-  def print_tree(is_subtree, node)
+  def print_tree(is_subtree, node, page_title)
     c=is_subtree ? 'tocify-subheader' : 'tocify-header'
     s="<ul class='#{c}'>"
     node.each_pair do |path, subtree|
       p=path[1...path.length]
       file_name=File.basename(path)
       unless file_name=="index.html"
-        if has_index(subtree) || file_name.end_with?(".html")
-          s="#{s}<li class='tocify-item open'><a href='#{p}'>#{file_name}</a></li>"
+        if has_index(subtree)
+          s="#{s}<li class='tocify-item open'><a href='#{p}'>#{page_title[path+"/index.html"]}</a></li>"
+        elsif file_name.end_with?(".html")
+          s="#{s}<li class='tocify-item open'><a href='#{p}'>#{page_title[path]}</a></li>"
         else
           s="#{s}<li class='tocify-item open'><a>#{file_name}</a></li>"
         end
       end
-      s=s+print_tree(true, subtree) unless subtree.empty?
+      s=s+print_tree(true, subtree, page_title) unless subtree.empty?
     end
     return "#{s}</ul>"
   end

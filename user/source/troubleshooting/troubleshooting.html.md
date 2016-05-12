@@ -1,3 +1,7 @@
+---
+title: Troubleshooting Gauge
+---
+
 # Troubleshooting
 * [Logs](logs.md)
 * [Installation](installation.md)

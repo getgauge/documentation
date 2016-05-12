@@ -1,3 +1,7 @@
+---
+title: Install on operating system
+---
+
 # Install on operating system
 
 This section explains Gauge installation in three major operating systems.

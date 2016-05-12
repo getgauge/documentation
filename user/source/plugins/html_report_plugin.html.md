@@ -1,3 +1,7 @@
+---
+title: HTML Reports
+---
+
 # HTML Reports
 
 Reports are generated using `html-report` plugin. By default html-report is added to the project.

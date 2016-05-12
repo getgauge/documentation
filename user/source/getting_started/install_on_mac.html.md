@@ -1,3 +1,7 @@
+---
+title: Install Gauge on Mac
+---
+
 ## Install Gauge on Mac
 
 There are 2 ways you can download an install Gauge.

@@ -1,3 +1,7 @@
+---
+title: Installation
+---
+
 # Installation
 
 Gauge installation can be broadly classified into the following sections

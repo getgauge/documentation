@@ -1,3 +1,7 @@
+---
+title: Using build tools
+---
+
 # Using build tools
 
 You can use Gauge with any of the build tools that you like.

@@ -1,3 +1,6 @@
+---
+title : Parallel Execution
+---
 # Parallel Execution
 Specs can be executed in parallel to run the tests faster and distribute the load.
 

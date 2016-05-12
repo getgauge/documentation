@@ -1,4 +1,8 @@
-# Gauge-gradle-plugin
+---
+title: "Gauge Gradle Plugin"
+---
+
+# Gauge Gradle Plugin
 
 Use the gauge-gradle-plugin to execute specifications in your gauge java project and manage dependencies using [gradle](http://gradle.org//).
 
