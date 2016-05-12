@@ -1,0 +1,16 @@
+{
+    "examples/examples.html" : "examples/index.html",
+    "test_code/java/java.html": "test_code/step_implementations.html?java",
+    "test_code/csharp/csharp.html": "test_code/step_implementations.html?csharp",
+    "test_code/ruby/ruby.html": "test_code/step_implementations.html?ruby",
+    "test_code/java/execution_hooks.html": "test_code/execution_hooks.html?java",
+    "test_code/csharp/execution_hooks_c.html": "test_code/execution_hooks.html?csharp",
+    "test_code/ruby/execution_hooks_ruby.html": "test_code/execution_hooks.html?ruby",
+    "test_code/java/data_store_to_share_data.html": "test_code/data_store_to_share_data.html?java",
+    "test_code/csharp/data_store_to_share_data.html": "test_code/data_store_to_share_data.html?csharp",
+    "test_code/csharp/custom_messages_in_reports.html": "test_code/custom_messages_in_reports.html?csharp",
+    "test_code/java/custom_messages_in_reports.html": "test_code/custom_messages_in_reports.html?java",
+    "test_code/csharp/custom_screenshot.html": "test_code/custom_screenshot_support.html?csharp",
+    "test_code/java/custom_screenshot_support.html": "test_code/custom_screenshot_support.html?java",
+    "test_code/java/configuration.html": "test_code/configuration.html?java"
+}

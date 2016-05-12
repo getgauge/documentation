@@ -39,6 +39,8 @@ configure :build do
   # activate :gzip
 end
 
+JSON.parse(File.read("data/page_redirects.json")).each {|k,v| redirect k, to: v}
+
 helpers do
   def print_toc(sitemap)
     tree = {}
@@ -55,7 +57,6 @@ helpers do
         sub_path
       end
     end
-    p page_title
     return print_tree false, tree, page_title 
   end
   
@@ -67,11 +68,11 @@ helpers do
     node.each_pair do |path, subtree|
       p=path[1...path.length]
       file_name=File.basename(path)
-      unless file_name=="index.html"
+      unless file_name=="index.html" || data.page_redirects.keys.include?(p)
         if has_index(subtree)
-          s="#{s}<li class='tocify-item open'><a href='#{p}'>#{page_title[path+"/index.html"]}</a></li>"
+          s="#{s}<li class='tocify-item open'>#{link_to page_title[path+"/index.html"], path}</li>"
         elsif file_name.end_with?(".html")
-          s="#{s}<li class='tocify-item open'><a href='#{p}'>#{page_title[path]}</a></li>"
+          s="#{s}<li class='tocify-item open'>#{link_to page_title[path], path}</a></li>"
         else
           s="#{s}<li class='tocify-item open'><a>#{file_name}</a></li>"
         end
