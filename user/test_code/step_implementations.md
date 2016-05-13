@@ -13,9 +13,9 @@ Every [step](../specifications/steps.md) needs to have a language specific imple
 
 **Implementation**
 
-*_Java_*
+{% codetabs name="Java", type="java" -%}
+// This Method can be written in any java class as long as it is in classpath.
 
-````java
 public class StepImplementation {
 
     @Step("Say <greeting> to <product name>")
@@ -23,14 +23,8 @@ public class StepImplementation {
         // Step implementation
     }
 }
-````
-
-> The text passed to the annotation is the [step template](step_name_template.md), which is a simple representation of the step.
-The Method can be written in **any java class** as long as it is in classpath.
-
-*_C#_*
-
-````csharp
+{%- language name="C#", type="csharp" -%}
+// The Method can be written in **any C# class** as long as it is part of the project.
 public class StepImplementation {
 
     [Step("Say <greeting> to <product name>")]
@@ -38,18 +32,13 @@ public class StepImplementation {
         // Step implementation
     }
 }
-````
-> The text passed to the annotation is the [step template](step_name_template.md), which is a simple representation of the step.
-The Method can be written in **any C# class** as long as it is part of the project.
-
-*_Ruby_*
-
-````ruby
+{%- language name="Ruby", type="ruby" -%}
 step 'Say <greeting> to <product name>' do |greeting, name|
  # Code for the step
 end
-````
+{%- endcodetabs %}
 
+> The text passed to the annotation is the [step template](step_name_template.md), which is a simple representation of the step.
 
 #### Step with table
 **Step:**
@@ -65,8 +54,8 @@ end
 
 **Implementation:**
 
-*_Java_*
-````java
+{% codetabs name="Java", type="java" -%}
+// Table is a custom data structure defined by gauge.
 public class Users {
 
     @Step("Create following <race> characters <table>")
@@ -74,13 +63,10 @@ public class Users {
         // Step implementation
     }
 }
-
-````
-> Here **Table** is a custom data structure defined by gauge.
-
-*_C#_*
-
-````csharp
+{%- language name="C#", type="csharp" -%}
+// Here Table is a custom data structure defined by gauge. 
+// This is available by adding a reference to the Gauge.CSharp.Lib.
+// Refer : http://nuget.org/packages/Gauge.CSharp.Lib/
 public class Users {
 
     [Step("Create following <role> users <table>")]
@@ -88,22 +74,13 @@ public class Users {
         // Step implementation
     }
 }
-
-````
-> Here **Table** is a custom data structure defined by gauge. This is available by adding a reference to the [Gauge.CSharp.Lib](http://nuget.org/packages/Gauge.CSharp.Lib/) nuget package.
-
-
-*_Ruby_*
-
-````ruby
+{%- language name="Ruby", type="ruby" -%}
+# Here table is a custom data structure defined by gauge-ruby.
 step 'Create following <race> characters <table>' do |role, table|
   puts table.rows
   puts table.columns
 end
-
-
-````
-> Here **table** is a custom data structure defined by gauge-ruby.
+{%- endcodetabs %}
 
 ## Multiple Step names (Alias for Step names)
 The same implementation can point to multiple step names. To do this add all the [step name template](step_name_template.md) to the `[Step]` attribute.
@@ -112,16 +89,15 @@ The number and type of parameters for all the steps names must match the number 
 
 ####Example
 
-***Step Names :***
+**Step Names**
 ````
 * Create a wizard "Gandalf"
 * Create another wizard "Saruman"
 ````
-***Implementation :***
+**Implementation**
 
-*_Java_*
 
-````java
+{% codetabs name="Java", type="java" -%}
 public class Users {
 
     @Step({"Create a wizard <wizard>", "Create another wizard <wizard>"})
@@ -129,12 +105,7 @@ public class Users {
         // Step implementation
     }
 }
-
-````
-
-*_C#_*
-
-````csharp
+{%- language name="C#", type="csharp" -%}
 public class Users {
 
     [Step({"Create a wizard <wizard>", "Create another wizard <wizard>"})]
@@ -142,17 +113,11 @@ public class Users {
         // Step implementation
     }
 }
-
-````
-
-*_Ruby_*
-
-````ruby
+{%- language name="Ruby", type="ruby" -%}
 step "Create a wizard <wizard>", "Create another wizard <wizard>" do |username|
  #step code
 end
-
-````
+{%- endcodetabs %}
 
 ---
 

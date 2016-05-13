@@ -1,4 +1,5 @@
 {
+    "gitbook":"3.0.0-pre.15",
     "output": "_book",
     "generator": "site",
     "title": "Gauge Documentation",
@@ -8,7 +9,9 @@
     "plugins": [
         "anchors@0.5.0",
         "ga@1.0.1",
-        "redirect@0.0.7"
+        "redirect@0.0.7",
+        "codetabs",
+        "expandable-chapters"
     ],
     "pluginsConfig": {
         "ga": {

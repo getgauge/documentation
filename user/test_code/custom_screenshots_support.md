@@ -7,11 +7,9 @@
 > Note: If multiple custom ScreenGrabber implementations are found in classpath then gauge will pick one randomly to capture the screen. 
 This is because Gauge selects the first ScreenGrabber it finds, which in turn depends on the order of scanning of the libraries.
 
-## Java
 
-#### Example - using webdriver
-
-````java
+{% codetabs name="Java", type="java" -%}
+// Using Webdriver
 public class CustomScreenGrabber implements ICustomScreenshotGrabber {
 
     // Return a screenshot byte array
@@ -20,13 +18,8 @@ public class CustomScreenGrabber implements ICustomScreenshotGrabber {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
-````
-
-## C# #
-
-#### Example - using WebDriver
-
-````csharp
+{%- language name="C#", type="csharp" -%}
+//Using Webdriver
 public class CustomScreenGrabber : IScreenGrabber {
 
     // Return a screenshot byte array
@@ -35,8 +28,7 @@ public class CustomScreenGrabber : IScreenGrabber {
         return ((ITakesScreenshot) driver).GetScreenshot().AsByteArray;
     }
 }
-````
-
-## Ruby
-
-> Note: This feature is not implemented in Gauge Ruby. Please refer [this issue](https://github.com/getgauge/gauge-ruby/issues/13) for updates.
+{%- language name="Ruby", type="ruby" -%}
+This feature is not implemented in Gauge Ruby. 
+Please refer [this issue](https://github.com/getgauge/gauge-ruby/issues/13) for updates.
+{%- endcodetabs %}
