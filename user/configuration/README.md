@@ -53,3 +53,13 @@ If the size of the project is too big, Gauge may timeout before the runner retur
 ```
 runner_request_timeout = 10000
 ```
+
+###gauge_exclude_dirs
+
+This property sets the excluded dirs for gauge.
+
+Gauge always looks for concepts in the whole project, folders starting with dot(.) are excluded and a user can add folders to the excluded folders list by passing a comma separeted paths of folder.Paths can be relative to the path of directory or absolute.
+
+```
+gauge_exclude_dirs = "src/test,bin"
+```
