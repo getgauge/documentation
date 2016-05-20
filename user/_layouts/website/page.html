@@ -4,9 +4,10 @@
     {{ super() }}
     <link type="image/ico" rel="shortcut icon" href="//getgauge.io/assets/images/favicons/favicon.ico">
 {% endblock %}
-    
+
 {% block style %}
-    <link rel="stylesheet" href="//getgauge.io/assets/stylesheets/application.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ "styles/embed.css"|resolveFile }}">
     {{ super() }}
 {% endblock %}
 
@@ -63,8 +64,7 @@
         <img alt="Thoughtworks logo" height="44" src="//getgauge.io/assets/images/thoughtworks_logo.svg">
     </a>
     <div class="disclamer">Gauge is an open source project, sponsored by ThoughtWorks Inc. under the GPL License, Version 3.0</div>
-    <script src="//getgauge.io/assets/javascripts/mobileNav.js"></script>
-    <script src="//getgauge.io/assets/javascripts/browser_support.js"></script>
+
     <script src="//getgauge.io/assets/javascripts/application.js" async="true"></script>
     </section>
 </footer>
