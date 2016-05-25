@@ -25,8 +25,9 @@
       * [Install Language Runners](installations/install_language_runners.md)
       * [Install Plugins](installations/install_plugins.md)
       * [Check Installation](installations/check_installation.md)
-   * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
-   * [Project Structure](getting_started/project_structure.md)
+
+  * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
+  * [Project Structure](getting_started/project_structure.md)
 
 * [Using Gauge](using_gauge/README.md)
   * [Command Line Interface](cli/README.md)

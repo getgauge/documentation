@@ -2,7 +2,7 @@
 
 On initialization of a gauge project for a particular language a project skeleton is created with the following files
 
-##1. Common Gauge files
+## Common Gauge files
 
 ```
 ├── env
@@ -10,7 +10,7 @@ On initialization of a gauge project for a particular language a project skeleto
 │     └── default.properties
 ├── manifest.json
 ├── specs
-   └── hello_world.spec
+   └── example.spec
 ```
 
 ### Env Directory
@@ -24,7 +24,7 @@ Learn more about [managing environments](../managing_environments/README.md).
 
 The specs directory contains all the [spec](../specifications/README.md) files for the project. They are the business layer specifications written in simple markdown format.
 
-A simple example spec (**hello_world.spec**)  is created in the specs directory to better understand the format of specifications.
+A simple example spec (**example.spec**)  is created in the specs directory to better understand the format of specifications.
 
 Learn more about [specifications](../specifications/README.md)
 
@@ -33,9 +33,9 @@ The **manifest.json** contains gauge specific configurations which includes the 
 
 After project initialization, the `manifest.json` will have the following content.
 
-```
+```js
 {
-  "Language": {{ LANGAUGE }},
+  "Language": "<language>",
   "Plugins": [
     "html-report"
   ]
@@ -45,20 +45,24 @@ After project initialization, the `manifest.json` will have the following conten
 * **language** : Programming language used for the test code. Gauge uses the corresponding language runner for executing the specs.
 
 * **Plugins** : The gauge plugins used for the project. Some plugins are used by default on each gauge project. The plugins can be added to project by running the following command :
-    ```
-    gauge --add-plugin {{PLUGIN_NAME}}
+
+    ```sh
+    gauge --add-plugin <plugin-name>
 
     ```
+
     Example :
-    ```
+
+    ```sh
     gauge --add-plugin xml-report
     ```
 
 
 After running the above command, the manifest.json would have the following content:
-```
+
+```js
 {
-  "Language": {{ LANGAUGE }},
+  "Language": "<language>",
   "Plugins": [
     "html-report",
     "xml-report"
@@ -66,6 +70,6 @@ After running the above command, the manifest.json would have the following cont
 }
 ```
 
-##2. Language specific files
+## Language specific files
 
 Along with common gauge files certain language specific files and directories are created during [project creation](creating_a_gauge_project.md). You can find the more details about language specific files created under each [programming language](../test_code/step_implementations.md).

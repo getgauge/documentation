@@ -4,28 +4,19 @@ This section will explain the steps needed to get Gauge working.
 
 Gauge is a first class command line tool. This means that you can operate entirely from the command line. Or, if you prefer to use an IDE then Gauge also has excellent integration with multiple IDEs.
 
-The following section describe the steps needed to set up Gauge and get specs working from the command line or [with an IDE](../ide_support/README.md).
+## Setting up
 
-## Pre-requiste
+* [Setup Gauge on your machine](../installations/README.md).
+* [Create a Gauge project](creating_a_gauge_project.md) - You can use the command line or [use an IDE](../ide_support/README.md).
 
-* [Downlod and Install](http://getgauge.io/get-started) Gauge
-* Install a Gauge [language plugin](../plugins/installation.md)
+## Add tests
 
-## Using Gauge from command line
+* Add [specifications](../gauge_domain/specifications.md).
+* Add [code implementation](../language_features/step_implementations.md) for the steps.
 
-* [Create a Gauge project](creating_a_gauge_project.md)
-* [Execute](../execution/README.md) the example spec
+---
 
-## Using Gauge with an IDE
+## Suggested reading
 
-* [Install Gauge IDE plugin](../ide_support/README.md)
-* [Create and execute a Gauge project](../ide_support/README.md) via your IDE
-
-
-Add more [specifications](../specifications/README.md) and underlying [code implementation](../test_code/step_implementations.md) for the steps.
-
-If Gauge is already installed, you can check the current version of gauge and all its plugins by `--version` or `-v` flag.
-
-```
-$ gauge --version
-```
+* [Gauge domain](../gauge_domain/README.md)
+* [Using Gauge from command line](../cli/README.md)
