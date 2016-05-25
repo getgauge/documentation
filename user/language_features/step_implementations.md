@@ -1,6 +1,6 @@
 # Step implementations
 
-Every [step](../specifications/steps.md) needs to have a language specific implementation that gets executed on the spec execution.
+Every [step](../gauge_domain/steps.md) needs to have a language specific implementation that gets executed on the spec execution.
 
 ###Examples
 
@@ -64,7 +64,7 @@ public class Users {
     }
 }
 {%- language name="C#", type="csharp" -%}
-// Here Table is a custom data structure defined by gauge. 
+// Here Table is a custom data structure defined by gauge.
 // This is available by adding a reference to the Gauge.CSharp.Lib.
 // Refer : http://nuget.org/packages/Gauge.CSharp.Lib/
 public class Users {
