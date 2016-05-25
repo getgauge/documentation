@@ -31,6 +31,7 @@
 
 * [Using Gauge](using_gauge/README.md)
   * [Command Line Interface](cli/README.md)
+    * [Command Line Flags](cli/flags.md)
   * [IDE Support](ide_support/README.md)
     * [IntelliJ Idea](ide_support/intellij_idea.md)
        * [Features](ide_support/features.md)

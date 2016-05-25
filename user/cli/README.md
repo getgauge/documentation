@@ -1,37 +1,93 @@
 # Command Line Interface
 
-Gauge has **first-class command line support**. If you have gauge installed, running `gauge` in terminal gives you command usage and all the flags it supports.
+Gauge has **first-class command line support**. If you have gauge [installed](../installations/README.md), running `gauge` in terminal gives you command usage and all the flags it supports.
 
-Here is a list of flags that can be used with `gauge`.
+The command-line interface works across platforms. On GNU/Linux and OSX, you can use any terminal. On Windows, you can use `cmd` or Powershell.
 
-| Flag  | Description |Usage|
-| ------| ----------- |-----|
-|--add-plugin| Adds the specified non-language plugin to the current project.|```gauge --add-plugin xml-report```|
-|  --api-port  |    Specifies the api port to be used.| ``` gauge --daemonize --api-port 7777```|
-| --validate | Check for validation and parse errors. | ```gauge --validate specs```|
-|  --daemonize    |  Run as a **daemon**.|```gauge --daemonize```|
-|  --dir|Set the working directory for the current command, accepts a path relative to current directory.|```gauge --dir=PATH specs```|
-|  --env | Specifies the **environment**. If not specified, default will be used.|```gauge --env="chrome" specs```|
-|  --file, -f    | Installs the plugin from zip file. This is used with --install.|```gauge -f PATH_TO_ZIP_FILE --install java```|
-|  --format      |Formats the specified spec files. |```gauge --format specs``` |
-|  -g, --group   |  Specify which group of specs to execute based on -n flag.|```gauge -n=3 -g=1 specs```|
-|  --init| Initializes project structure in the current directory.|```gauge --init java```|
-|  --install |  Downloads and installs a plugin.|```gauge --install java```|
-|  --install-all |  Installs all the plugins specified in project manifest, if not installed.|```gauge --install-all```|
-|--list-templates | Lists all the Gauge templates available. | ```gauge --list-templates```|
-|  --log-level |     Set level of logging to debug, info, warning, error or critical.|```gauge --log-level="debug" specs```|
-|  -n          |Specify number of **parallel execution** streams.|```gauge -p -n=4 specs``` |
-|  --parallel, -p |    Execute specs in parallel.|```gauge -p specs```|
-|  --plugin-args | Specify additional arguments to the plugin. This is used together with --add-plugin.|```gauge --add-plugin xml-report --plugin-args="version=1.0"```|
-|  --plugin-version    |         Version of plugin to be installed. This is used with --install, --uninstall, --update  .|```gauge --install java --plugin-version="0.0.5"```|
-|  --refactor   |      **Refactor/Rephrase** steps.| ```gauge --refactor OLD_STEP NEW_STEP```|
-|  --simple-console  | Removes colouring and simplifies the console output.|```gauge --simple-console specs```|
-|  --sort, -s          |       Run specs in Alphabetical Order.|```gauge -s specs```|
-| --strategy="eager" | Set the parallelization strategy for execution. Should be used with -p flag. Possible values are: eager, lazy. | ```gauge -p --strategy="eager" specs``` |
-|  --table-rows      |     Executes the specs and scenarios only for the selected rows of data table.| ```gauge --table-rows "1-3" specs/hello.spec ```|
-|  --tags    | Executes the specs/ scenarios tagged with given tags. This filtering can also be done based on **tag expression**.| ```gauge --tags tag1,tag2 specs```<br>```gauge --tags "tag1 & tag2" specs```|
-|  --check-updates  |Checks for Gauge and plugins updates. | ```gauge --check-updates```|
-|  --update  |Updates a plugin. | ```gauge --update java```|
-|  --update-all  |Updates all the installed Gauge plugins. | ```gauge --update-all```|
-|  -v, --version, -version   | Print the current version and exit.| ```gauge --version```|
-|  --verbose |  Enable step level reporting on console, default being scenario level. | ```gauge --verbose specs```|
+## Creating a project
+
+To create or initialize a Gauge project use the `gauge --init` command. For details, see how to [create a Gauge project](../getting_started/creating_a_gauge_project.md).
+
+**Example: Create a Java project**
+
+```sh
+$ gauge --init java
+```
+
+## Executing tests
+
+Inside a Gauge project, you can execute your tests by invoking `gauge` with path to [specifications](../gauge_domain/specifications.md). By convention, specifications are stored in the the `./specs/` sub-directory in the project root. The syntax is:
+
+```sh
+$ gauge [options] <path-to-specs>
+```
+
+The `gauge` command-line utility allows multiple ways to specify the specifications to be executed. A valid path for executing tests can be path to directories that contain specifications or path to specification files or path to scenarios or a mix of any of these three methods.
+
+### Specify directories
+
+You can specify a single directory in which specifications are stored. Gauge scans the directory and picks up valid specification files.
+
+For example:
+
+```sh
+$ gauge specs/
+```
+
+You can also specify multiple directories in which specifications are stored. Gauge scans all the directories for valid specification files and executes them in one run.
+
+For example:
+
+```sh
+$ gauge specs-dir1/ specs-dir2/ specs-dir3/
+```
+
+### Specify specification files
+
+You can specify path to a specification files. In that case, Gauge executes only the specification files provided.
+
+For example, to execute a single specification file:
+
+```sh
+$ gauge specs/spec1.spec
+```
+
+Or, to execute multiple specification files:
+
+```sh
+$ gauge specs/spec1.spec specs/spec2.spec specs/spec3.spec
+```
+
+### Specify scenarios
+
+You can also specify a specific [scenario](../gauge_domain/scenarios.md) or a list of scenarios to execute. To execute scenarios, `gauge` takes path to a specification file, followed by a colon and a zero-indexed number of scenarios.
+
+For example, to execute the second scenario of a specification file named `spec1.spec`, you would do:
+
+```sh
+$ gauge specs/spec1.spec:1
+```
+
+To specify multiple scenarios, add multiple such arguments. For example, to execute the first and third scenarios of a specification file named `spec1.spec`, you would do:
+
+```sh
+$ gauge specs/spec1.spec:0 specs/spec1.spec:2
+```
+
+## Verbose reporting
+
+By default, `gauge` reports at the specification level when executing tests. You can enable verbose, step-level reporting by using the `--verbose` flag. For example:
+
+```sh
+$ gauge --verbose specs/
+```
+
+---
+
+## Suggested reading
+
+* [Command line flags](flags.md)
+* [Specifications](../gauge_domain/specifications.md)
+* [Scenarios](../gauge_domain/scenarios.md)
+* [Tagged execution](../advanced_readings/execution/tagged_execution.md)
+* [Parallel execution](../advanced_readings/execution/parallel_execution.md)
