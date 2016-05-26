@@ -43,16 +43,18 @@
 
 * [Plugins](plugins/README.md)
    * [Plugins List](plugins/list.md)
-   * [HTML Report](plugins/html_report_plugin.md)
-   * [XML Report](plugins/xml_report_plugin.md)
 
 * [Language Features](language_features/README.md)
   * [Step Implementations](language_features/step_implementations.md)
   * [Execution Hooks](language_features/execution_hooks.md)
-  * [Data Stores](language_features/data_stores.md)
+  * [Data Stores](language_features/data_store.md)
   * [Custom Messages](language_features/custom_messages.md)
   * [Custom Screenshots](language_features/custom_screenshots.md)
   * [Configuration](language_features/configuration.md)
+
+* [Reporting Features](reporting_features/README.md)
+   * [HTML Report](reporting_features/html_report_plugin.md)
+   * [XML Report](reporting_features/xml_report_plugin.md)
 
 * [Syntax Cheat Sheet](cheat_sheet/README.md)
 

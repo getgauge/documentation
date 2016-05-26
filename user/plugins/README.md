@@ -9,7 +9,7 @@ Also known as **language runners**, these plugins enable the users to write the 
 
 ## Reporting plugins
 
-These are plugins that work during the execution of the specifications.
+These are plugins that work during the execution of the specifications to give summary/details of the run.
 Example: [HTML Report](html_report_plugin.md), [XML Report](xml_report_plugin.md)
 
 ## IDE plugins
