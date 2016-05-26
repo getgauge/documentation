@@ -1,3 +1,0 @@
-10:17:25.886 Gathering metadata for csharp
-10:17:27.443 Failed to install plugin 'csharp'.
-Reason: Could not get download link: Platform not supported for darwin. Download URL not specified.
