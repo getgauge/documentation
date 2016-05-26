@@ -9,9 +9,9 @@
     "plugins": [
         "anchors",
         "ga",
-        "redirect",
         "codetabs",
-        "expandable-chapters"
+        "expandable-chapters",
+        "bulk-redirect"
     ],
     "pluginsConfig": {
         "ga": {
@@ -32,5 +32,25 @@
             "facebook": "http://getgauge.io",
             "twitter": "getgauge"
         }
-    }
+    },
+    "redirects": [
+        { "from": "getting_started/download_and_install.html", "to": "../installations/"},
+        { "from": "getting_started/install_on_operating_system.html", "to": "../installations/operating_system/"},
+        { "from": "getting_started/install_on_windows.html", "to": "../installations/operating_system/install_on_windows.html" },
+        { "from": "getting_started/install_with_exe.html", "to": "../installations/operating_system/install_with_exe.html" },
+        { "from": "getting_started/install_with_chocolatey.html", "to": "../installations/operating_system/install_with_chocolatey.html" },
+        { "from": "getting_started/install_on_mac.html", "to": "../installations/operating_system/install_on_mac.html" },
+        { "from": "getting_started/install_on_linux.html", "to": "../installations/operating_system/install_on_linux.html" },
+        { "from": "getting_started/install_language_runners.html", "to": "../installations/install_language_runners.html" },
+        { "from": "plugins/installation.html", "to": "../installations/install_plugins.html" },
+        { "from": "getting_started/check_installation.html", "to": "../installations/check_installation.html" },
+        { "from": "specifications/README.html", "to": "../gauge_domain/specifications.html" },
+        { "from": "specifications/steps.html", "to": "../gauge_domain/steps.html" },
+        { "from": "specifications/contexts.html", "to": "../gauge_domain/contexts.html" },
+        { "from": "specifications/scenarios.html", "to": "../gauge_domain/scenarios.html" },
+        { "from": "specifications/parameters.html", "to": "../gauge_domain/parameters/" },
+        { "from": "specifications/concepts.html", "to": "../gauge_domain/concepts.html" },
+        { "from": "specifications/tear_down_steps.html", "to": "../gauge_domain/tear_down_steps.html" },
+        { "from": "test_code/step_implementations.md", "to": "../language_features/step_implementations.html" }
+    ]
 }
