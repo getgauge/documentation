@@ -1,5 +1,5 @@
 # Command Line Interface
-
+------
 Gauge has **first-class command line support**. If you have gauge [installed](../installations/README.md), running `gauge` in terminal gives you command usage and all the flags it supports.
 
 The command-line interface works across platforms. On GNU/Linux and OSX, you can use any terminal. On Windows, you can use `cmd` or Powershell.

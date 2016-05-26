@@ -16,7 +16,7 @@ Create a `.cpt` file under specs directory with the concept definition.
 The concept definition contains the 2 parts:
 
 ### Concept header
-The concept header defines the name of the concept and the parameters that it takes. It is written in the markdown **H1** format.
+The concept header defines the name of the concept and the parameters that it takes. It is written in the markdown **`H1`** format.
 
 * All parameters are defined in angular brackets `< >`.
 * A concept definition must have a concept header.

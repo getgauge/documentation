@@ -1,5 +1,5 @@
-## Install Gauge on Mac
-
+# Install Gauge on Mac
+-----
 There are 2 ways you can download an install Gauge.
 
 * Using brew
@@ -7,7 +7,7 @@ There are 2 ways you can download an install Gauge.
 
 We recommend using brew because it's very simple. However, if you have limitations then you can use the offline installation instructions.
 
-### Home Brew
+## Home Brew
 
 The following command installs Gauge.
 
@@ -25,7 +25,7 @@ $ brew update
 $ brew upgrade gauge
 ```
 
-### Offline Installation
+## Offline Installation
 
 You can [download the Gauge installer](http://getgauge.io/get-started). This is a `pkg` file, so you can click your way through to finish installing Gauge.
 

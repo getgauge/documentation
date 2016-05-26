@@ -1,5 +1,5 @@
-## Install Gauge on Linux
-
+# Install Gauge on Linux
+-----
 [Download](http://getgauge.io/get-started) the zip file. Choose the archive file appropriate for your installation. And run the command below to install Gauge.
 
 ```

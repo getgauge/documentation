@@ -1,5 +1,5 @@
 # Check your installation
-
+------
 You can check the version of your plugin and Gauge core by executing the following command.
 
 ```

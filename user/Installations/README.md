@@ -1,4 +1,5 @@
 # Installation
+-----
 
 * [Downlod and Install](http://getgauge.io/get-started) Gauge
 
