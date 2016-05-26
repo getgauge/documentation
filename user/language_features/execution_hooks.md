@@ -1,47 +1,118 @@
-# Execution hooks 
+# Execution hooks
 
-The [execution hooks](../execution/execution_hooks.md) can be defined at all levels in java by annotating methods with the following annotations:
+Test execution hooks can be used to run arbitrary test code as different levels during the test suite execution.
 
+## Before Suite Hook
+Executes before the entire suite execution begins i.e, before the execution of all specifications in the project.
 
-| Execution Hook | annotation  |
-|----------------| ------------|
-| Before Suite   | `@BeforeSuite`|
-| After Suite    | `@AfterSuite`|
-| Before Specification   | `@BeforeSpec`|
-| After Specification   | `@AfterSpec`|
-| Before Scenario | `@BeforeScenario`|
-| After Scenario   | `@AfterScenario`|
-| Before Step | `@BeforeStep` |
-|After Step| `@AfterStep`|
-|BeforeClassSteps (Java only)|`@BeforeClassSteps`|
-|AfterClassSteps (Java only)|`@AfterClassSteps`|
+## After Suite Hook
+Executes after the entire suite execution finishes i.e, after the execution of all specifications in the project.
+
+## Before Specification hook
+Executes before every spec executes.
+
+## After Specification hook
+Executes after every spec executes.
+
+## Before Scenario hook
+Executes before every scenario executes.
+
+## After Specification hook
+Executes after every scenario executes.
+
+## Before Step hook
+Executes before every step executes.
+
+## After Step hook
+Executes after every scenario executes.
+
+## Hooks specific to Java
+- BeforeClassSteps (Java only)-`@BeforeClassSteps`
+- AfterClassSteps (Java only)-`@AfterClassSteps`
 
 ### Example
 
 {% codetabs name="Java", type="java" -%}
 public class ExecutionHooks {
+    @BeforeSuite
+    public void BeforeSuite() {
+      // Code for before suite
+    }
+
+    @AfterSuite
+    public void AfterSuite() {
+      // Code for after suite
+    }
+
     @BeforeSpec
-    public void loginUser() {
+    public void BeforeSpec() {
       // Code for before spec
     }
 
+    @AfterSpec
+    public void AfterSpec() {
+      // Code for after spec
+    }
+
+    @BeforeScenario
+    public void BeforeScenario() {
+      // Code for before scenario
+    }
+
+    @AfterScenario
+    public void AfterScenario() {
+      // Code for after scenario
+    }
+
+    @BeforeStep
+    public void BeforeStep() {
+      // Code for before step
+    }
+
     @AfterStep
-    public void performAfterStep() {
+    public void AfterStep() {
       // Code for after step
     }
 }
 {%- language name="C#", type="csharp" -%}
 public class ExecutionHooks {
+    [BeforeSuite]
+    public void BeforeSuite() {
+      // Code for before suite
+    }
+
+    [AfterSuite]
+    public void AfterSuite() {
+      // Code for after suite
+    }
 
     [BeforeSpec]
-    public void LoginUser() 
-    {
+    public void BeforeSpec() {
       // Code for before spec
     }
 
+    [AfterSpec]
+    public void AfterSpec() {
+      // Code for after spec
+    }
+
+    [BeforeScenario]
+    public void BeforeScenario() {
+      // Code for before scenario
+    }
+
+    [AfterScenario]
+    public void AfterScenario() {
+      // Code for after scenario
+    }
+
+    [BeforeStep]
+    public void BeforeStep() {
+      // Code for before step
+    }
+
     [AfterStep]
-    public void PerformAfterStep() 
-    {
+    public void AfterStep() {
       // Code for after step
     }
 }
@@ -57,90 +128,3 @@ end
 
 > By default, Gauge clears the state after each scenario so that new objects are created for next scenario execution.
 You can [configure](configuration.md#gaugeclearstatelevel) to change the level at which Gauge clears cache.
-
-## Filtering Hooks execution based on tags
-
-* You can specify tags for which the execution hooks can run. This will ensure that the hook runs only on scenarios and specifications that have the required tags.
-
-{% codetabs name="Java", type="java" -%}
-// A before spec hook that runs when tag1 and tag2 
-// is present in the current scenario and spec.
-@BeforeSpec(tags = {"tag1, tag2"})
-public void loginUser() {
-    // Code for before scenario
-}
-
-
-// A after step hook runs when tag1 or tag2 
-// is present in the current scenario and spec.
-// Default tagAggregation value is Operator.AND.
-@AfterStep(tags = {"tag1", "tag2"}, tagAggregation = Operator.OR)
-public void performAfterStep() {
-    // Code for after step
-}
-{%- language name="C#", type="cs" -%}
-// A before spec hook that runs when tag1 and tag2 
-// is present in the current scenario and spec.
-[BeforeSpec("tag1, tag2")]
-public void LoginUser() 
-{
-    // Code for before scenario
-}
-
-
-// A after step hook runs when tag1 or tag2 
-// is present in the current scenario and spec.
-// Default tagAggregation value is Operator.AND.
-[AfterStep("tag1", "tag2")
-[TagAggregationBehagiour(TagAggregation.OR)]
-public void PerformAfterStep() 
-{
-    // Code for after step
-}
-{%- language name="Ruby", type="ruby" -%}
-# A before spec hook that runs when tag1 and tag2 is present in the current scenario and spec.
-before_spec({tags: ['tag2', 'tag1']}) do
-    // Code for before scenario
-end
-
-# A after step hook runs when tag1 or tag2 is present in the current scenario and spec.
-# Default tagAggregation value is Operator.AND.
-after_spec({tags: ['tag2', 'tag1'], operator: 'OR'}) do
-    // Code for after step
-end
-{%- endcodetabs %}
-
-> Note: Tags cannot be specified on @BeforeSuite and @AfterSuite hooks
-
-
-## Current Execution Context in the Hook
-
-* To get additional information about the **current specification, scenario and step** executing, an additional **ExecutionContext** parameter can be added to the hooks method.
-
-{% codetabs name="Java", type="java" -%}
-public class ExecutionHooks {
-
-    @BeforeScenario
-    public void loginUser(ExecutionContext context) {
-      String scenarioName = context.getCurrentScenario().getName();
-      // Code for before scenario
-    }
-
-    @AfterSpec
-    public void performAfterSpec(ExecutionContext context) {
-      Specification currentSpecification = context.getCurrentSpecification();
-      // Code for after step
-    }
-}
-{%- language name="C#", type="csharp" -%}
-This feature is not yet supported in Gauge-CSharp. 
-Please refer to https://github.com/getgauge/gauge-csharp/issues/53 for updates.
-{%- language name="Ruby", type="ruby" -%}
-before_spec do |execution_info|
-    puts execution_info.inspect
-end
-
-after_spec do |execution_info|
-    puts execution_info.inspect
-end
-{%- endcodetabs %}
