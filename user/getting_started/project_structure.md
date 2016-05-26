@@ -72,4 +72,4 @@ After running the above command, the manifest.json would have the following cont
 
 ## Language specific files
 
-Along with common gauge files certain language specific files and directories are created during [project creation](creating_a_gauge_project.md). You can find the more details about language specific files created under each [programming language](../test_code/step_implementations.md).
+Along with common gauge files certain language specific files and directories are created during [project creation](creating_a_gauge_project.md). You can find the more details about language specific files created under each [programming language](language_features/step_implementations.md).

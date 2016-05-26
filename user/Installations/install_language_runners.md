@@ -3,11 +3,11 @@
 
 The langauge runner determines the language you would use to write your tests. To install a langauge runner and then initialise the runner, use the following commands
 
-| Language | Command | Test code |
+| Language | Command |
 | -- | -- | -- |
-| `Java` | ``$ gauge --install java`` | [Test code](../test_code/java/java.md) |
-| `C#` | ``$ gauge --install csharp`` | [Test code](../test_code/csharp/csharp.md) |
-| `Ruby` | ``$ gauge --install ruby`` | [Test code](../test_code/ruby/ruby.md) |
+| `Java` | ``$ gauge --install java`` |
+| `C#` | ``$ gauge --install csharp`` |
+| `Ruby` | ``$ gauge --install ruby`` |
 
 ## Community contributed language runners
 
