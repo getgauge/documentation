@@ -1,5 +1,5 @@
 # Scenarios
-
+-------
 Each scenario represents a single flow in a particular specification. A specification must contain at least one scenario.
 
 A scenario starts after a scenario heading or a scenario name. The scenario heading is written in markdown **H2** syntax. This can be written in 2 ways:
@@ -35,6 +35,6 @@ Admin Login
 * User "john" should have admin permissions
 ```
 
-### Further reading
+### *Further reading*
 * [Steps](steps.md)
 * [Tags](tags.md)

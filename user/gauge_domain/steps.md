@@ -1,5 +1,5 @@
 # Steps
-
+------
 Steps are the executable components of your specification. They  are written as markdown unordered list items (bulleted points).
 
 Every step has an underlying code implementation for the programming language used. This is executed when the steps inside a spec are executed.

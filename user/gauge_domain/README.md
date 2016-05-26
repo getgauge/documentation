@@ -1,5 +1,5 @@
 ## Gauge domain
-
+--------------
 Gauge introduces multiple terminologies that abstract out the
 functions of different areas of the testing life-cycle. A solid
 understanding of these terminologies helps in writing efficient test
@@ -16,6 +16,4 @@ They are:
 * [Contexts](gauge_domain/contexts.md)
 * [Tear Down Steps](gauge_domain/tear_down_steps.md)
 
----
-
-Once you have a solid understanding of these topics, you may want to skip to the [Getting Started](../getting_started/README.md) section.
+> Once you have a solid understanding of these topics, you may want to skip to the [Getting Started](../getting_started/README.md) section.

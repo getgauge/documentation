@@ -1,13 +1,13 @@
 # Concepts
-
+---
 Concepts provide the ability to combine multiple steps into a single step. It provides a higher level abstraction of a business intent by combining steps. It's like refactoring out common code to a method except this is targetted at business intent and not code.
 
-They are defined in **.cpt** format files in the **specs** directory in the project. They can be inside nested directories inside the **specs** directory.
+They are defined in **`.cpt`** format files in the `specs` directory in the project. They can be inside nested directories inside the specs directory.
 
 * Concepts are used inside spec just like any other step. The appropriate parameters are passed to them.
 * On execution all the steps under the concepts are executed in the defined order.
 
-**Note:** A single .cpt file can contain multiple concept definitions.
+> **Note:** A single .cpt file can contain multiple concept definitions.
 
 ## Defining a concept
 

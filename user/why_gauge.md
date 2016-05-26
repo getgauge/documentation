@@ -1,4 +1,5 @@
 ## Why Gauge?
+------------
 
 The communication breakdowns between Developers and Business Stakeholders is a common risk of software development.
 

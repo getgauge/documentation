@@ -1,5 +1,5 @@
 # Tear Down Steps
-
+------
 __Tear Down Steps__ are the steps defined in a spec  after the last scenario.
 They allow you to specify a set of clean-up steps after every execution of scenario in a spec. They are used to perform a tear down function.
 
@@ -42,7 +42,7 @@ These are teardown steps
 * Delete user "mike"
 ```
 
-In the above example spec, the tear down steps are ***Logout user "mike"*** and ***Delete user "mike"***, they are defined after three or more consecutive underscores.
+In the above example spec, the tear down steps are **`Logout user "mike"`** and **`Delete user "mike"`**, they are defined after three or more consecutive underscores.
 
 The spec execution flow would be:
 
