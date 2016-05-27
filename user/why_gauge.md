@@ -20,4 +20,4 @@ Some of its key features include:
 * Helps you create Maintainable and Understandable test suites
 * [IDE Support](ide_support/README.md)
 
-Learn about the [Gauge domain](gauge_domain.md) and get started.
+Learn about the [Gauge terminologies](gauge_domain/README.md) and [get started](getting_started/README.md).

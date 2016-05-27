@@ -1,8 +1,11 @@
 # Table Parameter
 ----
-When a scenario or multiple scenarios in a specification are to be executed for multiple sets of data then Data table execution can be used. Tables or inline tables can be passed to steps as parameters.
+* Table Parameters can be used in two ways
+- When a scenario or multiple scenarios in a specification are to be executed for multiple sets of data then Data table execution can be used.
+- Tables or inline tables can be passed to steps as parameters.
 
-* A **data table** is defined in markdown table format in the beginning of the spec before any steps.
+## Data driven execution
+* A *data table* is defined in markdown table format in the beginning of the spec before any steps.
 * The data table should have a header row and one or more data rows
 * The header names from the table can be used in the steps within angular brackets `< >` to refer a particular column from the data table as a parameter.
 * On execution each scenario will be executed for every data row from the table.
@@ -69,7 +72,7 @@ Id,Name
 
 **The first row is considered as table header. Following rows are considered as the row values.**
 
-### Data Table values in inline tables
+## Data Table values in inline tables
 Dynamic values from the data table can also be referred in table parameters passed into steps
 
 Example:

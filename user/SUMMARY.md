@@ -4,7 +4,7 @@
 
 * [Why Gauge](why_gauge.md)
 
-* [Gauge Domain](gauge_domain/README.md)
+* [Gauge terminologies](gauge_domain/README.md)
   * [Specifications](gauge_domain/specifications.md)
   * [Scenarios](gauge_domain/scenarios.md)
   * [Steps](gauge_domain/steps.md)

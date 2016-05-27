@@ -6,7 +6,7 @@ This section will explain the steps needed to get Gauge working.
 
 * [Setup Gauge on your machine](../installations/README.md).
 * [Understand Gauge terminologies](../gauge_domain/README.md)
-* [Create a Gauge project](creating_a_gauge_project.md) - You can use the command line or [use an IDE](../ide_support/README.md).
+* [Create a Gauge project](creating_a_gauge_project.md). You can use the [command line](../cli/README.md) or [use an IDE](../ide_support/README.md).
 
 **Add tests**
 
@@ -16,6 +16,7 @@ This section will explain the steps needed to get Gauge working.
 **Run tests**
 
 * [Execute from the command-line](../cli/#executing-tests)
+* [use an IDE](../ide_support/README.md)
 
 >**Suggested reading**
 * [Using Gauge from command line](../cli/README.md)
