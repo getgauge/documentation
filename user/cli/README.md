@@ -16,7 +16,7 @@ $ gauge --init java
 
 ## Executing tests
 
-Inside a Gauge project, you can execute your tests by invoking `gauge` with path to [specifications](../gauge_domain/specifications.md). By convention, specifications are stored in the the `./specs/` sub-directory in the project root. The syntax is:
+Inside a Gauge project, you can execute your tests by invoking `gauge` with path to [specifications](../gauge_terminologies/specifications.md). By convention, specifications are stored in the the `./specs/` sub-directory in the project root. The syntax is:
 
 ```sh
 $ gauge [options] <path-to-specs>
@@ -60,7 +60,7 @@ $ gauge specs/spec1.spec specs/spec2.spec specs/spec3.spec
 
 ### Specify scenarios
 
-You can also specify a specific [scenario](../gauge_domain/scenarios.md) or a list of scenarios to execute. To execute scenarios, `gauge` takes path to a specification file, followed by a colon and a zero-indexed number of scenarios.
+You can also specify a specific [scenario](../gauge_terminologies/scenarios.md) or a list of scenarios to execute. To execute scenarios, `gauge` takes path to a specification file, followed by a colon and a zero-indexed number of scenarios.
 
 For example, to execute the second scenario of a specification file named `spec1.spec`, you would do:
 
@@ -87,7 +87,7 @@ $ gauge --verbose specs/
 ## Suggested reading
 
 * [Command line flags](flags.md)
-* [Specifications](../gauge_domain/specifications.md)
-* [Scenarios](../gauge_domain/scenarios.md)
+* [Specifications](../gauge_terminologies/specifications.md)
+* [Scenarios](../gauge_terminologies/scenarios.md)
 * [Tagged execution](../advanced_readings/execution/tagged_execution.md)
 * [Parallel execution](../advanced_readings/execution/parallel_execution.md)

@@ -1,6 +1,6 @@
 # Step implementations
 
-Every [step](../gauge_domain/steps.md) needs to have a language specific implementation that gets executed on the spec execution.
+Every [step](../gauge_terminologies/steps.md) needs to have a language specific implementation that gets executed on the spec execution.
 
 ###Examples
 

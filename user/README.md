@@ -2,7 +2,7 @@
 -------
 Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language. It champions the idea of **living/executable documentation**.
 
-Read [**Why Gauge**](why_gauge.md) can be used and more about the [**Gauge terminologies**](gauge_domain.md).
+Read [**Why Gauge**](why_gauge.md) can be used and more about the [**Gauge terminologies**](gauge_terminologies.md).
 
 ## Looking for examples?
 Get started by [example projects](examples/examples.md)
