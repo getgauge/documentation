@@ -1,4 +1,4 @@
-## Gauge domain
+## Gauge terminologies
 --------------
 Gauge introduces multiple terminologies that abstract out the
 functions of different areas of the testing life-cycle. A solid
