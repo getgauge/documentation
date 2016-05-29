@@ -5,9 +5,7 @@ The communication breakdowns between Developers and Business Stakeholders is a c
 
 Gauge is an advanced automation tool that allows requirements to be written in a way that will be understood by all roles in a project and help bridge the gap.
 
-Features of Gauge that make it stand unique amongst others.
-
-Some of its key features include:
+Some of the key features of Gauge that make it stand unique include:
 
 * A rich markup based on [markdown](https://en.wikipedia.org/wiki/Markdown)
 * Simple, Flexible and Rich Syntax

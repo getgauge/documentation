@@ -58,6 +58,7 @@
         { "from": "execution/table_driven_execution.html", "to": "../advanced_readings/execution/table_driven_execution.html" },
         { "from": "execution/tagged_execution.html", "to": "../advanced_readings/execution/tagged_execution.html" },
         { "from": "execution/parallel_execution.html", "to": "../advanced_readings/execution/parallel_execution.html" },
-        { "from": "execution/execution_hooks.html", "to": "../language_features/execution_hooks.html" }
+        { "from": "execution/execution_hooks.html", "to": "../language_features/execution_hooks.html" },
+        { "from": "plugins/list.html", "to": "plugins/" }
     ]
 }

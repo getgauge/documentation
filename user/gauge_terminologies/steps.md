@@ -2,9 +2,14 @@
 ------
 Steps are the executable components of your specification. They  are written as markdown unordered list items (bulleted points).
 
+They are written inside a specification as
+- [context steps](contexts.md)
+- [tear down steps](tear_down_steps.md)
+- [steps](steps.md) inside a scenario.
+
 Every step has an underlying code implementation for the programming language used. This is executed when the steps inside a spec are executed.
 
-See [test code](language_features/step_implementations.md) to understand how to write step implementations for different languages.
+See how to write [step implementations](language_features/step_implementations.md) for different languages.
 
 ## Example
 
@@ -22,4 +27,4 @@ The values written in __quotes__ are parameters which are passed into the underl
 - >
 
 ## Further reading
-* [Parameters](parameters.md)
+* [Parameters](parameters/README.md)

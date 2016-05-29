@@ -7,9 +7,9 @@ Steps can be defined to take values as parameters so that they can be re-used wi
 * Check "product 2" exists
 ```
 
-The underlying [step implementation](language_features/step_implementations.md) in code must also take the same number of parameters as passed from the step.
+The underlying [step implementation](../../language_features/step_implementations.md) in code must also take the same number of parameters as passed from the step.
 
 The parameters passed into a step can be of different types:
-- [Simple parameter](gauge_terminologies/parameters/simple_parameters.md)
-- [Table parameter](gauge_terminologies/parameters/table_parameters.md)
-- [Special parameter](gauge_terminologies/parameters/special_parameters.md)
+- [Simple parameter](simple_parameters.md)
+- [Table parameter](table_parameters.md)
+- [Special parameter](special_parameters.md)

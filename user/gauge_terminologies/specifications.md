@@ -30,29 +30,8 @@ Spec Heading
 * Every spec must contain one or more [scenarios](scenarios.md).
 * Every spec can be marked with labels using [tags](tags.md).
 
-## Scenarios
-
-Each scenario represents a single flow in a particular specification.
-
-Consider the above example, *successful search* and *unsuccessful search* are 2 scenarios for the **search specification**. In business language terms they represent the entire search feature in the app.
-
-Learn more about the structure of a [Scenario](scenarios.md).
-
-## Steps
-
-Steps are the executable part of the specification. They have underlying implementations in the programming language for execution of the specs.
-
-They are written inside a specification ([context steps](contexts.md)) or a scenario.
-
-Example:
-
-```
-* Search for product "die hard"
-* User "admin" must be logged in
-```
-
 ### Further reading
 
 * [Scenarios](scenarios.md)
 * [Steps](steps.md)
-* [Test code](language_features/step_implementations.md)
+* [Step implementations](language_features/step_implementations.md)
