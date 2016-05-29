@@ -17,6 +17,8 @@
   * [Contexts](gauge_terminologies/contexts.md)
   * [Tear Down Steps](gauge_terminologies/tear_down_steps.md)
 
+* [Syntax Cheat Sheet](cheat_sheet/README.md)
+
 * [Getting Started](getting_started/README.md)
   * [Installation](installations/README.md)
       * [Install on Operating System](installations/operating_system/README.md)
@@ -28,7 +30,7 @@
       * [Install Language Runners](installations/install_language_runners.md)
       * [Install Plugins](installations/install_plugins.md)
       * [Check Installation](installations/check_installation.md)
-      * [Install Plugins](installations/uninstall_plugin.md)
+      * [Un-install Plugins](installations/uninstall_plugin.md)
 
   * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
   * [Project Structure](getting_started/project_structure.md)
@@ -46,7 +48,6 @@
        * [Features](ide_support/gauge_eclipse_plugin_features.md)
 
 * [Plugins](plugins/README.md)
-   * [Plugins List](plugins/list.md)
 
 * [Language Features](language_features/README.md)
   * [Step Implementations](language_features/step_implementations.md)
@@ -59,8 +60,6 @@
 * [Reporting Features](reporting_features/README.md)
    * [HTML Report](reporting_features/html_report_plugin.md)
    * [XML Report](reporting_features/xml_report_plugin.md)
-
-* [Syntax Cheat Sheet](cheat_sheet/README.md)
 
 * [Advanced Readings](advanced_readings/README.md)
   * [Gauge Templates](advanced_readings/templates/gauge_templates.md)
