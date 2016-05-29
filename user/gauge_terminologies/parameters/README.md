@@ -13,3 +13,6 @@ The parameters passed into a step can be of different types:
 - [Simple parameter](simple_parameters.md)
 - [Table parameter](table_parameters.md)
 - [Special parameter](special_parameters.md)
+
+## Further reading
+* [Concepts](../concepts.md)

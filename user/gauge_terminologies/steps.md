@@ -5,7 +5,7 @@ Steps are the executable components of your specification. They  are written as 
 They are written inside a specification as
 - [context steps](contexts.md)
 - [tear down steps](tear_down_steps.md)
-- [steps](steps.md) inside a scenario.
+- steps inside a scenario or concepts
 
 Every step has an underlying code implementation for the programming language used. This is executed when the steps inside a spec are executed.
 
@@ -27,4 +27,8 @@ The values written in __quotes__ are parameters which are passed into the underl
 - >
 
 ## Further reading
+* [context steps](contexts.md)
+* [tear down steps](tear_down_steps.md)
+* [Scenarios](scenarios.md)
+* [Concepts](concepts.md)
 * [Parameters](parameters/README.md)

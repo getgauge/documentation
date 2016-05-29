@@ -35,3 +35,4 @@ Spec Heading
 * [Scenarios](scenarios.md)
 * [Steps](steps.md)
 * [Step implementations](language_features/step_implementations.md)
+* [Tags](tags.md)

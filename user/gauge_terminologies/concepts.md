@@ -1,6 +1,6 @@
 # Concepts
 ---
-Concepts provide the ability to combine multiple steps into a single step. It provides a higher level abstraction of a business intent by combining steps. It's like refactoring out common code to a method except this is targetted at business intent and not code.
+Concepts provide the ability to combine re-usable logical groups of steps into a single unit. It provides a higher level abstraction of a business intent by combining steps.
 
 They are defined in **`.cpt`** format files in the `specs` directory in the project. They can be inside nested directories inside the specs directory.
 
@@ -14,6 +14,8 @@ They are defined in **`.cpt`** format files in the `specs` directory in the proj
 Create a `.cpt` file under specs directory with the concept definition.
 
 The concept definition contains the 2 parts:
+- Concept header
+- steps
 
 ### Concept header
 The concept header defines the name of the concept and the parameters that it takes. It is written in the markdown **`H1`** format.
