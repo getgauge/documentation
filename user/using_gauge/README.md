@@ -9,4 +9,4 @@ IDE then Gauge also has excellent integration with multiple IDEs.
 * [IDE Support](ide_support/README.md)
   * [IntelliJ Idea](ide_support/intellij_idea.md)
   * [Visual Studio](ide_support/visual_studio.md)
-  * [Eclipse](ide_support/eclipse.md)
+  * [Eclipse(limited Support)](ide_support/eclipse.md)

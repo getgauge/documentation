@@ -17,8 +17,6 @@
   * [Contexts](gauge_terminologies/contexts.md)
   * [Tear Down Steps](gauge_terminologies/tear_down_steps.md)
 
-* [Syntax Cheat Sheet](cheat_sheet/README.md)
-
 * [Getting Started](getting_started/README.md)
   * [Installation](installations/README.md)
       * [Install on Operating System](installations/operating_system/README.md)
@@ -35,6 +33,8 @@
   * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
   * [Project Structure](getting_started/project_structure.md)
 
+* [Syntax Cheat Sheet](cheat_sheet/README.md)
+
 * [Using Gauge](using_gauge/README.md)
   * [Command Line Interface](cli/README.md)
     * [Command Line Flags](cli/flags.md)
@@ -44,7 +44,7 @@
        * [Other Usability Features](ide_support/other_usability_features.md)
    * [Visual Studio](ide_support/visual_studio.md)
        * [Features](ide_support/visual_studio_features.md)
-   * [Eclipse](ide_support/eclipse.md)
+   * [Eclipse(limited Support)](ide_support/eclipse.md)
        * [Features](ide_support/gauge_eclipse_plugin_features.md)
 
 * [Plugins](plugins/README.md)

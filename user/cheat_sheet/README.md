@@ -93,4 +93,7 @@ This is [an example](http://getgauge.io "Title") inline link.
 
 [This link](http://github.com/getgauge/gauge) has no title attribute.
 ````
-Read more about [Markdown](https://en.wikipedia.org/wiki/Markdown).
+
+## Further reading
+- [Markdown](https://en.wikipedia.org/wiki/Markdown).
+- [Examples](../examples/examples.md)
