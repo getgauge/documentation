@@ -74,6 +74,11 @@ mvn test
 mvn gauge:execute -DspecsDir=specs
 ```
 
+####To only run gauge specs that correspond to a particular test profile in pom.xml,
+```
+mvn gauge:execute -P <profile-name>
+```
+
 ####Execute specs In parallel
 ```
 mvn gauge:execute -DspecsDir=specs -DinParallel=true
