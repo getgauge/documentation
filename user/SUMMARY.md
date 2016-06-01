@@ -62,7 +62,7 @@
    * [XML Report](reporting_features/xml_report_plugin.md)
 
 * [Advanced Readings](advanced_readings/README.md)
-  * [Gauge Templates](advanced_readings/templates/gauge_templates.md)
+  * [Gauge Templates](advanced_readings/gauge_templates.md)
   * [Execution](advanced_readings/execution/README.md)
      * [Table Driven Execution](advanced_readings/execution/table_driven_execution.md)
      * [Tagged Execution](advanced_readings/execution/tagged_execution.md)

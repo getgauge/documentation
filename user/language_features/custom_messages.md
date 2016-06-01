@@ -1,6 +1,5 @@
 # Custom messages in reports
 
-
 Custom messsages/data can be added to execution reports using the below API from the step implementations or hooks.
 
 These messages will appear under steps in the execution reports.
