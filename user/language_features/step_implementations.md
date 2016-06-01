@@ -2,9 +2,7 @@
 
 Every [step](../gauge_terminologies/steps.md) needs to have a language specific implementation that gets executed on the spec execution.
 
-###Examples
-
-#### Simple step
+## Simple step
 
 **Step name**
 ```
@@ -40,7 +38,7 @@ end
 
 > The text passed to the annotation is the [step template](step_name_template.md), which is a simple representation of the step.
 
-#### Step with table
+## Step with table
 **Step:**
 
 ````
@@ -79,43 +77,6 @@ public class Users {
 step 'Create following <race> characters <table>' do |role, table|
   puts table.rows
   puts table.columns
-end
-{%- endcodetabs %}
-
-## Multiple Step names (Alias for Step names)
-The same implementation can point to multiple step names. To do this add all the [step name template](step_name_template.md) to the `[Step]` attribute.
-
-The number and type of parameters for all the steps names must match the number of parameters on the C# implementation.
-
-####Example
-
-**Step Names**
-````
-* Create a wizard "Gandalf"
-* Create another wizard "Saruman"
-````
-**Implementation**
-
-
-{% codetabs name="Java", type="java" -%}
-public class Users {
-
-    @Step({"Create a wizard <wizard>", "Create another wizard <wizard>"})
-    public void helloWorld(String role) {
-        // Step implementation
-    }
-}
-{%- language name="C#", type="csharp" -%}
-public class Users {
-
-    [Step({"Create a wizard <wizard>", "Create another wizard <wizard>"})]
-    public void HelloWorld(string role) {
-        // Step implementation
-    }
-}
-{%- language name="Ruby", type="ruby" -%}
-step "Create a wizard <wizard>", "Create another wizard <wizard>" do |username|
- #step code
 end
 {%- endcodetabs %}
 

@@ -8,11 +8,16 @@ The command-line interface works across platforms. On GNU/Linux and OSX, you can
 
 To create or initialize a Gauge project use the `gauge --init` command. For details, see how to [create a Gauge project](../getting_started/creating_a_gauge_project.md).
 
-**Example: Create a Java project**
+**Example: Create a project**
 
-```sh
-$ gauge --init java
-```
+{% codetabs name="Java", type="java" -%}
+  $ gauge --init java
+{%- language name="C#", type="cs" -%}
+  $ gauge --init csharp
+{%- language name="Ruby", type="ruby" -%}
+  $ gauge --init ruby
+{%- endcodetabs %}
+
 
 ## Executing tests
 

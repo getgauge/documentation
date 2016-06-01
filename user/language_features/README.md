@@ -1,21 +1,27 @@
 # Language features
 
-# Feature Matrix
+# Basic Feature Matrix
 
-| Features               | [Java][1] | [C#][2] | [Ruby][3] |
+| Basic Features            | [Java][1] | [C#][2] | [Ruby][3] |
 |-----------------------:|:---------:|:-------:|:---------:|
-| Initialize             | Yes       | Yes     | Yes       |
-| Refactor               | Yes       | Yes     | Yes       |
-| [Data stores](language_features/data_store.md)            | Yes       | Yes     | Yes       |
-| Sandboxed execution    | -         | Yes     | -         |
+| [Create a project](../cli/README.md)             | Yes       | Yes     | Yes       |
+| [Step Implementation](step_implementations.md)             | Yes       | Yes     | Yes       |
+| [Execution](../advanced_readings/execution)              | Yes       | Yes     | Yes       |
 | Screenshot             | Yes       | Yes     | Yes       |
+| [Custom Report Messages](custom_messages.md) | Yes       | Yes     | Yes       |
+
+# Advanced Feature Matrix
+
+| Advanced Features          | [Java][1] | [C#][2] | [Ruby][3] |
+|-----------------------:|:---------:|:-------:|:---------:|
+| [Create a project using Templates](../advanced_readings/gauge_templates.md)              | Yes       | -       | -         |
+| [Step alias](../advanced_readings/step_alias.md)             | Yes       | Yes     | Yes       |
+| [Refactor](../advanced_readings/refactoring.md)               | Yes       | Yes     | Yes       |
+| [Data stores](data_store.md)            | Yes       | Yes     | Yes       |
+| [Hooks](execution_hooks.md)                  | Yes       | Yes     | Yes       |
+| [Tagged hooks](../advanced_readings/execution/hooks/filtering.md)           | Yes       | Yes     | Yes       |
+| Sandboxed execution    | -         | Yes     | -         |
 | [Custom screenshot hook](language_features/custom_screenshots.md) | Yes       | Yes     | -         |
-| [Custom Report Messages](language_features/custom_messages) | Yes       | Yes     | Yes       |
-| [Templates](advanced_readings/templates)              | Yes       | -       | -         |
-| [Execution](advanced_readings/execution)              | Yes       | Yes     | Yes       |
-| [Hooks](language_features/execution_hooks.md)                  | Yes       | Yes     | Yes       |
-| [Tagged hooks](advanced_readings/execution/hooks/filtering.md)           | Yes       | Yes     | Yes       |
-| Step alias             | Yes       | Yes     | Yes       |
 
 [1]: https://github.com/getgauge/gauge-java
 [2]: https://github.com/getgauge/gauge-csharp
