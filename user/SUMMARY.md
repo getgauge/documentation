@@ -62,6 +62,7 @@
    * [XML Report](reporting_features/xml_report_plugin.md)
 
 * [Advanced Readings](advanced_readings/README.md)
+  * [Living Documentation](advanced_readings/living_documentation.md)
   * [Gauge Templates](advanced_readings/gauge_templates.md)
   * [Execution](advanced_readings/execution/README.md)
      * [Table Driven Execution](advanced_readings/execution/table_driven_execution.md)

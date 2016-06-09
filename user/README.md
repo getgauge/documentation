@@ -1,6 +1,6 @@
 # Welcome to Gauge
 -------
-Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language. It champions the idea of **living/executable documentation**.
+Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language. It champions the idea of [**living/executable documentation**](advanced_readings/living_documentation.md).
 
 ## Get Started
 Read more about [Why Gauge](why_gauge.md) can be used, its [terminologies](gauge_terminologies/README.md) and [**get started...**](getting_started/README.md)

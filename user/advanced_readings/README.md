@@ -6,6 +6,7 @@ This is a collection of articles and sections for those who are familiar with th
 - [Gauge terminologies](gauge_terminologies/README.md)
 
 * One can explore the following topics
+- [living documentation](living_documentation.md)
 - [configuration](configuration/README.md)
 - [dependency management](dependency_management/README.md)
 - [execution](execution/README.md)
