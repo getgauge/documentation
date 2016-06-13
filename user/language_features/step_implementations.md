@@ -36,8 +36,6 @@ step 'Say <greeting> to <product name>' do |greeting, name|
 end
 {%- endcodetabs %}
 
-> The text passed to the annotation is the [step template](step_name_template.md), which is a simple representation of the step.
-
 ## Step with table
 **Step:**
 
@@ -85,4 +83,4 @@ end
 Learn More
 * [Configuration](configuration.md)
 * [Execution Hooks](execution_hooks.md)
-* [Data Store](data_store_to_share_data.md)
+* [Data Store](data_store.md)

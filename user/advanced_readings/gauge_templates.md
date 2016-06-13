@@ -24,4 +24,4 @@ $ gauge --init java_maven_selenium
 
 This template creates a Gauge project with Maven as build tool and the selenium Webdriver. This will download the Gauge template `java_maven_selenium` and setup your project with useful sample code.
 
-Now, you can start writing [Specifications](../specifications/README.md) and execute them.
+Now, you can start writing [Specifications](../gauge_terminologies/specifications.md) and execute them.

@@ -1,8 +1,6 @@
 # Step alias
 
-Multiple Step names for the same implementation. To do this add all the [step name template](step_name_template.md) to the `[Step]` attribute.
-
-The number and type of parameters for all the steps names must match the number of parameters on the C# implementation.
+Multiple Step names for the same implementation. The number and type of parameters for all the steps names must match the number of parameters on the implementation.
 
 ## Use case
 There may be situations where while authoring the specs, you may want to express the same functionality in different ways in order to make the specs more readable.

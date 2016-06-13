@@ -2,7 +2,6 @@
 
 The step name template is a simple generic representation for a step. It is used while defining language implementations for steps.
 
-
 The Step template contains:
 * The name of the step as it is used.
 * The parameters are replaced by placeholders in angular brackets `< >`. The placeholder value determines what the parameter represents.
@@ -26,6 +25,3 @@ The Step template contains:
 |   |  456  |navaneeth|     |                                      |
 
 ````
-
-
-

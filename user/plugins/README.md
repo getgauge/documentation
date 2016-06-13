@@ -13,7 +13,7 @@ Also known as **language runners**, these plugins enable the users to write the 
 ## Reporting plugins
 
 These are plugins that work during the execution of the specifications to give summary/details of the run.
-Example: [HTML Report](html_report_plugin.md), [XML Report](xml_report_plugin.md)
+Example: [HTML Report](../reporting_features/html_report_plugin.md), [XML Report](../reporting_features/xml_report_plugin.md)
 
 ## IDE plugins
 
@@ -29,7 +29,7 @@ Gauge has a bunch of plugins so that users can easily author specs on IDE. For m
  * [XML Report](http://github.com/getgauge/xml-report) to help integrated with CI/CD systems.
 
 >Some plugins are added to every new project created in gauge.
- - [HTML Report Plugin](html_report_plugin.md)
+ - [HTML Report Plugin](../reporting_features/html_report_plugin.md)
 
 ## Other
 
