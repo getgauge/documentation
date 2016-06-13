@@ -96,4 +96,4 @@ This is [an example](http://getgauge.io "Title") inline link.
 
 ## Further reading
 - [Markdown](https://en.wikipedia.org/wiki/Markdown).
-- [Examples](../examples/examples.md)
+- [Examples](../tutorials/README.md)

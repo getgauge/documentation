@@ -88,6 +88,7 @@
   * [Execution](troubleshooting/execution.md)
   * [IntelliJ Idea](troubleshooting/intellij.md)
 
-* [Example Projects](examples/examples.md)
+* [Tutorials](tutorials/README.md)
+  * [Java](tutorials/getting_started_3_steps.md)
 
 * [Previous Versions](previous_versions/README.md)

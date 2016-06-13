@@ -9,7 +9,7 @@ They are written inside a specification as
 
 Every step has an underlying code implementation for the programming language used. This is executed when the steps inside a spec are executed.
 
-See how to write [step implementations](language_features/step_implementations.md) for different languages.
+See how to write [step implementations](../language_features/step_implementations.md) for different languages.
 
 ## Example
 
