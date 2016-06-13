@@ -43,7 +43,7 @@
 * After project creation `close and re-open the project` to enable auto-complete features.
 * Enable `auto-import` for the project. Under `File > Settings > Maven > Importing`, mark the checkbox  `Import Maven projects automatically`.
 
- See [gauge-maven-plugin](../dependency_management/maven-plugin.md) for more details on using the gauge maven plugin.
+ See [gauge-maven-plugin](../advanced_readings/dependency_management/maven-plugin.md) for more details on using the gauge maven plugin.
 
 ## Auto Completion
 Steps present in the current project can be listed by invoking the auto completion pop up `ctrl+space` after the '*'. After choosing a step, it gets inserted with parameters highlighted, you can press `tab` to cycle between the parameters and edit them.
