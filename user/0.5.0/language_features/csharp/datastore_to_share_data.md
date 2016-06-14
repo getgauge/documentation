@@ -1,1 +1,0 @@
-!REDIRECT "../data_store_to_share_data.html"
