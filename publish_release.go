@@ -90,7 +90,7 @@ func buildGitBook() string {
 func buildAndCopyBook(docType string, bookPath string) {
 	runCommand("gitbook", "install", docType)
 	runCommand("gitbook", "build", docType)
-	mirrorDir(bookDir, filepath.Join(bookPath, docType))
+	mirrorDir(filepath.Join(docType, bookDir), filepath.Join(bookPath, docType))
 }
 
 func cleanUp() {
