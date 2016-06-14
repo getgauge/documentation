@@ -18,7 +18,7 @@ These generally occur if step implementation is not found for a particular step.
 Failed to start a runner. Compatible runner version to 0.0.7 not found
 ````
 * The language plugin installed is not compatible with the gauge version installed.
-* Run ```gauge --install language_NAME ``` to install the latest compatible version. See [plugin installation](../plugins/installation.md) for more details
+* Run ```gauge --install language_NAME ``` to install the latest compatible version. See [plugin installation](../Installations/install_language_runners.md) for more details
 
 
 ### Execution Errors
