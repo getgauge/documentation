@@ -1,7 +1,7 @@
 # Language runners
 -----
 
-The langauge runner determines the language you would use to write your tests. To install a langauge runner and then initialise the runner, use the following commands
+The language runner determines the language you would use to write your tests. To install a language runner and then initialise the runner, use the following commands
 
 | Language | Command |
 | -- | -- | -- |

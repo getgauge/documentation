@@ -10,7 +10,7 @@ $ gauge --init <language>
 
 Replace *<language>* with the programming language in which you want to write the test code. See supported programming [language runners](../installations/install_language_runners.md).
 
-**Note:** Currently this command creates the Gauge project in the current directory. If you would like to specify a location, then you will have to manually create that dir and navigate to it before you run `--init langauge`
+**Note:** Currently this command creates the Gauge project in the current directory. If you would like to specify a location, then you will have to manually create that dir and navigate to it before you run `--init language`
 
 ```
 $ mkdir <location for Gauge project>

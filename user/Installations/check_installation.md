@@ -18,4 +18,4 @@ language(<version number>)
 
 You can read more about plugins [here](../plugins/index.html).
 
-If you have Gauge and your langauge runner installed, then see how you can [create a Gauge project](../getting_started/creating_a_gauge_project.md).
+If you have Gauge and your language runner installed, then see how you can [create a Gauge project](../getting_started/creating_a_gauge_project.md).

@@ -24,7 +24,7 @@ gauge_templates_url = https://dl.bintray.com/gauge/Templates
 
 ###runner_connection_timeout
 
-This property sets the timeout in milliseconds for making a connection to the langauge runner.
+This property sets the timeout in milliseconds for making a connection to the language runner.
 
 ```
 runner_connection_timeout = 30000
@@ -46,7 +46,7 @@ plugin_kill_timeout = 10000
 
 ###runner_request_timeout
 
-This property sets the timeout in milliseconds for requests from the langauge runner.
+This property sets the timeout in milliseconds for requests from the language runner.
 
 If the size of the project is too big, Gauge may timeout before the runner returns the response message. This value can be configured accordingly.
 
