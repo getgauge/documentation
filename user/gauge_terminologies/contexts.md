@@ -1,5 +1,4 @@
 # Contexts
------
 
 **Contexts** or **Context steps** are steps defined in a spec before any scenario.
 

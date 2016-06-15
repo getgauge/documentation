@@ -1,5 +1,5 @@
 ## Gauge terminologies
---------------
+
 Gauge introduces multiple terminologies that abstract out the
 functions of different areas of the testing life-cycle. A solid
 understanding of these terminologies helps in writing efficient test

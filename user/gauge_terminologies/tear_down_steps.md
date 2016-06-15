@@ -1,5 +1,5 @@
 # Tear Down Steps
-------
+
 __Tear Down Steps__ are the steps defined in a spec  after the last scenario.
 They allow you to specify a set of clean-up steps after every execution of scenario in a spec. They are used to perform a tear down function.
 

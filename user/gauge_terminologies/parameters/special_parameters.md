@@ -1,5 +1,5 @@
 # Special Parameters
------
+
 Special parameters provide the ability to pass larger and richer data into the steps as parameters.
 * They are entered in angular brackets - `<>` in the step. There are 2 types of special parameters available in Gauge
 * They contain 2 parts separated by a colon `:`

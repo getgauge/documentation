@@ -1,5 +1,5 @@
 # Steps
-------
+
 Steps are the executable components of your specification. They  are written as markdown unordered list items (bulleted points).
 
 They are written inside a specification as

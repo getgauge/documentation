@@ -1,5 +1,5 @@
 # Parameters
----
+
 Steps can be defined to take values as parameters so that they can be re-used with different parameter values.
 
 ```

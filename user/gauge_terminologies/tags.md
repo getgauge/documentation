@@ -1,5 +1,5 @@
 # Tags
-----
+
 Tags are used to associate labels with specifications or scenarios. Tags are written as comma separated values in the spec with a prefix **`Tags:`** .
 
 * Both scenarios and specifications can be separately tagged

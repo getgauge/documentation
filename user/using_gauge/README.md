@@ -1,5 +1,5 @@
 # Using Gauge
-----
+
 
 Gauge is a first class command line tool. This means that you can
 operate entirely from the command line. Or, if you prefer to use an

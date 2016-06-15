@@ -1,5 +1,5 @@
  ## Getting Started
------------
+
 This section will explain the steps needed to get Gauge working.
 
 **Setting up**

@@ -1,8 +1,8 @@
 # HTML-Report
 This plugin generates HTML reports of the test execution result provided by Gauge.
 
-Build from Source
------------------
+## Build from Source
+
 
 ### Requirements
 * [Golang](http://golang.org/)

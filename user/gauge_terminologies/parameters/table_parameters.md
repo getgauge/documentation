@@ -1,5 +1,5 @@
 # Table Parameter
-----
+
 * Table Parameters can be used in two ways
 - When a scenario or multiple scenarios in a specification are to be executed for multiple sets of data then Data table execution can be used.
 - Tables or inline tables can be passed to steps as parameters.

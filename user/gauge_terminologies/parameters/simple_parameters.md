@@ -1,5 +1,5 @@
 # Simple parameters
-------
+
 They are values passed into the steps in double quotes.
 
 ```

@@ -1,5 +1,5 @@
 # Concepts
----
+
 Concepts provide the ability to combine re-usable logical groups of steps into a single unit. It provides a higher level abstraction of a business intent by combining steps.
 
 They are defined in **`.cpt`** format files in the `specs` directory in the project. They can be inside nested directories inside the specs directory.
