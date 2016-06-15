@@ -52,7 +52,7 @@ go run build/make.go --test --coverage
 
 ## Installing
 
-###MacOS and Linux
+###Mac OS X and Linux
 
 ````
 go run build/make.go --install

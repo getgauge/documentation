@@ -4,18 +4,18 @@ Plugins are installed using the flag `install`, this checks our plugin repositor
 
 **Example:**
 ```
-gauge --install java
+gauge --install html-report
 
 ```
 
 To install a specific version of a plugin use the `--plugin-version` flag.
 ```
-gauge --install ruby --plugin-version 0.0.2
+gauge --install html-report --plugin-version 2.1.0
 ```
 ### Offline Installation
 If plugin should be installed from a zip file instead of downloading from plugin repository, use the `--file` or `-f` flag.
 ```
-gauge --install java --file ZIP_FILE_PATH
+gauge --install html-report --file ZIP_FILE_PATH
 ```
 Download the latest version of plugin from the `Releases` section of the respective repository. See [plugin list](../plugins/README.md) to find the repositories.
 
