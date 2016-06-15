@@ -15,7 +15,7 @@ Set **{projectGroupId}** and **{projectArtifactId}** based on your project.
 See [maven docs](https://maven.apache.org/pom.html#Maven_Coordinates) to understand what groupId and artifactId mean in a maven project.
 
 ### Gauge maven project creation in IDE
-* [Intellij idea](../ide_support/features.md#12-creating-a-maven-project-using-gauge-maven-plugin)
+* [Intellij idea](../../ide_support/features.html#creating-a-maven-project-using-gauge-maven-plugin)
 
 
 The generated **pom.xml** in the project will have the** gauge-java** dependency and a **gauge:execute** goal defined in the test phase.
@@ -106,5 +106,3 @@ The following plugin properties can be additionally set:
 
 
 See gauge's [command line interface](../cli/README.md) for list of all flags that be used with **-Dflags** option.
-
-

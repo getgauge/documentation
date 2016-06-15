@@ -1,8 +1,8 @@
 # Install Gauge on Windows
 There are two ways to install Gauge on Windows.
 
-* [Using the installer](#1-using-installer)
-* [Using chocolatey](#2-using-chocolatey)
+* [Using the installer](#using-the-installer)
+* [Using chocolatey](#using-chocolatey)
 
 ## Using the installer
 

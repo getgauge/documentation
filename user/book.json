@@ -7,15 +7,18 @@
     "github": "https://www.github.com/getgauge/gauge",
     "githubHost": "https://github.com/",
     "plugins": [
-        "anchors",
-        "ga",
-        "codetabs",
-        "expandable-chapters",
-        "bulk-redirect"
+        "ga@1.0.1",
+        "codetabs@1.0.0",
+        "expandable-chapters@0.1.7",
+        "bulk-redirect@0.1.1",
+        "anchorjs@1.1.1"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-54838477-1"
+        },
+        "anchorjs": {
+            "placement": "left"
         }
     },
     "links": {

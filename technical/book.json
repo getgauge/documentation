@@ -6,12 +6,15 @@
     "github": "https://www.github.com/getgauge/gauge",
     "githubHost": "https://github.com/",
     "plugins": [
-        "anchors@0.5.0",
+        "anchorjs@1.1.1",
         "ga@1.0.1"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-54838477-1"
+        },
+        "anchorjs": {
+            "placement": "left"
         }
     },
     "links": {

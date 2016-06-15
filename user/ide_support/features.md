@@ -1,14 +1,14 @@
 # Gauge IntelliJ idea plugin Features
 
-* [Project Creation](#1-project-creation)
-* [Auto completion](#2-auto-completion)
-* [Quick Fix for unimplemented steps](#3-step-quick-fix)
-* [Formatting](#4-formatting)
-* [Execution and Debugging](#5-execution)
-* [Parallel Execution](#52-parallel-execution)
-* [Run configurations](#6-run-configuration)
-* [Rephrase steps](#7-rephrase-steps)
-* [Find Usages](#8-find-usages)
+* [Project Creation](#project-creation)
+* [Auto completion](#auto-completion)
+* [Quick Fix for unimplemented steps](#step-quick-fix)
+* [Formatting](#formatting)
+* [Execution and Debugging](#execution)
+* [Parallel Execution](#parallel-execution)
+* [Run configurations](#run-configuration)
+* [Rephrase steps](#rephrase-steps)
+* [Find Usages](#find-usages)
 * Navigation from step to implementation (cmd/ctrl + b)
 
 ## Project Creation
