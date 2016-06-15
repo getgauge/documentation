@@ -37,8 +37,6 @@
         { "from": "getting_started/download_and_install.html", "to": "../installations/"},
         { "from": "getting_started/install_on_operating_system.html", "to": "../installations/operating_system/"},
         { "from": "getting_started/install_on_windows.html", "to": "../installations/operating_system/install_on_windows.html" },
-        { "from": "getting_started/install_with_exe.html", "to": "../installations/operating_system/install_with_exe.html" },
-        { "from": "getting_started/install_with_chocolatey.html", "to": "../installations/operating_system/install_with_chocolatey.html" },
         { "from": "getting_started/install_on_mac.html", "to": "../installations/operating_system/install_on_mac.html" },
         { "from": "getting_started/install_on_linux.html", "to": "../installations/operating_system/install_on_linux.html" },
         { "from": "getting_started/install_language_runners.html", "to": "../installations/install_language_runners.html" },

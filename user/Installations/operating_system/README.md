@@ -1,5 +1,4 @@
-# Install on operating system
-----
+# Install Gauge
 This section explains Gauge installation in three major operating systems.
 
 * [Windows](install_on_windows.md)
