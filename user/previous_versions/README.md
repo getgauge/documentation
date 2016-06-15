@@ -4,7 +4,8 @@
 
 Documentation for previous releases of Gauge are listed below.
 
-- [v0.2.1](/documentation/user/current) (Current)
+- [v0.5.0](/documentation/user/current) (Current)
+- [v0.2.1](/documentation/user/0.2.1)
 - [v0.1.4](/documentation/user/0.1.4)
 - [v0.1.3](/documentation/user/0.1.3)
 - [v0.1.0](/documentation/user/0.1.0)
