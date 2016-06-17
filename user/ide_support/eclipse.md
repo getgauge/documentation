@@ -19,7 +19,7 @@ This plugin depends on XText 2.6 or newer. This plugin can be installed via an u
 1. Click on Help -> Install New Software
 2. Ensure that the below update sites are listed in the "Available Software Sites" list:
     - XText : http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/
-    - Gauge : https://dl.bintray.com/gauge/Gauge
+    - Gauge : https://dl.bintray.com/gauge/Gauge-Eclipse
 3. In the Dialog that opens up, choose the Gauge update site (entered above) in the "Work with" textbox, press enter.
 4. Eclipse should fetch and list the below
     ```
