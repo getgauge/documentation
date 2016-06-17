@@ -60,6 +60,13 @@
         { "from": "execution/tagged_execution.html", "to": "../advanced_readings/execution/tagged_execution.html" },
         { "from": "execution/parallel_execution.html", "to": "../advanced_readings/execution/parallel_execution.html" },
         { "from": "execution/execution_hooks.html", "to": "../language_features/execution_hooks.html" },
-        { "from": "plugins/list.html", "to": "plugins/" }
+        { "from": "plugins/list.html", "to": "../plugins/" },
+        { "from": "plugins/html_report_plugin.html", "to":"../reporting_features/html_report_plugin.html"},
+        { "from": "plugins/xml_report_plugin.html", "to":"../reporting_features/xml_report_plugin.html"},
+        { "from": "dependency_management/maven-plugin.html", "to": "../advanced_readings/dependency_management/maven-plugin.html"},
+        { "from": "dependency_management/gradle-plugin.html", "to": "../advanced_readings/dependency_management/gradle-plugin.html"},
+        { "from": "test_code/java/java.html", "to": "../../language_features/index.html"},
+        { "from": "test_code/csharp/csharp.html", "to": "../../language_features/index.html"},
+        { "from": "test_code/ruby/ruby.html", "to": "../../language_features/index.html"}
     ]
 }
