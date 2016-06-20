@@ -2,9 +2,9 @@
 
 ## Example Matrix
 
-* [Getting started in 3 steps](getting_started_3_steps.md)
+* [Getting started in 3 minutes](getting_started_3_steps.md)
 
-* [Clone the github project](http://git-scm.com/docs/git-clone) on your system. Follow the instructions mentioned on the project's page for setup.
+* [Clone](http://git-scm.com/docs/git-clone) the github project on your system. Follow the instructions mentioned on the project's page for setup.
 
 
 | Features            | [Java][1] | [C#][2] | [Ruby][3] |

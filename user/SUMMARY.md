@@ -87,6 +87,6 @@
   * [IntelliJ IDEA](troubleshooting/intellij.md)
 
 * [Tutorials](tutorials/README.md)
-  * [Java](tutorials/getting_started_3_steps.md)
+  * [Get started in 3 minutes](tutorials/getting_started_3_minutes.md)
 
 * [Previous Versions](previous_versions/README.md)
