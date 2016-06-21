@@ -39,6 +39,7 @@
     "redirects": [
       { "from": "configuration/README.html", "to": "../advanced_readings/configuration/index.html" },
       { "from": "configuration/configuring_proxy.html", "to": "../advanced_readings/configuration/configuring_proxy.html" },
+      { "from": "dependency_management/README.html", "to": "../advanced_readings/dependency_management/README.html"},
       { "from": "dependency_management/maven-plugin.html", "to": "../advanced_readings/dependency_management/maven-plugin.html"},
       { "from": "dependency_management/gradle-plugin.html", "to": "../advanced_readings/dependency_management/gradle-plugin.html"},
       { "from": "execution/index.html", "to": "../advanced_readings/execution/index.html" },
