@@ -39,7 +39,7 @@ These scenarios can also belong to different specifications.
 
 ### 1. Parse error in a spec file:
 
-This occurs if the spec file doesn't follow the expected [specifications](../../gauge_terminologies/specifications/README.md) syntax or parameters could not be resolved.
+This occurs if the spec file doesn't follow the expected [specifications](../../gauge_terminologies/specifications.md) syntax or parameters could not be resolved.
 
 **Example**
 

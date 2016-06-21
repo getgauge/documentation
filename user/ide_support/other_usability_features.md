@@ -3,7 +3,7 @@
 The intellij idea gauge plugin comes with more features to simplify writing specifications.
 
 ## Create Spec and Concept files
-* You can right-click in under any directory in the specs directory and create a new [specification](../specifications/README.md) or [concept](../specifications/concepts.md) file. They will be created with a template to get you started.
+* You can right-click in under any directory in the specs directory and create a new [specification](../gauge_terminologies/specifications.md) or [concept](../gauge_terminologies/concepts.md) file. They will be created with a template to get you started.
 
 ![create spec](intellij-screenshots/additional/create_spec_file.png "Spec creation")
 

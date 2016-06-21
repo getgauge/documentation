@@ -53,7 +53,7 @@
         { "from": "specifications/concepts.html", "to": "../gauge_terminologies/concepts.html" },
         { "from": "specifications/tear_down_steps.html", "to": "../gauge_terminologies/tear_down_steps.html" },
         { "from": "test_code/step_implementations.html", "to": "../language_features/step_implementations.html" },
-        { "from": "configuration/README.html", "to": "../advanced_readings/configuration/README.html" },
+        { "from": "configuration/README.html", "to": "../advanced_readings/configuration/index.html" },
         { "from": "configuration/configuring_proxy.html", "to": "../advanced_readings/configuration/configuring_proxy.html" },
         { "from": "execution/index.html", "to": "../advanced_readings/execution/index.html" },
         { "from": "execution/table_driven_execution.html", "to": "../advanced_readings/execution/table_driven_execution.html" },
