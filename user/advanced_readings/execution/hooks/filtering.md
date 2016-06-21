@@ -1,6 +1,6 @@
 # Filtering Hooks execution based on tags
 
-* You can specify tags for which the execution [hooks](language_features/execution_hooks.md) can run. This will ensure that the hook runs only on scenarios and specifications that have the required tags.
+* You can specify tags for which the execution [hooks](../../../language_features/execution_hooks.md) can run. This will ensure that the hook runs only on scenarios and specifications that have the required tags.
 
 {% codetabs name="Java", type="java" -%}
 // A before spec hook that runs when tag1 and tag2

@@ -6,8 +6,8 @@
 * [Setup a new pipeline on Go](http://www.go.cd/documentation/user/current/configuration/quick_pipeline_setup.html)
 
     ![pipeline](images/Gauge_Pipeline.png "gauge pipeline")
-* [Download](http://getgauge.io/download.html) and Install Gauge on the Go Agents
-* Install the required gauge [language plugin](../../installation/install_language_runners.md) on the Go agents.
+* [Download](http://getgauge.io/get-started/index.html) and Install Gauge on the Go Agents
+* Install the required gauge [language plugin](../../../installations/install_language_runners.md) on the Go agents.
 
 ### Create execution task
 
