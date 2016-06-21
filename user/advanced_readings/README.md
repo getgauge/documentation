@@ -3,7 +3,7 @@
 This is a collection of articles and sections for those who are familiar with the basics of Gauge and want to explore more.
 
 * Pre-requisite
-- [Gauge terminologies](gauge_terminologies/README.md)
+- [Gauge terminologies](../gauge_terminologies/README.md)
 
 * One can explore the following topics
 - [living documentation](living_documentation.md)

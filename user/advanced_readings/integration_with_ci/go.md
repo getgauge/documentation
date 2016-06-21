@@ -7,7 +7,7 @@
 
     ![pipeline](images/Gauge_Pipeline.png "gauge pipeline")
 * [Download](http://getgauge.io/download.html) and Install Gauge on the Go Agents
-* Install the required gauge [language plugin](../plugins/installation.md) on the Go agents.
+* Install the required gauge [language plugin](../../installation/install_language_runners.md) on the Go agents.
 
 ### Create execution task
 
@@ -15,7 +15,7 @@
 * If you want to run only a subset of specs, you can use [tags](../execution/tagged_execution.md). Eg. ```gauge --tags "tag1 & tag2" specs```
 * Adding a flag `-p` runs them in [parallel](../execution/parallel_execution.md).
 * Run against specific [environments](../managing_environments/README.md) using the ```--env``` flag
-* See the [Gauge CLI](../cli/README.md) for list of all flags that can be used.
+* See the [Gauge CLI](../../cli/README.md) for list of all flags that can be used.
 
     ![configuring](images/Configuring_Gauge.png "adding new task")
 

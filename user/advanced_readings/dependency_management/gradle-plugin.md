@@ -75,6 +75,4 @@ The following plugin properties can be additionally set:
 |additionalFlags| -PadditionalFlags="--verbose" | Add additional gauge flags to execution|
 
 
-See gauge's [command line interface](../cli/README.md) for list of all flags that be used with **-PadditionalFlags** option.
-
-
+See gauge's [command line interface](../../cli/README.md) for list of all flags that be used with **-PadditionalFlags** option.

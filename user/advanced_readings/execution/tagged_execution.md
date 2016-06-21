@@ -16,7 +16,7 @@ This executes only the scenarios and specifications which are tagged with `tag1`
 
 Example:
 
-![Spec](../specifications/images/spec.png "Specification")
+![Spec](../../gauge_terminologies/specifications/images/spec.png "Specification")
 
 In the above spec, if all the scenarios tagged with "search" and "admin" should be executed, then use the following command:
 
