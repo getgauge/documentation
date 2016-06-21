@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Installation · Gauge Documentation</title>
+        <title>Examples · Gauge Documentation</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -70,10 +70,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="execution.html" />
+    <link rel="next" href="getting_started_3_minutes.html" />
     
     
-    <link rel="prev" href="logs.html" />
+    <link rel="prev" href="../troubleshooting/intellij.html" />
     
 
     <link type="image/ico" rel="shortcut icon" href="//getgauge.io/assets/images/favicons/favicon.ico">
@@ -1169,9 +1169,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="troubleshooting.html">
+        <li class="chapter " data-level="1.11" data-path="../troubleshooting/troubleshooting.html">
             
-                <a href="troubleshooting.html">
+                <a href="../troubleshooting/troubleshooting.html">
             
                     
                     Troubleshooting
@@ -1183,9 +1183,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.11.1" data-path="logs.html">
+        <li class="chapter " data-level="1.11.1" data-path="../troubleshooting/logs.html">
             
-                <a href="logs.html">
+                <a href="../troubleshooting/logs.html">
             
                     
                     Logs
@@ -1196,9 +1196,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11.2" data-path="installation.html">
+        <li class="chapter " data-level="1.11.2" data-path="../troubleshooting/installation.html">
             
-                <a href="installation.html">
+                <a href="../troubleshooting/installation.html">
             
                     
                     Installation
@@ -1209,9 +1209,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.3" data-path="execution.html">
+        <li class="chapter " data-level="1.11.3" data-path="../troubleshooting/execution.html">
             
-                <a href="execution.html">
+                <a href="../troubleshooting/execution.html">
             
                     
                     Execution
@@ -1222,9 +1222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.4" data-path="intellij.html">
+        <li class="chapter " data-level="1.11.4" data-path="../troubleshooting/intellij.html">
             
-                <a href="intellij.html">
+                <a href="../troubleshooting/intellij.html">
             
                     
                     IntelliJ IDEA
@@ -1240,9 +1240,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12" data-path="../examples/">
+        <li class="chapter active" data-level="1.12" data-path="./">
             
-                <a href="../examples/">
+                <a href="./">
             
                     
                     Examples
@@ -1254,9 +1254,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="../examples/getting_started_3_minutes.html">
+        <li class="chapter " data-level="1.12.1" data-path="getting_started_3_minutes.html">
             
-                <a href="../examples/getting_started_3_minutes.html">
+                <a href="getting_started_3_minutes.html">
             
                     
                     Get started in 3 minutes
@@ -1315,7 +1315,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Installation</a>
+        <a href=".." >Examples</a>
     </h1>
 </div>
 
@@ -1330,68 +1330,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="troubleshooting">Troubleshooting</h1>
-<h2 id="gauge-installation">Gauge Installation</h2>
-<h3 id="windows">Windows</h3>
+                                <h1 id="example-projects">Example projects</h1>
+<h2 id="example-matrix">Example Matrix</h2>
 <ul>
-<li><p><code>GAUGE_ROOT</code> environment variable should be set to the gauge installation path.</p>
+<li><p><a href="getting_started_3_steps.md">Getting started in 3 minutes</a></p>
 </li>
-<li><p>The default installation location is <code>%ProgramFiles%\gauge</code>.</p>
-</li>
-<li><p><code>gauge_install_location\bin</code> should be in PATH to run from command line.</p>
-</li>
-<li><p>Gauge plugins are installed at <code>%APPDATA%\gauge\plugins</code> directory.</p>
-</li>
-<li><p><a href="http://windows.microsoft.com/en-in/windows-8/what-appdata-folder" _target="blank">APPDATA</a> directory is usually located at <code>C:\Users\USER_NAME\AppData\Roaming</code>.</p>
+<li><p><a href="http://git-scm.com/docs/git-clone" _target="blank">Clone</a> the github project on your system. Follow the instructions mentioned on the project&apos;s page for setup.</p>
 </li>
 </ul>
-<h3 id="mac-os-x">Mac OS X</h3>
-<ul>
-<li><p>The default installation location is <code>/usr/local/</code>.</p>
-</li>
-<li><p>On custom installation location set the environment variable <code>GAUGE_ROOT</code> to custom_install_location.</p>
-</li>
-<li><p><code>usr/local/bin/</code> should be in PATH.</p>
-</li>
-<li><p>Run <code>brew update</code> before installing the latest version of gauge.</p>
-</li>
-<li><p>If installation is failing <a href="https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/FAQ.md#how-do-i-update-my-local-packages" _target="blank">Upgrade homebrew</a></p>
-</li>
-<li><p>Gauge plugins are installed under <code>~/.gauge/plugins</code> directory.</p>
-</li>
-</ul>
-<h3 id="linux">Linux</h3>
-<ul>
-<li><p>The default installation location is <code>/usr/local/</code>.</p>
-</li>
-<li><p>On custom installation location Set the environment variable <code>GAUGE_ROOT</code> to custom_install_location.</p>
-</li>
-<li><p><code>usr/local/bin/</code> or <code>custom_install_location/bin</code> should be in PATH.</p>
-</li>
-<li><p>Gauge plugins are installed under <code>~/.gauge/plugins</code> directory.</p>
-</li>
-</ul>
-<h2 id="plugin-installation">Plugin installation</h2>
-<ul>
-<li>If <a href="../plugins/installation.md">plugin installation</a> fails due to a network connection issue, you can <strong>manually download</strong> the plugin distributable zip and install it using the <code>-f</code> flag.</li>
-</ul>
-<pre><code>gauge --install plugin_name -f path_to_zip_file
-</code></pre><p>Example:</p>
-<pre><code>gauge --install html-report -f html-report-1.0.3-darwin.x86.zip
-</code></pre><ul>
-<li>Find the plugin zip files under <code>Releases</code> section of the plugin github repositories. See the <a href="../plugins/">gauge plugins list</a> for plugin repositories details.</li>
-</ul>
-<h2 id="plugins-directory">Plugins directory</h2>
-<p>Plugins are installed in the <code>.gauge/plugins</code> directory in user&apos;s home. You can check this directory to manually install / uninstall plugins as well as to verify the installed plugins.</p>
-<p>The plugin installation directory for various operating systems are listed below.</p>
-<ul>
-<li><strong>Windows:</strong> <code>%APPDATA%\.gauge\plugins</code></li>
-<li><strong>Mac OS X:</strong> <code>~/.gauge/plugins</code></li>
-<li><strong>Linux:</strong> <code>~/.gauge/plugins</code></li>
-</ul>
-<h3 id="custom-plugin-install-location">Custom Plugin Install location</h3>
-<p>By default the plugins are stored at <code>%APPDATA%\gauge\plugins</code> for windows and <code>~/.gauge/plugins</code> in mac and linux.</p>
-<p>To install plugins at different location, set <code>GAUGE_HOME</code> environment variable to the custom location. After setting the <code>GAUGE_HOME</code> env, run the install command. The plugin will get installed at the <code>GAUGE_HOME</code> custom location.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Features</th>
+<th style="text-align:center">[Java][1]</th>
+<th style="text-align:center">[C#][2]</th>
+<th style="text-align:center">[Ruby][3]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Web app using Webdriver</td>
+<td style="text-align:center"><a href="https://github.com/getgauge/gauge-example-java" _target="blank">Yes</a></td>
+<td style="text-align:center"><a href="https://github.com/getgauge/gauge-example-ruby" _target="blank">Yes</a></td>
+<td style="text-align:center"><a href="https://github.com/getgauge/gauge-example-csharp" _target="blank">Yes</a></td>
+</tr>
+<tr>
+<td style="text-align:right">Web app using Sahi</td>
+<td style="text-align:center"><a href="https://github.com/getgauge/gauge-example-sahi" _target="blank">Yes</a></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1419,12 +1389,12 @@
 
             
                 
-                <a href="logs.html" class="navigation navigation-prev " aria-label="Previous page: Logs">
+                <a href="../troubleshooting/intellij.html" class="navigation navigation-prev " aria-label="Previous page: IntelliJ IDEA">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="execution.html" class="navigation navigation-next " aria-label="Next page: Execution">
+                <a href="getting_started_3_minutes.html" class="navigation navigation-next " aria-label="Next page: Get started in 3 minutes">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1435,7 +1405,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Installation","level":"1.11.2","depth":2,"next":{"title":"Execution","level":"1.11.3","depth":2,"path":"troubleshooting/execution.md","ref":"troubleshooting/execution.md","articles":[]},"previous":{"title":"Logs","level":"1.11.1","depth":2,"path":"troubleshooting/logs.md","ref":"troubleshooting/logs.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.1.1","anchorjs@1.1.1"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"placement":"left"},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":[{"from":"getting_started/download_and_install.html","to":"../installations/"},{"from":"getting_started/install_on_operating_system.html","to":"../installations/operating_system/"},{"from":"getting_started/install_on_windows.html","to":"../installations/operating_system/install_on_windows.html"},{"from":"getting_started/install_on_mac.html","to":"../installations/operating_system/install_on_mac.html"},{"from":"getting_started/install_on_linux.html","to":"../installations/operating_system/install_on_linux.html"},{"from":"getting_started/install_language_runners.html","to":"../installations/install_language_runners.html"},{"from":"plugins/installation.html","to":"../installations/install_plugins.html"},{"from":"getting_started/check_installation.html","to":"../installations/check_installation.html"},{"from":"specifications/index.html","to":"../gauge_terminologies/specifications.html"},{"from":"specifications/steps.html","to":"../gauge_terminologies/steps.html"},{"from":"specifications/contexts.html","to":"../gauge_terminologies/contexts.html"},{"from":"specifications/scenarios.html","to":"../gauge_terminologies/scenarios.html"},{"from":"specifications/parameters.html","to":"../gauge_terminologies/parameters/"},{"from":"specifications/concepts.html","to":"../gauge_terminologies/concepts.html"},{"from":"specifications/tear_down_steps.html","to":"../gauge_terminologies/tear_down_steps.html"},{"from":"test_code/step_implementations.html","to":"../language_features/step_implementations.html"},{"from":"configuration/README.html","to":"../advanced_readings/configuration/README.html"},{"from":"configuration/configuring_proxy.html","to":"../advanced_readings/configuration/configuring_proxy.html"},{"from":"execution/index.html","to":"../advanced_readings/execution/index.html"},{"from":"execution/table_driven_execution.html","to":"../advanced_readings/execution/table_driven_execution.html"},{"from":"execution/tagged_execution.html","to":"../advanced_readings/execution/tagged_execution.html"},{"from":"execution/parallel_execution.html","to":"../advanced_readings/execution/parallel_execution.html"},{"from":"execution/execution_hooks.html","to":"../language_features/execution_hooks.html"},{"from":"plugins/list.html","to":"../plugins/"},{"from":"plugins/html_report_plugin.html","to":"../reporting_features/html_report_plugin.html"},{"from":"plugins/xml_report_plugin.html","to":"../reporting_features/xml_report_plugin.html"},{"from":"dependency_management/maven-plugin.html","to":"../advanced_readings/dependency_management/maven-plugin.html"},{"from":"dependency_management/gradle-plugin.html","to":"../advanced_readings/dependency_management/gradle-plugin.html"},{"from":"test_code/java/java.html","to":"../../language_features/index.html"},{"from":"test_code/csharp/csharp.html","to":"../../language_features/index.html"},{"from":"test_code/ruby/ruby.html","to":"../../language_features/index.html"}],"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"troubleshooting/installation.md","mtime":"2016-06-21T06:26:08.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-21T06:29:10.459Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Examples","level":"1.12","depth":1,"next":{"title":"Get started in 3 minutes","level":"1.12.1","depth":2,"path":"examples/getting_started_3_minutes.md","ref":"examples/getting_started_3_minutes.md","articles":[]},"previous":{"title":"IntelliJ IDEA","level":"1.11.4","depth":2,"path":"troubleshooting/intellij.md","ref":"troubleshooting/intellij.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.1.1","anchorjs@1.1.1"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"placement":"left"},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":[{"from":"getting_started/download_and_install.html","to":"../installations/"},{"from":"getting_started/install_on_operating_system.html","to":"../installations/operating_system/"},{"from":"getting_started/install_on_windows.html","to":"../installations/operating_system/install_on_windows.html"},{"from":"getting_started/install_on_mac.html","to":"../installations/operating_system/install_on_mac.html"},{"from":"getting_started/install_on_linux.html","to":"../installations/operating_system/install_on_linux.html"},{"from":"getting_started/install_language_runners.html","to":"../installations/install_language_runners.html"},{"from":"plugins/installation.html","to":"../installations/install_plugins.html"},{"from":"getting_started/check_installation.html","to":"../installations/check_installation.html"},{"from":"specifications/index.html","to":"../gauge_terminologies/specifications.html"},{"from":"specifications/steps.html","to":"../gauge_terminologies/steps.html"},{"from":"specifications/contexts.html","to":"../gauge_terminologies/contexts.html"},{"from":"specifications/scenarios.html","to":"../gauge_terminologies/scenarios.html"},{"from":"specifications/parameters.html","to":"../gauge_terminologies/parameters/"},{"from":"specifications/concepts.html","to":"../gauge_terminologies/concepts.html"},{"from":"specifications/tear_down_steps.html","to":"../gauge_terminologies/tear_down_steps.html"},{"from":"test_code/step_implementations.html","to":"../language_features/step_implementations.html"},{"from":"configuration/README.html","to":"../advanced_readings/configuration/README.html"},{"from":"configuration/configuring_proxy.html","to":"../advanced_readings/configuration/configuring_proxy.html"},{"from":"execution/index.html","to":"../advanced_readings/execution/index.html"},{"from":"execution/table_driven_execution.html","to":"../advanced_readings/execution/table_driven_execution.html"},{"from":"execution/tagged_execution.html","to":"../advanced_readings/execution/tagged_execution.html"},{"from":"execution/parallel_execution.html","to":"../advanced_readings/execution/parallel_execution.html"},{"from":"execution/execution_hooks.html","to":"../language_features/execution_hooks.html"},{"from":"plugins/list.html","to":"../plugins/"},{"from":"plugins/html_report_plugin.html","to":"../reporting_features/html_report_plugin.html"},{"from":"plugins/xml_report_plugin.html","to":"../reporting_features/xml_report_plugin.html"},{"from":"dependency_management/maven-plugin.html","to":"../advanced_readings/dependency_management/maven-plugin.html"},{"from":"dependency_management/gradle-plugin.html","to":"../advanced_readings/dependency_management/gradle-plugin.html"},{"from":"test_code/java/java.html","to":"../../language_features/index.html"},{"from":"test_code/csharp/csharp.html","to":"../../language_features/index.html"},{"from":"test_code/ruby/ruby.html","to":"../../language_features/index.html"}],"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"examples/README.md","mtime":"2016-06-21T06:26:08.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-21T06:29:10.459Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
