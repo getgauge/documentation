@@ -7,4 +7,4 @@ $ unzip gauge-$VERSION-$OS.$ARCH.zip
 $ ./install.sh
 ```
 
-Having trouble with installation? Here is a detailed [installation troubleshooting guide](../troubleshooting/installation.md) that can help you.
+Having trouble with installation? Here is a detailed [installation troubleshooting guide](../../troubleshooting/installation.md) that can help you.
