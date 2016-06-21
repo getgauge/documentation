@@ -66,6 +66,7 @@
         { "from": "specifications/parameters.html", "to": "../gauge_terminologies/parameters/" },
         { "from": "specifications/concepts.html", "to": "../gauge_terminologies/concepts.html" },
         { "from": "specifications/tear_down_steps.html", "to": "../gauge_terminologies/tear_down_steps.html" },
+        { "from": "test_code/README.html", "to": "../language_features/README.html" },
         { "from": "test_code/step_implementations.html", "to": "../language_features/step_implementations.html" },
         { "from": "test_code/java/java.html", "to": "../../language_features/index.html"},
         { "from": "test_code/java/execution_hooks.html", "to": "../../advanced_readings/execution/context.html"},
