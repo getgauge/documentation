@@ -29,7 +29,10 @@
       * [Uninstall Plugins](installations/uninstall_plugin.md)
 
   * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
-  * [Project Structure](getting_started/project_structure.md)
+  * [Project Structure](getting_started/project_structure/README.md)
+    * [c sharp project files](getting_started/project_structure/c_project_files.md)
+    * [java project files](getting_started/project_structure/java_project_files.md)
+    * [ruby project files](getting_started/project_structure/ruby_project_files.md)
 
 * [Syntax Cheat Sheet](cheat_sheet/README.md)
 
