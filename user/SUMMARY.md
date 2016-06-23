@@ -73,7 +73,7 @@
      * [Execution hook filtering](advanced_readings/execution/hooks/filtering.md)
   * [Integration With CI](advanced_readings/integration_with_ci/README.md)
      * [Go](advanced_readings/integration_with_ci/go.md)
-  * [Environments](advanced_readings/managing_environments/README.md)
+  * [Environments](advanced_readings/managing_environments.md)
   * [Dependency Management](advanced_readings/dependency_management/README.md)
     * [maven-plugin](advanced_readings/dependency_management/maven-plugin.md)
     * [gradle-plugin](advanced_readings/dependency_management/gradle-plugin.md)

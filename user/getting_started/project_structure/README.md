@@ -18,7 +18,7 @@ The env directory contains multiple environment specific directories. Each direc
 
 A **env/default** directory is created on project initialization which contains the default environment variables set during execution.
 
-Learn more about [managing environments](../advanced_readings/managing_environments/README.md).
+Learn more about [managing environments](../advanced_readings/managing_environments.md).
 
 ### Specs Directory
 

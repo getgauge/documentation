@@ -11,7 +11,7 @@ This is a collection of articles and sections for those who are familiar with th
 - [dependency management](dependency_management/README.md)
 - [execution](execution/README.md)
 - [integration with ci](integration_with_ci/README.md)
-- [managing environments](managing_environments/README.md)
+- [managing environments](managing_environments.md)
 - [templates](gauge_templates.md)
 - [refactoring](refactoring.md)
 - [using Build Tools](using_build_tools.md)
