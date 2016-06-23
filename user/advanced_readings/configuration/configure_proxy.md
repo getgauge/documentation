@@ -1,4 +1,4 @@
-# Configuring Proxy
+# Configure Proxy
 
 Gauge connects to internet for downloading plugins, templates, etc. If you are behind a proxy, you will have to configure the proxy settings so that Gauge connects to internet via the proxy server.
 

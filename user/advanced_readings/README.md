@@ -8,8 +8,8 @@ This is a collection of articles and sections for those who are familiar with th
 * One can explore the following topics
 - [living documentation](living_documentation.md)
 - [configuration](configuration/README.md)
-- [dependency management](dependency_management/README.md)
-- [execution](execution/README.md)
+- [dependency management](dependency_management_plugins/README.md)
+- [execution](execution_types/README.md)
 - [integration with ci](ci_integration/README.md)
 - [managing environments](managing_environments.md)
 - [templates](gauge_templates.md)

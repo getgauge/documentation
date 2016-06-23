@@ -92,5 +92,5 @@ $ gauge --verbose specs/
 * [Command line flags](flags.md)
 * [Specifications](../gauge_terminologies/specifications.md)
 * [Scenarios](../gauge_terminologies/scenarios.md)
-* [Tagged execution](../advanced_readings/execution/tagged_execution.md)
-* [Parallel execution](../advanced_readings/execution/parallel_execution.md)
+* [Tagged execution](../advanced_readings/execution_types/tagged_execution.md)
+* [Parallel execution](../advanced_readings/execution_types/parallel_execution.md)

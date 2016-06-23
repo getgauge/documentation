@@ -20,7 +20,7 @@
 | [Refactor](../advanced_readings/refactoring.md)               | Yes       | Yes     | Yes       |
 | [Data stores](data_store.md)            | Yes       | Yes     | Yes       |
 | [Hooks](execution_hooks.md)                  | Yes       | Yes     | Yes       |
-| [Tagged hooks](../advanced_readings/execution/hooks/filtering.md)           | Yes       | Yes     | Yes       |
+| [Tagged hooks](../advanced_readings/execution_hooks/filtering.md)           | Yes       | Yes     | Yes       |
 | Sandboxed execution    | -         | Yes     | -         |
 | [Custom screenshot hook](custom_screenshots.md) | Yes       | Yes     | -         |
 

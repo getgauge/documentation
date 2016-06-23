@@ -46,7 +46,7 @@ Note: This will download and install the specific language plugin if it is not c
 
 ### Learn more
 * [Gauge project structure](project_structure.md)
-* [Executing Specs](../advanced_readings/execution/README.md)
+* [Executing Specs](../advanced_readings/execution_types/README.md)
 * [Specifications](../gauge_terminologies/specifications.md)
 * [Test code](../language_features/step_implementations.md)
 * [IDE support](../ide_support/README.md)
