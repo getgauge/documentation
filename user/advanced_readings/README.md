@@ -10,7 +10,7 @@ This is a collection of articles and sections for those who are familiar with th
 - [configuration](configuration/README.md)
 - [dependency management](dependency_management/README.md)
 - [execution](execution/README.md)
-- [integration with ci](integration_with_ci/README.md)
+- [integration with ci](ci_integration/README.md)
 - [managing environments](managing_environments.md)
 - [templates](gauge_templates.md)
 - [refactoring](refactoring.md)
