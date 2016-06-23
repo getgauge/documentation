@@ -28,6 +28,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -964,9 +968,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3" data-path="../advanced_readings/execution/">
+        <li class="chapter " data-level="1.10.3" data-path="../advanced_readings/execution_types/">
             
-                <a href="../advanced_readings/execution/">
+                <a href="../advanced_readings/execution_types/">
             
                     
                     Execution
@@ -978,9 +982,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.3.1" data-path="../advanced_readings/execution/table_driven_execution.html">
+        <li class="chapter " data-level="1.10.3.1" data-path="../advanced_readings/execution_types/table_driven_execution.html">
             
-                <a href="../advanced_readings/execution/table_driven_execution.html">
+                <a href="../advanced_readings/execution_types/table_driven_execution.html">
             
                     
                     Table Driven Execution
@@ -991,9 +995,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3.2" data-path="../advanced_readings/execution/tagged_execution.html">
+        <li class="chapter " data-level="1.10.3.2" data-path="../advanced_readings/execution_types/tagged_execution.html">
             
-                <a href="../advanced_readings/execution/tagged_execution.html">
+                <a href="../advanced_readings/execution_types/tagged_execution.html">
             
                     
                     Tagged Execution
@@ -1004,9 +1008,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3.3" data-path="../advanced_readings/execution/parallel_execution.html">
+        <li class="chapter " data-level="1.10.3.3" data-path="../advanced_readings/execution_types/parallel_execution.html">
             
-                <a href="../advanced_readings/execution/parallel_execution.html">
+                <a href="../advanced_readings/execution_types/parallel_execution.html">
             
                     
                     Parallel Execution
@@ -1017,9 +1021,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3.4" data-path="../advanced_readings/execution/hooks/context.html">
+        <li class="chapter " data-level="1.10.3.4" data-path="../advanced_readings/execution_hooks/context.html">
             
-                <a href="../advanced_readings/execution/hooks/context.html">
+                <a href="../advanced_readings/execution_hooks/context.html">
             
                     
                     Execution hook Context
@@ -1030,9 +1034,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.3.5" data-path="../advanced_readings/execution/hooks/filtering.html">
+        <li class="chapter " data-level="1.10.3.5" data-path="../advanced_readings/execution_hooks/filtering.html">
             
-                <a href="../advanced_readings/execution/hooks/filtering.html">
+                <a href="../advanced_readings/execution_hooks/filtering.html">
             
                     
                     Execution hook filtering
@@ -1093,9 +1097,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.6" data-path="../advanced_readings/dependency_management/">
+        <li class="chapter " data-level="1.10.6" data-path="../advanced_readings/dependency_management_plugins/">
             
-                <a href="../advanced_readings/dependency_management/">
+                <a href="../advanced_readings/dependency_management_plugins/">
             
                     
                     Dependency Management
@@ -1107,9 +1111,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.6.1" data-path="../advanced_readings/dependency_management/maven-plugin.html">
+        <li class="chapter " data-level="1.10.6.1" data-path="../advanced_readings/dependency_management_plugins/maven-plugin.html">
             
-                <a href="../advanced_readings/dependency_management/maven-plugin.html">
+                <a href="../advanced_readings/dependency_management_plugins/maven-plugin.html">
             
                     
                     maven-plugin
@@ -1120,9 +1124,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10.6.2" data-path="../advanced_readings/dependency_management/gradle-plugin.html">
+        <li class="chapter " data-level="1.10.6.2" data-path="../advanced_readings/dependency_management_plugins/gradle-plugin.html">
             
-                <a href="../advanced_readings/dependency_management/gradle-plugin.html">
+                <a href="../advanced_readings/dependency_management_plugins/gradle-plugin.html">
             
                     
                     gradle-plugin
@@ -1191,9 +1195,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.10.1" data-path="../advanced_readings/configuration/configuring_proxy.html">
+        <li class="chapter " data-level="1.10.10.1" data-path="../advanced_readings/configuration/configure_proxy.html">
             
-                <a href="../advanced_readings/configuration/configuring_proxy.html">
+                <a href="../advanced_readings/configuration/configure_proxy.html">
             
                     
                     Configuring Proxy
@@ -1375,7 +1379,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="concepts">Concepts</h1>
+                                <h1 id="concepts"><a name="concepts" class="plugin-anchor" href="#concepts"><i class="fa fa-link" aria-hidden="true"></i></a>Concepts</h1>
 <p>Concepts provide the ability to combine re-usable logical groups of steps into a single unit. It provides a higher level abstraction of a business intent by combining steps.</p>
 <p>They are defined in <strong><code>.cpt</code></strong> format files in the <code>specs</code> directory in the project. They can be inside nested directories inside the specs directory.</p>
 <ul>
@@ -1385,14 +1389,14 @@
 <blockquote>
 <p><strong>Note:</strong> A single .cpt file can contain multiple concept definitions.</p>
 </blockquote>
-<h2 id="defining-a-concept">Defining a concept</h2>
+<h2 id="defining-a-concept"><a name="defining-a-concept" class="plugin-anchor" href="#defining-a-concept"><i class="fa fa-link" aria-hidden="true"></i></a>Defining a concept</h2>
 <p>Create a <code>.cpt</code> file under specs directory with the concept definition.</p>
 <p>The concept definition contains the 2 parts:</p>
 <ul>
 <li>Concept header</li>
 <li>steps</li>
 </ul>
-<h3 id="concept-header">Concept header</h3>
+<h3 id="concept-header"><a name="concept-header" class="plugin-anchor" href="#concept-header"><i class="fa fa-link" aria-hidden="true"></i></a>Concept header</h3>
 <p>The concept header defines the name of the concept and the parameters that it takes. It is written in the markdown <strong><code>H1</code></strong> format.</p>
 <ul>
 <li>All parameters are defined in angular brackets <code>&lt; &gt;</code>.</li>
@@ -1400,14 +1404,14 @@
 </ul>
 <p>Example:</p>
 <pre><code># Concept name with &lt;param0&gt; and &lt;param1&gt;
-</code></pre><h3 id="steps">Steps</h3>
+</code></pre><h3 id="steps"><a name="steps" class="plugin-anchor" href="#steps"><i class="fa fa-link" aria-hidden="true"></i></a>Steps</h3>
 <p>The concept header is followed by the steps that are used inside the concept. They are defined in the usual <a href="steps.html">step</a> structure.</p>
 <ul>
 <li>All the parameters used from the concept header will be in <code>&lt; &gt;</code> brackets.</li>
 <li>Fixed static parameter values are written in quotes <code>&quot; &quot;</code>.</li>
 <li>Other concepts can also be called inside the concept definition.</li>
 </ul>
-<h2 id="example-of-concept-definition">Example of Concept definition</h2>
+<h2 id="example-of-concept-definition"><a name="example-of-concept-definition" class="plugin-anchor" href="#example-of-concept-definition"><i class="fa fa-link" aria-hidden="true"></i></a>Example of Concept definition</h2>
 <pre><code># login as user &lt;username&gt; and create project &lt;project_name&gt;
 
 * login as user &lt;username&gt; and &quot;password&quot;
@@ -1461,7 +1465,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Concepts","level":"1.3.6","depth":2,"next":{"title":"Contexts","level":"1.3.7","depth":2,"path":"gauge_terminologies/contexts.md","ref":"gauge_terminologies/contexts.md","articles":[]},"previous":{"title":"Tags","level":"1.3.5","depth":2,"path":"gauge_terminologies/tags.md","ref":"gauge_terminologies/tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.1.1","anchorjs@1.1.1"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"placement":"left"},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"redirects":[{"from":"advanced_readings/execution/context.html","to":"hooks/context.html"},{"from":"configuration/README.html","to":"../advanced_readings/configuration/index.html"},{"from":"configuration/configuring_proxy.html","to":"../advanced_readings/configuration/configuring_proxy.html"},{"from":"dependency_management/README.html","to":"../advanced_readings/dependency_management/README.html"},{"from":"dependency_management/maven-plugin.html","to":"../advanced_readings/dependency_management/maven-plugin.html"},{"from":"dependency_management/gradle-plugin.html","to":"../advanced_readings/dependency_management/gradle-plugin.html"},{"from":"execution/index.html","to":"../advanced_readings/execution/index.html"},{"from":"execution/table_driven_execution.html","to":"../advanced_readings/execution/table_driven_execution.html"},{"from":"execution/tagged_execution.html","to":"../advanced_readings/execution/tagged_execution.html"},{"from":"execution/parallel_execution.html","to":"../advanced_readings/execution/parallel_execution.html"},{"from":"execution/execution_hooks.html","to":"../language_features/execution_hooks.html"},{"from":"examples/examples.html","to":"index.html"},{"from":"getting_started/download_and_install.html","to":"../installations/"},{"from":"getting_started/install_on_operating_system.html","to":"../installations/operating_system/"},{"from":"getting_started/install_on_windows.html","to":"../installations/operating_system/install_on_windows.html"},{"from":"getting_started/install_on_mac.html","to":"../installations/operating_system/install_on_mac.html"},{"from":"getting_started/install_on_linux.html","to":"../installations/operating_system/install_on_linux.html"},{"from":"getting_started/install_language_runners.html","to":"../installations/install_language_runners.html"},{"from":"getting_started/check_installation.html","to":"../installations/check_installation.html"},{"from":"getting_started/gauge_templates.html","to":"../advanced_readings/gauge_templates.html"},{"from":"integration_with_ci/index.html","to":"../advanced_readings/ci_integration/index.html"},{"from":"managing_environments/index.html","to":"../advanced_readings/managing_environments.html"},{"from":"plugins/installation.html","to":"../installations/install_plugins.html"},{"from":"plugins/README.html","to":"index.html"},{"from":"plugins/list.html","to":"../plugins/"},{"from":"plugins/html_report_plugin.html","to":"../reporting_features/html_report_plugin.html"},{"from":"plugins/xml_report_plugin.html","to":"../reporting_features/xml_report_plugin.html"},{"from":"specifications/index.html","to":"../gauge_terminologies/specifications.html"},{"from":"specifications/steps.html","to":"../gauge_terminologies/steps.html"},{"from":"specifications/contexts.html","to":"../gauge_terminologies/contexts.html"},{"from":"specifications/scenarios.html","to":"../gauge_terminologies/scenarios.html"},{"from":"specifications/parameters.html","to":"../gauge_terminologies/parameters/"},{"from":"specifications/concepts.html","to":"../gauge_terminologies/concepts.html"},{"from":"specifications/tags.html","to":"../gauge_terminologies/tags.html"},{"from":"specifications/tear_down_steps.html","to":"../gauge_terminologies/tear_down_steps.html"},{"from":"test_code/README.html","to":"../language_features/index.html"},{"from":"test_code/csharp/csharp.html","to":"../../language_features/index.html"},{"from":"test_code/csharp/c_project_files.html","to":"../../getting_started/project_structure/c_project_files.html"},{"from":"test_code/csharp/java_project_files.html","to":"../../getting_started/project_structure/java_project_files.html"},{"from":"test_code/csharp/ruby_project_files.html","to":"../../getting_started/project_structure/ruby_project_files.html"},{"from":"test_code/custom_messages_in_reports.html","to":"../language_features/custom_messages.html"},{"from":"test_code/custom_screenshots_support.html","to":"../language_features/custom_screenshots.html"},{"from":"test_code/configuration.html","to":"../language_features/configuration.html"},{"from":"test_code/data_store_to_share_data.html","to":"../language_features/data_store.html"},{"from":"test_code/java/java.html","to":"../../language_features/index.html"},{"from":"test_code/java/execution_hooks.html","to":"../../advanced_readings/execution/hooks/context.html"},{"from":"test_code/ruby/ruby.html","to":"../../language_features/index.html"},{"from":"test_code/step_implementations.html","to":"../language_features/step_implementations.html"},{"from":"test_code/using_build_tools.html","to":"advanced_readings/using_build_tools.html"}],"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"gauge_terminologies/concepts.md","mtime":"2016-06-23T05:47:08.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-23T05:54:31.240Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Concepts","level":"1.3.6","depth":2,"next":{"title":"Contexts","level":"1.3.7","depth":2,"path":"gauge_terminologies/contexts.md","ref":"gauge_terminologies/contexts.md","articles":[]},"previous":{"title":"Tags","level":"1.3.5","depth":2,"path":"gauge_terminologies/tags.md","ref":"gauge_terminologies/tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.0","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/user/current/","redirects":[{"from":"advanced_readings/execution/context.html","to":"advanced_readings/execution_hooks/context.html"},{"from":"configuration/index.html","to":"advanced_readings/configuration/index.html"},{"from":"configuration/configuring_proxy.html","to":"advanced_readings/configuration/configure_proxy.html"},{"from":"dependency_management/index.html","to":"advanced_readings/dependency_management_plugins/index.html"},{"from":"dependency_management/maven-plugin.html","to":"advanced_readings/dependency_management_plugins/maven-plugin.html"},{"from":"dependency_management/gradle-plugin.html","to":"advanced_readings/dependency_management_plugins/gradle-plugin.html"},{"from":"execution/index.html","to":"advanced_readings/execution_types/index.html"},{"from":"execution/table_driven_execution.html","to":"advanced_readings/execution_types/table_driven_execution.html"},{"from":"execution/tagged_execution.html","to":"advanced_readings/execution_types/tagged_execution.html"},{"from":"execution/parallel_execution.html","to":"advanced_readings/execution_types/parallel_execution.html"},{"from":"execution/execution_hooks.html","to":"language_features/execution_hooks.html"},{"from":"examples/examples.html","to":"examples/index.html"},{"from":"getting_started/download_and_install.html","to":"installations/"},{"from":"getting_started/install_on_operating_system.html","to":"installations/operating_system/"},{"from":"getting_started/install_on_windows.html","to":"installations/operating_system/install_on_windows.html"},{"from":"getting_started/install_on_mac.html","to":"installations/operating_system/install_on_mac.html"},{"from":"getting_started/install_on_linux.html","to":"installations/operating_system/install_on_linux.html"},{"from":"getting_started/install_language_runners.html","to":"installations/install_language_runners.html"},{"from":"getting_started/check_installation.html","to":"installations/check_installation.html"},{"from":"getting_started/gauge_templates.html","to":"advanced_readings/gauge_templates.html"},{"from":"integration_with_ci/index.html","to":"advanced_readings/ci_integration/index.html"},{"from":"managing_environments/index.html","to":"advanced_readings/managing_environments.html"},{"from":"plugins/installation.html","to":"installations/install_plugins.html"},{"from":"plugins/index.html","to":"plugins/index.html"},{"from":"plugins/list.html","to":"plugins/"},{"from":"plugins/html_report_plugin.html","to":"reporting_features/html_report_plugin.html"},{"from":"plugins/xml_report_plugin.html","to":"reporting_features/xml_report_plugin.html"},{"from":"specifications/index.html","to":"gauge_terminologies/specifications.html"},{"from":"specifications/steps.html","to":"gauge_terminologies/steps.html"},{"from":"specifications/contexts.html","to":"gauge_terminologies/contexts.html"},{"from":"specifications/scenarios.html","to":"gauge_terminologies/scenarios.html"},{"from":"specifications/parameters.html","to":"gauge_terminologies/parameters/"},{"from":"specifications/concepts.html","to":"gauge_terminologies/concepts.html"},{"from":"specifications/tags.html","to":"gauge_terminologies/tags.html"},{"from":"specifications/tear_down_steps.html","to":"gauge_terminologies/tear_down_steps.html"},{"from":"test_code/index.html","to":"language_features/index.html"},{"from":"test_code/csharp/csharp.html","to":"language_features/index.html"},{"from":"test_code/csharp/c_project_files.html","to":"getting_started/project_structure/c_project_files.html"},{"from":"test_code/csharp/java_project_files.html","to":"getting_started/project_structure/java_project_files.html"},{"from":"test_code/csharp/ruby_project_files.html","to":"getting_started/project_structure/ruby_project_files.html"},{"from":"test_code/custom_messages_in_reports.html","to":"language_features/custom_messages.html"},{"from":"test_code/custom_screenshots_support.html","to":"language_features/custom_screenshots.html"},{"from":"test_code/configuration.html","to":"language_features/configuration.html"},{"from":"test_code/data_store_to_share_data.html","to":"language_features/data_store.html"},{"from":"test_code/java/java.html","to":"language_features/index.html"},{"from":"test_code/java/execution_hooks.html","to":"advanced_readings/execution_hooks/context.html"},{"from":"test_code/ruby/ruby.html","to":"language_features/index.html"},{"from":"test_code/step_implementations.html","to":"language_features/step_implementations.html"},{"from":"test_code/using_build_tools.html","to":"advanced_readings/using_build_tools.html"}]},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"gauge_terminologies/concepts.md","mtime":"2016-06-23T15:17:23.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-23T15:34:24.866Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1491,14 +1495,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
-        
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
         
     
         
