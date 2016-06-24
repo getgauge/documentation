@@ -3,9 +3,9 @@
 You can use Gauge with any of the build tools that you like.
 
 Here are the sample build files for
-1. [Maven](#a-namemavenamaven)
-2. [Gradle](#a-namegradleagradle)
-3. [Ant](#a-nameantaant-task)
+1. [Maven](#maven)
+2. [Gradle](#gradle)
+3. [Ant](#ant-task)
 
 For more details, please take a look at the [Dependency Management](dependency_management_plugins/README.md) section.
 
