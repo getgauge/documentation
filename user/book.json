@@ -11,7 +11,7 @@
         "codetabs@1.0.0",
         "expandable-chapters@0.1.7",
         "bulk-redirect@0.2.0",
-        "anchorjs@1.1.1"
+        "anchors@0.7.0"
     ],
     "pluginsConfig": {
         "ga": {
