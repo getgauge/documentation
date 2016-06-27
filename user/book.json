@@ -18,14 +18,14 @@
             "token": "UA-54838477-1"
         },
         "bulk-redirect": {
-            "basepath": "/documentation/user/current/",
+            "basepath": "/",
             "redirects": [
                 { "from": "advanced_readings/execution/context.html", "to": "advanced_readings/execution_hooks/context.html" },
                 { "from": "configuration/index.html", "to": "advanced_readings/configuration/index.html" },
                 { "from": "configuration/configuring_proxy.html", "to": "advanced_readings/configuration/configure_proxy.html" },
-                { "from": "dependency_management/index.html", "to": "advanced_readings/dependency_management_plugins/index.html"},
-                { "from": "dependency_management/maven-plugin.html", "to": "advanced_readings/dependency_management_plugins/maven-plugin.html"},
-                { "from": "dependency_management/gradle-plugin.html", "to": "advanced_readings/dependency_management_plugins/gradle-plugin.html"},
+                { "from": "dependency_management/index.html", "to": "advanced_readings/dependency_management/index.html"},
+                { "from": "dependency_management/maven-plugin.html", "to": "advanced_readings/dependency_management/maven-plugin.html"},
+                { "from": "dependency_management/gradle-plugin.html", "to": "advanced_readings/dependency_management/gradle-plugin.html"},
                 { "from": "execution/index.html", "to": "advanced_readings/execution_types/index.html" },
                 { "from": "execution/table_driven_execution.html", "to": "advanced_readings/execution_types/table_driven_execution.html" },
                 { "from": "execution/tagged_execution.html", "to": "advanced_readings/execution_types/tagged_execution.html" },
@@ -67,7 +67,13 @@
                 { "from": "test_code/java/execution_hooks.html", "to": "advanced_readings/execution_hooks/context.html"},
                 { "from": "test_code/ruby/ruby.html", "to": "language_features/index.html"},
                 { "from": "test_code/step_implementations.html", "to": "language_features/step_implementations.html" },
-                { "from": "test_code/using_build_tools.html", "to": "advanced_readings/using_build_tools.html"}
+                { "from": "test_code/using_build_tools.html", "to": "advanced_readings/using_build_tools.html"},
+                { "from": "cli/README.html", "to": "cli/index.html"},
+                { "from": "advanced_readings/dependency_management/README.html", "to": "advanced_readings/dependency_management/index.html"},
+                { "from": "advanced_readings/installations/check_installation.html", "to": "installations/check_installation.html"},
+                { "from": "advanced_readings/language_features/step_implementations.html", "to": "language_features/step_implementations.html"},
+                { "from": "advanced_readings/advanced_readings/execution/tagged_execution.html", "to": "advanced_readings/execution_types/tagged_execution.html"},
+                { "from": "advanced_readings/installations/install_language_runners.html", "to": "installations/install_language_runners.html"}
             ]
       }
     },

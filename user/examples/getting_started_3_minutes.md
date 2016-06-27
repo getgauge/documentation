@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * JDK 6+ / .NET framework / Ruby 2.0+ is installed
-* [Gauge](../../installations/operating_system/README.md) is installed.
+* [Gauge](../../installations/operating_system) is installed.
 * Install the language runner
 {% codetabs name="Java", type="java" -%}
 $ gauge --install java
