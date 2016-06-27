@@ -7,8 +7,8 @@ Some of the **key features** of Gauge that make it stand unique include:
 
 * A rich markup based on [markdown](https://en.wikipedia.org/wiki/Markdown)
 * Simple, Flexible and Rich Syntax
-* Business Language Tests : Supports the concept of executable documentation
-* Consistent Cross Platform/Language Support for writing test code. Currently [supported languages](language_features/README.md).
+* Business Language Tests : Supports the concept of [executable documentation](advanced_readings/living_documentation.md)
+* Consistent Cross Platform/Language Support for writing test code. Currently [supported languages](installations/install_language_runners.md).
 * Open Source, so it could be shared freely and improved by others as well
 * A modular architecture with [plugin](plugins/README.md) support.
 * Extensible through [plugins](plugins/README.md) and Hackable
