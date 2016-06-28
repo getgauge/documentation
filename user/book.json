@@ -19,7 +19,7 @@
         },
         "bulk-redirect": {
             "basepath": "/documentation/user/current/",
-            "redirectsFile": "redirects.json"
+            "redirectsFile": "user/redirects.json"
       }
     },
     "links": {
