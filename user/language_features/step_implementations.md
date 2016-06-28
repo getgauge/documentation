@@ -41,10 +41,10 @@ end
 
 ````
 * Create following "hobbit" characters
-|id |   name  |
-|---|---------|
-|123| frodo |
-|456| bilbo  |
+|id |name   |
+|---|-------|
+|123|frodo  |
+|456|bilbo  |
 |789|samwise|
 ````
 
