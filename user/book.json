@@ -18,7 +18,7 @@
             "token": "UA-54838477-1"
         },
         "bulk-redirect": {
-            "basepath": "/",
+            "basepath": "/documentation/user/current/",
             "redirects": [
                 { "from": "advanced_readings/execution/context.html", "to": "advanced_readings/execution_hooks/context.html" },
                 { "from": "configuration/index.html", "to": "advanced_readings/configuration/index.html" },
