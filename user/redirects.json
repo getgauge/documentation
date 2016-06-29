@@ -53,6 +53,7 @@
         { "from": "advanced_readings/installations/check_installation.html", "to": "installations/check_installation.html"},
         { "from": "advanced_readings/language_features/step_implementations.html", "to": "language_features/step_implementations.html"},
         { "from": "advanced_readings/advanced_readings/execution/tagged_execution.html", "to": "advanced_readings/execution_types/tagged_execution.html"},
-        { "from": "advanced_readings/installations/install_language_runners.html", "to": "installations/install_language_runners.html"}
+        { "from": "advanced_readings/installations/install_language_runners.html", "to": "installations/install_language_runners.html"},
+        { "from": "language_features/README.html", "to": "language_features/"}
     ]
 }
