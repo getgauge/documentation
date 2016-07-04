@@ -79,6 +79,7 @@
     * [gradle-plugin](advanced_readings/dependency_management/gradle-plugin.md)
   * [Step alias](advanced_readings/step_alias.md)
   * [Re-run Failed Tests](advanced_readings/re_run_failed_tests.md)
+  * [Gauge spectacle](advanced_readings/spectacle.md)
   * [Refactoring](advanced_readings/refactoring.md)
   * [Using Build Tools](advanced_readings/using_build_tools.md)
   * [Gauge Configuration](advanced_readings/configuration/README.md)
