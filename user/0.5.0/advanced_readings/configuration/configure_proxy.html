@@ -11,9 +11,11 @@
         
         
         
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../styles/embed.css">
-    
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="../../javascript/main.js""></script>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../../styles/embed.css">
+  
     
     <link rel="stylesheet" href="../../gitbook/style.css">
 
@@ -63,7 +65,7 @@
 
 
         
-    
+  
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -80,55 +82,54 @@
     <link rel="prev" href="./" />
     
 
-    <link type="image/ico" rel="shortcut icon" href="//getgauge.io/assets/images/favicons/favicon.ico">
+  <link type="image/ico" rel="shortcut icon" href="//getgauge.io/assets/images/favicons/favicon.ico">
 
     </head>
     <body>
         
-<header class="dark">
-    <nav class="nav-wrapper">
-    <a class="logo" href="index.html">
-        <img alt="Gauge logo" height="38" id="thumb" src="//getgauge.io/assets/images/Gauge_logo.svg" width="150">
+  <header class="top">
+    <a class="logo" href="http://getgauge.io/index.html">
+      <img alt="Gauge logo" height="38" id="thumb" src="//localhost:4567/assets/images/Gauge_logo.svg" width="150">
     </a>
-    <div class="beta">
-        <img alt="BETA" src="//getgauge.io/assets/images/svg/icon_beta.svg">
-    </div>
-    <a class="navigation-menu-button" href="javascript:void(0)">
-        <i class="fa fa-bars fa-2x"></i>
-    </a>
-    <ul class="header-nav">
-        <li class="nav-link nav-drilldown">
-        <a href="http://getgauge.io/get-started/index.html">Get Started <span class="expand"><i class="fa fa-plus"></i></span></a>
-        <ul class="nav-drilldown-list">
+    <span class="beta">
+      Beta
+    </span>
+    <nav class="mainnav">
+      <ul class="level0">
+        <li class="dropdown">
+          <a class="link-get-started" href="http://getgauge.io/get-started/index.html">Get Started</a>
+          <ul class="level1">
             <li>
-            <a href="http://getgauge.io/get-started/index.html">Download</a>
+              <a class="link-download" href="http://getgauge.io/get-started/index.html">Download</a>
             </li>
             <li>
-            <a href="plugins/index.html">Plugins</a>
+              <a class="link-plugins" href="http://getgauge.io/plugins/index.html">Plugins</a>
             </li>
-        </ul>
+          </ul>
         </li>
-        <li class="nav-link nav-drilldown">
-        <a href="http://getgauge.io/contribute/index.html">Contribute <span class="expand"><i class="fa fa-plus"></i></span></a>
-        <ul class="nav-drilldown-list">
+        <li class="dropdown">
+          <a class="toplink-contribute" href="http://getgauge.io/contribute/index.html">Contribute</a>
+          <ul class="level1">
             <li>
-            <a href="http://getgauge.io/contribute/index.html">Contribute</a>
+              <a class="link-contribute" href="http://getgauge.io/contribute/index.html">Contribute</a>
             </li>
             <li>
-            <a href="http://getgauge.io/cla/">CLA</a>
+              <a class="link-cla" href="http://getgauge.io/cla/index.html">CLA</a>
             </li>
-        </ul>
+          </ul>
         </li>
-        <li class="nav-link">
-        <a href="http://getgauge.io/documentation/user/current/" target="_blank">Documentation</a>
-        </li>
-        <li class="nav-link-short">
-        <a alt="Gauge on Github" href="//github.com/getgauge/gauge" target="_blank">
-            <i class="fa fa-github"></i>
-        </a>
-        </li>
+        <li>
+        <a class="link-documentation" href="http://getgauge.io/documentation/user/current/" target="_blank">Documentation</a>
+      </li>
+<!--       <li>
+        <a class="link-blog" href="http://getgauge.io/blog/index.html">Blog</a>
+      </li> -->
     </ul>
-    </nav>
+  </nav>
+  <button class="navbtn menu collapse">
+  <span></span>
+  </button>
+  <a alt="Gauge on Github" class="github-fork-ribbon" href="https://github.com/getgauge/gauge" target="_blank" title="Fork me on GitHub"></a>
 </header>
 
 <div class="book">
@@ -1443,20 +1444,19 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Configuring Proxy","level":"1.10.11.1","depth":3,"next":{"title":"Troubleshooting","level":"1.11","depth":1,"path":"troubleshooting/troubleshooting.md","ref":"troubleshooting/troubleshooting.md","articles":[{"title":"Logs","level":"1.11.1","depth":2,"path":"troubleshooting/logs.md","ref":"troubleshooting/logs.md","articles":[]},{"title":"Installation","level":"1.11.2","depth":2,"path":"troubleshooting/installation.md","ref":"troubleshooting/installation.md","articles":[]},{"title":"Execution","level":"1.11.3","depth":2,"path":"troubleshooting/execution.md","ref":"troubleshooting/execution.md","articles":[]},{"title":"IntelliJ IDEA","level":"1.11.4","depth":2,"path":"troubleshooting/intellij.md","ref":"troubleshooting/intellij.md","articles":[]}]},"previous":{"title":"Gauge Configuration","level":"1.10.11","depth":2,"path":"advanced_readings/configuration/README.md","ref":"advanced_readings/configuration/README.md","articles":[{"title":"Configuring Proxy","level":"1.10.11.1","depth":3,"path":"advanced_readings/configuration/configure_proxy.md","ref":"advanced_readings/configuration/configure_proxy.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"advanced_readings/configuration/configure_proxy.md","mtime":"2016-07-04T04:27:58.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-04T04:28:14.688Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Configuring Proxy","level":"1.10.11.1","depth":3,"next":{"title":"Troubleshooting","level":"1.11","depth":1,"path":"troubleshooting/troubleshooting.md","ref":"troubleshooting/troubleshooting.md","articles":[{"title":"Logs","level":"1.11.1","depth":2,"path":"troubleshooting/logs.md","ref":"troubleshooting/logs.md","articles":[]},{"title":"Installation","level":"1.11.2","depth":2,"path":"troubleshooting/installation.md","ref":"troubleshooting/installation.md","articles":[]},{"title":"Execution","level":"1.11.3","depth":2,"path":"troubleshooting/execution.md","ref":"troubleshooting/execution.md","articles":[]},{"title":"IntelliJ IDEA","level":"1.11.4","depth":2,"path":"troubleshooting/intellij.md","ref":"troubleshooting/intellij.md","articles":[]}]},"previous":{"title":"Gauge Configuration","level":"1.10.11","depth":2,"path":"advanced_readings/configuration/README.md","ref":"advanced_readings/configuration/README.md","articles":[{"title":"Configuring Proxy","level":"1.10.11.1","depth":3,"path":"advanced_readings/configuration/configure_proxy.md","ref":"advanced_readings/configuration/configure_proxy.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"advanced_readings/configuration/configure_proxy.md","mtime":"2016-07-04T05:28:50.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-04T05:29:06.858Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
 
 <footer>
-    <section class="powered-by">
+  <section class="powered-by">
     <a href="http://www.thoughtworks.com/products">
-        <img alt="Thoughtworks logo" height="44" src="//getgauge.io/assets/images/thoughtworks_logo.svg">
+      <img alt="Thoughtworks logo" height="44" src="//getgauge.io/assets/images/thoughtworks_logo.svg">
     </a>
     <div class="disclamer">Gauge is an open source project, sponsored by ThoughtWorks Inc. under the GPL License, Version 3.0</div>
-
     <script src="//getgauge.io/assets/javascripts/application.js" async="true"></script>
-    </section>
+  </section>
 </footer>
 
         
