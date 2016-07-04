@@ -1403,6 +1403,7 @@
 <li><a href="#run-configuration">Run configurations</a></li>
 <li><a href="#rephrase-steps">Rephrase steps</a></li>
 <li><a href="#find-usages">Find Usages</a></li>
+<li><a href="#step-name-template">Step name template</a></li>
 <li>Navigation from step to implementation (cmd/ctrl + b)</li>
 </ul>
 <h2 id="project-creation"><a name="project-creation" class="plugin-anchor" href="#project-creation"><i class="fa fa-link" aria-hidden="true"></i></a>Project Creation</h2>
@@ -1493,7 +1494,45 @@
 <li>Press <strong>cmd/ctrl+alt+F7</strong> on step/concept to see the usages.</li>
 </ul>
 <p><img src="intellij-screenshots/find_usages/find_usages.gif" alt="find usages" title="find usages"></p>
-
+<h2 id="step-name-template"><a name="step-name-template" class="plugin-anchor" href="#step-name-template"><i class="fa fa-link" aria-hidden="true"></i></a>Step Name Template</h2>
+<p>The step name template is a simple generic representation for a step. It is used while defining language implementations for steps.</p>
+<p>The Step template contains:</p>
+<ul>
+<li>The name of the step as it is used.</li>
+<li>The parameters are replaced by placeholders in angular brackets <code>&lt; &gt;</code>. The placeholder value determines what the parameter represents.</li>
+<li>Additional <code>&lt;table&gt;</code>  value is added if a step contains a table parameter.</li>
+</ul>
+<h3 id="examples"><a name="examples" class="plugin-anchor" href="#examples"><i class="fa fa-link" aria-hidden="true"></i></a>Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Step Usage</th>
+<th>Step name template</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>create a user</td>
+<td>create a user</td>
+</tr>
+<tr>
+<td>create a user &quot;prateek&quot;</td>
+<td>create a user &lt; username &gt;</td>
+</tr>
+<tr>
+<td>Verify text &lt; file:test.txt &gt;</td>
+<td>Verify text &lt; email text &gt;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For Steps with tables:</strong></p>
+<pre><code>| Step usage                |       Step name template             |
+|---------------------------|--------------------------------------|
+| Create following users    |    Create following users &lt;table&gt;    |
+|   |user-id|  name   |     |                                      |
+|   |  123  | vishnu  |     |                                      |
+|   |  456  |navaneeth|     |                                      |
+</code></pre>
                                 
                                 </section>
                             
@@ -1536,7 +1575,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Features","level":"1.6.2.1.1","depth":4,"next":{"title":"Other Usability Features","level":"1.6.2.1.2","depth":4,"path":"ide_support/other_usability_features.md","ref":"ide_support/other_usability_features.md","articles":[]},"previous":{"title":"IntelliJ IDEA","level":"1.6.2.1","depth":3,"path":"ide_support/intellij_idea.md","ref":"ide_support/intellij_idea.md","articles":[{"title":"Features","level":"1.6.2.1.1","depth":4,"path":"ide_support/features.md","ref":"ide_support/features.md","articles":[]},{"title":"Other Usability Features","level":"1.6.2.1.2","depth":4,"path":"ide_support/other_usability_features.md","ref":"ide_support/other_usability_features.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"ide_support/features.md","mtime":"2016-07-04T03:50:50.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-04T03:51:07.922Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Features","level":"1.6.2.1.1","depth":4,"next":{"title":"Other Usability Features","level":"1.6.2.1.2","depth":4,"path":"ide_support/other_usability_features.md","ref":"ide_support/other_usability_features.md","articles":[]},"previous":{"title":"IntelliJ IDEA","level":"1.6.2.1","depth":3,"path":"ide_support/intellij_idea.md","ref":"ide_support/intellij_idea.md","articles":[{"title":"Features","level":"1.6.2.1.1","depth":4,"path":"ide_support/features.md","ref":"ide_support/features.md","articles":[]},{"title":"Other Usability Features","level":"1.6.2.1.2","depth":4,"path":"ide_support/other_usability_features.md","ref":"ide_support/other_usability_features.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"sidebar":{"Home":"http://getgauge.io","Github":"http://github.com/getgauge/gauge"},"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"ide_support/features.md","mtime":"2016-07-04T04:27:58.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-04T04:28:14.688Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
