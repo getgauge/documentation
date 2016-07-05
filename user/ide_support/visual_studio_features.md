@@ -2,7 +2,7 @@
 
 * [Project Creation](#project-creation)
 * [Syntax Highlighting](#syntax-highlighting)
-* [Auto Completing](#)
+* [Auto Completing](#auto-completing)
 * [Navigation](#navigation)
 * [Smart Tag](#smart-tag)
 * [Test Runner](#test-runner)
