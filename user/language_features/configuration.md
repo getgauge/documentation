@@ -1,7 +1,7 @@
 # Configuration
 
 * [Java](#java)
-* [C-Sharp](#c-sharp)
+* [CSharp](#csharp)
 * [Ruby](#ruby)
 
 ## Java
@@ -54,7 +54,7 @@ gauge_clear_state_level = spec
 ```
 This clears the objects after the execution of each specification, so that new objects are created for next execution.
 
-## C-Sharp
+## CSharp
 
 ## Ruby
 
