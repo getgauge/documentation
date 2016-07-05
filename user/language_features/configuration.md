@@ -6,7 +6,7 @@
 * [Ruby](#ruby)
 
 ## General
-Configuration properties set here will be available to the test execution as environment variables. Please see [Environments](#../advanced_readings/managing_environments.md) for more details.
+Configuration properties set here will be available to the test execution as environment variables. Please see [Environments](#../../advanced_readings/managing_environments.md) for more details.
 
 Properties are defined in the following format.
 ````
