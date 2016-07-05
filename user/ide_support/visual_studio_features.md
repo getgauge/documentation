@@ -31,6 +31,7 @@ $ gauge --init csharp
 
 This creates `<project_name>.sln` file which can be opened with Visual Studio.
 
+[top](#)
 ## Syntax Highlighting
 
 Gauge specs are in [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax. This plugin highlights Specifications, Scenarios, Steps and Tags.
