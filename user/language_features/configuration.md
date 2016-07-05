@@ -56,5 +56,7 @@ This clears the objects after the execution of each specification, so that new o
 
 ## CSharp
 
+CSharp Specific configuration changes can be made in the ***env/default/default.properties*** file.
+
 ## Ruby
 
