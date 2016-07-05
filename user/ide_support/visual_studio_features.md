@@ -1,5 +1,6 @@
 # Features
 
+* [Create a project](#)
 ## Creating a new Gauge Project
 
 - Go to `File` -> `New Project`.
