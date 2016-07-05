@@ -1,7 +1,15 @@
 # Features
 
-* [Create a project](#)
-## Creating a new Gauge Project
+* [Project Creation](#project-creation)
+* [Syntax Highlighting](#syntax-highlighting)
+* [Auto Completing](#)
+* [Navigation](#)
+* [Smart Tag](#)
+* [Test Runner](#)
+* [Create Spec and Concept files](#)
+
+
+## Project Creation
 
 - Go to `File` -> `New Project`.
 - Choose `Gauge Test Project` under Visual C# Test category.
@@ -31,7 +39,7 @@ Steps with missing implementation are also highlighted.
 
 ![syntax highlighting](visual_studio_screenshots/features/Syntax_highlighting.png "syntax highlighting")
 
-## Autocomplete
+## Auto Completing
 
 This plugin hooks into VisualStudio Intellisense, and brings in autocompletion of Step text. The step texts brought in is a union of steps already defined, concepts defined, and step text from implementation.
 
