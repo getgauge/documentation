@@ -1,14 +1,12 @@
 # Configuration
 
+* [Java](#java)
+* [C-Sharp](#c-sharp)
+* [Ruby](#ruby)
+
 ## Java
 
 Java Specific configuration changes can be made in the ***env/default/java.properties*** file.
-
-The following configurations can be made:
-
-- java
-- c#
-- ruby
 
 ### gauge_java_home
 Specify an alternate Java home if you want to use a custom version.
@@ -55,4 +53,8 @@ Example:
 gauge_clear_state_level = spec
 ```
 This clears the objects after the execution of each specification, so that new objects are created for next execution.
+
+## C-Sharp
+
+## Ruby
 
