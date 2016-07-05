@@ -3,10 +3,10 @@
 * [Project Creation](#project-creation)
 * [Syntax Highlighting](#syntax-highlighting)
 * [Auto Completing](#)
-* [Navigation](#)
-* [Smart Tag](#)
-* [Test Runner](#)
-* [Create Spec and Concept files](#)
+* [Navigation](#navigation)
+* [Smart Tag](#smart-tag)
+* [Test Runner](#test-runner)
+* [Create Spec and Concept files](#create-spec-and-concept-files)
 
 
 ## Project Creation
