@@ -10,7 +10,7 @@ It is advised to use the latest version of gauge and [gauge plugins](../plugins/
 ````
 These generally occur if step implementation is not found for a particular step.
 * Ensure the [step implementation](../language_features/step_implementations.md) for the step has been added.
-* The [step_template](../ide_support/features.html#step-name-template) marking the step in code is case sensitive and should match the step usage in the spec file.
+* The [step name template](../ide_support/features.md#step-name-template) marking the step in code is case sensitive and should match the step usage in the spec file.
 
 
 ### Compatibility errors
