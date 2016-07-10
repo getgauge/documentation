@@ -97,4 +97,4 @@ screenshot_on_failure = true
 
 
 ## Ruby
-
+The default Ruby properties are similar to that of the CSharp properties.
