@@ -23,10 +23,6 @@
       }
     },
     "links": {
-        "sidebar": {
-            "Home": "http://getgauge.io",
-            "Github": "http://github.com/getgauge/gauge"
-        },
         "home": "http://getgauge.io",
         "about": "http://getgauge.io",
         "issues": "https://github.com/getgauge/gauge/issues",
