@@ -31,8 +31,8 @@ public void LoginUser()
 // A after step hook runs when tag1 or tag2
 // is present in the current scenario and spec.
 // Default tagAggregation value is Operator.AND.
-[AfterStep("tag1", "tag2")
-[TagAggregationBehagiour(TagAggregation.OR)]
+[AfterStep("tag1", "tag2")]
+[TagAggregationBehaviour(TagAggregation.Or)]
 public void PerformAfterStep()
 {
     // Code for after step
