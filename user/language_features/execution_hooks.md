@@ -26,10 +26,6 @@ Executes before every step executes.
 ## After Step hook
 Executes after every scenario executes.
 
-## Hooks specific to Java
-- BeforeClassSteps (Java only)-`@BeforeClassSteps`
-- AfterClassSteps (Java only)-`@AfterClassSteps`
-
 ### Example
 
 {% codetabs name="Java", type="java" -%}
