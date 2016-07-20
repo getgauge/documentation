@@ -84,6 +84,7 @@
   * [Using Build Tools](advanced_readings/using_build_tools.md)
   * [Gauge Configuration](advanced_readings/configuration/README.md)
     * [Configuring Proxy](advanced_readings/configuration/configure_proxy.md)
+  * [Continue on Failure](advanced_readings/continue_on_failure.md)
 
 * [Troubleshooting](troubleshooting/troubleshooting.md)
   * [Logs](troubleshooting/logs.md)
@@ -94,4 +95,4 @@
 * [Examples](examples/README.md)
   * [Get started in 3 minutes](examples/getting_started_3_minutes.md)
 
-* [Previous Versions](previous_versions/README.md)
+            * [Previous Versions](previous_versions/README.md)
