@@ -95,4 +95,4 @@
 * [Examples](examples/README.md)
   * [Get started in 3 minutes](examples/getting_started_3_minutes.md)
 
-            * [Previous Versions](previous_versions/README.md)
+* [Previous Versions](previous_versions/README.md)
