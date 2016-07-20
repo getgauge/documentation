@@ -1,17 +1,21 @@
-# advanced_readings
+# Advanced Readings
 
 This is a collection of articles and sections for those who are familiar with the basics of Gauge and want to explore more.
 
-* Pre-requisite
-- [Gauge terminologies](../gauge_terminologies/README.md)
+**Pre-requisite:**
 
-* One can explore the following topics
-- [living documentation](living_documentation.md)
-- [configuration](configuration/README.md)
-- [dependency management](dependency_management_plugins/README.md)
-- [execution](execution_types/README.md)
-- [integration with ci](ci_integration/README.md)
-- [managing environments](managing_environments.md)
-- [templates](gauge_templates.md)
-- [refactoring](refactoring.md)
-- [using Build Tools](using_build_tools.md)
+- [Gauge Terminologies](../gauge_terminologies/README.md)
+
+
+**Topics:**
+
+- [Living Documentation](living_documentation.md)
+- [Configuration](configuration/README.md)
+- [Dependency Management](dependency_management_plugins/README.md)
+- [Execution](execution_types/README.md)
+- [Integration with CI](ci_integration/README.md)
+- [Managing Environments](managing_environments.md)
+- [Templates](gauge_templates.md)
+- [Refactoring](refactoring.md)
+- [Using Build Tools](using_build_tools.md)
+- [Continue on Failure](continue_on_failure.md)
