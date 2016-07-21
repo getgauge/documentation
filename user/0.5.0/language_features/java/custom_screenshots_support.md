@@ -1,1 +1,0 @@
-!REDIRECT "../custom_screenshots_support.html"
