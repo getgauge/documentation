@@ -31,7 +31,13 @@ public class StepImplementation {
     }
 }
 {%- language name="Ruby", type="ruby" -%}
-# Not yet supported.
+# The `:continue_on_failure => true` keyword argument tells Gauge to continue executing
+# other steps even if the current step fails.
+
+step 'Say <greeting> to <product_name>', :continue_on_failure => true do |greeting, name|
+    # If there is an error here, Gauge will still execute next steps
+end
+
 {%- endcodetabs %}
 
 ## Caveats
