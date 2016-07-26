@@ -45,8 +45,6 @@
        * [Other Usability Features](ide_support/other_usability_features.md)
    * [Visual Studio](ide_support/visual_studio.md)
        * [Features](ide_support/visual_studio_features.md)
-   * [Eclipse(limited Support)](ide_support/eclipse.md)
-       * [Features](ide_support/gauge_eclipse_plugin_features.md)
 
 * [Plugins](plugins/README.md)
 

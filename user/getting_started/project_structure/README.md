@@ -18,15 +18,15 @@ The env directory contains multiple environment specific directories. Each direc
 
 A **env/default** directory is created on project initialization which contains the default environment variables set during execution.
 
-Learn more about [managing environments](../advanced_readings/managing_environments.md).
+Learn more about [managing environments](../../advanced_readings/managing_environments.md).
 
 ### Specs Directory
 
-The specs directory contains all the [spec](../gauge_terminologies/specifications.md) files for the project. They are the business layer specifications written in simple markdown format.
+The specs directory contains all the [spec](../../gauge_terminologies/specifications.md) files for the project. They are the business layer specifications written in simple markdown format.
 
 A simple example spec (**example.spec**)  is created in the specs directory to better understand the format of specifications.
 
-Learn more about [specifications](../gauge_terminologies/specifications.md)
+Learn more about [specifications](../../gauge_terminologies/specifications.md)
 
 ### Manifest file
 The **manifest.json** contains gauge specific configurations which includes the information of plugins required in the project.
@@ -72,4 +72,4 @@ After running the above command, the manifest.json would have the following cont
 
 ## Language specific files
 
-Along with common gauge files certain language specific files and directories are created during [project creation](creating_a_gauge_project.md). You can find the more details about language specific files created under each [programming language](../language_features/step_implementations.md).
+Along with common gauge files certain language specific files and directories are created during [project creation](creating_a_gauge_project.md). You can find the more details about language specific files created under each [programming language](../../language_features/step_implementations.md).

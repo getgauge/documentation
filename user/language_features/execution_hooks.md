@@ -123,4 +123,4 @@ end
 {%- endcodetabs %}
 
 > By default, Gauge clears the state after each scenario so that new objects are created for next scenario execution.
-You can [configure](../advanced_readings/configuration/README.md) to change the level at which Gauge clears cache.
+You can [configure](../advanced_readings/managing_environments.html#gauge_clear_state_level) to change the level at which Gauge clears cache.

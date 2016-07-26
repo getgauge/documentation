@@ -16,7 +16,6 @@ Gauge has a bunch of plugins so that users can easily author specs on IDE. For m
 
 * Integration with [IntelliJ IDEA](../ide_support/intellij_idea.md)
 * Integration with [Visual Studio](../ide_support/visual_studio.md)
-* Integration with [Eclipse](../ide_support/eclipse.md)
 
 ## Reporting
 

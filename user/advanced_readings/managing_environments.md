@@ -12,7 +12,7 @@ The env directory structure for a `java` project:
 
 Custom properties can be added to an existing property files or in a newly created one.
 
-##Creating new environment
+## Creating new environment
 
 To create an environment called `ci`:
 
@@ -29,29 +29,54 @@ To create an environment called `ci`:
       └── java.properties
 ```
 
-##Executing with environment
+## Executing with environment
 
 The environment is specified using the `env` flag. For example if `ci` environment is used during execution
 ```
 gauge --env ci specs
 ```
 
+## Configuring the Properties
 
-##Configuring the Properties
+Certain properties can be configured in `env/default/default.properties`, which overrides the default properties and are scoped only to the current project. These are key value pairs.
 
-Certain properties can be configured in `env/default/default.properties`, which overrides the default properties and are scoped only to the current project.
-
-These are key value pairs, key being the property name and the value is either the absolute or path relative to project root.
-
-Example:
-
+### gauge_reports_dir
+The path to the gauge reports directory. Should be either relative to the project directory or an absolute path
 ```
 gauge_reports_dir = reports
+```
 
+### overwrite_reports
+- Set as false if gauge reports should not be overwritten on each execution.
+- If set to true, a new time-stamped directory will be created on each execution.
+```
+overwrite_reports = true
+```
+
+### screenshot_on_failure
+- Set to false to disable screenshots on failure in reports.
+```
+screenshot_on_failure = false
+```
+
+### logs_directory
+The path to the gauge logs directory. Should be either relative to the project directory or an absolute path
+```
 logs_directory = GaugeLogs
 ```
 
-##Precedence of Environments
+### gauge_clear_state_level
+Specify the level at which cached objects should get removed while execution.
+
+Possible values for this property are `suite`,`spec` and `scenario`. By default, Gauge clears state at scenario level.
+
+Example:
+```
+gauge_clear_state_level = spec
+```
+This clears the objects after the execution of each specification, so that new objects are created for next execution.
+
+## Precedence of Environments
 
 Precedence to the env variable value is given in the below order.
    1. User shell / OS env variable values
@@ -88,4 +113,3 @@ Gauge loads the enviroment variables as below.
     * Gauge will set all the default env variables from `env/default` directory and then from the above table, except for the variable `gauge_reports_dir`. This variable's value will still continue to be `newReportsDir`.
   * User executes `gauge_reports_dir=newReportsDir gauge --env=java_ci specs` or user explicitly sets `gauge_reports_dir=newReportsDir` in shell and then runs `gauge --env=java_ci specs`
     * Gauge will set the env variables mentioned in the `java_ci` environment. It will then load other variables from the `default` environment which are not already set. Finally, it will the set the env vars with values mentioned in the table above (if they are not already set). However variable `gauge_reports_dir`, which is explicitly set in the shell will not be overwritten. This variable's value will still continue to be `newReportsDir`.
-
