@@ -24,7 +24,7 @@ $ gauge --parallel -n=4 specs
 ````
 This creates four parallel execution streams.
 
-**Note:** The number of streams should be specified depending on number of CPU cores available on the machine, beyond which it affects the performance of the system.
+**Note:** The number of streams should be specified depending on number of CPU cores available on the machine, beyond which it could lead to undesirable results.
 
 ## Run your test suite with lazy assignment of tests
 This features allows you to dynamically allocate your specs to streams during execution instead of at the start of execution.
