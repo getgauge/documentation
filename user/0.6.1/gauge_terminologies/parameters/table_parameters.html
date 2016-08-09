@@ -1379,56 +1379,6 @@
 <li>When a scenario or multiple scenarios in a specification are to be executed for multiple sets of data then Data table execution can be used.</li>
 <li>Tables or inline tables can be passed to steps as parameters.</li>
 </ul>
-<h2 id="data-driven-execution"><a name="data-driven-execution" class="plugin-anchor" href="#data-driven-execution"><i class="fa fa-link" aria-hidden="true"></i></a>Data driven execution</h2>
-<ul>
-<li>A <em>data table</em> is defined in markdown table format in the beginning of the spec before any steps.</li>
-<li>The data table should have a header row and one or more data rows</li>
-<li>The header names from the table can be used in the steps within angular brackets <code>&lt; &gt;</code> to refer a particular column from the data table as a parameter.</li>
-<li>On execution each scenario will be executed for every data row from the table.</li>
-<li>Table can be easily created in IDE using template <code>table:&lt;no of columns&gt;</code>, and hit <code>Tab</code>.</li>
-<li>Table parameters are written in Multi-markdown table formats.</li>
-</ul>
-<p><strong>Example:</strong></p>
-<pre><code>Table driven execution
-======================
-
-     |id| name    |
-     |--|---------|
-     |1 |vishnu   |
-     |2 |prateek  |
-     |3 |navaneeth|
-
-Scenario
---------
-* Say &quot;hello&quot; to &lt;name&gt;
-
-Second Scenario
----------------
-* Say &quot;namaste&quot; to &lt;name&gt;
-</code></pre><p>In the above example the step uses the <code>name</code> column from the data table as a dynamic parameter.</p>
-<p>Both <code>Scenario</code> and <code>Second Scenario</code> are executed first for the first row values <code>1, vishnu</code> and then consecutively for the second and third row values from the table.</p>
-<h2 id="external-csv-for-data-table"><a name="external-csv-for-data-table" class="plugin-anchor" href="#external-csv-for-data-table"><i class="fa fa-link" aria-hidden="true"></i></a>External CSV for data table</h2>
-<p>Data Tables for a specification can also be passed from an external <a href="http://en.wikipedia.org/wiki/Comma-separated_values" _target="blank">CSV file</a>. The parameter contains a prefix table and the path to the csv file.</p>
-<p><strong>Prefix</strong> : The prefix is table</p>
-<p><strong>Value</strong> : The value is the path to the csv file. This can be absolute file path or relative to project.</p>
-<p>Example:</p>
-<pre><code>Table Driven execution
-=====================
-
-table: /system/users.csv
-
-Scenario
---------
-* Say &quot;hello&quot; to &lt;name&gt;
-
-Second Scenario
----------------
-* Say &quot;namaste&quot; to &lt;name&gt;
-</code></pre><p>Sample csv file :</p>
-<pre><code>Id,Name
-1,The Way to Go On
-2,Ivo Jay Balbaert
-</code></pre><p><strong>The first row is considered as table header. Following rows are considered as the row values.</strong></p>
 <h2 id="data-table-values-in-inline-tables"><a name="data-table-values-in-inline-tables" class="plugin-anchor" href="#data-table-values-in-inline-tables"><i class="fa fa-link" aria-hidden="true"></i></a>Data Table values in inline tables</h2>
 <p>Dynamic values from the data table can also be referred in table parameters passed into steps</p>
 <p>Example:</p>
@@ -1449,6 +1399,10 @@ first scenario
      | Gauge java | &lt;name&gt;   |
      | Gauge ruby | &lt;name&gt;   |
 </code></pre><p>In the above example the table parameter uses a dynamic value from the data table.</p>
+<h2 id="further-reading"><a name="further-reading" class="plugin-anchor" href="#further-reading"><i class="fa fa-link" aria-hidden="true"></i></a>Further reading</h2>
+<ul>
+<li><a href="special_parameters.html">External data source</a> as parameters</li>
+</ul>
 
                                 
                                 </section>
@@ -1492,7 +1446,7 @@ first scenario
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Table parameter","level":"1.3.4.2","depth":3,"next":{"title":"Special parameter","level":"1.3.4.3","depth":3,"path":"gauge_terminologies/parameters/special_parameters.md","ref":"gauge_terminologies/parameters/special_parameters.md","articles":[]},"previous":{"title":"Simple parameter","level":"1.3.4.1","depth":3,"path":"gauge_terminologies/parameters/simple_parameters.md","ref":"gauge_terminologies/parameters/simple_parameters.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"gauge_terminologies/parameters/table_parameters.md","mtime":"2016-07-29T09:00:27.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-29T09:00:44.455Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Table parameter","level":"1.3.4.2","depth":3,"next":{"title":"Special parameter","level":"1.3.4.3","depth":3,"path":"gauge_terminologies/parameters/special_parameters.md","ref":"gauge_terminologies/parameters/special_parameters.md","articles":[]},"previous":{"title":"Simple parameter","level":"1.3.4.1","depth":3,"path":"gauge_terminologies/parameters/simple_parameters.md","ref":"gauge_terminologies/parameters/simple_parameters.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"gauge_terminologies/parameters/table_parameters.md","mtime":"2016-08-09T21:58:22.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-08-09T21:58:39.583Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
