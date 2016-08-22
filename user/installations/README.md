@@ -1,7 +1,7 @@
 # Installation
 
 
-* [Downlod and Install](http://getgauge.io/get-started) Gauge
+* [Download and Install](http://getgauge.io/get-started) Gauge
 
 Gauge installation can be broadly classified into the following sections
 * [Install Gauge on operating system](operating_system/README.md)
