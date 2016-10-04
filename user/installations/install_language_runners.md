@@ -17,3 +17,4 @@ The Gauge community maintains some language runners as well. Here is a list of a
 | -- | -- | -- |
 | `Javascript` | `gauge --install js` | [Gauge JavaScript project page](http://github.com/getgauge-contrib/gauge-js) |
 | `Python` | `gauge --install python` | [Gauge Python project page](http://github.com/kashishm/gauge-python) |
+| `Go` | `gauge --install go` | [Gauge Go project page](https://github.com/getgauge-contrib/gauge-go) |
