@@ -13,19 +13,18 @@ This will give a colored console output with details of the execution as well an
 
 ## Single scenario execution
 
-A single scenario of a specification can be executed by specifying the line number of that scenario in the spec. To execute a single scenario in a spec use the following command.
-
+A single scenario of a specification can be executed by specifying the line number in the span of that scenario in the spec. To execute a `Admin Login` scenario in the following spec use `gauge specs/login_test.spec:4` command.
 ```
-$ gauge specs/login_test.spec:3
+1>   Configuration
+2>   =============
+3>
+4>   Admin Login
+5>   -----------
+6>   * User must login as "admin"
+7>   * Navigate to the configuration page
 ```
 
-or
-
-```
-$ gauge login_test.spec:3
-```
-
-This executes only the scenario present at line number `3` in `login_test.spec`.
+This executes only the scenario present at line number `4` i.e `Admin Login` in `login_test.spec`. In the above spec, specifying line numbers 4-7 will execute the same scenario because of the span.
 
 Multiple scenarios can be executed selectively as follows :
 
