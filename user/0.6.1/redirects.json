@@ -20,7 +20,7 @@
         { "from": "getting_started/install_language_runners.html", "to": "installations/install_language_runners.html" },
         { "from": "getting_started/check_installation.html", "to": "installations/check_installation.html" },
         { "from": "getting_started/gauge_templates.html", "to": "advanced_readings/gauge_templates.html" },
-        { "from": "getting_started/project_structure/configuration.md", "to": "getting_started/project_structure/" },
+        { "from": "getting_started/project_structure/configuration.html", "to": "getting_started/project_structure/" },
         { "from": "integration_with_ci/index.html", "to": "advanced_readings/ci_integration/index.html" },
         { "from": "managing_environments/index.html", "to": "advanced_readings/managing_environments.html" },
         { "from": "plugins/installation.html", "to": "installations/install_plugins.html" },
