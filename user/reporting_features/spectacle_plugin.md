@@ -14,7 +14,7 @@ gauge --install spectacle --plugin-version 0.0.2
 ````
 __Offline Installation__ :
 
-If plugin should be installed from a zipfile instead of downloading from plugin repository, use the `--file` or `-f` flag.
+If plugin should be installed from a zip file instead of downloading from plugin repository, use the `--file` or `-f` flag.
 ````
 gauge --install spectacle --file ZIP_FILE_PATH
 ````
@@ -34,8 +34,8 @@ gauge --docs spectacle <path to specs dir>
 
 **Filter Specification/Scenario based on Tags**
 
-Tags allow you to filter the specs and scenarios. Add the tags to the textbox in the report to view all the specs and scenarios which are labelled with certain tags. Tag expressions with operators `|`, `&`, `!` are supported.
+Tags allow you to filter the specs and scenarios. Add the tags to the textbox in the report to view all the specs and scenarios which are labeled with certain tags. Tag expressions with operators `|`, `&`, `!` are supported.
 
-In the following image the specs/scenarios are filtered using a tag expression(`refactoring & !api`).
+In the following image, the specs/scenarios are filtered using a tag expression(`refactoring & !api`).
 
 ![Filter Specification/Scenario](images/filter.png "Filter Specification/Scenario")
