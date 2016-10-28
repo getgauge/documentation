@@ -29,6 +29,12 @@ public class CustomScreenGrabber : IScreenGrabber {
     }
 }
 {%- language name="Ruby", type="ruby" -%}
-This feature is not implemented in Gauge Ruby. 
-Please refer [this issue](https://github.com/getgauge/gauge-ruby/issues/13) for updates.
+# Using Webdriver
+Gauge.configure do |config|
+    # Return a screenshot byte array
+    config.screengrabber =  -> {
+        driver.save_screenshot('/tmp/screenshot.png')
+        return File.binread("/tmp/screenshot.png")
+    }
+end
 {%- endcodetabs %}
