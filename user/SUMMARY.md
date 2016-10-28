@@ -59,6 +59,7 @@
 * [Reporting Features](reporting_features/README.md)
    * [HTML Report](reporting_features/html_report_plugin.md)
    * [XML Report](reporting_features/xml_report_plugin.md)
+   * [Spectacle](reporting_features/spectacle_plugin.md)
 
 * [Advanced Readings](advanced_readings/README.md)
   * [Living Documentation](advanced_readings/living_documentation.md)
@@ -77,7 +78,6 @@
     * [gradle-plugin](advanced_readings/dependency_management/gradle-plugin.md)
   * [Step alias](advanced_readings/step_alias.md)
   * [Re-run Failed Tests](advanced_readings/re_run_failed_tests.md)
-  * [Gauge spectacle](advanced_readings/spectacle.md)
   * [Refactoring](advanced_readings/refactoring.md)
   * [Using Build Tools](advanced_readings/using_build_tools.md)
   * [Gauge Configuration](advanced_readings/configuration/README.md)
