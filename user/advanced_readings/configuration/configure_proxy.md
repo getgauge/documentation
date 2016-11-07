@@ -10,7 +10,7 @@ export HTTP_PROXY=http://10.0.2.2:5678
 ```
 
 ### With Authentication
-If authentication is not required, set the environment variable `HTTP_PROXY` to proxy server URL along with the credentials.
+If authentication is required, set the environment variable `HTTP_PROXY` to proxy server URL along with the credentials.
 
 ```
 export HTTP_PROXY=http://username:password@10.0.2.2:5678
