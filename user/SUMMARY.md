@@ -55,6 +55,7 @@
   * [Custom Messages](language_features/custom_messages.md)
   * [Custom Screenshots](language_features/custom_screenshots.md)
   * [Configuration](language_features/configuration.md)
+  * [Enum as Step Parameter](language_features/enum_parameters.md)
 
 * [Reporting Features](reporting_features/README.md)
    * [HTML Report](reporting_features/html_report_plugin.md)
