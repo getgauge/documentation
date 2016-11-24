@@ -40,6 +40,31 @@ end
 
 {%- endcodetabs %}
 
+Continue on Failure can take an optional parameter to specify the list of error classes on which it would continue to execute further steps in case of failure. This is currently supported only with Java runner.
+
+{% codetabs name="Java", type="java" -%}
+@ContinueOnFailure({AssertionError.class, CustomError.class})
+@Step("hello")
+public void sayHello() {
+    // code here
+}
+@ContinueOnFailure(AssertionError.class)
+@Step("hello")
+public void sayHello() {
+    // code here
+}
+@ContinueOnFailure
+@Step("hello")
+public void sayHello() {
+    // code here
+}
+{%- endcodetabs %}
+
+In case no parameters are passed to `@ContinueOnFailure`, on any type of error it continues with execution of further steps by default.
+
+This can be used to control on what type of errors the execution should continue, instead of just continuing on every type of error. For instance, on a `RuntimeException` it's ideally not expected to continue further. Whereas if it's an assertion error, it might be fine to continue execution.
+
+
 ## Caveats
 
 - Continue on failure does not apply to [hooks](../language_features/execution_hooks.md). Hooks always fail on first error.
