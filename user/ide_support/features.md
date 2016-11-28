@@ -5,11 +5,10 @@
 * [Quick Fix for unimplemented steps](#step-quick-fix)
 * [Formatting](#formatting)
 * [Execution and Debugging](#execution)
-* [Parallel Execution](#parallel-execution)
 * [Run configurations](#run-configuration)
 * [Rephrase steps](#rephrase-steps)
 * [Find Usages](#find-usages)
-* [Step name template](#step-name-template)
+* [Extract Concept](#extract-concept)
 * Navigation from step to implementation (cmd/ctrl + b)
 
 ## Project Creation
@@ -120,30 +119,13 @@ You can edit the run configuration to make changes to:
 
 ![find usages](intellij-screenshots/find_usages/find_usages.gif "find usages")
 
-## Step Name Template
+## Extract Concept
 
-The step name template is a simple generic representation for a step. It is used while defining language implementations for steps.
-
-The Step template contains:
-* The name of the step as it is used.
-* The parameters are replaced by placeholders in angular brackets `< >`. The placeholder value determines what the parameter represents.
-* Additional `<table>`  value is added if a step contains a table parameter.
-
-###Examples
-| Step Usage | Step name template|
-| --    | -- |
-| create a user| create a user |
-| create a user "prateek"| create a user < username > |
-| Verify text < file:test.txt > | Verify text < email text >|
-
-
-**For Steps with tables:**
-````
-| Step usage                |       Step name template             |
-|---------------------------|--------------------------------------|
-| Create following users    |    Create following users <table>    |
-|   |user-id|  name   |     |                                      |
-|   |  123  | vishnu  |     |                                      |
-|   |  456  |navaneeth|     |                                      |
-
-````
+* In the editor, select the steps to be transformed into a concept.
+* On the main menu or on the context menu of the selection, choose Refactor | Extract to Concept or press ⌥⌘C.
+* In the Extract Concept dialog box that opens
+	* Specify the concept name with parameters to be passed from the usage. For Example: Say "hello" to "gauge".
+	* Select the file name from the spec file dropdown list or specify the new file name/path relative to the project.
+	* Click OK.
+* The selected steps will be replaced with the specified concept name.
+![extract concept](intellij-screenshots/etc.gif "Extract Concept")
