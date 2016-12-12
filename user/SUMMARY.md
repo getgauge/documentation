@@ -74,6 +74,7 @@
   * [Integration With CI](advanced_readings/ci_integration/README.md)
      * [Go](advanced_readings/ci_integration/go.md)
      * [Snap](advanced_readings/ci_integration/snap.md)
+     * [TeamCity](advanced_readings/ci_integration/teamcity.md)
   * [Environments](advanced_readings/managing_environments.md)
   * [Dependency Management](advanced_readings/dependency_management/README.md)
     * [maven-plugin](advanced_readings/dependency_management/maven-plugin.md)
