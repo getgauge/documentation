@@ -32,11 +32,12 @@ In the above example the step uses the `name` column from the data table as a dy
 Both `Scenario` and `Second Scenario` are executed first for the first row values `1, vishnu` and then consecutively for the second and third row values from the table.
 
 ##Execute selected data table rows
-By default, scenarios in a spec are run against all the data table rows. It can be run against selected data table rows with flag `--table-rows` and specifying the row number against which the scenarios should be executed.
+By default, scenarios in a spec are run against all the data table rows. It can be run against selected data table rows with flag `--table-rows` and specifying the row numbers against which the scenarios should be executed. If there are multiple row numbers, they should be separated by commas.
 
 Example:
 ````
 $ gauge --table-rows "1" specs/hello.spec
+$ gauge --table-rows "1,4,7" specs/hello.spec
 ````
 
 Range of table rows can also be specified, against which the scenarios are run.
