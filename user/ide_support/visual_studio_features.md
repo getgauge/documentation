@@ -1,6 +1,17 @@
-# Features
+# Gauge Visual Studio plugin Features
 
-## Creating a new Gauge Project
+* [Project Creation](#project-creation)
+* [Syntax Highlighting](#syntax-highlighting)
+* [Auto completion](#auto-completion)
+* [Navigation](#navigation)
+* [Smart Tag](#smart-tag) - Quick Fix for unimplemented steps
+* [Test Runner](#test-runner)
+* [Rephrase steps](#rephrase-steps)
+* [Find Usages](#find-usages)
+
+## Project Creation
+
+### Creating a new Gauge Project
 
 - Go to `File` -> `New Project`.
 - Choose `Gauge Test Project` under Visual C# Test category.
@@ -30,7 +41,7 @@ Steps with missing implementation are also highlighted.
 
 ![syntax highlighting](visual_studio_screenshots/features/Syntax_highlighting.png "syntax highlighting")
 
-## Autocomplete
+## Auto Completion
 
 This plugin hooks into VisualStudio Intellisense, and brings in autocompletion of Step text. The step texts brought in is a union of steps already defined, concepts defined, and step text from implementation.
 
@@ -56,6 +67,16 @@ Open the Test Explorer : `Menu` -> `Test` -> `Windows` -> `Test Explorer`
 All the scenarios in the project should be listed. Run one or more of these tests.
 
 ![Test Explorer](visual_studio_screenshots/features/TestExplorer.png "Test Explorer")
+
+## Rephrase Steps
+
+* Press **F2** on a step to rephrase it.
+* The parameters can also be reordered,removed or new parameters can be added.
+* The rephrase change will reflect across **all the specs** in the project.
+
+## Find Usages
+
+* Right click on a step -> Find All References
 
 ## Create Spec and Concept files
 
