@@ -21,17 +21,13 @@ $ gauge --init <language>
 
 **Examples:**
 
-```
+{% codetabs name="Java", type="shell" -%}
 $ gauge --init java
-```
-
-```
+{%- language name="C#", type="shell" -%}
 $ gauge --init csharp
-```
-
-```
+{%- language name="Ruby", type="shell" -%}
 $ gauge --init ruby
-```
+{%- endcodetabs %}
 
 This will initialize a gauge project with all the necessary project files.
 

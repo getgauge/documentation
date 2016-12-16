@@ -18,5 +18,5 @@ This section will explain the steps needed to get Gauge working.
 * [Execute from the command-line](../cli/#executing-tests)
 * [use an IDE](../ide_support/README.md)
 
->**Suggested reading**
+**Suggested reading**
 * [Using Gauge from command line](../cli/README.md)
