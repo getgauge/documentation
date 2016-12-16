@@ -113,11 +113,36 @@ public class ExecutionHooks {
     }
 }
 {%- language name="Ruby", type="ruby" -%}
+before_suite do
+    // Code for before suite
+end
+
+after_suite do
+    // Code for after suite
+end
+
 before_spec do
     // Code for before spec
 end
 
 after_spec do
+    // Code for after spec
+end
+
+before_scenario do
+    // Code for before scenario
+end
+
+after_scenario do
+    // Code for after scenario
+end
+
+
+before_step do
+    // Code for before step
+end
+
+after_tep do
     // Code for after step
 end
 {%- endcodetabs %}
