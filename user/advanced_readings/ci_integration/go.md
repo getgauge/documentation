@@ -9,6 +9,12 @@
 * [Download](http://getgauge.io/get-started/index.html) and Install Gauge on the Go Agents
 * Install the required gauge [language plugin](../../../installations/install_language_runners.md) on the Go agents.
 
+#### Tips on Installation
+
+* Gauge is installed system wide by default and not user wide. However, plugins are installed per user. So plugins should be installed via user account with which the Go agent executes. Refer default install location of Gauge and its plugins [here](http://getgauge.io/documentation/user/current/troubleshooting/installation.html).
+
+* Alternately, you can set [custom location for plugins](http://getgauge.io/documentation/user/current/troubleshooting/installation.html#custom-plugin-install-location) so that its accessible to Go agent running as a different user.
+
 ### Create execution task
 
 * Create a new task which will run `gauge specs`.
