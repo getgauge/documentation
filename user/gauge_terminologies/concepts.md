@@ -15,7 +15,7 @@ Create a `.cpt` file under specs directory with the concept definition.
 
 The concept definition contains the 2 parts:
 - Concept header
-- steps
+- Steps
 
 ### Concept header
 The concept header defines the name of the concept and the parameters that it takes. It is written in the markdown **`H1`** format.
@@ -40,11 +40,11 @@ The concept header is followed by the steps that are used inside the concept. Th
 ## Example of Concept definition
 
 ```
-# login as user <username> and create project <project_name>
+# Login as user <username> and create project <project_name>
 
-* login as user <username> and "password"
-* navigate to project page
-* create a project <project_name>
+* Login as user <username> and "password"
+* Navigate to project page
+* Create a project <project_name>
 ```
 
 In the above example:

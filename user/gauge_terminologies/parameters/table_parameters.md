@@ -18,7 +18,7 @@ Create projects
 |1 | john |
 |2 | mike |
 
-first scenario
+First scenario
 --------------
 
 * Create the following projects

@@ -27,8 +27,8 @@ The values written in __quotes__ are parameters which are passed into the underl
 - >
 
 ## Further reading
-* [context steps](contexts.md)
-* [tear down steps](tear_down_steps.md)
+* [Context Steps](contexts.md)
+* [Teardown Steps](tear_down_steps.md)
 * [Scenarios](scenarios.md)
 * [Concepts](concepts.md)
 * [Parameters](parameters/README.md)
