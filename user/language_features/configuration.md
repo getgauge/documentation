@@ -29,7 +29,7 @@ gauge_java_home = PATH_TO_JAVA_HOME
 ###gauge_custom _build_path
 
 ````
-Note: IntelliJ and Eclipse out directory will be usually auto-detected.
+Note: IntelliJ out directory will be usually auto-detected.
 ````
 
 Use this property if you need to override the build path for the project.
