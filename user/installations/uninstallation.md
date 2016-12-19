@@ -22,7 +22,7 @@ To uninstall Gauge, run the following commands:
 
 #### OS X/Linux
 ```
-rm -rf /usr/local/bin/gauge /usr/local/share/gauge
+rm -rf /usr/local/bin/gauge /usr/local/share/gauge /usr/local/share/gauge_screenshot ~/.gauge
 ```
 
 If Gauge is installed in custom location, user will have to remove corresponding files/directory. 
