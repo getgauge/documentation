@@ -474,12 +474,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.1.5" data-path="../installations/uninstall_plugin.html">
+        <li class="chapter " data-level="1.4.1.5" data-path="../installations/uninstallation.html">
             
-                <a href="../installations/uninstall_plugin.html">
+                <a href="../installations/uninstallation.html">
             
                     
-                    Uninstall Plugins
+                    Uninstallation
             
                 </a>
             
@@ -1524,11 +1524,36 @@
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">AfterStep</span>(<span class="hljs-params"></span>) </span>{
       <span class="hljs-comment">// Code for after step</span>
     }
-}</code></pre></div><div class="tab" data-codetab="2"><pre><code class="lang-ruby">before_spec do
+}</code></pre></div><div class="tab" data-codetab="2"><pre><code class="lang-ruby">before_suite do
+    // Code for before suite
+end
+
+after_suite do
+    // Code for after suite
+end
+
+before_spec do
     // Code for before spec
 end
 
 after_spec do
+    // Code for after spec
+end
+
+before_scenario do
+    // Code for before scenario
+end
+
+after_scenario do
+    // Code for after scenario
+end
+
+
+before_step do
+    // Code for before step
+end
+
+after_tep do
     // Code for after step
 end</code></pre></div></div></div></p>
 <blockquote>
@@ -1578,7 +1603,7 @@ You can <a href="../advanced_readings/managing_environments.html#gauge_clear_sta
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Execution Hooks","level":"1.8.2","depth":2,"next":{"title":"Data Stores","level":"1.8.3","depth":2,"path":"language_features/data_store.md","ref":"language_features/data_store.md","articles":[]},"previous":{"title":"Step Implementations","level":"1.8.1","depth":2,"path":"language_features/step_implementations.md","ref":"language_features/step_implementations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"language_features/execution_hooks.md","mtime":"2016-12-15T13:07:17.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-12-15T13:07:25.646Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Execution Hooks","level":"1.8.2","depth":2,"next":{"title":"Data Stores","level":"1.8.3","depth":2,"path":"language_features/data_store.md","ref":"language_features/data_store.md","articles":[]},"previous":{"title":"Step Implementations","level":"1.8.1","depth":2,"path":"language_features/step_implementations.md","ref":"language_features/step_implementations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"language_features/execution_hooks.md","mtime":"2016-12-19T11:02:03.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-12-19T11:02:11.117Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

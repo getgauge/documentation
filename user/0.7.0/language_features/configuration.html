@@ -474,12 +474,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.1.5" data-path="../installations/uninstall_plugin.html">
+        <li class="chapter " data-level="1.4.1.5" data-path="../installations/uninstallation.html">
             
-                <a href="../installations/uninstall_plugin.html">
+                <a href="../installations/uninstallation.html">
             
                     
-                    Uninstall Plugins
+                    Uninstallation
             
                 </a>
             
@@ -1426,15 +1426,23 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="configuration"><a name="configuration" class="plugin-anchor" href="#configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Configuration</h1>
-<p>Apart from the default configuration, we can create and use other configuration files which have logically grouped configurations.
-Here are the configurations generated while using the Java language runner.</p>
-<h2 id="java"><a name="java" class="plugin-anchor" href="#java"><i class="fa fa-link" aria-hidden="true"></i></a>Java</h2>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#csharp">CSharp</a></li>
+<li><a href="#ruby">Ruby</a></li>
+</ul>
+<h2 id="general"><a name="general" class="plugin-anchor" href="#general"><i class="fa fa-link" aria-hidden="true"></i></a>General</h2>
+<p>Configuration properties set here will be available to the test execution as environment variables. Please see <a href="#advanced_readings/managing_environments.md">Environments</a> for more details.</p>
+<p>Properties are defined in the following format.</p>
+<pre><code>sample_key = sample_value
+</code></pre><h2 id="java"><a name="java" class="plugin-anchor" href="#java"><i class="fa fa-link" aria-hidden="true"></i></a>Java</h2>
 <p>Java Specific configuration changes can be made in the <strong><em>env/default/java.properties</em></strong> file.</p>
 <h3 id="gaugejavahome"><a name="gaugejavahome" class="plugin-anchor" href="#gaugejavahome"><i class="fa fa-link" aria-hidden="true"></i></a>gauge_java_home</h3>
 <p>Specify an alternate Java home if you want to use a custom version.</p>
 <p>Example:</p>
 <pre><code>gauge_java_home = PATH_TO_JAVA_HOME
-</code></pre><h3 id="gaugecustombuildpath"><a name="gaugecustombuildpath" class="plugin-anchor" href="#gaugecustombuildpath"><i class="fa fa-link" aria-hidden="true"></i></a>gauge_custom_build_path</h3>
+</code></pre><h3 id="gaugecustom-buildpath"><a name="gaugecustom-buildpath" class="plugin-anchor" href="#gaugecustom-buildpath"><i class="fa fa-link" aria-hidden="true"></i></a>gauge_custom _build_path</h3>
 <pre><code>Note: IntelliJ out directory will be usually auto-detected.
 </code></pre><p>Use this property if you need to override the build path for the project.</p>
 <p>Example:</p>
@@ -1449,6 +1457,34 @@ Here are the configurations generated while using the Java language runner.</p>
 <pre><code>gauge_additional_libs = libs/*, PATH_TO_NEW_LIBRARY
 </code></pre><h3 id="gaugejvmargs"><a name="gaugejvmargs" class="plugin-anchor" href="#gaugejvmargs"><i class="fa fa-link" aria-hidden="true"></i></a>gauge_jvm_args</h3>
 <p>Specify the JVM arguments passed to java while launching.</p>
+<h3 id="gaugeclearstatelevel"><a name="gaugeclearstatelevel" class="plugin-anchor" href="#gaugeclearstatelevel"><i class="fa fa-link" aria-hidden="true"></i></a>gauge_clear_state_level</h3>
+<p>Specify the level at which cached objects should get removed while execution.</p>
+<p>Possible values for this property are <code>suite</code>,<code>spec</code> and <code>scenario</code>. By default, Gauge clears state at scenario level.</p>
+<p>Example:</p>
+<pre><code>gauge_clear_state_level = spec
+</code></pre><p>This clears the objects after the execution of each specification, so that new objects are created for next execution.</p>
+<h2 id="csharp"><a name="csharp" class="plugin-anchor" href="#csharp"><i class="fa fa-link" aria-hidden="true"></i></a>CSharp</h2>
+<p>CSharp Specific configuration changes can be made in the <strong><em>env/default/default.properties</em></strong> file.</p>
+<h3 id="gaugereportsdir"><a name="gaugereportsdir" class="plugin-anchor" href="#gaugereportsdir"><i class="fa fa-link" aria-hidden="true"></i></a>gauge_reports_dir</h3>
+<ul>
+<li>The path to the gauge reports directory.</li>
+<li>Should be either relative to the project directory or an absolute path.</li>
+</ul>
+<p>Example:</p>
+<pre><code>gauge_reports_dir = reports
+</code></pre><h3 id="overwritereports"><a name="overwritereports" class="plugin-anchor" href="#overwritereports"><i class="fa fa-link" aria-hidden="true"></i></a>overwrite_reports</h3>
+<ul>
+<li>Set as false if gauge reports should not be overwritten on each execution. </li>
+<li>A new time-stamped directory will be created on each execution.</li>
+</ul>
+<p>Example:</p>
+<pre><code>overwrite_reports = true
+</code></pre><h3 id="screenshotonfailure"><a name="screenshotonfailure" class="plugin-anchor" href="#screenshotonfailure"><i class="fa fa-link" aria-hidden="true"></i></a>screenshot_on_failure</h3>
+<p>Set to false to disable screenshots on failure in reports.</p>
+<p>Example:</p>
+<pre><code>screenshot_on_failure = true
+</code></pre><h2 id="ruby"><a name="ruby" class="plugin-anchor" href="#ruby"><i class="fa fa-link" aria-hidden="true"></i></a>Ruby</h2>
+<p>The default Ruby properties are similar to that of the CSharp properties.</p>
 
                                 
                                 </section>
@@ -1492,7 +1528,7 @@ Here are the configurations generated while using the Java language runner.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Configuration","level":"1.8.6","depth":2,"next":{"title":"Enum as Step Parameter","level":"1.8.7","depth":2,"path":"language_features/enum_parameters.md","ref":"language_features/enum_parameters.md","articles":[]},"previous":{"title":"Custom Screenshots","level":"1.8.5","depth":2,"path":"language_features/custom_screenshots.md","ref":"language_features/custom_screenshots.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"language_features/configuration.md","mtime":"2016-12-15T13:07:17.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-12-15T13:07:25.646Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Configuration","level":"1.8.6","depth":2,"next":{"title":"Enum as Step Parameter","level":"1.8.7","depth":2,"path":"language_features/enum_parameters.md","ref":"language_features/enum_parameters.md","articles":[]},"previous":{"title":"Custom Screenshots","level":"1.8.5","depth":2,"path":"language_features/custom_screenshots.md","ref":"language_features/custom_screenshots.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga@1.0.1","codetabs@1.0.0","expandable-chapters@0.1.7","bulk-redirect@0.2.1","anchors@0.7.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bulk-redirect":{"basepath":"/documentation/user/current/","redirectsFile":"user/redirects.json"},"ga":{"token":"UA-54838477-1","configuration":"auto"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"github":"https://www.github.com/getgauge/gauge","theme":"default","githubHost":"https://github.com/","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gauge Documentation","links":{"home":"http://getgauge.io","about":"http://getgauge.io","issues":"https://github.com/getgauge/gauge/issues","contribute":"https://github.com/getgauge/gauge/","sharing":{"google":"http://getgauge.io","facebook":"http://getgauge.io","twitter":"getgauge"}},"gitbook":"3.0.0","description":"Help documentation for Gauge."},"file":{"path":"language_features/configuration.md","mtime":"2016-12-19T11:02:03.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-12-19T11:02:11.117Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
