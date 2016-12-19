@@ -26,7 +26,7 @@
       * [Install Language Runners](installations/install_language_runners.md)
       * [Install Plugins](installations/install_plugins.md)
       * [Check Installation](installations/check_installation.md)
-      * [Uninstall Plugins](installations/uninstall_plugin.md)
+      * [Uninstallation](installations/uninstallation.md)
 
   * [Creating a Gauge project](getting_started/creating_a_gauge_project.md)
   * [Project Structure](getting_started/project_structure/README.md)
