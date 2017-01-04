@@ -27,3 +27,13 @@ To install plugin by downloading it manually or to update plugin, follow the ste
 Create a new Gauge project and start writing your tests.
 
 Explore all the [features of Gauge Intellij IDEA plugin](features.md) now!
+
+### Installing Nightly
+
+Nightly builds are also available in IntelliJ plugin repository.
+
+* Follow the [instructions](https://www.jetbrains.com/idea/help/managing-enterprise-plugin-repositories.html) to add `Nightly` channel to IntelliJ Idea.
+* Add the following repository URL
+```
+https://plugins.jetbrains.com/plugins/nightly/7535
+```
