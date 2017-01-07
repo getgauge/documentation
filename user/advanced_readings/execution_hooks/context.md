@@ -1,6 +1,6 @@
 # Current Execution Context in the Hook
 
-* To get additional information about the **current specification, scenario and step** executing, an additional **ExecutionContext** parameter can be added to the [hooks](../../../language_features/execution_hooks.md) method.
+* To get additional information about the **current specification, scenario and step** executing, an additional **ExecutionContext** parameter can be added to the [hooks](../../language_features/execution_hooks.md) method.
 
 {% codetabs name="Java", type="java" -%}
 public class ExecutionHooks {
