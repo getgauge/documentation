@@ -67,6 +67,7 @@ This can be used to control on what type of errors the execution should continue
 
 ## Caveats
 
+- Continue on failure comes into play at post execution, i.e. after the step method is executed. If there is a failure in executing the step, ex. parameter count/type mismatch, Gauge will not honour the `ContinueOnFailure` flag.
 - Continue on failure does not apply to [hooks](../language_features/execution_hooks.md). Hooks always fail on first error.
 - Step implementations are still non-recoverable by default and Gauge does not execute subsequent steps upon failure. To make a step implementation continue on failure, it needs to be explicitly marked in the test code.
 - There is no way to globally mark a test run to treat all steps to continue on failure. Each step implementation has to be marked explicitly.
