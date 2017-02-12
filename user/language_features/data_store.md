@@ -32,11 +32,11 @@ var elementId = (string) scenarioStore.Get("element-id");
 var anotherElementId = scenarioStore.Get<string>("element-id");
 {%- language name="Ruby", type="ruby" -%}
 // Adding value
-scenario_store = DataStoreFactory.scenario_datastore;
+scenario_store = Gauge::DataStoreFactory.scenario_datastore;
 scenario_store.put("element-id", "455678");
 
 // Fetching Value
-scenario_store = DataStoreFactory.scenario_datastore;
+scenario_store = Gauge::DataStoreFactory.scenario_datastore;
 element_id = scenario_store.get("element-id");
 {%- endcodetabs %}
 
@@ -69,11 +69,11 @@ var elementId = (string) specStore.Get("element-id");
 var anotherElementId = specStore.Get<string>("element-id");
 {%- language name="Ruby", type="ruby" -%}
 // Adding value
-spec_store = DataStoreFactory.spec_datastore;
+spec_store = Gauge::DataStoreFactory.spec_datastore;
 spec_store.put("element-id", "455678");
 
 // Fetching Value
-spec_store = DataStoreFactory.spec_datastore;
+spec_store = Gauge::DataStoreFactory.spec_datastore;
 element_id = spec_store.get("element-id");
 {%- endcodetabs %}
 
@@ -109,10 +109,10 @@ var elementId = (string) suiteStore.Get("element-id");
 var anotherElementId = suiteStore.Get<string>("element-id");
 {%- language name="Ruby", type="ruby" -%}
 // Adding value
-suite_store = DataStoreFactory.suite_datastore;
+suite_store = Gauge::DataStoreFactory.suite_datastore;
 suite_store.put("element-id", "455678");
 
 // Fetching Value
-suite_store = DataStoreFactory.suite_datastore;
+suite_store = Gauge::DataStoreFactory.suite_datastore;
 element_id = suite_store.get("element-id");
 {%- endcodetabs %}
