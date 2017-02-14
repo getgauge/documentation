@@ -2,58 +2,21 @@
 {% block head %}
   {{ super() }}
   <link type="image/ico" rel="shortcut icon" href="//getgauge.io/assets/images/favicons/favicon.ico">
-{% endblock %}
-{% block style %}
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="{{ "javascript/main.js"|resolveFile }}""></script>
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="{{ "styles/embed.css"|resolveFile }}">
-  {{ super() }}
+  <style>
+    header.top {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      background-color: #f5c10e;      
+    }
+  </style>
 {% endblock %}
 {% block body %}
-  <header class="top">
-    <a class="logo" href="http://getgauge.io/index.html">
-      <img alt="Gauge logo" height="38" id="thumb" src="http://getgauge.io/assets/images/Gauge_logo.svg" width="150">
-    </a>
-    <span class="beta">
-      Beta
-    </span>
-    <nav class="mainnav">
-      <ul class="level0">
-        <li class="dropdown">
-          <a class="link-get-started" href="http://getgauge.io/get-started/index.html">Get Started</a>
-          <ul class="level1">
-            <li>
-              <a class="link-download" href="http://getgauge.io/get-started/index.html">Download</a>
-            </li>
-            <li>
-              <a class="link-plugins" href="http://getgauge.io/plugins/index.html">Plugins</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="toplink-contribute" href="http://getgauge.io/contribute/index.html">Contribute</a>
-          <ul class="level1">
-            <li>
-              <a class="link-contribute" href="http://getgauge.io/contribute/index.html">Contribute</a>
-            </li>
-            <li>
-              <a class="link-cla" href="http://getgauge.io/cla/index.html">CLA</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-        <a class="link-documentation" href="http://getgauge.io/documentation/user/current/" target="_blank">Documentation</a>
-      </li>
-<!--       <li>
-        <a class="link-blog" href="http://getgauge.io/blog/index.html">Blog</a>
-      </li> -->
-    </ul>
-  </nav>
-  <button class="navbtn menu collapse">
-  <span></span>
-  </button>
-  <a alt="Gauge on Github" class="github-fork-ribbon" href="https://github.com/getgauge/gauge" target="_blank" title="Fork me on GitHub"></a>
+<header class="top">
+  <div>
+    Gauge Documentation has a <strong><a href="https://docs.getgauge.io">New Home</a></strong>.<br>
+    This page exists just as an archive, and could be obsolete.
+  </div>
 </header>
 {{ super() }}
 <footer>
@@ -62,7 +25,6 @@
       <img alt="Thoughtworks logo" height="44" src="//getgauge.io/assets/images/thoughtworks_logo.svg">
     </a>
     <div class="disclamer">Gauge is an open source project, sponsored by ThoughtWorks Inc. under the GPL License, Version 3.0</div>
-    <script src="//getgauge.io/assets/javascripts/application.js" async="true"></script>
   </section>
 </footer>
 {% endblock %}
