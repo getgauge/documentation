@@ -110,4 +110,6 @@ $ unzip gauge-$VERSION-$OS.$ARCH.zip
 $ ./install.sh
 ```
 
+If you are not using Bash as your default shell, you will need to ensure `GAUGE_ROOT` is set to your installed path (`/usr/local` unless you specified an alternative install path).
+
 Having trouble with installation? Here is a detailed [installation troubleshooting guide](../../troubleshooting/installation.md) that can help you.
